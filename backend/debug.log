@@ -1,0 +1,2063 @@
+INFO 2025-10-22 11:50:20,317 autoreload 11792 135881326719104 Watching for file changes with StatReloader
+INFO 2025-10-22 11:50:56,494 autoreload 11813 138097724256384 Watching for file changes with StatReloader
+INFO 2025-10-22 11:53:26,708 autoreload 11843 126297810325632 Watching for file changes with StatReloader
+INFO 2025-10-22 12:00:41,612 autoreload 12007 136481133744256 Watching for file changes with StatReloader
+WARNING 2025-10-22 12:01:01,461 log 12007 136480839169728 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 12:01:01,461 log 12007 136480830777024 Unauthorized: /api/posts/
+WARNING 2025-10-22 12:01:01,465 log 12007 136480839169728 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 12:01:01,466 log 12007 136480830777024 Unauthorized: /api/posts/
+WARNING 2025-10-22 12:01:14,897 log 12007 136480830777024 Forbidden: /api/pages/
+WARNING 2025-10-22 12:01:14,947 log 12007 136480830777024 Forbidden: /api/pages/
+WARNING 2025-10-22 12:01:17,008 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:01:17,022 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:01:25,482 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:01:25,498 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:01:37,463 log 12007 136480830777024 Unauthorized: /api/users/2/
+WARNING 2025-10-22 12:01:37,523 log 12007 136480830777024 Unauthorized: /api/auth/token/refresh/
+WARNING 2025-10-22 12:01:44,803 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:02:01,622 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:02:11,973 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:02:13,888 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:04:58,772 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:05:10,210 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:05:18,237 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:05:22,347 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:07:33,017 log 12007 136480830777024 Forbidden: /api/pages/
+WARNING 2025-10-22 12:07:33,078 log 12007 136480830777024 Forbidden: /api/pages/
+WARNING 2025-10-22 12:07:36,672 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:07:36,683 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:07:55,488 log 12007 136480830777024 Forbidden: /api/users/3/
+WARNING 2025-10-22 12:08:17,329 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:17,343 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:20,921 log 12007 136480830777024 Forbidden: /api/users/2/
+WARNING 2025-10-22 12:08:20,938 log 12007 136480830777024 Forbidden: /api/users/2/
+WARNING 2025-10-22 12:08:24,564 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:24,579 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:28,263 log 12007 136480830777024 Forbidden: /api/users/2/
+WARNING 2025-10-22 12:08:28,278 log 12007 136480830777024 Forbidden: /api/users/2/
+WARNING 2025-10-22 12:08:31,653 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:31,666 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:35,665 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:35,678 log 12007 136480830777024 Forbidden: /api/users/
+WARNING 2025-10-22 12:08:54,757 log 12007 136480830777024 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 12:08:54,760 log 12007 136480830777024 Unauthorized: /api/posts/
+WARNING 2025-10-22 12:08:54,806 log 12007 136480830777024 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 12:08:54,850 log 12007 136480830777024 Unauthorized: /api/posts/
+WARNING 2025-10-22 12:09:14,821 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:09:29,581 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:09:38,317 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:10:21,365 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:10:22,672 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:10:23,620 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:10:24,324 log 12007 136480830777024 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:10:41,139 log 12007 136480830777024 Unauthorized: /api/auth/token/
+INFO 2025-10-22 12:14:40,147 autoreload 12359 134149924647040 Watching for file changes with StatReloader
+ERROR 2025-10-22 12:14:49,477 log 12359 134149848483520 Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: <function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a02321dbf60>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: User has no field named '<function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a02321dbf60>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'hijack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 296, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 63, in hijack_field
+    return self.hijack_button(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 47, in hijack_button
+    return render_to_string(
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'hijack' is not a registered namespace
+ERROR 2025-10-22 12:15:27,357 log 12359 134149840090816 Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: <function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a0230c580e0>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: User has no field named '<function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a0230c580e0>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'hijack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 296, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 63, in hijack_field
+    return self.hijack_button(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 47, in hijack_button
+    return render_to_string(
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'hijack' is not a registered namespace
+ERROR 2025-10-22 12:15:32,135 log 12359 134149840090816 Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: <function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a0230c58720>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: User has no field named '<function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a0230c58720>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'hijack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 296, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 63, in hijack_field
+    return self.hijack_button(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 47, in hijack_button
+    return render_to_string(
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'hijack' is not a registered namespace
+ERROR 2025-10-22 12:16:14,822 log 12359 134149848483520 Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: <function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a02321db060>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: User has no field named '<function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x7a02321db060>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'hijack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 296, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 63, in hijack_field
+    return self.hijack_button(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 47, in hijack_button
+    return render_to_string(
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/urls/base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'hijack' is not a registered namespace
+WARNING 2025-10-22 12:16:39,484 log 12359 134149823837888 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:16:41,343 log 12359 134149823837888 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:16:49,252 log 12359 134149823837888 Unauthorized: /api/auth/token/
+INFO 2025-10-22 12:17:59,492 autoreload 12359 134149924647040 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2025-10-22 12:18:04,523 autoreload 12430 125937281450112 Watching for file changes with StatReloader
+ERROR 2025-10-22 12:18:14,625 log 12430 125937205089984 Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: <function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x728a0a61f7e0>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: User has no field named '<function HijackUserAdminMixin.get_changelist_instance.<locals>.hijack_field at 0x728a0a61f7e0>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1035, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'hijack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 296, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 63, in hijack_field
+    return self.hijack_button(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/hijack/contrib/admin/admin.py", line 47, in hijack_button
+    return render_to_string(
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1097, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1037, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'hijack' is not a registered tag library. Must be one of:
+admin_interface_tags
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+import_export_tags
+l10n
+log
+rest_framework
+static
+tz
+INFO 2025-10-22 12:25:18,244 autoreload 12430 125937281450112 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2025-10-22 12:27:11,927 autoreload 12721 136747575754880 Watching for file changes with StatReloader
+WARNING 2025-10-22 12:27:22,537 log 12721 136747500431040 Not Found: /user_login
+WARNING 2025-10-22 12:28:20,445 log 12721 136747262408384 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:29:59,270 log 12721 136747262408384 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:31:32,701 log 12721 136747262408384 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:31:41,619 log 12721 136747262408384 Unauthorized: /api/auth/token/
+WARNING 2025-10-22 12:32:25,203 log 12721 136747262408384 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:42:21,700 log 12721 136747262408384 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:42:21,730 log 12721 136747262408384 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:42:50,303 log 12721 136747262408384 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 12:42:50,305 log 12721 136747492038336 Unauthorized: /api/posts/
+WARNING 2025-10-22 12:42:50,312 log 12721 136747262408384 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 12:42:50,314 log 12721 136747492038336 Unauthorized: /api/posts/
+INFO 2025-10-22 12:48:42,506 autoreload 12721 136747575754880 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-10-22 12:48:53,011 autoreload 13140 136854733688960 Watching for file changes with StatReloader
+INFO 2025-10-22 12:49:15,033 autoreload 13140 136854733688960 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-10-22 12:49:21,212 autoreload 13160 138733508325504 Watching for file changes with StatReloader
+WARNING 2025-10-22 12:53:17,293 log 13160 138733431080640 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:53:17,313 log 13160 138733431080640 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:53:30,288 log 13160 138733349238464 Not Found: /api/news/undefined/
+WARNING 2025-10-22 12:53:30,353 log 13160 138733349238464 Not Found: /api/news/undefined/
+WARNING 2025-10-22 12:53:43,438 log 13160 138733349238464 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:53:43,458 log 13160 138733349238464 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:55:17,431 log 13160 138733431080640 Bad Request: /api/users/
+WARNING 2025-10-22 12:55:44,163 log 13160 138733431080640 Bad Request: /api/users/
+WARNING 2025-10-22 12:55:53,233 log 13160 138733431080640 Not Found: /api/users/undefined/
+WARNING 2025-10-22 12:55:53,295 log 13160 138733431080640 Not Found: /api/users/undefined/
+WARNING 2025-10-22 12:56:39,846 log 13160 138733431080640 Not Found: /api/pages/home/
+WARNING 2025-10-22 12:56:39,869 log 13160 138733431080640 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:15:12,244 log 13160 138733431080640 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:15:12,313 log 13160 138733431080640 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:15:57,787 log 13160 138733349238464 Bad Request: /api/users/
+WARNING 2025-10-22 15:17:09,250 log 13160 138733349238464 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:17:09,276 log 13160 138733349238464 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:33:35,788 log 13160 138733340845760 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:33:35,823 log 13160 138733340845760 Not Found: /api/pages/home/
+INFO 2025-10-22 15:46:53,059 autoreload 13160 138733508325504 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-10-22 15:47:02,706 autoreload 14327 139767944396928 Watching for file changes with StatReloader
+WARNING 2025-10-22 15:47:06,988 log 14327 139767868004032 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:47:07,006 log 14327 139767868004032 Not Found: /api/pages/home/
+INFO 2025-10-22 15:55:13,829 autoreload 14641 138374519627904 Watching for file changes with StatReloader
+WARNING 2025-10-22 15:55:53,956 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 15:55:53,979 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:01:21,538 log 14641 138374367143616 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 16:01:21,540 log 14641 138374375536320 Unauthorized: /api/posts/
+WARNING 2025-10-22 16:01:21,546 log 14641 138374367143616 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 16:01:21,547 log 14641 138374375536320 Unauthorized: /api/posts/
+WARNING 2025-10-22 16:12:48,522 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:12:48,545 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:13:15,683 log 14641 138374367143616 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:13:15,704 log 14641 138374367143616 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:13:23,538 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:13:23,562 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:16:19,641 log 14641 138374367143616 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:16:19,680 log 14641 138374367143616 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:17:04,863 log 14641 138374375536320 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 16:17:04,865 log 14641 138374367143616 Unauthorized: /api/posts/
+WARNING 2025-10-22 16:17:04,869 log 14641 138374375536320 Unauthorized: /api/pages/home/
+WARNING 2025-10-22 16:17:04,873 log 14641 138374367143616 Unauthorized: /api/posts/
+WARNING 2025-10-22 16:47:46,240 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:47:46,264 log 14641 138374375536320 Not Found: /api/pages/home/
+ERROR 2025-10-22 16:47:53,191 log 14641 138374349309632 Internal Server Error: /api/admin/stats/
+ERROR 2025-10-22 16:47:53,266 log 14641 138374349309632 Internal Server Error: /api/admin/stats/
+ERROR 2025-10-22 16:48:14,104 log 14641 138374349309632 Internal Server Error: /api/admin/stats/
+ERROR 2025-10-22 16:48:14,150 log 14641 138374349309632 Internal Server Error: /api/admin/stats/
+ERROR 2025-10-22 16:48:22,516 log 14641 138374349309632 Internal Server Error: /api/admin/stats/
+ERROR 2025-10-22 16:48:22,614 log 14641 138374349309632 Internal Server Error: /api/admin/stats/
+WARNING 2025-10-22 16:48:39,790 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-22 16:48:39,847 log 14641 138374375536320 Not Found: /api/pages/home/
+WARNING 2025-10-23 08:48:26,369 log 14641 138374358750912 Not Found: /api/pages/home/
+WARNING 2025-10-23 08:48:26,441 log 14641 138374358750912 Not Found: /api/pages/home/
+INFO 2025-10-23 09:10:28,027 autoreload 14641 138374519627904 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-10-23 09:10:33,509 autoreload 17336 134858268033152 Watching for file changes with StatReloader
+WARNING 2025-10-23 09:11:13,543 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 09:11:13,557 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 09:11:28,379 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 09:11:28,427 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:07:51,771 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:07:51,808 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:07:51,880 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:07:51,953 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:18:19,977 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:18:20,011 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:18:43,930 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:18:43,944 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:18:49,494 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:18:49,514 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:20:35,790 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:20:35,811 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:21:56,369 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:21:56,398 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:24:25,280 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:24:25,306 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:27:47,598 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:27:47,627 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:13,712 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:13,733 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:15,599 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:15,615 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:16,432 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:16,446 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:36,883 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:36,902 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:38,042 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:28:38,081 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:29:02,312 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:29:02,335 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:29:03,444 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:29:03,487 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:29:12,280 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:29:12,292 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:30:53,377 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:30:53,398 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:30:53,500 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:30:53,567 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:30:54,782 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:30:54,815 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:32:09,222 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:32:09,242 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:32:39,289 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:32:39,316 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:32:40,084 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:32:40,119 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:33:45,492 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:33:45,513 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:33:52,807 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:33:52,828 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:33:53,870 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:33:53,903 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:38:42,736 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:38:42,767 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:40:31,060 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:40:31,077 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:40:36,831 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:40:36,851 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:44:24,893 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:44:24,926 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:44:49,126 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:44:49,153 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:44:59,981 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:45:00,003 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:45:00,908 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:45:00,943 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:51:09,016 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:51:09,090 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:51:09,951 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:51:09,999 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:58:29,704 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:58:29,738 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:58:30,082 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:58:30,115 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:58:32,026 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:58:32,052 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:59:44,983 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 10:59:45,018 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:09,920 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:09,942 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:11,177 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:11,221 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:29,900 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:29,927 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:30,003 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:30,070 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:31,555 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:31,589 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:37,040 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:00:37,058 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:36:20,599 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:36:20,624 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:36:36,815 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:36:36,831 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:50:30,952 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 11:50:30,991 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:06:57,392 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:06:57,433 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:08:24,550 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:08:24,570 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:10:39,724 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:10:39,764 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:12:01,680 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:12:01,705 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:12:03,427 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:12:03,485 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:13:10,038 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:13:10,068 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:15:40,990 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:15:41,035 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:15:41,296 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:15:41,339 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:16:17,875 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:16:17,896 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:16:19,546 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:16:19,587 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:16:56,163 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:16:56,182 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:21:28,274 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:21:28,305 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:22:58,155 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:22:58,180 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:23:05,456 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:23:05,504 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:28:12,117 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:28:12,142 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:28:51,414 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:28:51,436 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:28:54,337 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:28:54,368 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:31:38,784 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:31:38,871 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:31:38,966 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:31:39,038 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:32:13,128 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:32:13,182 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:32:13,469 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:32:13,525 log 17336 134858183530176 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:50:57,683 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:50:57,716 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:51:20,518 log 17336 134858183530176 Not Found: /api/pages/history/
+WARNING 2025-10-23 12:51:20,578 log 17336 134858183530176 Not Found: /api/pages/history/
+WARNING 2025-10-23 12:51:22,099 log 17336 134858183530176 Not Found: /api/pages/organization/
+WARNING 2025-10-23 12:51:22,168 log 17336 134858183530176 Not Found: /api/pages/organization/
+WARNING 2025-10-23 12:51:23,396 log 17336 134858183530176 Not Found: /api/pages/department/
+WARNING 2025-10-23 12:51:23,470 log 17336 134858183530176 Not Found: /api/pages/department/
+WARNING 2025-10-23 12:51:38,108 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:51:38,164 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:52:14,589 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:52:14,627 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:52:28,874 log 17336 134858165696192 Not Found: /api/pages/organization/
+WARNING 2025-10-23 12:52:28,893 log 17336 134858165696192 Not Found: /api/pages/organization/
+WARNING 2025-10-23 12:52:33,376 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:52:33,397 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:52:49,059 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:52:49,084 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:54:31,886 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:54:31,908 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:55:15,208 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 12:55:15,223 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:25:39,957 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:25:39,976 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:25:59,672 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:25:59,686 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:04,428 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:04,443 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:06,395 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:06,411 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:21,355 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:21,368 log 17336 134858165696192 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:22,365 log 17336 134858191922880 Not Found: /api/pages/home/
+WARNING 2025-10-23 13:26:22,382 log 17336 134858191922880 Not Found: /api/pages/home/
+INFO 2025-10-26 10:08:20,634 autoreload 4389 139605791162496 Watching for file changes with StatReloader
+WARNING 2025-10-26 10:09:48,740 log 4389 139605714757312 Not Found: /favicon.ico
+INFO 2025-10-30 20:24:32,063 autoreload 5591 138361762349184 Watching for file changes with StatReloader
+WARNING 2025-10-30 20:30:20,142 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:30:20,143 log 5591 138361154037440 Unauthorized: /api/posts/
+WARNING 2025-10-30 20:30:20,195 log 5591 138361154037440 Unauthorized: /api/posts/
+WARNING 2025-10-30 20:30:20,200 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:30:20,264 log 5591 138361145644736 Unauthorized: /api/auth/token/refresh/
+WARNING 2025-10-30 20:30:20,266 log 5591 138361137252032 Unauthorized: /api/auth/token/refresh/
+WARNING 2025-10-30 20:30:20,271 log 5591 138361154037440 Unauthorized: /api/auth/token/refresh/
+WARNING 2025-10-30 20:30:20,273 log 5591 138361162430144 Unauthorized: /api/auth/token/refresh/
+WARNING 2025-10-30 20:30:28,777 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:30:28,779 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 20:30:28,805 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:30:28,832 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 20:30:54,639 log 5591 138361162430144 Unauthorized: /api/pages/history/
+WARNING 2025-10-30 20:30:54,643 log 5591 138361162430144 Unauthorized: /api/pages/history/
+WARNING 2025-10-30 20:32:24,369 log 5591 138361162430144 Unauthorized: /api/news/
+WARNING 2025-10-30 20:32:24,374 log 5591 138361162430144 Unauthorized: /api/news/
+WARNING 2025-10-30 20:32:27,635 log 5591 138361162430144 Unauthorized: /api/contact/
+WARNING 2025-10-30 20:32:27,640 log 5591 138361162430144 Unauthorized: /api/contact/
+WARNING 2025-10-30 20:32:29,678 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:32:29,680 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 20:32:29,688 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:32:29,691 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 20:36:16,752 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:36:16,754 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 20:36:16,759 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 20:36:16,761 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 21:27:45,686 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 21:27:45,689 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 21:27:45,693 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 21:27:45,696 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 21:36:34,619 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 21:36:34,625 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 21:36:34,634 log 5591 138361162430144 Unauthorized: /api/pages/home/
+WARNING 2025-10-30 21:36:34,637 log 5591 138361137252032 Unauthorized: /api/posts/
+WARNING 2025-10-30 21:38:03,121 log 5591 138361687336640 Not Found: /api/pos/sale/
+WARNING 2025-10-30 21:38:14,227 log 5591 138361687336640 Not Found: /api/public
+WARNING 2025-11-04 18:30:44,329 log 5591 138361154037440 Unauthorized: /api/pages/home/
+WARNING 2025-11-04 18:30:44,334 log 5591 138361145644736 Unauthorized: /api/posts/
+WARNING 2025-11-04 18:30:44,341 log 5591 138361154037440 Unauthorized: /api/pages/home/
+WARNING 2025-11-04 18:30:44,349 log 5591 138361145644736 Unauthorized: /api/posts/
+WARNING 2025-11-04 18:31:07,995 log 5591 138361145644736 Unauthorized: /api/pages/home/
+WARNING 2025-11-04 18:31:07,997 log 5591 138361154037440 Unauthorized: /api/posts/
+WARNING 2025-11-04 18:31:08,002 log 5591 138361145644736 Unauthorized: /api/pages/home/
+WARNING 2025-11-04 18:31:08,013 log 5591 138361154037440 Unauthorized: /api/posts/
+INFO 2025-11-16 19:07:15,221 autoreload 28489 138272742822016 Watching for file changes with StatReloader
+INFO 2025-11-16 19:09:10,618 autoreload 28550 140433140990080 Watching for file changes with StatReloader
+INFO 2025-11-16 19:12:23,854 autoreload 28690 128556239536256 Watching for file changes with StatReloader
+WARNING 2025-11-16 19:12:42,083 log 28690 128556088686272 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:12:42,083 log 28690 128556080293568 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:12:42,087 log 28690 128556088686272 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:12:42,089 log 28690 128556080293568 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:12:57,216 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:12:57,218 log 28690 128556088686272 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:12:57,222 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:12:57,225 log 28690 128556071900864 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:13:27,798 log 28690 128556080293568 Unauthorized: /api/auth/token/
+WARNING 2025-11-16 19:13:39,270 log 28690 128556080293568 Unauthorized: /api/auth/token/
+WARNING 2025-11-16 19:16:15,575 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:15,577 log 28690 128556071900864 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:16:15,586 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:15,588 log 28690 128556071900864 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:16:18,645 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:18,647 log 28690 128556071900864 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:16:18,653 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:18,656 log 28690 128556071900864 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:16:21,372 log 28690 128556071900864 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:21,376 log 28690 128556080293568 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:16:21,383 log 28690 128556071900864 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:21,385 log 28690 128556080293568 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:16:23,123 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:23,127 log 28690 128556071900864 Unauthorized: /api/posts/
+WARNING 2025-11-16 19:16:23,138 log 28690 128556080293568 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 19:16:23,143 log 28690 128556071900864 Unauthorized: /api/posts/
+INFO 2025-11-16 20:03:27,681 autoreload 30609 134774744576128 Watching for file changes with StatReloader
+WARNING 2025-11-16 20:05:15,282 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:05:15,283 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:05:15,292 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:05:15,294 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:07:30,106 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:07:30,110 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:07:30,120 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:07:30,125 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:09:42,049 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:09:42,052 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:09:42,071 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:09:42,071 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:12:37,439 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:12:37,443 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:12:37,451 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:12:37,453 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:04,074 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:04,075 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:04,078 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:04,079 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:09,115 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:09,116 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:09,120 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:09,121 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:10,424 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:10,425 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:10,427 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:10,429 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:13,820 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:13,822 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:13,829 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:13,831 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:33,643 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:33,644 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:15:33,649 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:15:33,651 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:43:11,803 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:43:11,805 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:43:11,809 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:43:11,810 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:44:18,695 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:44:18,699 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:44:18,705 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:44:18,707 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:45:06,629 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:45:06,630 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:45:06,635 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:45:06,636 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:45:08,254 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:45:08,256 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:45:08,262 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:45:08,263 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:46:09,945 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:46:09,947 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:46:09,957 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:46:09,959 log 30609 134774597351104 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:48:18,969 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:48:18,971 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:48:18,982 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:48:18,984 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:49:55,416 log 30609 134774588958400 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:49:55,421 log 30609 134774588958400 Unauthorized: /api/posts/
+WARNING 2025-11-16 20:49:55,425 log 30609 134774597351104 Unauthorized: /api/pages/home/
+WARNING 2025-11-16 20:49:55,473 log 30609 134774588958400 Unauthorized: /api/posts/
+INFO 2025-12-01 08:56:22,706 autoreload 3155 133384233660544 Watching for file changes with StatReloader
+INFO 2025-12-01 08:59:06,564 autoreload 3219 129254975889536 Watching for file changes with StatReloader
+WARNING 2025-12-01 08:59:15,604 log 3219 129254826178240 Not Found: /favicon.ico
+WARNING 2025-12-01 08:59:41,208 log 3219 129254817785536 Not Found: /management
+WARNING 2025-12-01 08:59:53,905 log 3219 129254809392832 Not Found: /admin/api
+WARNING 2025-12-01 09:00:13,965 log 3219 129254809392832 Not Found: /admin/ auth/user/
+WARNING 2025-12-01 09:01:28,885 log 3219 129254817785536 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 09:01:28,888 log 3219 129254817785536 Unauthorized: /api/posts/
+WARNING 2025-12-01 09:01:28,889 log 3219 129254775822016 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 09:01:28,934 log 3219 129254817785536 Unauthorized: /api/posts/
+WARNING 2025-12-01 09:01:40,209 log 3219 129254809392832 Not Found: /login
+INFO 2025-12-01 09:34:03,308 autoreload 3770 139167749591168 Watching for file changes with StatReloader
+INFO 2025-12-01 09:45:02,674 autoreload 3770 139167749591168 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-12-01 09:45:09,306 autoreload 4276 132866559426688 Watching for file changes with StatReloader
+INFO 2025-12-01 09:45:47,087 autoreload 4336 132981316034688 Watching for file changes with StatReloader
+WARNING 2025-12-01 09:50:05,670 log 4336 132981163288256 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 09:50:05,677 log 4336 132981163288256 Unauthorized: /api/posts/
+WARNING 2025-12-01 09:50:05,680 log 4336 132981153846976 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 09:50:05,724 log 4336 132981163288256 Unauthorized: /api/posts/
+WARNING 2025-12-01 09:50:26,173 log 4336 132981163288256 Unauthorized: /api/auth/token/
+WARNING 2025-12-01 09:50:29,162 log 4336 132981163288256 Unauthorized: /api/auth/token/
+WARNING 2025-12-01 09:51:49,583 log 4336 132981163288256 Unauthorized: /api/auth/token/
+WARNING 2025-12-01 09:51:54,632 log 4336 132981163288256 Unauthorized: /api/auth/token/
+WARNING 2025-12-01 09:52:00,171 log 4336 132981163288256 Unauthorized: /api/auth/token/
+WARNING 2025-12-01 09:52:26,357 log 4336 132981163288256 Unauthorized: /api/auth/token/
+ERROR 2025-12-01 09:54:51,376 log 4336 132981128668864 Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/backends/base/base.py", line 303, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2081, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1686, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/actions.py", line 49, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1324, in delete_queryset
+    queryset.delete()
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/query.py", line 1199, in delete
+    num_deleted, num_deleted_per_model = collector.delete()
+                                         ^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/models/deletion.py", line 454, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/transaction.py", line 263, in __exit__
+    connection.commit()
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/backends/base/base.py", line 327, in commit
+    self._commit()
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/backends/base/base.py", line 302, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/venv/lib/python3.12/site-packages/django/db/backends/base/base.py", line 303, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+WARNING 2025-12-01 10:01:47,562 log 4336 132981151749824 Unauthorized: /api/auth/token/
+INFO 2025-12-01 10:03:49,783 autoreload 4622 138139383861376 Watching for file changes with StatReloader
+WARNING 2025-12-01 10:03:53,748 log 4622 138139234465472 Unauthorized: /api/auth/token/
+WARNING 2025-12-01 10:03:53,937 log 4622 138139226072768 Unauthorized: /api/auth/token/
+WARNING 2025-12-01 10:06:16,282 log 4622 138139192501952 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:06:16,351 log 4622 138139192501952 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:10:37,700 log 4622 138139226072768 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:10:37,715 log 4622 138139226072768 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:15:03,494 log 4622 138139200894656 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:15:03,514 log 4622 138139200894656 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:15:33,498 log 4622 138139200894656 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:15:33,513 log 4622 138139200894656 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:16:13,083 log 4622 138139226072768 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:16:13,101 log 4622 138139226072768 Not Found: /api/pages/home/
+WARNING 2025-12-01 10:16:48,801 log 4622 138139234465472 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 10:16:48,804 log 4622 138139226072768 Unauthorized: /api/posts/
+WARNING 2025-12-01 10:16:48,808 log 4622 138139226072768 Unauthorized: /api/posts/
+WARNING 2025-12-01 10:16:48,810 log 4622 138139234465472 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 10:16:58,725 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 10:16:58,727 log 4622 138139234465472 Unauthorized: /api/posts/
+WARNING 2025-12-01 10:16:58,732 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 10:16:58,734 log 4622 138139234465472 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:31:31,718 log 4622 138139217680064 Unauthorized: /api/pages/organization/
+WARNING 2025-12-01 11:31:31,722 log 4622 138139217680064 Unauthorized: /api/pages/organization/
+WARNING 2025-12-01 11:31:32,745 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:31:32,748 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:31:32,755 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:31:32,757 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:36:44,472 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:36:44,473 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:36:44,476 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:36:44,477 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:37:10,021 log 4622 138139200894656 Unauthorized: /api/pages/history/
+WARNING 2025-12-01 11:37:10,026 log 4622 138139200894656 Unauthorized: /api/pages/history/
+WARNING 2025-12-01 11:37:11,722 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:37:11,724 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:37:11,732 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:37:11,734 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:45:39,055 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:45:39,057 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:45:39,061 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:45:39,064 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:45:46,378 log 4622 138139217680064 Unauthorized: /api/news/
+WARNING 2025-12-01 11:45:46,383 log 4622 138139200894656 Unauthorized: /api/news/
+WARNING 2025-12-01 11:46:07,236 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:46:07,237 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:46:07,246 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:46:07,249 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:46:11,467 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:46:11,469 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:46:11,479 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 11:46:11,481 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 11:46:12,319 log 4622 138139200894656 Unauthorized: /api/news/
+WARNING 2025-12-01 11:46:12,325 log 4622 138139200894656 Unauthorized: /api/news/
+WARNING 2025-12-01 12:03:22,283 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:22,285 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:03:22,288 log 4622 138139200894656 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:22,291 log 4622 138139217680064 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:03:44,314 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:44,316 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:03:44,321 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:44,323 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:03:50,795 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:50,797 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:03:50,803 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:50,805 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:03:59,079 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:59,082 log 4622 138139200894656 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:03:59,090 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:03:59,095 log 4622 138139192501952 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:04:13,927 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:04:13,930 log 4622 138139192501952 Unauthorized: /api/posts/
+WARNING 2025-12-01 12:04:13,937 log 4622 138139217680064 Unauthorized: /api/pages/home/
+WARNING 2025-12-01 12:04:13,939 log 4622 138139192501952 Unauthorized: /api/posts/
+INFO 2025-12-01 13:56:48,293 autoreload 4622 138139383861376 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-12-01 13:57:06,745 autoreload 5802 135034269724800 Watching for file changes with StatReloader
+INFO 2025-12-01 14:24:31,320 autoreload 5802 135034269724800 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-12-01 14:24:49,242 autoreload 6077 123913165365376 Watching for file changes with StatReloader
+WARNING 2025-12-01 14:25:26,379 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 14:25:26,457 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 14:26:21,010 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 14:26:21,045 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 14:36:00,493 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 14:36:00,534 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 14:37:17,602 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 14:37:17,641 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:11:26,942 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:11:26,974 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:11:36,153 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:11:36,188 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:11:37,003 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:11:37,048 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:12:28,280 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:12:28,326 log 6077 123913021904576 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:12:33,495 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:12:33,537 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:17:56,839 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-01 15:17:56,856 log 6077 123913013511872 Not Found: /api/pages/home/
+WARNING 2025-12-02 09:37:26,906 log 6077 123912985188032 Not Found: /api/pages/home/
+WARNING 2025-12-02 09:37:26,971 log 6077 123912985188032 Not Found: /api/pages/home/
+INFO 2025-12-02 09:59:31,337 autoreload 6939 134087340679296 Watching for file changes with StatReloader
+INFO 2025-12-02 11:10:45,865 autoreload 6939 134087340679296 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/urls.py changed, reloading.
+INFO 2025-12-02 11:10:54,410 autoreload 7941 130909154488448 Watching for file changes with StatReloader
+INFO 2025-12-02 11:12:56,843 autoreload 7941 130909154488448 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2025-12-02 11:13:06,414 autoreload 7971 134231678996608 Watching for file changes with StatReloader
+INFO 2025-12-02 11:15:08,968 autoreload 7971 134231678996608 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/police_academy_backend/urls.py changed, reloading.
+INFO 2025-12-02 11:15:20,927 autoreload 7983 135375216111744 Watching for file changes with StatReloader
+WARNING 2025-12-02 11:18:38,815 log 7983 135375130547904 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 11:20:08,781 log 7983 135375121106624 Not Found: /api/posts/
+WARNING 2025-12-02 11:20:08,787 log 7983 135375138940608 Not Found: /api/pages/home/
+WARNING 2025-12-02 11:20:08,812 log 7983 135375138940608 Not Found: /api/pages/home/
+WARNING 2025-12-02 11:20:08,816 log 7983 135375121106624 Not Found: /api/posts/
+WARNING 2025-12-02 11:20:20,059 log 7983 135375121106624 Not Found: /api/pages/history/
+WARNING 2025-12-02 11:20:20,115 log 7983 135375138940608 Not Found: /api/pages/history/
+WARNING 2025-12-02 11:20:20,792 log 7983 135375138940608 Not Found: /api/pages/organization/
+WARNING 2025-12-02 11:20:20,844 log 7983 135375121106624 Not Found: /api/pages/organization/
+WARNING 2025-12-02 11:20:21,430 log 7983 135375138940608 Not Found: /api/pages/department/
+WARNING 2025-12-02 11:20:21,497 log 7983 135375121106624 Not Found: /api/pages/department/
+WARNING 2025-12-02 11:20:29,959 log 7983 135375121106624 Not Found: /api/news/
+WARNING 2025-12-02 11:20:30,021 log 7983 135375138940608 Not Found: /api/news/
+WARNING 2025-12-02 11:20:31,725 log 7983 135375138940608 Not Found: /api/contact/
+WARNING 2025-12-02 11:20:31,780 log 7983 135375121106624 Not Found: /api/contact/
+WARNING 2025-12-02 11:20:34,012 log 7983 135375121106624 Not Found: /api/pages/history/
+WARNING 2025-12-02 11:20:34,025 log 7983 135375138940608 Not Found: /api/pages/history/
+WARNING 2025-12-02 11:20:34,660 log 7983 135375138940608 Not Found: /api/pages/organization/
+WARNING 2025-12-02 11:20:34,673 log 7983 135375121106624 Not Found: /api/pages/organization/
+WARNING 2025-12-02 11:20:35,112 log 7983 135375121106624 Not Found: /api/pages/department/
+WARNING 2025-12-02 11:20:35,126 log 7983 135375138940608 Not Found: /api/pages/department/
+WARNING 2025-12-02 11:20:35,941 log 7983 135375138940608 Not Found: /api/pages/home/
+WARNING 2025-12-02 11:20:35,952 log 7983 135375121106624 Not Found: /api/posts/
+WARNING 2025-12-02 11:20:35,962 log 7983 135375112713920 Not Found: /api/pages/home/
+WARNING 2025-12-02 11:20:35,971 log 7983 135375138940608 Not Found: /api/posts/
+INFO 2025-12-02 11:24:03,934 autoreload 7983 135375216111744 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-12-02 11:24:17,538 autoreload 8122 129176460112000 Watching for file changes with StatReloader
+INFO 2025-12-02 11:29:38,385 autoreload 8269 123846239817856 Watching for file changes with StatReloader
+WARNING 2025-12-02 11:37:02,526 log 8269 123846163785408 Method Not Allowed: /api/auth/token/
+WARNING 2025-12-02 15:30:59,456 log 8269 123846155392704 Not Found: /api/posts/
+WARNING 2025-12-02 15:32:39,875 log 8269 123846155392704 Not Found: /api/posts/
+INFO 2025-12-02 15:37:26,334 autoreload 8269 123846239817856 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/serializers.py changed, reloading.
+INFO 2025-12-02 15:37:38,761 autoreload 9458 135666934792320 Watching for file changes with StatReloader
+INFO 2025-12-02 15:39:52,610 autoreload 9458 135666934792320 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2025-12-02 15:40:06,826 autoreload 9522 132952107524224 Watching for file changes with StatReloader
+INFO 2025-12-02 15:41:09,074 autoreload 9559 137278845689984 Watching for file changes with StatReloader
+WARNING 2025-12-02 15:41:29,922 log 9559 137278680716992 Not Found: /api/posts/
+WARNING 2025-12-02 15:41:41,998 log 9559 137278655538880 Not Found: /api/posts/
+WARNING 2025-12-02 15:41:42,004 log 9559 137278647146176 Not Found: /api/pages/home/
+WARNING 2025-12-02 15:41:42,075 log 9559 137278160631488 Not Found: /api/posts/
+WARNING 2025-12-02 15:41:42,082 log 9559 137278152238784 Not Found: /api/pages/home/
+WARNING 2025-12-02 15:41:46,876 log 9559 137278152238784 Not Found: /api/users/me/
+WARNING 2025-12-02 15:41:46,939 log 9559 137278160631488 Not Found: /api/users/me/
+WARNING 2025-12-02 15:42:27,664 log 9559 137278160631488 Not Found: /api/users/me/
+WARNING 2025-12-02 15:42:27,685 log 9559 137278152238784 Not Found: /api/users/me/
+WARNING 2025-12-02 15:42:38,034 log 9559 137278152238784 Not Found: /api/users/me/
+WARNING 2025-12-02 15:42:38,052 log 9559 137278160631488 Not Found: /api/users/me/
+WARNING 2025-12-02 15:45:00,820 log 9559 137278160631488 Not Found: /api/pages/home/
+WARNING 2025-12-02 15:45:00,825 log 9559 137278152238784 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:00,853 log 9559 137278160631488 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:00,861 log 9559 137278655538880 Not Found: /api/pages/home/
+WARNING 2025-12-02 15:45:06,758 log 9559 137278160631488 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:06,767 log 9559 137278152238784 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:06,772 log 9559 137278655538880 Not Found: /api/users/
+WARNING 2025-12-02 15:45:06,780 log 9559 137278647146176 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:06,836 log 9559 137278160631488 Not Found: /api/users/
+WARNING 2025-12-02 15:45:06,839 log 9559 137278655538880 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:13,513 log 9559 137278655538880 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:13,524 log 9559 137278160631488 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:16,328 log 9559 137278160631488 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:16,331 log 9559 137278655538880 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:16,341 log 9559 137278647146176 Not Found: /api/users/
+WARNING 2025-12-02 15:45:16,359 log 9559 137278160631488 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:16,362 log 9559 137278152238784 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:16,365 log 9559 137278655538880 Not Found: /api/users/
+WARNING 2025-12-02 15:45:20,327 log 9559 137278655538880 Not Found: /api/users/
+WARNING 2025-12-02 15:45:20,345 log 9559 137278160631488 Not Found: /api/users/
+WARNING 2025-12-02 15:45:26,299 log 9559 137278160631488 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:26,302 log 9559 137278655538880 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:26,307 log 9559 137278152238784 Not Found: /api/users/
+WARNING 2025-12-02 15:45:26,320 log 9559 137278160631488 Not Found: /api/pages/
+WARNING 2025-12-02 15:45:26,322 log 9559 137278647146176 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:26,324 log 9559 137278655538880 Not Found: /api/users/
+WARNING 2025-12-02 15:45:38,614 log 9559 137278655538880 Not Found: /api/users/
+WARNING 2025-12-02 15:45:38,634 log 9559 137278160631488 Not Found: /api/users/
+WARNING 2025-12-02 15:45:40,063 log 9559 137278160631488 Not Found: /api/contact/
+WARNING 2025-12-02 15:45:40,118 log 9559 137278655538880 Not Found: /api/contact/
+WARNING 2025-12-02 15:45:42,498 log 9559 137278655538880 Not Found: /api/posts/
+WARNING 2025-12-02 15:45:42,523 log 9559 137278160631488 Not Found: /api/posts/
+WARNING 2025-12-02 15:46:17,832 log 9559 137278160631488 Not Found: /api/news/
+INFO 2025-12-02 15:57:22,750 autoreload 9559 137278845689984 /mnt/d/MIFUMO/MIFUMO YANGU/Dpa 2/dar-es-salaam-police-academy/backend/academy/urls.py changed, reloading.
+INFO 2025-12-02 15:57:36,247 autoreload 9946 127546991775872 Watching for file changes with StatReloader
+INFO 2025-12-03 09:06:12,726 autoreload 10452 137415436181632 Watching for file changes with StatReloader
+INFO 2025-12-03 11:21:39,233 autoreload 4612 136595049730176 Watching for file changes with StatReloader
+WARNING 2025-12-03 11:24:26,643 log 4612 136594581350080 Not Found: /api/pages/home/
+WARNING 2025-12-03 11:24:26,652 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 11:24:26,718 log 4612 136594564564672 Not Found: /api/pages/home/
+WARNING 2025-12-03 11:24:26,736 log 4612 136594581350080 Not Found: /api/posts/
+WARNING 2025-12-03 11:24:40,711 log 4612 136594581350080 Not Found: /api/pages/home/
+WARNING 2025-12-03 11:24:40,714 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 11:24:40,724 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 11:24:40,727 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 11:27:58,966 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 11:27:58,975 log 4612 136594581350080 Not Found: /api/users/
+WARNING 2025-12-03 11:27:58,978 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 11:27:58,984 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 11:27:59,032 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 11:27:59,034 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:02:33,520 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:02:33,523 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:02:33,526 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:02:33,549 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:02:33,552 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:02:33,555 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:02:41,477 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:02:41,481 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:02:41,484 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:02:41,502 log 4612 136594581350080 Not Found: /api/posts/
+WARNING 2025-12-03 12:02:41,507 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:02:41,511 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:07:48,242 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 12:07:48,246 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:07:48,251 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:07:48,291 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:07:48,294 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 12:07:48,302 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:09:20,953 log 4612 136594947290816 Not Found: /api/posts/
+WARNING 2025-12-03 12:09:20,959 log 4612 136594955683520 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:09:20,993 log 4612 136594955683520 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:09:20,997 log 4612 136594947290816 Not Found: /api/posts/
+WARNING 2025-12-03 12:12:27,904 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:12:27,941 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:12:27,950 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:12:27,968 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:12:28,022 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:12:28,028 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:12:33,268 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:12:33,278 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:12:33,283 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:12:33,295 log 4612 136594965124800 Not Found: /api/posts/
+WARNING 2025-12-03 12:12:33,304 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:12:33,310 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:13:28,790 log 4612 136594955683520 Not Found: /api/pages/
+WARNING 2025-12-03 12:13:28,795 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:13:28,866 log 4612 136594955683520 Not Found: /api/posts/
+WARNING 2025-12-03 12:13:28,875 log 4612 136594938898112 Not Found: /api/users/
+WARNING 2025-12-03 12:13:28,942 log 4612 136594938898112 Not Found: /api/users/
+WARNING 2025-12-03 12:13:28,949 log 4612 136594955683520 Not Found: /api/pages/
+WARNING 2025-12-03 12:15:20,424 log 4612 136594938898112 Not Found: /api/pages/
+WARNING 2025-12-03 12:15:20,430 log 4612 136594955683520 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:20,441 log 4612 136594938898112 Not Found: /api/users/
+WARNING 2025-12-03 12:15:20,446 log 4612 136594955683520 Not Found: /api/pages/
+WARNING 2025-12-03 12:15:20,509 log 4612 136594955683520 Not Found: /api/users/
+WARNING 2025-12-03 12:15:20,516 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:22,928 log 4612 136594938898112 Not Found: /api/pages/
+WARNING 2025-12-03 12:15:22,946 log 4612 136594955683520 Not Found: /api/pages/
+WARNING 2025-12-03 12:15:24,283 log 4612 136594938898112 Not Found: /api/news/
+WARNING 2025-12-03 12:15:24,344 log 4612 136594955683520 Not Found: /api/news/
+WARNING 2025-12-03 12:15:27,568 log 4612 136594955683520 Not Found: /api/pages/
+WARNING 2025-12-03 12:15:27,589 log 4612 136594938898112 Not Found: /api/pages/
+WARNING 2025-12-03 12:15:28,582 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:28,594 log 4612 136594955683520 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:32,528 log 4612 136594955683520 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:32,540 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:34,748 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:34,759 log 4612 136594955683520 Not Found: /api/posts/
+WARNING 2025-12-03 12:15:35,825 log 4612 136594955683520 Not Found: /api/users/
+WARNING 2025-12-03 12:15:35,837 log 4612 136594938898112 Not Found: /api/users/
+WARNING 2025-12-03 12:16:08,119 log 4612 136594564564672 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:16:08,131 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:16:08,176 log 4612 136594965124800 Not Found: /api/posts/
+WARNING 2025-12-03 12:16:08,210 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:16:14,823 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:16:14,839 log 4612 136594965124800 Not Found: /api/pages/
+WARNING 2025-12-03 12:16:14,849 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:16:14,876 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:16:14,894 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:16:14,911 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:16:20,172 log 4612 136594938898112 Not Found: /api/users/
+WARNING 2025-12-03 12:16:20,200 log 4612 136594955683520 Not Found: /api/users/
+WARNING 2025-12-03 12:16:26,410 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:16:26,418 log 4612 136594955683520 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:16:26,485 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:16:26,492 log 4612 136594955683520 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:16:34,205 log 4612 136594938898112 Not Found: /api/posts/
+WARNING 2025-12-03 12:16:34,208 log 4612 136594589742784 Not Found: /api/users/
+WARNING 2025-12-03 12:16:34,211 log 4612 136594955683520 Not Found: /api/pages/
+WARNING 2025-12-03 12:16:34,239 log 4612 136594938898112 Not Found: /api/pages/
+WARNING 2025-12-03 12:16:34,244 log 4612 136594947290816 Not Found: /api/users/
+WARNING 2025-12-03 12:16:34,247 log 4612 136594539386560 Not Found: /api/posts/
+WARNING 2025-12-03 12:19:59,030 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:19:59,035 log 4612 136594965124800 Not Found: /api/posts/
+WARNING 2025-12-03 12:19:59,058 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:19:59,073 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:20:04,815 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:20:04,821 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:20:04,821 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:20:04,840 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:20:04,844 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:20:04,848 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:21:21,853 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:21:21,856 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:21:21,881 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:21:21,886 log 4612 136594564564672 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:21:27,270 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:21:27,279 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:21:27,290 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:21:27,306 log 4612 136594965124800 Not Found: /api/posts/
+WARNING 2025-12-03 12:21:27,335 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:21:27,336 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:22:08,071 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:22:08,079 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:22:08,088 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:22:08,115 log 4612 136594547779264 Not Found: /api/posts/
+WARNING 2025-12-03 12:22:08,118 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:22:08,127 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:22:50,049 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:22:50,099 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 12:22:50,129 log 4612 136594547779264 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:22:50,142 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:22:54,361 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:22:54,367 log 4612 136594547779264 Not Found: /api/pages/
+WARNING 2025-12-03 12:22:54,371 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:22:54,385 log 4612 136594965124800 Not Found: /api/posts/
+WARNING 2025-12-03 12:22:54,391 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:22:54,396 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:23:07,412 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 12:23:07,416 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:23:07,420 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:23:07,440 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:23:07,445 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:23:07,448 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:24:55,969 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:24:55,972 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:24:56,018 log 4612 136594564564672 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:24:56,021 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:25:04,153 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:25:04,158 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:04,167 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:25:04,186 log 4612 136594965124800 Not Found: /api/posts/
+WARNING 2025-12-03 12:25:04,198 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:25:04,194 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:10,571 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:10,582 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:12,534 log 4612 136594564564672 Not Found: /api/news/
+WARNING 2025-12-03 12:25:12,594 log 4612 136594556171968 Not Found: /api/news/
+WARNING 2025-12-03 12:25:14,357 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:14,373 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:17,489 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 12:25:17,499 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:17,502 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:25:17,511 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:25:17,518 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:17,520 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:25:22,041 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:22,059 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:26,697 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:26,724 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:28,048 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:25:28,072 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:25:29,981 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 12:25:30,001 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:25:30,007 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:25:30,012 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 12:25:30,031 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:25:30,081 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:28:05,523 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:28:05,524 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:28:05,555 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:28:05,569 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:35:09,696 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:35:09,695 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:09,728 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:09,736 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:35:36,041 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:36,046 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:35:36,072 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 12:35:36,078 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:37,071 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:37,081 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:35:37,090 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 12:35:37,131 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:35:37,135 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:35:37,144 log 4612 136594965124800 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:57,588 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:35:57,591 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:57,595 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 12:35:57,614 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:35:57,618 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:35:57,622 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:36:04,024 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 12:36:04,064 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 12:36:04,065 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 12:36:04,071 log 4612 136594965124800 Not Found: /api/users/
+WARNING 2025-12-03 12:36:04,088 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 12:36:04,129 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 13:03:59,696 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 13:03:59,699 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 13:03:59,702 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 13:03:59,714 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 13:03:59,718 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 13:03:59,722 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 13:04:09,203 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 13:04:09,228 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 13:04:11,793 log 4612 136594564564672 Not Found: /api/news/
+WARNING 2025-12-03 13:04:11,824 log 4612 136594572957376 Not Found: /api/news/
+WARNING 2025-12-03 13:04:13,541 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 13:04:13,565 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 13:05:57,423 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 13:05:57,427 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:05:57,449 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:05:57,454 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:02,751 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:02,767 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 13:06:02,771 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 13:06:02,820 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 13:06:02,820 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:02,821 log 4612 136594572957376 Not Found: /api/users/
+WARNING 2025-12-03 13:06:06,865 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:06:06,869 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:06,931 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:06:06,926 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:20,510 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:20,514 log 4612 136594556171968 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:06:20,539 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:20,542 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:06:36,146 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:06:36,158 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 13:06:36,171 log 4612 136594572957376 Not Found: /api/pages/home/
+WARNING 2025-12-03 13:06:36,180 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 13:08:28,067 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 13:08:28,082 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 13:08:28,083 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 13:08:28,124 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 13:08:28,132 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 13:08:28,135 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:39,498 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:39,498 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 14:11:39,507 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 14:11:39,576 log 4612 136594556171968 Not Found: /api/pages/
+WARNING 2025-12-03 14:11:39,586 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 14:11:39,603 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:40,054 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 14:11:40,062 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 14:11:40,068 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:40,118 log 4612 136594955683520 Not Found: /api/pages/
+WARNING 2025-12-03 14:11:40,132 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 14:11:40,132 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:41,988 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 14:11:42,022 log 4612 136594556171968 Not Found: /api/users/
+WARNING 2025-12-03 14:11:45,098 log 4612 136594564564672 Not Found: /api/pages/
+WARNING 2025-12-03 14:11:45,099 log 4612 136594955683520 Not Found: /api/users/
+WARNING 2025-12-03 14:11:45,103 log 4612 136594556171968 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:45,132 log 4612 136594572957376 Not Found: /api/pages/
+WARNING 2025-12-03 14:11:45,140 log 4612 136594564564672 Not Found: /api/users/
+WARNING 2025-12-03 14:11:45,146 log 4612 136594955683520 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:48,519 log 4612 136594564564672 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:48,528 log 4612 136594955683520 Not Found: /api/pages/home/
+WARNING 2025-12-03 14:11:48,560 log 4612 136594572957376 Not Found: /api/posts/
+WARNING 2025-12-03 14:11:48,572 log 4612 136594564564672 Not Found: /api/pages/home/
+INFO 2025-12-04 07:11:54,037 autoreload 4612 136595049730176 /usr/lib/python3.12/asyncio/log.py changed, reloading.
+INFO 2025-12-04 07:12:11,226 autoreload 9657 126001101856896 Watching for file changes with StatReloader
+INFO 2025-12-07 22:41:18,350 autoreload 7053 133808109760640 Watching for file changes with StatReloader
+WARNING 2025-12-07 22:41:54,398 log 7053 133807952881344 Not Found: /favicon.ico
+WARNING 2025-12-07 22:42:06,877 log 7053 133807961274048 Not Found: /api/all
+WARNING 2025-12-07 22:42:33,606 log 7053 133807961274048 Not Found: /api/ public/contact/current/
+INFO 2026-01-21 10:20:59,066 autoreload 10204 26392 Watching for file changes with StatReloader
+INFO 2026-01-21 10:22:01,109 autoreload 16124 13440 Watching for file changes with StatReloader
+INFO 2026-01-21 10:22:23,593 autoreload 2808 19644 Watching for file changes with StatReloader
+INFO 2026-01-21 10:23:02,930 autoreload 27996 5656 Watching for file changes with StatReloader
+INFO 2026-01-21 10:23:26,144 autoreload 3452 31060 Watching for file changes with StatReloader
+INFO 2026-01-21 10:24:14,591 autoreload 25524 22412 Watching for file changes with StatReloader
+INFO 2026-01-21 10:25:10,047 autoreload 26236 2388 Watching for file changes with StatReloader
+WARNING 2026-01-21 10:25:15,334 log 26236 3788 Not Found: /favicon.ico
+WARNING 2026-01-21 10:28:32,048 log 26236 13112 Not Found: /api/pages/home/
+WARNING 2026-01-21 10:28:32,050 log 26236 20748 Not Found: /api/posts/
+WARNING 2026-01-21 10:28:32,071 log 26236 13112 Not Found: /api/pages/home/
+WARNING 2026-01-21 10:28:32,077 log 26236 20748 Not Found: /api/posts/
+INFO 2026-01-21 11:29:38,527 autoreload 10012 10016 Watching for file changes with StatReloader
+INFO 2026-01-21 11:36:59,478 autoreload 424 7868 Watching for file changes with StatReloader
+INFO 2026-01-21 11:42:47,379 autoreload 9672 7764 Watching for file changes with StatReloader
+INFO 2026-01-21 11:46:36,367 autoreload 9592 10132 Watching for file changes with StatReloader
+INFO 2026-01-21 11:49:59,052 autoreload 5836 1900 Watching for file changes with StatReloader
+INFO 2026-01-21 11:51:20,823 autoreload 11208 5384 Watching for file changes with StatReloader
+INFO 2026-01-21 11:56:13,603 autoreload 9736 10172 Watching for file changes with StatReloader
+INFO 2026-01-21 11:57:32,566 autoreload 8540 10440 Watching for file changes with StatReloader
+WARNING 2026-01-21 11:57:59,301 log 8540 5620 Not Found: /favicon.ico
+WARNING 2026-01-21 12:01:48,646 log 8540 6904 Not Found: /api/pages/home/
+WARNING 2026-01-21 12:01:48,743 log 8540 424 Not Found: /api/posts/
+WARNING 2026-01-21 12:01:50,711 log 8540 8628 Not Found: /api/pages/home/
+WARNING 2026-01-21 12:01:50,738 log 8540 6904 Not Found: /api/posts/
+ERROR 2026-01-21 12:03:59,064 log 8540 10792 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: admin_interface_theme.form_actions_sticky
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 160, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 160, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1150, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 788, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 928, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1000, in _resolve_lookup
+    current = current()
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 82, in super
+    return mark_safe(self.render(self.context))
+                     ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\library.py", line 325, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\admin_interface\templatetags\admin_interface_tags.py", line 64, in get_admin_interface_theme
+    theme = Theme.objects.get_active()
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\admin_interface\models.py", line 15, in get_active
+    objs_active_ls = list(objs_active_qs)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: admin_interface_theme.form_actions_sticky
+INFO 2026-01-21 13:17:43,006 autoreload 11168 9920 Watching for file changes with StatReloader
+WARNING 2026-01-21 13:18:19,117 log 11168 9816 Not Found: /api/users/
+WARNING 2026-01-21 13:18:19,153 log 11168 10564 Not Found: /api/pages/
+WARNING 2026-01-21 13:18:19,191 log 11168 4384 Not Found: /api/posts/
+WARNING 2026-01-21 13:18:19,222 log 11168 7200 Not Found: /api/users/
+WARNING 2026-01-21 13:18:19,313 log 11168 10564 Not Found: /api/posts/
+WARNING 2026-01-21 13:18:19,320 log 11168 9816 Not Found: /api/pages/
+WARNING 2026-01-21 13:19:24,152 log 11168 11100 Not Found: /api/posts/
+WARNING 2026-01-21 13:19:24,180 log 11168 7612 Not Found: /api/pages/
+WARNING 2026-01-21 13:19:24,235 log 11168 1368 Not Found: /api/users/
+WARNING 2026-01-21 13:19:24,286 log 11168 11100 Not Found: /api/posts/
+WARNING 2026-01-21 13:19:24,324 log 11168 7612 Not Found: /api/pages/
+WARNING 2026-01-21 13:19:24,409 log 11168 420 Not Found: /api/users/
+WARNING 2026-01-21 14:42:36,775 log 11168 2848 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:36,781 log 11168 11624 Not Found: /api/users/
+WARNING 2026-01-21 14:42:36,785 log 11168 11736 Not Found: /api/pages/
+WARNING 2026-01-21 14:42:36,882 log 11168 9868 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:36,966 log 11168 2848 Not Found: /api/users/
+WARNING 2026-01-21 14:42:37,072 log 11168 11736 Not Found: /api/pages/
+WARNING 2026-01-21 14:42:37,948 log 11168 2848 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:37,976 log 11168 11736 Not Found: /api/pages/home/
+WARNING 2026-01-21 14:42:38,370 log 11168 2848 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:38,581 log 11168 2848 Not Found: /api/pages/home/
