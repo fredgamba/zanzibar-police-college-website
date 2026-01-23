@@ -1,0 +1,200 @@
+/* Color Palette - Blue, White, Black Only */
+:root {
+  --blue: #1c236d;
+  --blue-light: #003366;
+  --white: #FFFFFF;
+  --black: #000000;
+  --text-dark: #333333;
+  --text-medium: #666666;
+  --border-light: #E5E5E5;
+}
+
+.fee-structure-page {
+  background: var(--white);
+  padding: 1.5rem 0;
+  min-height: auto;
+}
+
+.fee-structure-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.fee-structure-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0 0 2rem 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.fee-table {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  border: 2px solid var(--black);
+  background: var(--white);
+  margin: 0 auto;
+}
+
+.fee-table th,
+.fee-table td {
+  border: 1px solid var(--black);
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--black);
+}
+
+.fee-table th {
+  background: var(--white);
+  font-weight: 700;
+  text-align: center;
+  color: var(--black);
+}
+
+.item-description-header {
+  text-align: left !important;
+}
+
+.amount-header {
+  text-align: center;
+}
+
+.fee-table tbody tr:nth-child(even) {
+  background: var(--white);
+}
+
+.fee-table tbody tr:hover {
+  background: rgba(28, 35, 109, 0.05);
+}
+
+.fee-table td {
+  text-align: left;
+}
+
+.fee-table td:not(:first-child) {
+  text-align: center;
+}
+
+.total-row {
+  background: rgba(28, 35, 109, 0.1) !important;
+  font-weight: 700;
+}
+
+.total-row td {
+  font-weight: 700;
+  border-top: 2px solid var(--black);
+}
+
+.total-row td:first-child {
+  text-align: left;
+}
+
+.total-row td:not(:first-child) {
+  text-align: center;
+}
+
+/* Notes and Accommodation Section */
+.fee-notes-section {
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.fee-note {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+}
+
+.fee-note strong {
+  color: var(--black);
+}
+
+.accommodation-section {
+  margin-top: 1.5rem;
+}
+
+.accommodation-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0 0 1rem 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-transform: uppercase;
+}
+
+.accommodation-text {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 0.75rem 0;
+}
+
+.accommodation-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .fee-structure-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .fee-table {
+    font-size: 0.85rem;
+  }
+
+  .fee-table th,
+  .fee-table td {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .fee-structure-container {
+    padding: 0 1rem;
+  }
+
+  .fee-structure-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .fee-table {
+    font-size: 0.75rem;
+  }
+
+  .fee-table th,
+  .fee-table td {
+    padding: 0.4rem;
+  }
+
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+
+  .fee-notes-section {
+    padding: 0 1rem;
+  }
+
+  .accommodation-title {
+    font-size: 1.1rem;
+  }
+
+  .accommodation-text {
+    font-size: 0.9rem;
+  }
+}

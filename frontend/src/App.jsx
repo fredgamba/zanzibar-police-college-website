@@ -12,6 +12,10 @@ import History from './pages/About/History';
 import Organization from './pages/About/Organization';
 import Department from './pages/About/Department';
 
+// Admission imports
+import Course from './pages/Admission/Course';
+import FeeStructure from './pages/Admission/FeeStructure';
+
 // Admin imports - FIXED TO MATCH ORIGINAL FILENAMES
 import AdminLogin from './pages/admin/Login';
 import AdminDashboard from './pages/admin/Dashboard';
@@ -221,9 +225,9 @@ function App() {
           <Route path="/about/history" element={<PublicLayout><History /></PublicLayout>} />
           <Route path="/about/organization" element={<PublicLayout><Organization /></PublicLayout>} />
           <Route path="/about/department" element={<PublicLayout><Department /></PublicLayout>} />
-          <Route path="/admission/course" element={<PublicLayout><TempPage title="Course Information" /></PublicLayout>} />
+          <Route path="/admission/course" element={<PublicLayout><Course /></PublicLayout>} />
           <Route path="/admission/admission-requirements" element={<PublicLayout><TempPage title="Admission Requirements" /></PublicLayout>} />
-          <Route path="/admission/fee-structure" element={<PublicLayout><TempPage title="Fee Structure" /></PublicLayout>} />
+          <Route path="/admission/fee-structure" element={<PublicLayout><FeeStructure /></PublicLayout>} />
           <Route path="/admission/application-process" element={<PublicLayout><TempPage title="Application Process" /></PublicLayout>} />
           <Route path="/facilities/sport-gym" element={<PublicLayout><TempPage title="Sport & Gym" /></PublicLayout>} />
           <Route path="/facilities/recreation" element={<PublicLayout><TempPage title="Recreation" /></PublicLayout>} />
