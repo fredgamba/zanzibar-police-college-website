@@ -1,0 +1,41 @@
+# Core Django
+Django==4.2.11
+djangorestframework==3.14.0
+django-cors-headers==4.3.0
+
+# JWT Authentication
+djangorestframework-simplejwt==5.5.1
+
+# Rich Text Editor
+django-ckeditor==6.5.1
+Pillow==10.1.0
+
+# Admin Interface & UI
+django-admin-interface==0.27.0
+django-colorfield==0.11.0
+
+# Database & Utilities
+django-import-export==3.3.1
+django-constance[database]==3.0.0
+
+# Audit & Security
+django-auditlog==3.4.1
+django-hijack==3.1.0
+
+# Multi-Factor Authentication
+django-otp==1.7.0
+qrcode==7.4.2
+
+# Additional Utilities
+python-decouple==3.8
+pytz==2024.1
+requests==2.31.0
+python-dateutil==2.9.0.post0
+
+# Development
+gunicorn==21.2.0
+whitenoise==6.6.0
+
+# Testing
+pytest==7.4.3
+pytest-django==4.7.0
