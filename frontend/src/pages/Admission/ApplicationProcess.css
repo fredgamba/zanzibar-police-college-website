@@ -1,0 +1,160 @@
+/* Color Palette - Blue, White, Black Only */
+:root {
+  --blue: #1c236d;
+  --blue-light: #003366;
+  --white: #FFFFFF;
+  --black: #000000;
+  --text-dark: #333333;
+  --text-medium: #666666;
+}
+
+.application-process-page {
+  background: var(--white);
+  padding: 1.5rem 0 3rem;
+  min-height: auto;
+}
+
+.application-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.application-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0 0 2rem 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.application-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* Left Column - Text Content */
+.application-text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.application-section {
+  margin-bottom: 0;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0 0 1rem 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.section-text {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-line {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-line strong {
+  color: var(--black);
+}
+
+.contact-line a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
+
+/* Right Column - Image */
+.application-image-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.commandant-image-wrapper {
+  border: 4px solid var(--blue);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.commandant-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .application-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .application-text-column {
+    order: 2;
+  }
+
+  .application-image-column {
+    order: 1;
+  }
+
+  .application-title {
+    font-size: 1.75rem;
+  }
+
+  .section-heading {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .application-container {
+    padding: 0 1rem;
+  }
+
+  .application-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.25rem;
+  }
+
+  .section-text,
+  .contact-line {
+    font-size: 0.95rem;
+  }
+
+  .commandant-image-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
