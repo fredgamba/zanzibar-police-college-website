@@ -26,10 +26,12 @@ body, #root {
 }
 
 .main-content {
-  flex: 1;
-  overflow-y: auto;
+  padding-top:0px;   /* height of fixed navbar */
   width: 100%;
-  margin-top: 180px; /* Adjust based on total navbar height */
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  overflow: visible;
 }
 
 /* =============== Navbar =============== */
@@ -45,6 +47,12 @@ body, #root {
   z-index: 1000;          /* Ensures it stays above content */
 }
 
+.college-navbar {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
 /* Header with inward-pulled logos */
 .logo-bar {
   display: flex;
@@ -224,11 +232,12 @@ body, #root {
 /* =============== Home Page =============== */
 
 .home-page {
-  min-height: calc(100vh - 120px);
+  
   background: white;
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 /* Hero Carousel */
@@ -5021,6 +5030,7 @@ body, #root {
   color: #2d3748;
   line-height: 1.6;
   overflow-x: hidden;
+   min-height: auto;
 }
 
 :root {
@@ -5747,8 +5757,14 @@ body, #root {
 
 /* Gallery Section - 3D Design */
 .gallery-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
+  background: #f8fafc;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.gallery-section {
+  padding: 4rem 0; /* reduced from 6rem */
+  background: #f8fafc; /* keep simple gradient or solid light gray */
 }
 
 .gallery-3d {
@@ -5824,13 +5840,13 @@ body, #root {
 }
 
 .stat-card {
-  text-align: center;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
+  min-height: 180px;          
+  padding: 1.5rem 1.2rem;   
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .stat-card:hover {
@@ -5839,38 +5855,51 @@ body, #root {
 }
 
 .stat-icon-circle {
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+  width: auto;       
+  height: auto;     
+  background: none;  
+  border-radius: 0;  
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1rem;
-  transition: all 0.3s ease;
+  transition: transform 0.25s ease; /* keep subtle hover animation */
 }
 
+.stat-icon-circle i {
+  font-size: 2rem;
+  color: white;
+}
+
+
 .stat-card:hover .stat-icon-circle {
-  transform: scale(1.1) rotate(10deg);
-  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05); /* subtle scale only */
+  background: none;       /* no background change on hover */
 }
 
 .stat-icon {
   width: 40px;
   height: 40px;
-  color: white;
+  color: darkblue;
 }
 
 .stat-number {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin: 0.3rem 0 0.2rem;
+  line-height: 1.1;
 }
 
 .stat-label {
-  font-size: 1rem;
-  opacity: 0.9;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  max-width: 150px;
+  line-height: 1.4;
 }
+
 
 /* Quick Links Section */
 .quick-links-section {
@@ -5998,5 +6027,7 @@ body, #root {
   .quick-links-grid {
     grid-template-columns: 1fr;
   }
+  
 }
+
 

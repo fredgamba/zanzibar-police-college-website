@@ -35,6 +35,7 @@ import PostsList from './pages/admin/PostsList';
 import EditPage from './pages/admin/EditNews'; // FIXED: As per original (reuse for pages if needed)
 import CreateNews from './pages/admin/CreateNews';
 import EditNews from './pages/admin/EditNews';
+import SportGym from './pages/Facilities/SportGym';
 
 // Error Boundary
 import ErrorBoundary from './components/ErrorBoundary';

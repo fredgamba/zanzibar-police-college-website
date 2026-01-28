@@ -60,22 +60,20 @@ button:focus-visible {
 /* =============== App Layout =============== */
 #root, .app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
-.main-content {
-  flex: 1;
-  overflow-y: auto;
-}
 
 /* =============== Navbar =============== */
-
-/* Top White Bar with Logos */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  z-index: 1000;
+  
 }
 
 .logo-bar {
@@ -143,8 +141,9 @@ button:focus-visible {
 
 /* =============== Home Page =============== */
 .home-page {
-  min-height: calc(100vh - 120px); /* Adjust if navbar height changes */
+  /* Adjust if navbar height changes */
   background: white;
+   
 }
 
 /* Hero Banner */
