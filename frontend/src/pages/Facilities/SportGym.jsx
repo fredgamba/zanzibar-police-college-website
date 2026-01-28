@@ -124,7 +124,6 @@ export default function SportGym() {
           top: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 15px;
           font-size: 24px;
@@ -136,7 +135,6 @@ export default function SportGym() {
           bottom: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 15px;
           font-size: 16px;
@@ -168,7 +166,6 @@ export default function SportGym() {
           top: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 10px;
           font-weight: bold;
@@ -179,7 +176,6 @@ export default function SportGym() {
           bottom: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 10px;
         }

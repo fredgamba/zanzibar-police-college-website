@@ -40,6 +40,7 @@ import Dispensary from "./pages/Facilities/Dispensary";
 import Library from "./pages/Facilities/Library"
 import Range from "./pages/Facilities/Range";
 import Recreation from "./pages/Facilities/Recreation";
+import SportGym from "./pages/Facilities/SportGym";
 
 // ===== ADMIN =====
 import AdminLogin from "./pages/admin/Login";
@@ -224,7 +225,7 @@ function App() {
             </PublicLayout>
           } />
 
-          <Route path="/facilities/sport-gym" element={<PublicLayout><TempPage title="Sport & Gym" /></PublicLayout>} />
+          <Route path="/facilities/sport-gym" element={<PublicLayout><SportGym/></PublicLayout>} />
           <Route path="/facilities/recreation" element={<PublicLayout><Recreation/></PublicLayout>} />
           <Route path="/facilities/library" element={<PublicLayout><Library/></PublicLayout>} />
           <Route path="/facilities/range" element={<PublicLayout><Range/></PublicLayout>} />
