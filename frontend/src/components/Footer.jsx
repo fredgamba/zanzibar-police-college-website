@@ -22,21 +22,19 @@ export default function Footer() {
               United Republic of Tanzania.
             </p>
             <div className="tptc-social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="Facebook">
+              <a href="https://www.facebook.com/100082484637622" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="Twitter">
+              <a href="https://x.com/tanpol" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="Twitter(X)">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="YouTube">
+              <a href="http://www.youtube.com/@usalamatv" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="YouTube">
                 <i className="fab fa-youtube"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/polisi.tanzania" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="tptc-social-link" aria-label="LinkedIn">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
+              
             </div>
           </div>
 
@@ -54,26 +52,46 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="tptc-footer-section">
-            <h3 className="tptc-footer-heading">Quick Links</h3>
-            <ul className="tptc-links-list">
-              <li><Link to="/about" className="tptc-nav-footer-link"><i className="fas fa-chevron-right"></i> About Us</Link></li>
-              <li><Link to="/admission" className="tptc-nav-footer-link"><i className="fas fa-chevron-right"></i> Admission</Link></li>
-              <li><Link to="/facilities" className="tptc-nav-footer-link"><i className="fas fa-chevron-right"></i> Facilities</Link></li>
-              <li><Link to="/news" className="tptc-nav-footer-link"><i className="fas fa-chevron-right"></i> News</Link></li>
-              <li><Link to="/contact" className="tptc-nav-footer-link"><i className="fas fa-chevron-right"></i> Contact</Link></li>
-            </ul>
-          </div>
+        <div className="tptc-footer-section">
+           <h3 className="tptc-footer-heading">Quick Links</h3>
+          <ul className="tptc-links-list">
+           <li>
+            <a href="https://www.mha.go.tz" className="tptc-external-link" target="_blank" rel="noopener noreferrer" >
+            <i className="fas fa-chevron-right"></i> Wizara ya Mambo ya Ndani</a>
+           </li>
+           <li>
+              <a href="https://polisi.go.tz" className="tptc-external-link" target="_blank" rel="noopener">
+              <i className="fas fa-chevron-right"></i> Tanzania Police Force
+              </a>
+           </li>
+           <li>
+            <a href="https://www.prisons.go.tz" className="tptc-external-link" target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-chevron-right"></i> Jeshi la Magereza Tanzania </a>
+           </li>
+
+           <li>
+            <a href="https://www.immigration.go.tz" className="tptc-external-link" target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-chevron-right"></i> Uhamiaji Tanzania</a>
+           </li>
+
+           <li>
+            <a href="https://www.nida.go.tz" className="tptc-external-link" target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-chevron-right"></i> NIDA</a>
+           </li>
+
+           <li>
+            <a href="https://www.zimamoto.go.tz"className="tptc-external-link" target="_blank"rel="noopener noreferrer">
+            <i className="fas fa-chevron-right"></i> Zimamoto Tanzania</a>
+           </li>
+          </ul>
+        </div>
+
 
           {/* Police Colleges */}
           <div className="tptc-footer-section tptc-right-section">
             <h3 className="tptc-footer-heading">Police Colleges</h3>
             <ul className="tptc-links-list">
-              <li>
-                <a href="https://polisi.go.tz" className="tptc-external-link" target="_blank" rel="noopener">
-                  <i className="fas fa-chevron-right"></i> Tanzania Police Force
-                </a>
-              </li>
+              
               <li>
                 <a href="https://tpsmoshi.ac.tz" className="tptc-external-link" target="_blank" rel="noopener">
                   <i className="fas fa-chevron-right"></i> Tanzania Police School
@@ -82,6 +100,11 @@ export default function Footer() {
               <li>
                 <a href="https://www.nacte.go.tz" className="tptc-external-link" target="_blank" rel="noopener">
                   <i className="fas fa-chevron-right"></i> Marine Police College
+                </a>
+              </li>
+               <li>
+                <a href="https://tpsc.ac.tz/" className="tptc-external-link" target="_blank" rel="noopener">
+                  <i className="fas fa-chevron-right"></i> Tanzania Police Staff College
                 </a>
               </li>
             </ul>

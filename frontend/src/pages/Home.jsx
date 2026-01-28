@@ -222,14 +222,14 @@ export default function Home() {
         <div className="container">
           <div className="commandant-content">
             <div className="commandant-image">
-              <img src="/images/commander-jonathan.jpg" alt="Jonathan Mkumbo - Commandant" />
+              <img src="/images/mambosasa.jpg" alt="Dr. Lazaro B. Mambosasa-DCP - Commandant" />
               <div className="commandant-badge">
                 <Award className="badge-icon" />
               </div>
             </div>
             <div className="commandant-message">
               <div className="message-header">
-                <span className="message-icon">👨‍🏫</span>
+                <span className="message-icon"></span>
                 <h2>Message from the Commandant</h2>
               </div>
               <blockquote>
@@ -238,11 +238,9 @@ export default function Home() {
                 our graduates serve with honor, courage, and unwavering dedication to justice."
               </blockquote>
               <div className="commandant-info">
-                <h3>Jonathan Mkumbo</h3>
-                <p>Assistant Commissioner of Police - Commandant</p>
-                <div className="signature">
-                  <img src="/images/signature.png" alt="Signature" />
-                </div>
+                <h3>Dr. Lazaro B. Mambosasa-DCP</h3>
+                <p>Deputy Commissioner of Police - Commandant</p>
+                
               </div>
             </div>
           </div>

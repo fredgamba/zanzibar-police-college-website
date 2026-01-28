@@ -16,11 +16,29 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ErrorBoundary from "./components/ErrorBoundary";
 
+<<<<<<< HEAD
 // ===== PUBLIC PAGES =====
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
 import ApplyOnline from "./pages/ApplyOnline";
+=======
+// Admin imports - FIXED TO MATCH ORIGINAL FILENAMES
+import AdminLogin from './pages/admin/Login';
+import AdminDashboard from './pages/admin/Dashboard';
+import AdminPages from './pages/admin/Pages';
+import AdminNews from './pages/admin/AdminNews'; // FIXED: Original path
+import AdminContact from './pages/admin/Contact';
+import Users from './pages/admin/Users';
+import AddUser from './pages/admin/AddUser';
+import EditUser from './pages/admin/EditUser';
+import CreatePost from './pages/admin/CreateNews'; // FIXED: As per original (reuse for posts if needed)
+import PostsList from './pages/admin/PostsList';
+import EditPage from './pages/admin/EditNews'; // FIXED: As per original (reuse for pages if needed)
+import CreateNews from './pages/admin/CreateNews';
+import EditNews from './pages/admin/EditNews';
+import SportGym from './pages/Facilities/SportGym';
+>>>>>>> 51269c8b2b91bce0f011c6d20f30baad6dde0e43
 
 // ===== ABOUT =====
 import History from "./pages/About/History";
