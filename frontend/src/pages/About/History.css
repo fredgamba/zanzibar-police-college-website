@@ -1,0 +1,53 @@
+/* Main container for the Academy text */
+.center-text {
+    top: 20px;
+    margin-left: auto;        /* Push block to the right */
+    margin-right: 40px;
+    margin-bottom: 100px;       /* Space from right edge */
+    max-width: 800px;         /* Limit width */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Paragraph spacing */
+.center-text p {
+    margin: 4px 0;
+    text-align: justify;
+    padding: 0px;
+}
+
+/* Heading */
+.center-text h1 {
+    text-align: right;
+    margin-bottom: 20px;
+    color: #003366;
+}
+.middle-text {
+    margin-top: 220px;      /* space from top-right fixed panel */
+    padding: 20px;
+    max-width: 700px;       /* keeps text readable */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;       /* slightly tighter than normal */
+    color: #333;
+    line-height: 1.4; 
+}
+
+/* Make paragraphs closer together */
+.middle-text p {
+    margin: 4px 0;          /* minimal spacing between paragraphs */
+    line-height: 1.5;  
+    margin-top: 50px;     /* tight but readable */
+}
+
+.marin-top
+{
+ margin-top:"4%";
+}
+
