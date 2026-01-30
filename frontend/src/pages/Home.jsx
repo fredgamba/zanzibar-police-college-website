@@ -144,8 +144,8 @@ export default function Home() {
     { number: "98%", label: "Employment Rate", icon: <BarChart3 className="stat-icon" /> }
   ];
 
-  const galleryImages = Array(6).fill().map((_, i) => ({
-    src: `/images/gallery${i + 1}.jpg`,
+  const galleryImages = Array(5).fill().map((_, i) => ({
+    src: `/images/slide${i + 1}.jpg`,
     alt: `Campus activity ${i + 1}`
   }));
 
@@ -207,7 +207,7 @@ export default function Home() {
 
         <div className="apply-overlay">
           <a
-            href="https://tvetims.nacte.go.tz/"
+            href="https://dpa.tpf.go.tz/"
             target="_blank"
             rel="noopener noreferrer"
             className="apply-hero-btn animated-padding"
