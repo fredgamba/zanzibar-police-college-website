@@ -48,7 +48,7 @@ urlpatterns = [
     # 🔥 OPTIONAL: ADD DRF AUTH URLS FOR BROWSABLE API LOGIN
     path('api/auth/', include('rest_framework.urls')),
     
-    # 🔥 HIJACK URLS (for user impersonation)
+    # police_academy_backend/urls.py - Add this after other includes
     path('hijack/', include('hijack.urls')),
 ]
 

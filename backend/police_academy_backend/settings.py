@@ -38,12 +38,12 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'ckeditor',
     'auditlog',
-    'hijack',
-    'hijack.contrib.admin',
+    #'hijack',
+    #'hijack.contrib.admin',
     'constance',
     'constance.backends.database',
     'import_export',
-    'mfa',
+    'django_mfa',
     
     # 🔥 YOUR APPS
     'academy',

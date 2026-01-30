@@ -5,3 +5,4 @@ staticfiles/
 policeenv/
 __pycache__/
 *.pyc
+./backend/staticfiles

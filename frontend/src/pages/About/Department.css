@@ -1,0 +1,67 @@
+.department-page {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.department-container {
+  display: flex;
+  flex-direction: row;       /* side by side */
+  align-items: flex-start;   /* align tops */
+  gap: 32px;                 /* space between image & text */
+  background: #f8f9fa;       /* light background – optional */
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08); /* subtle card look – optional */
+}
+
+.department-image {
+  width: 100%;
+  max-width: 600px;          /* your preferred max size */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;         /* better framing if image has people/buildings */
+  flex-shrink: 0;            /* prevents image from being squished */
+}
+
+.department-text {
+  flex: 1;                   /* take all remaining space */
+  min-width: 0;
+}
+
+.department-text h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  color: #1a3c5e;           /* darker blue – police theme feel */
+}
+
+.department-text h2 {
+  margin: 1.8rem 0 0.8rem;
+  font-size: 1.6rem;
+  color: #33475b;
+}
+
+.department-text ul {
+  list-style: disc;
+  padding-left: 1.8rem;
+  margin: 0.8rem 0 1.5rem;
+  line-height: 1.6;
+}
+
+.department-text li {
+  margin-bottom: 0.6rem;
+}
+
+/* Mobile – stack vertically */
+@media (max-width: 900px) {
+  .department-container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+  }
+  
+  .department-image {
+    max-width: 100%;
+    width: 100%;
+  }
+}

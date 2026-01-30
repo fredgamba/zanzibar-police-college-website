@@ -1,6 +1,41 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+import { useEffect, useState } from 'react';
+import api from '../../utils/api';
+
+export default function SportGym() {
+  const [content, setContent] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    api.get('pages/sport_gym/')
+      .then(res => {
+        setContent(res.data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Error loading Sport & Gym page:', err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div>Loading Sport & Gym info...</div>;
+  if (!content) return <div>Sport & Gym details not available.</div>;
+
+  return (
+    <div className="sport-gym-page">
+      <h1>{content.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: content.content }} />
+    </div>
+  );
+=======
+import { useEffect, useState } from 'react';
+import api from '../../utils/api';
+=======
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+>>>>>>> 51269c8b2b91bce0f011c6d20f30baad6dde0e43
 
 export default function SportGym() {
   const data = {
@@ -207,4 +242,9 @@ export default function SportGym() {
       `}</style>
     </div>
   );
+<<<<<<< HEAD
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }
+=======
+}
+>>>>>>> 51269c8b2b91bce0f011c6d20f30baad6dde0e43
