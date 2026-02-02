@@ -47,6 +47,7 @@ import AdminLogin from "./pages/admin/Login";
 import AdminDashboard from "./pages/admin/Dashboard";
 import AdminPages from "./pages/admin/Pages";
 import AdminNews from "./pages/admin/AdminNews";
+import AdminGallery from "./pages/admin/AdminGallery";
 import AdminContact from "./pages/admin/Contact";
 import Users from "./pages/admin/Users";
 import AddUser from "./pages/admin/AddUser";
@@ -55,6 +56,7 @@ import PostsList from "./pages/admin/PostsList";
 import CreatePost from "./pages/admin/CreatePost";
 import CreateNews from "./pages/admin/CreateNews";
 import EditNews from "./pages/admin/EditNews";
+import CreateGallery from "./pages/admin/CreateGallery";
 
 
 // ===== PUBLIC LAYOUT =====
@@ -158,6 +160,26 @@ function App() {
               <ProtectedAdminRoute>
                 <ErrorBoundary>
                   <EditNews />
+                </ErrorBoundary>
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/gallery"
+            element={
+              <ProtectedAdminRoute>
+                <ErrorBoundary>
+                  <AdminGallery />
+                </ErrorBoundary>
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/gallery/create"
+            element={
+              <ProtectedAdminRoute>
+                <ErrorBoundary>
+                  <CreateGallery />
                 </ErrorBoundary>
               </ProtectedAdminRoute>
             }

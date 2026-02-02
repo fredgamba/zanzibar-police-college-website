@@ -1,7 +1,7 @@
 # academy/serializers.py - FIXED SERIALIZERS
 from django.contrib.auth.models import User
 from rest_framework import serializers
-from .models import PageContent, News, ContactInfo, Post, UserProfile
+from .models import Gallery, PageContent, News, ContactInfo, Post, UserProfile
 
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
@@ -55,6 +55,11 @@ class NewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = News
         fields = ['id', 'title', 'content', 'date_posted', 'image']
+
+class GallerySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Gallery
+        fields = ['id',  'description', 'date_posted', 'image']
 
 class ContactInfoSerializer(serializers.ModelSerializer):
     class Meta:

@@ -8,8 +8,8 @@ from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser
 from django.http import JsonResponse
 from django.contrib.auth.models import User
 from django.db.models import Count, Q
-from .models import PageContent, News, ContactInfo, Post, UserProfile
-from .serializers import PageContentSerializer, NewsSerializer, ContactInfoSerializer, UserSerializer, UserCreateSerializer, PostSerializer
+from .models import Gallery, PageContent, News, ContactInfo, Post, UserProfile
+from .serializers import GallerySerializer, PageContentSerializer, NewsSerializer, ContactInfoSerializer, UserSerializer, UserCreateSerializer, PostSerializer
 
 # 🔥 API ROOT ENDPOINT
 @api_view(['GET'])
@@ -895,3 +895,79 @@ def update_news(request, news_id):
 
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def create_gallery(request):
+    """Create news - Only staff can create gallery"""
+    try:
+        if not request.user.is_staff:
+            return Response(
+                {"error": "Only staff members can create news."},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        serializer = GallerySerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    except Exception as e:
+        return Response(
+            {"error": f"Error creating gallery: {str(e)}"},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+    
+class PublicGalleryListView(generics.ListAPIView):
+    permission_classes = [AllowAny]
+    queryset = Gallery.objects.all().order_by('-date_posted')
+    serializer_class = GallerySerializer
+    
+    def list(self, request, *args, **kwargs):
+        """List public gallery with array response"""
+        try:
+            response = super().list(request, *args, **kwargs)
+            # 🔥 ENSURE ARRAY RESPONSE
+            #print(response.data)
+            return ensure_array_response(response)
+        except Exception as e:
+            print(f"Error in public gallery list: {e}")
+            #return Response([], status=status.HTTP_200_OK)
+            
+
+   
+@api_view(['DELETE'])
+@permission_classes([IsAuthenticated])
+def delete_gallery(request, gallery_id):
+    """Delete news - Only staff can delete news"""
+    try:
+        # Check if user is staff
+        if not request.user.is_staff:
+            return Response(
+                {"error": "Only staff members can delete news."},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        # Try to find the news
+        try:
+            gallery_item = Gallery.objects.get(id=gallery_id)
+        except Gallery.DoesNotExist:
+            return Response(
+                {"error": "Gallery not found."},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        # Delete the news
+        gallery_item.delete()
+        return Response(
+            {"message": f"Gallery with ID {gallery_id} deleted successfully."},
+            status=status.HTTP_200_OK
+        )
+
+    except Exception as e:
+        return Response(
+            {"error": f"Error deleting Gallery: {str(e)}"},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+  

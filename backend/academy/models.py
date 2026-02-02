@@ -47,8 +47,18 @@ class News(models.Model):
     date_posted = models.DateField(auto_now_add=True)
     image = models.ImageField(upload_to='news/', blank=True, null=True)
 
+    #class Meta:
+        #db_table="management_news",
     def __str__(self):
         return self.title
+
+class Gallery(models.Model):
+    description = RichTextField()
+    date_posted = models.DateField(auto_now_add=True)
+    image = models.ImageField(upload_to='gallery/')
+
+    def __str__(self):
+        return self.description
 
 class ContactInfo(models.Model):
     address = models.TextField()

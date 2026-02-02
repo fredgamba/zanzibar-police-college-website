@@ -15,8 +15,8 @@ import {
 import api from '../../utils/api';
 import AdminNavbar from './AdminNavbar'; // ✅ Reuse the separate navbar
 
-export default function AdminNews() {
-  const [news, setNews] = useState([]);
+export default function AdminGallery() {
+  const [news, setGallery] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,73 +29,71 @@ export default function AdminNews() {
       return;
     }
 
-    fetchNews();
+    fetchGallery();
   }, [navigate]);
 
-  const fetchNews = async () => {
+  const fetchGallery = async () => {
     try {
       setLoading(true);
       setError('');
       
-      const res = await api.get('public/news/');
+      const res = await api.get('public/gallery/');
       
-      let newsData = [];
+      let galleryData = [];
       if (res.data && Array.isArray(res.data)) {
-        newsData = res.data[1]
-          .filter(item => item?.id !== undefined && item.title)
-          .map(item => ({
-            id: item.id,
-            title: item.title || 'Untitled News',
-            content: item.content || '',
-            excerpt: item.excerpt || '',
-            date_posted: item.date_posted || new Date().toISOString(),
-            image: item.image || null,
-            shortContent: String(item.content || '').substring(0, 100) + '...',
-            formattedDate: formatDate(item.date_posted)
-          }));
-      } else if (res.data && typeof res.data === 'object') {
-        const newsArray = Object.values(res.data);
-        newsData = newsArray
+        galleryData = res.data[1]
           .filter(item => item?.id !== undefined)
           .map(item => ({
             id: item.id,
-            title: item.title || 'Untitled News',
-            content: item.content || '',
+            description: item.description || '',
             excerpt: item.excerpt || '',
             date_posted: item.date_posted || new Date().toISOString(),
             image: item.image || null,
-            shortContent: String(item.content || '').substring(0, 100) + '...',
+            shortContent: String(item.description || '').substring(0, 100) + '...',
+            formattedDate: formatDate(item.date_posted)
+          }));
+      } else if (res.data && typeof res.data === 'object') {
+        const galleryArray = Object.values(res.data);
+        galleryData = galleryArray
+          .filter(item => item?.id !== undefined)
+          .map(item => ({
+            id: item.id,
+
+            description: item.description || '',
+            excerpt: item.excerpt || '',
+            date_posted: item.date_posted || new Date().toISOString(),
+            image: item.image || null,
+            shortContent: String(item.description || '').substring(0, 100) + '...',
             formattedDate: formatDate(item.date_posted)
           }));
       } else {
         console.warn('Unexpected news data format:', res.data);
       }
-      
-      setNews(newsData);
+      setGallery(galleryData);
       
     } catch (err) {
-      console.error('Failed to load news:', err);
-      setError('Failed to load news. Please try again.');
-      setNews([]);
+      console.error('Failed to load gallery:', err);
+      setError('Failed to load gallery. Please try again.');
+      setGallery([]);
     } finally {
       setLoading(false);
     }
   };
 
-  const filteredNews = news.filter(item => {
+  const filteredGallery = news.filter(item => {
     if (!item) return false;
     const searchLower = searchTerm.toLowerCase();
-    return [item.title, item.content, item.excerpt].some(field => field?.toLowerCase().includes(searchLower));
+    return [item.description, item.excerpt].some(field => field?.toLowerCase().includes(searchLower));
   });
 
   const handleDelete = async (id, title) => {
     if (!id) {
-      Swal.fire({ icon: 'error', title: 'Invalid ID', text: 'Cannot delete this news item.' });
+      Swal.fire({ icon: 'error', title: 'Invalid ID', text: 'Cannot delete this gallery item.' });
       return;
     }
 
     const result = await Swal.fire({
-      title: `Are you sure you want to delete "${title}"?`,
+      title: `Are you sure you want to delete ?`,
       text: "This action cannot be undone!",
       icon: 'warning',
       showCancelButton: true,
@@ -107,11 +105,11 @@ export default function AdminNews() {
 
     if (result.isConfirmed) {
       try {
-        await api.delete(`admin/news/delete/${id}/`);
-        setNews(news.filter(item => item.id !== id));
-        Swal.fire({ icon: 'success', title: 'Deleted!', text: `"${title}" has been deleted.`, timer: 2000, showConfirmButton: false });
+        await api.delete(`admin/gallery/delete/${id}/`);
+        setGallery(news.filter(item => item.id !== id));
+        Swal.fire({ icon: 'success', title: 'Deleted!', text: `gallery has been deleted.`, timer: 2000, showConfirmButton: false });
       } catch (err) {
-        Swal.fire({ icon: 'error', title: 'Error', text: 'Failed to delete news. Please try again.' });
+        Swal.fire({ icon: 'error', title: 'Error', text: 'Failed to delete gallery. Please try again.' });
       }
     }
   };
@@ -133,12 +131,12 @@ export default function AdminNews() {
         <div className="dashboard-header">
           <div className="header-actions">
             <div>
-              <h1>News Management</h1>
-              <p>Manage news articles and announcements</p>
+              <h1>Gallery Management</h1>
+             
             </div>
-            <Link to="/admin/news/create" className="btn-primary">
+            <Link to="/admin/gallery/create" className="btn-primary">
               <PlusCircle size={18} />
-              Add New News
+              Add New Gallery
             </Link>
           </div>
         </div>
@@ -147,22 +145,22 @@ export default function AdminNews() {
           <div className="error-banner" style={{ background: '#ffebee', color: '#c62828', padding:'1rem', borderRadius:'8px', marginBottom:'1rem', display:'flex', alignItems:'center', gap:'0.5rem' }}>
             <AlertCircle size={20} />
             <span>{error}</span>
-            <button onClick={fetchNews} style={{ marginLeft:'auto', background:'#c62828', color:'white', border:'none', padding:'0.5rem 1rem', borderRadius:'4px', cursor:'pointer' }}>Retry</button>
+            <button onClick={fetchGallery} style={{ marginLeft:'auto', background:'#c62828', color:'white', border:'none', padding:'0.5rem 1rem', borderRadius:'4px', cursor:'pointer' }}>Retry</button>
           </div>
         )}
 
         <div className="search-box" style={{ marginBottom:'2rem' }}>
           <Search size={18} />
-          <input type="text" placeholder="Search news by title or content..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+          <input type="text" placeholder="Search gallery by  content..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
         </div>
 
         <div className="news-container">
           {loading ? (
             <div className="loading">Loading news...</div>
-          ) : filteredNews.length > 0 ? (
+          ) : filteredGallery.length > 0 ? (
             <div className="news-grid">
-              {filteredNews.map(item => (
-                <NewsCard 
+              {filteredGallery.map(item => (
+                <GalleryCard 
                   key={item.id} 
                   item={item} 
                   onEdit={() => navigate(`/admin/news/edit/${item.id}`)}
@@ -174,9 +172,9 @@ export default function AdminNews() {
           ) : (
             <div className="no-news" style={{ textAlign:'center', padding:'3rem', color:'#666' }}>
               <Newspaper size={48} color="#ccc" />
-              <h3>No news found</h3>
-              <p>{news.length > 0 ? 'Try changing your search terms' : 'No news articles available'}</p>
-              <Link to="/admin/news/create" className="btn-primary"><PlusCircle size={18} /> Create News</Link>
+              <h3>No gallery found</h3>
+              <p>{news.length > 0 ? 'Try changing your search terms' : 'No gallery available'}</p>
+              <Link to="/admin/gallery/create" className="btn-primary"><PlusCircle size={18} /> Create Gallery</Link>
             </div>
           )}
         </div>
@@ -187,7 +185,7 @@ export default function AdminNews() {
 
 
 
-const NewsCard = ({ item, onEdit, onDelete, onView }) => {
+const GalleryCard = ({ item, onEdit, onDelete, onView }) => {
   const [showFullImage, setShowFullImage] = useState(false);
 
   if (!item) return null;
@@ -232,8 +230,8 @@ const NewsCard = ({ item, onEdit, onDelete, onView }) => {
             alt={item.title}
             loading="lazy"
             style={{
-              width: '80%',
-              height: '60%',       // keeps full image without cropping
+              width: 'auto',
+              height: '50%',       // keeps full image without cropping
               objectFit: 'contain', // maintain aspect ratio
               cursor: 'pointer',
               display: 'block',

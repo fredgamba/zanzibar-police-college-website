@@ -3,7 +3,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from . import views
 from .views import (
-    PublicHomeFeedView, UserViewSet, PostViewSet, PageContentViewSet, NewsViewSet, 
+    PublicGalleryListView, PublicHomeFeedView, UserViewSet, PostViewSet, PageContentViewSet, NewsViewSet, 
     ContactInfoViewSet, admin_stats, PublicNewsListView, 
     PublicPostListView, PublicPostDetailView, PublicHomeFeedView, api_root,
     health_check, bulk_user_actions
@@ -30,12 +30,14 @@ urlpatterns = [
     path('admin/news/delete/<int:news_id>/', views.delete_news, name='delete_news'),
     path('admin/news/update/<int:news_id>/', views.update_news, name='update-news'),
 
-    
+    path('admin/gallery/create/', views.create_gallery, name='create-gallery'),
+    path('admin/gallery/delete/<int:gallery_id>/', views.delete_gallery, name='delete_gallery'),
     # 🔥 PUBLIC ENDPOINTS
     path('public/news/', PublicNewsListView.as_view(), name='public-news'),
     path('public/posts/', PublicPostListView.as_view(), name='public-posts'),
     path('public/news/get/<int:news_id>/', views.get_news, name='get_news'),
     path('public/home-feed/', PublicHomeFeedView.as_view(), name='public-home-feed'),
+    path('public/gallery/', PublicGalleryListView.as_view(), name='public-gallery'),
     
     path('public/posts/<int:pk>/', PublicPostDetailView.as_view(), name='public-post-detail'),
     

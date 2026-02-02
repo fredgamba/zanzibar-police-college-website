@@ -32,19 +32,22 @@ import api from '../utils/api';
 export default function Home() {
   const [content, setContent] = useState(null);
   const [posts, setPosts] = useState({ news: [], announcements: [], events: [] });
+  const [gallery, setGallery] = useState([]);
   const [loading, setLoading] = useState(true);
   const [hoveredCard, setHoveredCard] = useState(null);
 
   useEffect(() => {
   const fetchData = async () => {
     try {
-      const [contentRes, postsRes] = await Promise.all([
+      const [contentRes, postsRes, galleryRes] = await Promise.all([
         api.get('public/posts/'),   // or /public/content/ if needed
-        api.get('public/home-feed/') // new endpoint
+        api.get('public/home-feed/'), // new endpoint
+        api.get('public/gallery') // new endpoint
       ]);
-
+      
       setContent(contentRes.data);
-
+      setGallery(galleryRes)
+      console.log(gallery)
       // postsRes.data is now already structured
       setPosts(postsRes.data);
       console.log('Fetched posts:', postsRes.data);
@@ -189,6 +192,31 @@ export default function Home() {
 
   return (
     <div className="home-page">
+      {/* {ga.length === 0 ? (
+        <p>No news available at the moment.</p>
+      ) : (
+        <div className="news-list">
+          {newsList.map(item => (
+            <div key={item.id} className="news-item">
+              {item.image && (
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="news-image"
+                />
+              )}
+              <div className="news-content">
+                <h2>{item.title}</h2>
+                <p className="news-date">
+                  <em>{new Date(item.date_posted).toLocaleDateString()}</em>
+                </p>
+                <div dangerouslySetInnerHTML={{ __html: item.content }} />
+              </div>
+            </div>
+          ))}
+        </div>
+      )} */}
+
       {/* Hero Carousel */}
       <div className="hero-carousel">
         <Slider {...settings}>
