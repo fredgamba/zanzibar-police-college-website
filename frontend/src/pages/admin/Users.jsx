@@ -1,3 +1,4 @@
+
 // src/pages/admin/Users.jsx - COMPLETE FIXED VERSION
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
@@ -1075,4 +1076,4 @@ const AdminNavbar = () => {
       </div>
     </nav>
   );
-};
+}

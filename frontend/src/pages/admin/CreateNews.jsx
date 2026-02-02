@@ -1,3 +1,4 @@
+
 // src/pages/admin/CreateNews.jsx
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
@@ -12,7 +13,6 @@ import {
   ArrowLeft,
   Upload
 } from 'lucide-react';
-
 import api from '../../utils/api';
 
 export default function CreateNews() {
@@ -43,7 +43,7 @@ export default function CreateNews() {
         formDataToSend.append('image', formData.image);
       }
 
-      await api.post('admin/news/create/', formDataToSend, {
+      await api.post('news/', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -237,4 +237,5 @@ const AdminNavbar = () => {
       </div>
     </nav>
   );
+
 };

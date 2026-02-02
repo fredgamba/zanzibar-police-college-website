@@ -1,3 +1,4 @@
+
 // src/pages/Contact.jsx
 import { useEffect, useState } from 'react';
 import api from '../utils/api';
@@ -36,4 +37,5 @@ export default function Contact() {
       )}
     </div>
   );
+
 }

@@ -1,266 +1,426 @@
-// src/pages/admin/Contact.jsx - FIXED WITH FALLBACK
-import { useState, useEffect } from "react";
-import { MapPin, Phone, Mail, Clock, Send, ChevronRight, Building, GraduationCap } from "lucide-react";
 
-// Try to import api, but have fallback
-let api;
-try {
-  api = require("../../utils/api").default;
-} catch (error) {
-  console.warn("API file not found, using mock data");
-  // Create simple mock api
-  api = {
-    get: async () => ({ data: [] }),
-    post: async () => ({ data: {} }),
-    put: async () => ({ data: {} }),
-    delete: async () => ({ data: {} }),
-  };
-}
+import { useState, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import { 
+  LayoutDashboard, 
+  FileText, 
+  Newspaper, 
+  Phone, 
+  Users as UsersIcon,
+  LogOut,
+  Edit,
+  Search,
+  PlusCircle,
+  Globe,
+  Calendar,
+  AlertCircle
+} from 'lucide-react';
+import api from '../../utils/api';
 
-export default function AdminContact() {
-  const [contactInfo, setContactInfo] = useState(null);
+export default function AdminPages() {
+  const [pages, setPages] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [formData, setFormData] = useState({
-    address: "",
-    phone: "",
-    email: "",
-    working_hours: "",
-    map_embed: "",
-    additional_info: ""
-  });
+  const [error, setError] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchContactInfo = async () => {
-      try {
-        setLoading(true);
-        
-        // Try to fetch from API
-        try {
-          const response = await api.get("contact/");
-          if (response.data && response.data.length > 0) {
-            setContactInfo(response.data[0]);
-            setFormData({
-              address: response.data[0].address || "",
-              phone: response.data[0].phone || "",
-              email: response.data[0].email || "",
-              working_hours: response.data[0].working_hours || "",
-              map_embed: response.data[0].map_embed || "",
-              additional_info: response.data[0].additional_info || ""
-            });
-          }
-        } catch (apiError) {
-          console.log("API call failed, using default data");
-          // Use default data
-          const defaultData = {
-            address: "Dar es Salaam Police Academy, Tanzania",
-            phone: "+255 22 123 4567",
-            email: "info@dpa.ac.tz",
-            working_hours: "Monday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 1:00 PM",
-            map_embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15859.293119189995!2d39.208443!3d-6.792999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDcnMzQuOCJTIDM5wrAxMiczMC40IkU!5e0!3m2!1sen!2stz!4v1633081600000!5m2!1sen!2stz" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
-            additional_info: "For emergencies, please call our 24/7 hotline."
-          };
-          
-          setContactInfo(defaultData);
-          setFormData(defaultData);
-        }
-        
-      } catch (err) {
-        console.error("Failed to load contact info:", err);
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
+    const token = localStorage.getItem('access_token');
+    if (!token) {
+      navigate('/admin/login');
+      return;
+    }
 
-    fetchContactInfo();
-  }, []);
+    fetchPages();
+  }, [navigate]);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const fetchPages = async () => {
     try {
-      // Try to save to API
-      const response = await api.put("contact/1/", formData);
-      console.log("Contact info updated:", response.data);
-      alert("Contact information updated successfully!");
+      setLoading(true);
+      setError('');
+      
+      const res = await api.get('pages/');
+      
+      // 🔥 COMPLETE FIX: Handle all possible API response formats
+      let pagesData = [];
+      
+      if (res.data && Array.isArray(res.data)) {
+        // Filter out invalid data and ensure proper objects
+        pagesData = res.data
+          .filter(item => 
+            item && 
+            typeof item === 'object' && 
+            item.id !== undefined && 
+            item.id !== null &&
+            item.page !== undefined
+          )
+          .map(item => ({
+            // Ensure all required properties with safe defaults
+            id: item.id || 0,
+            page: item.page || 'unknown',
+            title: item.title || 'Untitled Page',
+            content: item.content || '',
+            updated_at: item.updated_at || new Date().toISOString(),
+            // Add derived properties safely
+            displayTitle: getPageDisplayTitle(item.page),
+            lastUpdated: formatDate(item.updated_at),
+            excerpt: (item.content || '').substring(0, 150) + '...'
+          }));
+      } else if (res.data && typeof res.data === 'object') {
+        // Handle object response - convert to array
+        const pagesArray = Object.values(res.data);
+        pagesData = pagesArray
+          .filter(item => 
+            item && 
+            typeof item === 'object' && 
+            item.id !== undefined
+          )
+          .map(item => ({
+            id: item.id || 0,
+            page: item.page || 'unknown',
+            title: item.title || 'Untitled Page',
+            content: item.content || '',
+            updated_at: item.updated_at || new Date().toISOString(),
+            displayTitle: getPageDisplayTitle(item.page),
+            lastUpdated: formatDate(item.updated_at),
+            excerpt: (item.content || '').substring(0, 150) + '...'
+          }));
+      } else {
+        console.warn('Unexpected pages data format:', res.data);
+        // Fallback to empty array
+        pagesData = [];
+      }
+      
+      console.log('Processed pages data:', pagesData);
+      setPages(pagesData);
+      
     } catch (err) {
-      console.error("Failed to update contact info:", err);
-      alert("Saved locally (API not available)");
+      console.error('Failed to load pages:', err);
+      setError('Failed to load pages. Please try again.');
+      setPages([]); // Ensure empty array on error
+    } finally {
+      setLoading(false);
     }
   };
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  // 🔥 FIXED: Safe search filter
+  const filteredPages = pages.filter(page => {
+    if (!page || typeof page !== 'object') return false;
+    
+    const searchLower = searchTerm.toLowerCase();
+    const title = String(page.title || '');
+    const pageName = String(page.page || '');
+    const displayTitle = String(page.displayTitle || '');
+    const content = String(page.content || '');
+    
+    return (
+      title.toLowerCase().includes(searchLower) ||
+      pageName.toLowerCase().includes(searchLower) ||
+      displayTitle.toLowerCase().includes(searchLower) ||
+      content.toLowerCase().includes(searchLower)
+    );
+  });
+
+  // Helper functions
+  const getPageDisplayTitle = (pageKey) => {
+    const pageTitles = {
+      'home': 'Home Page',
+      'history': 'History',
+      'organization': 'Organization Structure',
+      'department': 'Department',
+      'sport_gym': 'Sport & Gym',
+      'recreation': 'Recreation',
+      'classes_accommodation': 'Classes & Accommodation',
+      'range': 'Range',
+      'library': 'Library',
+      'driving_school': 'Driving School',
+      'dispensary': 'Dispensary',
+      'course': 'Course Information',
+      'admission_requirements': 'Admission Requirements',
+      'fee_structure': 'Fee Structure',
+      'application_process': 'Application Process'
+    };
+    return pageTitles[pageKey] || pageKey;
   };
 
-  if (loading) {
-    return (
-      <div className="admin-contact-page">
-        <div className="loading-container">
-          <div className="loading-spinner"></div>
-          <p>Loading contact information...</p>
-        </div>
-      </div>
-    );
-  }
+  const formatDate = (dateString) => {
+    if (!dateString) return 'Never updated';
+    
+    try {
+      const date = new Date(dateString);
+      return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+    } catch (error) {
+      return 'Invalid date';
+    }
+  };
 
   return (
-    <div className="admin-contact-page">
-      <div className="page-header">
-        <h1><Building size={24} /> Contact Information Management</h1>
-        <p>Update academy contact details and information</p>
-      </div>
-
-      <div className="contact-edit-container">
-        {/* Preview Section */}
-        <div className="contact-preview">
-          <h3>Current Contact Information</h3>
-          <div className="contact-details">
-            <div className="contact-item">
-              <MapPin size={20} />
-              <div>
-                <strong>Address:</strong>
-                <p>{formData.address || "Not set"}</p>
-              </div>
-            </div>
-            
-            <div className="contact-item">
-              <Phone size={20} />
-              <div>
-                <strong>Phone:</strong>
-                <p>{formData.phone || "Not set"}</p>
-              </div>
-            </div>
-            
-            <div className="contact-item">
-              <Mail size={20} />
-              <div>
-                <strong>Email:</strong>
-                <p>{formData.email || "Not set"}</p>
-              </div>
-            </div>
-            
-            <div className="contact-item">
-              <Clock size={20} />
-              <div>
-                <strong>Working Hours:</strong>
-                <pre style={{ whiteSpace: 'pre-wrap', margin: 0 }}>
-                  {formData.working_hours || "Not set"}
-                </pre>
-              </div>
+    <div className="admin-dashboard">
+      <AdminNavbar />
+      
+      <div className="dashboard-content">
+        <div className="dashboard-header">
+          <div className="header-actions">
+            <div>
+              <h1>Pages Management</h1>
+              <p>Manage website page content</p>
             </div>
           </div>
         </div>
 
-        {/* Edit Form */}
-        <div className="contact-edit-form">
-          <h3>Edit Contact Information</h3>
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="address">
-                <MapPin size={16} /> Address
-              </label>
-              <textarea
-                id="address"
-                name="address"
-                value={formData.address}
-                onChange={handleChange}
-                rows="3"
-                className="form-input"
-                placeholder="Enter full address"
-              />
-            </div>
+        {/* Error Display */}
+        {error && (
+          <div className="error-banner" style={{
+            background: '#ffebee',
+            color: '#c62828',
+            padding: '1rem',
+            borderRadius: '8px',
+            marginBottom: '1rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem'
+          }}>
+            <AlertCircle size={20} />
+            <span>{error}</span>
+            <button 
+              onClick={fetchPages}
+              style={{
+                marginLeft: 'auto',
+                background: '#c62828',
+                color: 'white',
+                border: 'none',
+                padding: '0.5rem 1rem',
+                borderRadius: '4px',
+                cursor: 'pointer'
+              }}
+            >
+              Retry
+            </button>
+          </div>
+        )}
 
-            <div className="form-group">
-              <label htmlFor="phone">
-                <Phone size={16} /> Phone Number
-              </label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="form-input"
-                placeholder="+255 22 123 4567"
-              />
-            </div>
+        {/* Search Box */}
+        <div className="search-box" style={{ marginBottom: '2rem' }}>
+          <Search size={18} />
+          <input
+            type="text"
+            placeholder="Search pages by title or content..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
 
-            <div className="form-group">
-              <label htmlFor="email">
-                <Mail size={16} /> Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="form-input"
-                placeholder="info@academy.ac.tz"
-              />
+        {/* Pages Grid */}
+        <div className="pages-container">
+          {loading ? (
+            <div className="loading">Loading pages...</div>
+          ) : filteredPages.length > 0 ? (
+            <div className="pages-grid">
+              {filteredPages.map(page => (
+                // 🔥 FIX: Proper key prop and safe rendering
+                <PageCard key={page.id} page={page} />
+              ))}
             </div>
-
-            <div className="form-group">
-              <label htmlFor="working_hours">
-                <Clock size={16} /> Working Hours
-              </label>
-              <textarea
-                id="working_hours"
-                name="working_hours"
-                value={formData.working_hours}
-                onChange={handleChange}
-                rows="4"
-                className="form-input"
-                placeholder="Monday - Friday: 8:00 AM - 5:00 PM"
-              />
-              <small className="form-help">Use new lines for different days</small>
+          ) : (
+            <div className="no-pages" style={{
+              textAlign: 'center',
+              padding: '3rem',
+              color: '#666'
+            }}>
+              <FileText size={48} color="#ccc" />
+              <h3>No pages found</h3>
+              <p>
+                {pages.length > 0 
+                  ? 'Try changing your search terms' 
+                  : 'No pages available in the system'
+                }
+              </p>
             </div>
-
-            <div className="form-group">
-              <label htmlFor="map_embed">Google Maps Embed Code</label>
-              <textarea
-                id="map_embed"
-                name="map_embed"
-                value={formData.map_embed}
-                onChange={handleChange}
-                rows="4"
-                className="form-input"
-                placeholder='<iframe src="https://maps.google.com/..." ></iframe>'
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="additional_info">Additional Information</label>
-              <textarea
-                id="additional_info"
-                name="additional_info"
-                value={formData.additional_info}
-                onChange={handleChange}
-                rows="3"
-                className="form-input"
-                placeholder="Emergency contacts, special instructions, etc."
-              />
-            </div>
-
-            <div className="form-actions">
-              <button type="submit" className="btn-primary">
-                <Send size={16} /> Update Contact Information
-              </button>
-              <button 
-                type="button" 
-                className="btn-secondary"
-                onClick={() => window.location.reload()}
-              >
-                Cancel
-              </button>
-            </div>
-          </form>
+          )}
         </div>
       </div>
     </div>
   );
 }
+
+// 🔥 NEW: Extract PageCard component for better error handling
+const PageCard = ({ page }) => {
+  if (!page || typeof page !== 'object') {
+    return null; // Skip invalid pages
+  }
+
+  return (
+    <div className="page-card" style={{
+      background: 'white',
+      borderRadius: '12px',
+      padding: '1.5rem',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+      border: '1px solid #e0e0e0',
+      transition: 'all 0.3s ease'
+    }}>
+      <div className="page-header" style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'space-between',
+        marginBottom: '1rem'
+      }}>
+        <div>
+          <h3 style={{ 
+            margin: '0 0 0.5rem 0',
+            color: '#1c236d',
+            fontSize: '1.2rem'
+          }}>
+            {page.displayTitle || 'Untitled Page'}
+          </h3>
+          <p style={{ 
+            margin: 0,
+            color: '#666',
+            fontSize: '0.9rem',
+            fontFamily: 'monospace'
+          }}>
+            /{page.page || 'unknown'}
+          </p>
+        </div>
+        <div style={{
+          background: '#e8eaf6',
+          padding: '0.5rem',
+          borderRadius: '6px'
+        }}>
+          <Globe size={16} color="#1c236d" />
+        </div>
+      </div>
+
+      <div className="page-content" style={{ marginBottom: '1.5rem' }}>
+        <p style={{ 
+          margin: '0 0 1rem 0',
+          color: '#555',
+          lineHeight: '1.5',
+          fontSize: '0.95rem'
+        }}>
+          {page.excerpt || 'No content available'}
+        </p>
+        
+        <div className="page-meta" style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          color: '#888',
+          fontSize: '0.85rem'
+        }}>
+          <Calendar size={14} />
+          <span>Updated: {page.lastUpdated || 'Unknown'}</span>
+        </div>
+      </div>
+
+      <div className="page-actions" style={{
+        display: 'flex',
+        gap: '0.5rem'
+      }}>
+        <Link 
+          to={`/admin/pages/edit/${page.id}`}
+          className="action-btn edit"
+          style={{
+            background: '#1c236d',
+            color: 'white',
+            border: 'none',
+            padding: '0.75rem 1rem',
+            borderRadius: '6px',
+            cursor: 'pointer',
+            textDecoration: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            fontSize: '0.9rem',
+            flex: 1,
+            justifyContent: 'center'
+          }}
+        >
+          <Edit size={16} />
+          Edit Page
+        </Link>
+        
+        <button 
+          onClick={() => window.open(`/page/${page.page}`, '_blank')}
+          className="action-btn view"
+          style={{
+            background: 'transparent',
+            color: '#1c236d',
+            border: '1px solid #1c236d',
+            padding: '0.75rem 1rem',
+            borderRadius: '6px',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            fontSize: '0.9rem'
+          }}
+        >
+          <Globe size={16} />
+          View
+        </button>
+      </div>
+    </div>
+  );
+};
+
+// AdminNavbar component
+const AdminNavbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    localStorage.removeItem('user');
+    navigate('/');
+  };
+
+  const adminNavItems = [
+    { name: 'Dashboard', path: '/admin/dashboard', icon: LayoutDashboard },
+    { name: 'Pages', path: '/admin/pages', icon: FileText },
+    { name: 'News', path: '/admin/news', icon: Newspaper },
+    { name: 'Posts', path: '/admin/posts', icon: FileText },
+    { name: 'Contact', path: '/admin/contact', icon: Phone },
+    { name: 'Users', path: '/admin/users', icon: UsersIcon },
+  ];
+
+  return (
+    <nav className="admin-navbar">
+      <div className="admin-nav-container">
+        <div className="admin-nav-brand">
+          <h1>DPA Admin</h1>
+        </div>
+        
+        <div className="admin-nav-menu">
+          {adminNavItems.map(item => {
+            const IconComponent = item.icon;
+            return (
+              <Link 
+                key={item.path} 
+                to={item.path} 
+                className="admin-nav-link"
+              >
+                <IconComponent size={18} />
+                {item.name}
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="admin-user-menu">
+          <span>Welcome, Admin</span>
+          <button onClick={handleLogout} className="logout-btn">
+            <LogOut size={18} />
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+
+};

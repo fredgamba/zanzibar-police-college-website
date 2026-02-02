@@ -30,7 +30,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_extensions',
     
     # 🔥 THIRD-PARTY APPS
     'corsheaders',
@@ -44,11 +43,7 @@ INSTALLED_APPS = [
     'constance',
     'constance.backends.database',
     'import_export',
-<<<<<<< HEAD
-    'django_mfa',
-=======
-    #'mfa',
->>>>>>> 4dc015de18e662f6ddc97011fd7f932e11230579
+    'mfa',
     
     # 🔥 YOUR APPS
     'academy',
@@ -105,24 +100,10 @@ TEMPLATES = [
 # ===========================
 # Database (SQLite default)
 # ===========================
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'police_colleges',   # replace with your DB name
-        'USER': 'root',      # replace with your MySQL username
-        'PASSWORD': '',  # replace with your password
-        'HOST': '127.0.0.1',            # or your DB host
-        'PORT': '3306',                 # default MySQL port
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

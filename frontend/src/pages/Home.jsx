@@ -1,3 +1,4 @@
+
 // src/pages/Home.jsx
 import { useEffect, useState } from 'react';
 import { 
@@ -32,34 +33,31 @@ import api from '../utils/api';
 export default function Home() {
   const [content, setContent] = useState(null);
   const [posts, setPosts] = useState({ news: [], announcements: [], events: [] });
-  const [gallery, setGallery] = useState([]);
   const [loading, setLoading] = useState(true);
   const [hoveredCard, setHoveredCard] = useState(null);
 
   useEffect(() => {
-  const fetchData = async () => {
-    try {
-      const [contentRes, postsRes, galleryRes] = await Promise.all([
-        api.get('public/posts/'),   // or /public/content/ if needed
-        api.get('public/home-feed/'), // new endpoint
-        api.get('public/gallery') // new endpoint
-      ]);
-      
-      setContent(contentRes.data);
-      setGallery(galleryRes)
-      console.log(gallery)
-      // postsRes.data is now already structured
-      setPosts(postsRes.data);
-      console.log('Fetched posts:', postsRes.data);
-    } catch (err) {
-      console.error('Error loading home content:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-  fetchData();
-}, []);
-
+    const fetchData = async () => {
+      try {
+        const [contentRes, postsRes] = await Promise.all([
+          api.get('pages/home/'),
+          api.get('posts/'),
+        ]);
+        setContent(contentRes.data);
+        const data = postsRes.data;
+        setPosts({
+          news: data.filter(p => p.post_type === 'news').slice(0, 4),
+          announcements: data.filter(p => p.post_type === 'announcement').slice(0, 3),
+          events: data.filter(p => p.post_type === 'event').slice(0, 3),
+        });
+      } catch (err) {
+        console.error('Error loading home content:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
 
   // Sample data for sections
  
@@ -195,31 +193,6 @@ export default function Home() {
 
   return (
     <div className="home-page">
-      {/* {ga.length === 0 ? (
-        <p>No news available at the moment.</p>
-      ) : (
-        <div className="news-list">
-          {newsList.map(item => (
-            <div key={item.id} className="news-item">
-              {item.image && (
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="news-image"
-                />
-              )}
-              <div className="news-content">
-                <h2>{item.title}</h2>
-                <p className="news-date">
-                  <em>{new Date(item.date_posted).toLocaleDateString()}</em>
-                </p>
-                <div dangerouslySetInnerHTML={{ __html: item.content }} />
-              </div>
-            </div>
-          ))}
-        </div>
-      )} */}
-
       {/* Hero Carousel */}
       <div className="hero-carousel">
         <Slider {...settings}>
@@ -340,15 +313,14 @@ export default function Home() {
                     >
                       <div className="news-content">
                         <div className="news-date">
-                          {new Date(news.date_posted).toLocaleDateString('en-US', {
+                          {new Date(news.created_at).toLocaleDateString('en-US', {
                             day: 'numeric',
                             month: 'short',
                             year: 'numeric'
                           })}
                         </div>
-                        
                         <h3>{news.title}</h3>
-                        <p>{news.content || "Important update from the academy administration."}</p>
+                        <p>{news.excerpt || "Important update from the academy administration."}</p>
                       </div>
                       <div className="news-arrow">
                         <ChevronRight size={16} />
@@ -403,7 +375,7 @@ export default function Home() {
                       <div className="event-date-badge">
                         <Calendar size={16} />
                         <span>
-                          {new Date(event.created_at).toLocaleDateString('en-US', {
+                          {new Date(event.event_date).toLocaleDateString('en-US', {
                             day: 'numeric',
                             month: 'short'
                           })}
@@ -411,7 +383,7 @@ export default function Home() {
                       </div>
                       <div className="event-content">
                         <h3>{event.title}</h3>
-                        <p>{event.content || "Join us for this important academy event."}</p>
+                        <p>{event.description || "Join us for this important academy event."}</p>
                         <div className="event-meta">
                           <span>📍 Main Campus</span>
                           <span>🕒 09:00 AM</span>
@@ -530,4 +502,5 @@ export default function Home() {
 </section>
     </div>
   );
+
 }

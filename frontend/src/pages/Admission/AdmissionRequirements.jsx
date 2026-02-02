@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   GraduationCap,
   FileText,
@@ -9,6 +9,7 @@ import {
   Calendar,
   AlertCircle,
   ChevronRight,
+  ChevronLeft,
   Clock,
   Target,
   Shield,
@@ -23,6 +24,7 @@ const programs = [
     title: "Diploma Program",
     duration: "2-3 Years",
     intake: "Annual",
+    tag: "OD-PS",
     description:
       "Comprehensive professional training program for aspiring officers",
     details: [
@@ -39,6 +41,7 @@ const programs = [
     title: "Certificate in Law",
     duration: "1 Year",
     intake: "Annual",
+    tag: "TC-LAW",
     description: "Specialized legal training for law enforcement professionals",
     details: [
       "Apply through UDSM",
@@ -51,9 +54,10 @@ const programs = [
   {
     id: 3,
     icon: <BookOpen />,
-    title: "Certifricate in Laboratory Technician",
+    title: "Certificate in Laboratory Technician",
     duration: "1 Year",
     intake: "Annual",
+    tag: "TC-MLB",
     description: "Technical certification for forensic laboratory work",
     details: [
       "NACTE application process",
@@ -63,12 +67,14 @@ const programs = [
     ],
     color: "#0f766e",
   },
+  
   {
     id: 4,
     icon: <TrendingUp />,
     title: "Promotion Program",
     duration: "Varies",
     intake: "As Needed",
+    tag: "PROMO",
     description: "Career advancement for serving officers",
     details: [
       "PHQ nomination required",
@@ -81,9 +87,10 @@ const programs = [
   {
     id: 5,
     icon: <Users />,
-    title: "other Programs",
+    title: "Other Programs",
     duration: "Flexible",
     intake: "On Demand",
+    tag: "OTHER",
     description: "Tailored training for specific organizational needs",
     details: [
       "Stakeholder collaboration",
@@ -93,10 +100,67 @@ const programs = [
     ],
     color: "#ea580c",
   },
+  {
+
+  },
 ];
 
 const AdmissionRequirement = () => {
-  const [activeCard, setActiveCard] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+
+  // Auto-slide functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, isAutoPlaying]);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % programs.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + programs.length) % programs.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+    setIsAutoPlaying(false);
+  };
+
+  // Touch handlers for mobile swipe
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      nextSlide();
+      setIsAutoPlaying(false);
+    }
+    if (touchStartX.current - touchEndX.current < -50) {
+      prevSlide();
+      setIsAutoPlaying(false);
+    }
+  };
+
+  // Get visible cards (prev, current, next)
+  const getVisibleCards = () => {
+    const prevIndex = (currentIndex - 1 + programs.length) % programs.length;
+    const nextIndex = (currentIndex + 1) % programs.length;
+    return [prevIndex, currentIndex, nextIndex];
+  };
 
   return (
     <div className="admission-container">
@@ -138,61 +202,110 @@ const AdmissionRequirement = () => {
         </div>
       </div>
 
-      {/* Programs Section */}
+      {/* Programs Carousel Section */}
       <div className="programs-section">
         <div className="section-header">
           <Target size={32} />
-          <h2>Available Programs</h2>
-          <p>Choose your path to excellence in law enforcement</p>
+          <h2>OUR PROGRAMS</h2>
+          <p>Explore our comprehensive range of training programs designed to develop professional excellence</p>
         </div>
 
-        <div className="programs-grid">
-          {programs.map((program) => (
-            <div
-              key={program.id}
-              className={`program-card ${
-                activeCard === program.id ? "active" : ""
-              }`}
-              onMouseEnter={() => setActiveCard(program.id)}
-              onMouseLeave={() => setActiveCard(null)}
-              style={{ "--card-color": program.color }}
-            >
-              <div className="card-accent"></div>
-              <div className="card-header">
-                <div className="card-icon">{program.icon}</div>
-                <div className="card-meta">
-                  <div className="meta-item">
-                    <Clock size={14} />
-                    <span>{program.duration}</span>
+        <div 
+          className="carousel-container"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          onMouseEnter={() => setIsAutoPlaying(false)}
+          onMouseLeave={() => setIsAutoPlaying(true)}
+        >
+          {/* Navigation Buttons */}
+          <button 
+            className="carousel-nav carousel-nav-prev" 
+            onClick={prevSlide}
+            aria-label="Previous program"
+          >
+            <ChevronLeft size={32} />
+          </button>
+
+          <button 
+            className="carousel-nav carousel-nav-next" 
+            onClick={nextSlide}
+            aria-label="Next program"
+          >
+            <ChevronRight size={32} />
+          </button>
+
+          {/* Cards Container */}
+          <div className="carousel-track">
+            {programs.map((program, index) => {
+              const visibleCards = getVisibleCards();
+              const position = visibleCards.indexOf(index);
+              
+              let cardClass = "carousel-card";
+              if (position === 0) cardClass += " carousel-card-prev";
+              else if (position === 1) cardClass += " carousel-card-active";
+              else if (position === 2) cardClass += " carousel-card-next";
+              else cardClass += " carousel-card-hidden";
+
+              return (
+                <div
+                  key={program.id}
+                  className={cardClass}
+                  style={{ "--card-color": program.color }}
+                >
+                  <div className="card-accent"></div>
+                  
+                  <div className="card-icon-large">
+                    {program.icon}
                   </div>
-                  <div className="meta-item">
-                    <Calendar size={14} />
-                    <span>{program.intake}</span>
+
+                  <div className="card-tag">{program.tag}</div>
+
+                  <h3 className="card-title">{program.title}</h3>
+                  <p className="card-description">{program.description}</p>
+
+                  <div className="card-meta-inline">
+                    <div className="meta-item">
+                      <Clock size={16} />
+                      <span>{program.duration}</span>
+                    </div>
+                    <div className="meta-item">
+                      <Calendar size={16} />
+                      <span>{program.intake}</span>
+                    </div>
+                  </div>
+
+                  <div className="card-actions">
+                    <button 
+                      className="btn-apply"
+                      onClick={() => window.open('https://dpa.tpf.go.tz/apply', '_blank')}
+                    >
+                      APPLY NOW
+                      <ChevronRight size={18} />
+                    </button>
+                    <button className="btn-learn">
+                      <span className="info-icon">●</span>
+                      LEARN MORE
+                    </button>
                   </div>
                 </div>
-              </div>
+              );
+            })}
+          </div>
 
-              <h3 className="card-title">{program.title}</h3>
-              <p className="card-description">{program.description}</p>
-
-              <div className="card-details">
-                <h4>Program Highlights</h4>
-                <ul className="details-list">
-                  {program.details.map((detail, index) => (
-                    <li key={index}>
-                      <CheckCircle size={16} />
-                      <span>{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <button className="card-button">
-                <span>Learn More</span>
-                <ChevronRight size={18} />
-              </button>
-            </div>
-          ))}
+          {/* Pagination Dots */}
+          <div className="carousel-pagination">
+            {programs.map((_, index) => (
+              <button
+                key={index}
+                className={`pagination-dot ${
+                  index === currentIndex ? "active" : ""
+                }`}
+                onClick={() => goToSlide(index)}
+                aria-label={`Go to program ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -257,7 +370,12 @@ const AdmissionRequirement = () => {
             Take the first step towards a rewarding career in law enforcement
           </p>
           <div className="cta-buttons">
-            <button className="btn-primary">Apply Now</button>
+            <button 
+              className="btn-primary"
+              onClick={() => window.open('https://dpa.tpf.go.tz/apply', '_blank')}
+            >
+              Apply Now
+            </button>
             <button className="btn-secondary">Download Brochure</button>
           </div>
         </div>

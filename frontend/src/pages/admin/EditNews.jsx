@@ -41,7 +41,7 @@ export default function EditNews() {
 
   const fetchNews = async () => {
     try {
-      const response = await api.get(`public/news/get/${newsId}/`);
+      const response = await api.get(`news/${newsId}/`);
       setNews(response.data);
       setFormData({
         title: response.data.title,
@@ -49,7 +49,7 @@ export default function EditNews() {
         image: null
       });
       if (response.data.image) {
-        setImagePreview("http://127.0.0.1:8000/"+response.data.image);
+        setImagePreview(response.data.image);
       }
     } catch (err) {
       console.error('Failed to load news');
@@ -75,10 +75,8 @@ export default function EditNews() {
       if (formData.image) {
         formDataToSend.append('image', formData.image);
       }
-      else
-        formDataToSend.append('image', '');
 
-      await api.put(`admin/news/update/${newsId}/`, formDataToSend, {
+      await api.put(`news/${newsId}/`, formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -292,4 +290,5 @@ const AdminNavbar = () => {
       </div>
     </nav>
   );
+
 };

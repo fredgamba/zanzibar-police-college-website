@@ -1,3 +1,4 @@
+
 import './Course.css';
 import modernDormitoriesImage from '../../assets/modern-dormitories.png';
 
@@ -28,9 +29,17 @@ export default function Course() {
               <div className="course-section-content">
                 <h2 className="course-section-title">Academic Programmes</h2>
                 <ul className="course-list">
-                  <li>Diploma in Police Science</li>
-                  <li>Medical Laboratory Technology program</li>
-                  <li>Certificate in Law</li>
+                  <li>Bachelor degree in police science</li>
+                  <li>Ordinary Diploma in criminal Investigation</li>
+                  <li>Ordinary Diploma in medical laboratory science</li>
+                  <li>Ordinary Diploma in police science</li>
+                  <li>Basic Technician certificate in medical laboratory science</li>
+                  <li>Basic Technician certificate in Criminal Investigation</li>
+                  <li>Basic technician certificate in police communication</li>
+                  <li>Basic Technician certificate in law</li>
+                  <li>Technician certificate in law</li>
+                  <li>Technician certificate in medical laboratory science</li>
+                  <li>Driving course</li>
                 </ul>
               </div>
             </div>
@@ -68,3 +77,4 @@ export default function Course() {
     </div>
   );
 }
+

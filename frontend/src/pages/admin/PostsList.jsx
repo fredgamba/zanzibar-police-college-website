@@ -1,3 +1,4 @@
+
 // src/pages/admin/PostsList.jsx - COMPLETELY FIXED
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
@@ -19,7 +20,6 @@ import {
   BarChart3,
   AlertCircle
 } from 'lucide-react';
-import AdminNavbar from './AdminNavbar';
 import api from '../../utils/api';
 
 export default function PostsList() {
@@ -46,13 +46,14 @@ export default function PostsList() {
       setLoading(true);
       setError('');
       
-      const res = await api.get('public/posts/');
+      const res = await api.get('posts/');
       
       // 🔥 COMPLETE FIX: Handle all possible API response formats
       let postsData = [];
-      if (res.data && Array.isArray(res.data[1])) {
+      
+      if (res.data && Array.isArray(res.data)) {
         // Filter out invalid data and ensure proper objects
-        postsData = res.data[1]
+        postsData = res.data
           .filter(item => 
             item && 
             typeof item === 'object' && 
@@ -604,56 +605,56 @@ const getTypeColor = (type) => {
 };
 
 // AdminNavbar component
-// const AdminNavbar = () => {
-//   const navigate = useNavigate();
+const AdminNavbar = () => {
+  const navigate = useNavigate();
 
-//   const handleLogout = () => {
-//     localStorage.removeItem('access_token');
-//     localStorage.removeItem('refresh_token');
-//     localStorage.removeItem('user');
-//     navigate('/');
-//   };
+  const handleLogout = () => {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    localStorage.removeItem('user');
+    navigate('/');
+  };
 
-//   const adminNavItems = [
-//     { name: 'Dashboard', path: '/admin/dashboard', icon: LayoutDashboard },
-//     { name: 'Pages', path: '/admin/pages', icon: FileText },
-//     { name: 'News', path: '/admin/news', icon: Newspaper },
-//     { name: 'Posts', path: '/admin/posts', icon: FileText },
-//     { name: 'Contact', path: '/admin/contact', icon: Phone },
-//     { name: 'Users', path: '/admin/users', icon: UsersIcon },
-//   ];
+  const adminNavItems = [
+    { name: 'Dashboard', path: '/admin/dashboard', icon: LayoutDashboard },
+    { name: 'Pages', path: '/admin/pages', icon: FileText },
+    { name: 'News', path: '/admin/news', icon: Newspaper },
+    { name: 'Posts', path: '/admin/posts', icon: FileText },
+    { name: 'Contact', path: '/admin/contact', icon: Phone },
+    { name: 'Users', path: '/admin/users', icon: UsersIcon },
+  ];
 
-//   return (
-//     <nav className="admin-navbar">
-//       <div className="admin-nav-container">
-//         <div className="admin-nav-brand">
-//           <h1>DPA Admin</h1>
-//         </div>
+  return (
+    <nav className="admin-navbar">
+      <div className="admin-nav-container">
+        <div className="admin-nav-brand">
+          <h1>DPA Admin</h1>
+        </div>
         
-//         <div className="admin-nav-menu">
-//           {adminNavItems.map(item => {
-//             const IconComponent = item.icon;
-//             return (
-//               <Link 
-//                 key={item.path} 
-//                 to={item.path} 
-//                 className="admin-nav-link"
-//               >
-//                 <IconComponent size={18} />
-//                 {item.name}
-//               </Link>
-//             );
-//           })}
-//         </div>
+        <div className="admin-nav-menu">
+          {adminNavItems.map(item => {
+            const IconComponent = item.icon;
+            return (
+              <Link 
+                key={item.path} 
+                to={item.path} 
+                className="admin-nav-link"
+              >
+                <IconComponent size={18} />
+                {item.name}
+              </Link>
+            );
+          })}
+        </div>
 
-//         <div className="admin-user-menu">
-//           <span>Welcome, Admin</span>
-//           <button onClick={handleLogout} className="logout-btn">
-//             <LogOut size={18} />
-//             Logout
-//           </button>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-//};
+        <div className="admin-user-menu">
+          <span>Welcome, Admin</span>
+          <button onClick={handleLogout} className="logout-btn">
+            <LogOut size={18} />
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+}

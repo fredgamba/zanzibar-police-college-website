@@ -1,3 +1,4 @@
+
 // src/pages/admin/Contact.jsx - FIXED WITH FALLBACK
 import { useState, useEffect } from "react";
 import { MapPin, Phone, Mail, Clock, Send, ChevronRight, Building, GraduationCap } from "lucide-react";
@@ -263,4 +264,5 @@ export default function AdminContact() {
       </div>
     </div>
   );
+
 }

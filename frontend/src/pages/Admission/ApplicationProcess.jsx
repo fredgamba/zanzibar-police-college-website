@@ -1,3 +1,4 @@
+
 import "./ApplicationProcess.css";
 import commandant from "../../assets/commandant.png";
 
@@ -41,3 +42,4 @@ const ApplicationProcess = () => {
 };
 
 export default ApplicationProcess;
+

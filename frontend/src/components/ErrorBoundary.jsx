@@ -1,3 +1,7 @@
+
+// src/components/ErrorBoundary.jsx
+
+
 // src/components/ErrorBoundary.jsx
 import { Component } from 'react';
 import { AlertTriangle, RefreshCw, Home, ArrowLeft } from 'lucide-react';
@@ -206,5 +210,6 @@ class ErrorBoundary extends Component {
     return this.props.children;
   }
 }
+
 
 export default ErrorBoundary;

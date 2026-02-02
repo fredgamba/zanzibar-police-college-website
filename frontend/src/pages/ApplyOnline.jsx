@@ -1,4 +1,4 @@
-// src/pages/ApplyOnline.jsx
+
 import { useState } from 'react';
 
 export default function ApplyOnline() {
@@ -100,4 +100,5 @@ export default function ApplyOnline() {
       </form>
     </div>
   );
+
 }

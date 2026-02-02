@@ -1,3 +1,4 @@
+
 // src/pages/admin/Dashboard.jsx - UPDATED WITH ADMIN NAVBAR (MATCHING CREATE NEWS STYLE)
 import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
@@ -581,4 +582,5 @@ export default function AdminDashboard() {
       </div>
     </>
   );
+
 }

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './FeeStructure.css';
 
@@ -175,3 +176,4 @@ const FeeStructure = () => {
 };
 
 export default FeeStructure;
+
