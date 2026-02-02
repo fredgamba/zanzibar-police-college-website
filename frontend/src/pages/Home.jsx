@@ -62,6 +62,7 @@ export default function Home() {
 
 
   // Sample data for sections
+ 
   const programs = [
     {
       title: "Certificate in Law Enforcement",
@@ -147,24 +148,26 @@ export default function Home() {
     { number: "98%", label: "Employment Rate", icon: <BarChart3 className="stat-icon" /> }
   ];
 
-  const galleryImages = Array(6).fill().map((_, i) => ({
-    src: `/images/gallery${i + 1}.jpg`,
-    alt: `Campus activity ${i + 1}`
-  }));
-
+   const galleryImages = [
+  { src: "/images/campus1.webp", alt: "Campus activity 1" },
+   { src: "/images/campus2.jpg", alt: "Campus activity 2" },
+  { src: "/images/campus3.jpg", alt: "Campus activity 3" },
+  { src: "/images/campus4.jpg", alt: "Campus activity 4" },
+   { src: "/images/campus5.jpeg", alt: "Campus activity 5" },
+];
   const slides = [
     {
-      image: '/images/slide1.jpg',
+      image: '/images/campus2.jpg',
       title: "Welcome to the Center of Excellence",
       subtitle: "Where Discipline Meets Leadership"
     },
     {
-      image: '/images/slide2.jpg', 
+      image: '/images/campus3.jpg', 
       title: "Shape the Future of Law Enforcement",
       subtitle: "Join Tanzania Police Academy"
     },
     {
-      image: '/images/slide3.jpg',
+      image: '/images/campus4.jpg',
       title: "Excellence in Training, Integrity in Service", 
       subtitle: "Building Professional Officers"
     }
@@ -310,40 +313,6 @@ export default function Home() {
                 <a href="/programs" className="modern-btn outline animated-padding">
                   View Details <ChevronRight className={`btn-icon ${hoveredCard === `program-${index}` ? 'icon-slide' : ''}`} />
                 </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Facilities Section */}
-      <section className="facilities-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="animated-icon">🏢</div>
-            <h2>Our Facilities</h2>
-            <p className="section-subtitle">World-Class Infrastructure for Optimal Learning</p>
-          </div>
-          <div className="facilities-grid">
-            {facilities.map((facility, index) => (
-              <div 
-                key={index} 
-                className={`facility-card animated-card ${hoveredCard === `facility-${index}` ? 'card-hovered' : ''}`}
-                onMouseEnter={() => setHoveredCard(`facility-${index}`)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="facility-icon-wrapper">
-                  <div className="facility-icon-bg"></div>
-                  {facility.icon}
-                </div>
-                <h3>{facility.name}</h3>
-                <p>{facility.description}</p>
-                <div className="facility-features">
-                  {facility.features.map((feature, idx) => (
-                    <span key={idx} className="feature-tag">{feature}</span>
-                  ))}
-                </div>
-                <div className="facility-hover-effect"></div>
               </div>
             ))}
           </div>
@@ -532,78 +501,33 @@ export default function Home() {
 
       {/* Gallery Section */}
       <section className="gallery-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="animated-icon">📸</div>
-            <h2>Campus Gallery</h2>
-            <p className="section-subtitle">Life at Dar es Salaam Police Academy</p>
-          </div>
-          <div className="gallery-3d">
-            {galleryImages.map((image, index) => (
-              <div 
-                key={index} 
-                className="gallery-item-3d"
-                style={{ '--rotation': `${index * 60}deg` }}
-              >
-                <div className="gallery-item-inner">
-                  <img src={image.src} alt={image.alt} />
-                  <div className="gallery-overlay-3d">
-                    <PlayCircle size={24} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <a href="/gallery" className="modern-btn primary">
-              <Image className="btn-icon" /> Explore Gallery
-            </a>
-          </div>
-        </div>
-      </section>
+  <div className="container">
+    <div className="section-header">
+      <div className="animated-icon">📸</div>
+      <h2>Campus Gallery</h2>
+      <p className="section-subtitle">Life at Dar es Salaam Police Academy</p>
+    </div>
 
-      {/* Statistics Section - Moved to bottom */}
-      <section className="stats-section-bottom">
-        <div className="container">
-          <div className="stats-grid">
-            {stats.map((stat, index) => (
-              <div key={index} className="stat-card">
-                <div className="stat-icon-circle">
-                  {stat.icon}
-                </div>
-                <div className="stat-number">{stat.number}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
-            ))}
+    <div className="gallery-slider">
+      <div className="gallery-track">
+        {galleryImages.map((image, index) => (
+          <div className="gallery-slide" key={index}>
+            <img src={image.src} alt={image.alt} />
+            <div className="gallery-overlay">
+              <PlayCircle size={28} />
+            </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
 
-      {/* Quick Links Section */}
-      <section className="quick-links-section">
-        <div className="container">
-          <div className="quick-links-grid">
-            <div className="link-card">
-              <MapPin className="link-icon" />
-              <h3>Visit Campus</h3>
-              <p>Schedule a tour of our facilities</p>
-              <a href="/visit" className="link-btn">Plan Visit</a>
-            </div>
-            <div className="link-card">
-              <BookOpen className="link-icon" />
-              <h3>Admissions</h3>
-              <p>Start your application process</p>
-              <a href="/admissions" className="link-btn">Apply Now</a>
-            </div>
-            <div className="link-card">
-              <Users className="link-icon" />
-              <h3>Contact Us</h3>
-              <p>Get in touch with our team</p>
-              <a href="/contact" className="link-btn">Contact</a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="text-center">
+      <a href="/gallery" className="modern-btn primary">
+        <Image className="btn-icon" /> Explore Gallery
+      </a>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
