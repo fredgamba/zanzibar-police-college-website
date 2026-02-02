@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import './History.css';
 import { useEffect, useState } from 'react';
 import api from '../../utils/api';
@@ -53,13 +53,6 @@ export default function History() {
       <div dangerouslySetInnerHTML={{ __html: content.content }} />
     </div>
   );
-=======
-import { useEffect, useState } from 'react';
-import api from '../../utils/api';
-
-export default function History() {
-  const [content, setContent] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     api.get('pages/history/')
@@ -82,5 +75,4 @@ export default function History() {
       <div dangerouslySetInnerHTML={{ __html: content.content }} />
     </div>
   );
->>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }

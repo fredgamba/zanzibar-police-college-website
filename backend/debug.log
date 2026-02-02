@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO 2025-10-22 11:50:20,317 autoreload 11792 135881326719104 Watching for file changes with StatReloader
 INFO 2025-10-22 11:50:56,494 autoreload 11813 138097724256384 Watching for file changes with StatReloader
 INFO 2025-10-22 11:53:26,708 autoreload 11843 126297810325632 Watching for file changes with StatReloader
@@ -3117,3 +3118,121 @@ INFO 2026-01-28 13:03:33,355 autoreload 65457 125549081792640 /home/nason/Deskto
 INFO 2026-01-28 13:03:33,654 autoreload 65562 131726497124480 Watching for file changes with StatReloader
 INFO 2026-01-28 13:03:37,762 autoreload 65562 131726497124480 /home/nason/Desktop/dar-es-salaam-police-academy/backend/academy/serializers.py changed, reloading.
 INFO 2026-01-28 13:03:38,027 autoreload 65610 132383970091136 Watching for file changes with StatReloader
+=======
+WARNING 2026-02-01 21:01:30,305 log 46654 131967926560448 Not Found: /api/posts/
+WARNING 2026-02-01 21:01:30,312 log 46654 131967567787712 Not Found: /api/pages/
+WARNING 2026-02-01 21:01:30,314 log 46654 131967934953152 Not Found: /api/users/
+WARNING 2026-02-01 21:01:30,385 log 46654 131967525824192 Not Found: /api/users/
+WARNING 2026-02-01 21:01:30,390 log 46654 131967918167744 Not Found: /api/posts/
+WARNING 2026-02-01 21:01:30,393 log 46654 131967926560448 Not Found: /api/pages/
+WARNING 2026-02-01 21:02:06,832 log 46654 131967525824192 Not Found: /api/users/
+WARNING 2026-02-01 21:02:06,844 log 46654 131967525824192 Not Found: /api/users/
+WARNING 2026-02-01 21:03:05,852 log 46654 131967525824192 Not Found: /api/users/
+WARNING 2026-02-01 21:03:14,011 log 46654 131967525824192 Not Found: /api/users/
+WARNING 2026-02-01 21:03:14,025 log 46654 131967926560448 Not Found: /api/users/
+WARNING 2026-02-01 21:03:42,162 log 46654 131967926560448 Not Found: /api/users/1/reset-password/
+WARNING 2026-02-01 21:04:09,840 log 46654 131967926560448 Not Found: /api/users/1/
+WARNING 2026-02-01 21:04:09,896 log 46654 131967525824192 Not Found: /api/users/1/
+WARNING 2026-02-01 21:04:14,020 log 46654 131967525824192 Not Found: /api/users/
+WARNING 2026-02-01 21:04:14,033 log 46654 131967926560448 Not Found: /api/users/
+INFO 2026-02-01 21:15:37,562 autoreload 46654 131968026787968 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:15:38,122 autoreload 54322 136280479047808 Watching for file changes with StatReloader
+INFO 2026-02-01 21:15:39,433 autoreload 54322 136280479047808 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:15:39,904 autoreload 54344 132222942675072 Watching for file changes with StatReloader
+INFO 2026-02-01 21:15:44,266 autoreload 54344 132222942675072 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:15:44,651 autoreload 54387 128734954553472 Watching for file changes with StatReloader
+INFO 2026-02-01 21:15:46,881 autoreload 54387 128734954553472 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:15:47,164 autoreload 54414 124728122372224 Watching for file changes with StatReloader
+INFO 2026-02-01 21:15:57,459 autoreload 54414 124728122372224 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:15:57,744 autoreload 54464 129149629943936 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:03,001 autoreload 54464 129149629943936 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:03,332 autoreload 54516 123296347762816 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:04,566 autoreload 54516 123296347762816 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:04,869 autoreload 54555 127670786982016 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:07,116 autoreload 54555 127670786982016 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:07,425 autoreload 54564 132128004280448 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:20,732 autoreload 54564 132128004280448 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:21,075 autoreload 54628 134705284935808 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:23,317 autoreload 54628 134705284935808 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:23,755 autoreload 54671 130456572948608 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:27,123 autoreload 54671 130456572948608 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:27,532 autoreload 54693 137361646198912 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:28,779 autoreload 54693 137361646198912 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:29,082 autoreload 54715 127965676183680 Watching for file changes with StatReloader
+INFO 2026-02-01 21:16:30,319 autoreload 54715 127965676183680 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:16:30,746 autoreload 54723 132264895074432 Watching for file changes with StatReloader
+INFO 2026-02-01 21:17:02,835 autoreload 54723 132264895074432 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:17:03,336 autoreload 54809 126768677109888 Watching for file changes with StatReloader
+INFO 2026-02-01 21:17:06,705 autoreload 54809 126768677109888 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:17:07,191 autoreload 54858 139804582948992 Watching for file changes with StatReloader
+ERROR 2026-02-01 21:17:10,358 log 54858 139804500199104 Internal Server Error: /api/public/news/
+Traceback (most recent call last):
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2026-02-01 21:17:10,389 log 54858 139804490757824 Internal Server Error: /api/public/news/
+Traceback (most recent call last):
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+INFO 2026-02-01 21:17:38,415 autoreload 54858 139804582948992 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:17:38,857 autoreload 54955 130426962993280 Watching for file changes with StatReloader
+INFO 2026-02-01 21:17:44,125 autoreload 54955 130426962993280 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:17:44,567 autoreload 54996 132670923268224 Watching for file changes with StatReloader
+INFO 2026-02-01 21:17:45,891 autoreload 54996 132670923268224 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:17:46,273 autoreload 55029 135719097303168 Watching for file changes with StatReloader
+INFO 2026-02-01 21:17:54,561 autoreload 55029 135719097303168 /home/beni/Documents/dpa_college_website/backend/academy/models.py changed, reloading.
+INFO 2026-02-01 21:17:54,989 autoreload 55081 139508956151936 Watching for file changes with StatReloader
+WARNING 2026-02-01 21:19:10,910 log 55081 139508792161984 Not Found: /api/public/users/
+WARNING 2026-02-01 21:19:20,642 log 55081 139508792161984 Not Found: /api/public/users
+WARNING 2026-02-02 03:41:01,952 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 03:41:02,007 log 55081 139508874118848 Not Found: /api/users/
+WARNING 2026-02-02 04:07:10,522 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 04:07:10,534 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 04:33:05,820 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 04:33:05,831 log 55081 139508874118848 Not Found: /api/users/
+WARNING 2026-02-02 05:00:05,560 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 05:00:05,571 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 05:26:24,549 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 05:26:24,561 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 05:52:41,555 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 05:52:41,566 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 06:47:44,849 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 06:47:44,862 log 55081 139508874118848 Not Found: /api/users/
+WARNING 2026-02-02 08:03:21,562 log 55081 139508874118848 Not Found: /api/users/
+WARNING 2026-02-02 08:03:21,574 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 08:03:48,918 log 55081 139508775376576 Not Found: /api/users/
+WARNING 2026-02-02 08:03:48,931 log 55081 139508775376576 Not Found: /api/users/
+>>>>>>> 4dc015de18e662f6ddc97011fd7f932e11230579
