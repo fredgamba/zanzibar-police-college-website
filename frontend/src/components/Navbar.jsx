@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // src/components/Navbar.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -211,72 +210,8 @@ export default function Navbar() {
       </div>
     </nav>
   );
-=======
-// src/components/Navbar.jsx
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import {
-  Home,
-  Users,
-  GraduationCap,
-  Building,
-  Newspaper,
-  Phone,
-  Send,
-  ChevronDown,
-  Mail,
-  PhoneCall,
-  BookOpen,
-  HelpCircle,
-  Shield,
-  UserCircle
-} from 'lucide-react';
 
-export default function Navbar() {
-  const [openDropdown, setOpenDropdown] = useState(null);
 
-  const handleMouseEnter = (name) => {
-    setOpenDropdown(name);
-  };
-
-  const handleMouseLeave = () => {
-    setOpenDropdown(null);
-  };
-
-  // Quick Links for Top Bar
-  const quickLinks = [
-    { name: 'Tpf Service Portal', path: '/alumni', icon: Shield },
-    { name: 'Admission', path: '/admission', icon: GraduationCap },
-    { name: 'E-Learning', path: '/e-learning', icon: BookOpen },
-    { name: 'Help Desk', path: '/help-desk', icon: HelpCircle },
-    { name: 'Certificate Verification', path: '/certificate-verification', icon: Shield },
-  ];
-
-  // Dropdown Items - SWITCHED ADMISSION AND FACILITIES
-  const aboutSubItems = [
-    { label: 'History', path: '/about/history' },
-    { label: 'Organization Structure', path: '/about/organization' },
-    { label: 'Department', path: '/about/department' },
-  ];
-
-  // NOW FACILITIES ITEMS UNDER ADMISSION
-  const admissionSubItems = [
-    { label: 'Course', path: '/admission/course' },
-    { label: 'Admission Requirements', path: '/admission/admission-requirements' },
-    { label: 'Fee Structure', path: '/admission/fee-structure' },
-    { label: 'Application Process', path: '/admission/application-process' },
-  ];
-
-  // NOW ADMISSION ITEMS UNDER FACILITIES
-  const facilitiesSubItems = [
-    { label: 'Sport & Gym', path: '/facilities/sport-gym' },
-    { label: 'Recreation', path: '/facilities/recreation' },
-    { label: 'Classes & Accommodation', path: '/facilities/classes-accommodation' },
-    { label: 'Range', path: '/facilities/range' },
-    { label: 'Library', path: '/facilities/library' },
-    { label: 'Driving School', path: '/facilities/driving-school' },
-    { label: 'Dispensary', path: '/facilities/dispensary' },
-  ];
 
   return (
     <nav className="college-navbar">
@@ -424,5 +359,5 @@ export default function Navbar() {
       </div>
     </nav>
   );
->>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }
+
