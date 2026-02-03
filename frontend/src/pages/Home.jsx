@@ -102,13 +102,7 @@ export default function Home() {
 */
 
 const programs = [
-  {
-    title: "Basic Recruit Courses",
-    description:
-      "Comprehensive entry-level training program designed to transform motivated individuals into professional police officers.",
-    image: "/images/recruit.jpg",
-    color: "#1a365d",
-  },
+ 
   {
     title: "Academic Courses",
     description:
@@ -123,20 +117,8 @@ const programs = [
     image: "/images/promotional.jpg",
     color: "#5b21b6",
   },
-   {
-    title: "Basic Recruit Courses",
-    description:
-      "Comprehensive entry-level training program designed to transform motivated individuals into professional police officers.",
-    image: "/images/recruit.jpg",
-    color: "#1a365d",
-  },
-   {
-    title: "Basic Recruit Courses",
-    description:
-      "Comprehensive entry-level training program designed to transform motivated individuals into professional police officers.",
-    image: "/images/campus4.jpg",
-    color: "#1a365d",
-  },
+  
+  
   
   {
     title: "Proficiency Courses",
@@ -146,45 +128,37 @@ const programs = [
     color: "#9a3412",
   },
 ];
+const facilities = [
+  {
+    category: "ICT Labs",
+    name: "Networking Lab",
+    image: "/images/campus4.jpg",
+    description: "Specialized lab for network administration and cybersecurity training.",
+    progress: 85
+  },
+  {
+    category: "ICT Labs",
+    name: "Computer Lab",
+    image: "/images/promotional.jpg",
+    description: "State-of-the-art technology for digital forensics and research.",
+     progress: 90
+  },
+  {
+    category: "Sports Areas",
+    name: "Basketball Courts",
+    image: "/images/campus3.jpg",
+    description: "Multiple indoor and outdoor basketball courts for training and competitions.",
+    progress: 75
+  },
+  {
+    category: "Library",
+    name: "Modern Library",
+    image: "/images/campus4.jpg",
+    description: "Extensive collection of law enforcement literature and digital resources.",
+    progress: 95
+  }
+];
 
-  const facilities = [
-    { 
-      icon: <Library className="facility-icon-svg" />, 
-      name: "Modern Library", 
-      description: "Extensive collection of law enforcement literature and digital resources",
-      features: ["24/7 Access", "Digital Resources", "Study Rooms"]
-    },
-    { 
-      icon: <BookOpen className="facility-icon-svg" />, 
-      name: "Computer Lab", 
-      description: "State-of-the-art technology for digital forensics and research",
-      features: ["High-Speed Internet", "Forensic Software", "Modern Equipment"]
-    },
-    { 
-      icon: <HomeIcon className="facility-icon-svg" />,
-      name: "Student Hostels", 
-      description: "Comfortable and secure accommodation for all cadets",
-      features: ["WiFi", "Security", "Recreation"]
-    },
-    { 
-      icon: <Activity className="facility-icon-svg" />, 
-      name: "Parade Ground", 
-      description: "Spacious grounds for military drills and ceremonies",
-      features: ["5 Acres", "Lighting", "Grandstand"]
-    },
-    { 
-      icon: <Target className="facility-icon-svg" />, 
-      name: "Shooting Range", 
-      description: "Modern firearms training facility with safety protocols",
-      features: ["Indoor/Outdoor", "Safety Gear", "Expert Trainers"]
-    },
-    { 
-      icon: <Dumbbell className="facility-icon-svg" />, 
-      name: "Gymnasium", 
-      description: "Fully equipped fitness center for physical training",
-      features: ["Modern Equipment", "Trainers", "24/7 Access"]
-    }
-  ];
 
   const stats = [
     { number: "5000+", label: "Graduated Officers", icon: <GraduationCap className="stat-icon" /> },
@@ -270,33 +244,44 @@ const programs = [
 
       {/* Commandant Message Section */}
       <section className="commandant-section">
-        <div className="container">
-          <div className="commandant-content">
-            <div className="commandant-image">
-              <img src="/images/mambosasa.jpg" alt="Dr. Lazaro B. Mambosasa-DCP - Commandant" />
-              <div className="commandant-badge">
-                <Award className="badge-icon" />
-              </div>
-            </div>
-            <div className="commandant-message">
-              <div className="message-header">
-                <span className="message-icon"></span>
-                <h2>Message from the Commandant</h2>
-              </div>
-              <blockquote>
-                "At Dar es Salaam Police Academy, we shape officers of integrity and excellence. 
-                Our commitment extends beyond academic excellence to character building, ensuring 
-                our graduates serve with honor, courage, and unwavering dedication to justice."
-              </blockquote>
-              <div className="commandant-info">
-                <h3>Dr. Lazaro B. Mambosasa-DCP</h3>
-                <p>Deputy Commissioner of Police - Commandant</p>
-                
-              </div>
-            </div>
-          </div>
+        
+  <div className="container">
+    <div className="commandant-card">
+
+      {/* IMAGE */}
+      <div className="commandant-image">
+        <img
+          src="/images/mambosasa.jpg"
+          alt="Dr. Lazaro B. Mambosasa-DCP - Commandant"
+        />
+        <div className="commandant-badge">
+          <Award size={22} />
         </div>
-      </section>
+      </div>
+
+      {/* MESSAGE */}
+      <div className="commandant-message">
+        <span className="section-tag">Leadership Message</span>
+
+        <h2>Message from the Commandant</h2>
+
+        <blockquote>
+          “At Dar es Salaam Police Academy, we shape officers of integrity and
+          excellence. Our commitment extends beyond academic excellence to
+          character building, ensuring our graduates serve with honor, courage,
+          and unwavering dedication to justice.”
+        </blockquote>
+
+        <div className="commandant-info">
+          <h3>Dr. Lazaro B. Mambosasa, DCP</h3>
+          <p>Deputy Commissioner of Police · Commandant</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Programs Section */}
      <section className="programs-section">
@@ -509,35 +494,46 @@ const programs = [
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="gallery-section">
+         {/* Facilities Section */}
+     <section className="facilities-showcase">
   <div className="container">
-    <div className="section-header">
-      <div className="animated-icon">📸</div>
-      <h2>Campus Gallery</h2>
-      <p className="section-subtitle">Life at Dar es Salaam Police Academy</p>
+
+    <div className="facilities-tabs">
+      <button className="active">ICT Labs</button>
+      <button>Sports Areas</button>
+      <button>Library</button>
     </div>
 
-    <div className="gallery-slider">
-      <div className="gallery-track">
-        {galleryImages.map((image, index) => (
-          <div className="gallery-slide" key={index}>
-            <img src={image.src} alt={image.alt} />
-            <div className="gallery-overlay">
-              <PlayCircle size={28} />
-            </div>
+    <div className="facilities-cards">
+      {facilities.map((facility, index) => (
+        <div className="facility-image-card" key={index}>
+          <img src={facility.image} alt={facility.name} />
+
+          <div className="facility-overlay">
+            <span className="facility-category">
+              {facility.category}
+            </span>
+
+            <h3>{facility.name}</h3>
+            <p>{facility.description}</p>
+
+            <button className="facility-btn">
+              Learn More
+            </button>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
 
-    <div className="text-center">
-      <a href="/gallery" className="modern-btn primary">
-        <Image className="btn-icon" /> Explore Gallery
-      </a>
+    <div className="facilities-footer">
+      <button className="explore-btn">
+        Explore All Facilities
+      </button>
     </div>
+
   </div>
 </section>
+
     </div>
   );
 
