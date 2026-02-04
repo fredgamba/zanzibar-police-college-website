@@ -1,0 +1,469 @@
+/* Organization Structure Page Styles */
+
+/* ===== VARIABLES ===== */
+:root {
+    --org-primary: #1a365d;
+    --org-secondary: #2c5282;
+    --org-accent: #3182ce;
+    --org-gold: #d4af37;
+    --org-bg: #f8fafc;
+    --org-white: #ffffff;
+    --org-text: #1a202c;
+    --org-text-light: #4a5568;
+    --org-border: #e2e8f0;
+    --org-shadow: 0 4px 16px rgba(26, 54, 93, 0.12);
+    --org-shadow-hover: 0 8px 24px rgba(26, 54, 93, 0.18);
+  }
+  
+  /* ===== PAGE CONTAINER ===== */
+  .organization-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #e6f2ff 100%);
+    padding: 2rem 1rem;
+  }
+  
+  /* ===== HEADER SECTION ===== */
+  .org-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .org-header-decoration {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, var(--org-gold) 0%, #f6e05e 100%);
+    margin: 0 auto 1.5rem;
+    border-radius: 2px;
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  .org-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--org-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .org-subtitle {
+    font-size: 1.25rem;
+    color: var(--org-text-light);
+    font-weight: 300;
+    letter-spacing: 1px;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+  
+  /* ===== CHART CONTAINER ===== */
+  .org-chart-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--org-white);
+    border-radius: 24px;
+    box-shadow: var(--org-shadow);
+    animation: fadeInUp 1s ease-out 0.3s both;
+  }
+  
+  .org-chart {
+    padding: 2rem;
+    position: relative;
+  }
+  
+  /* ===== ORGANIZATION LEVELS ===== */
+  .org-level {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Connecting Lines */
+  .org-level::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 2rem;
+    background: linear-gradient(180deg, transparent 0%, var(--org-accent) 100%);
+  }
+  
+  .org-level.level-1::before {
+    display: none;
+  }
+  
+  /* ===== ORGANIZATION BOXES ===== */
+  .org-box {
+    background: var(--org-white);
+    border: 2px solid var(--org-border);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    min-width: 220px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(26, 54, 93, 0.08);
+    position: relative;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .org-box:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--org-shadow-hover);
+    border-color: var(--org-accent);
+  }
+  
+  .box-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    filter: grayscale(20%);
+  }
+  
+  .org-box h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--org-text);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .org-box h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--org-text);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  
+  .org-box h5 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--org-text);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+  }
+  
+  /* ===== SPECIAL BOX STYLES ===== */
+  .org-box.commandant {
+    background: linear-gradient(135deg, var(--org-primary) 0%, var(--org-secondary) 100%);
+    color: white;
+    border: none;
+    min-width: 300px;
+    padding: 2rem 3rem;
+    box-shadow: 0 8px 32px rgba(26, 54, 93, 0.2);
+  }
+  
+  .org-box.commandant h3 {
+    color: white;
+    font-size: 1.25rem;
+  }
+  
+  .org-box.commandant .box-icon {
+    font-size: 2.5rem;
+    filter: none;
+  }
+  
+  .org-box.chief-instructor,
+  .org-box.staff-officer {
+    background: linear-gradient(135deg, var(--org-accent) 0%, #4299e1 100%);
+    color: white;
+    border: none;
+    min-width: 260px;
+  }
+  
+  .org-box.chief-instructor h4,
+  .org-box.staff-officer h4 {
+    color: white;
+  }
+  
+  .org-box.coordinator {
+    background: linear-gradient(135deg, #38b2ac 0%, #4fd1c5 100%);
+    color: white;
+    border: none;
+    min-width: 280px;
+  }
+  
+  .org-box.coordinator h4 {
+    color: white;
+  }
+  
+  .org-box.students {
+    background: linear-gradient(135deg, var(--org-gold) 0%, #f6e05e 100%);
+    color: var(--org-primary);
+    border: none;
+    min-width: 300px;
+    padding: 2rem 3rem;
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.2);
+  }
+  
+  .org-box.students h3 {
+    color: var(--org-primary);
+    font-size: 1.25rem;
+  }
+  
+  .org-box.department {
+    border-color: #667eea;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  }
+  
+  .org-box.department:hover {
+    border-color: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  
+  .org-box.department:hover h5 {
+    color: white;
+  }
+  
+  .org-box.unit {
+    border-color: var(--org-accent);
+  }
+  
+  .org-box.admin {
+    border-color: #48bb78;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  }
+  
+  .org-box.admin:hover {
+    border-color: #48bb78;
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    color: white;
+  }
+  
+  .org-box.admin:hover h5 {
+    color: white;
+  }
+  
+  /* ===== LEVEL 2 ROW ===== */
+  .org-row {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* ===== LEVEL 4 SPLIT ===== */
+  .org-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  .org-section {
+    background: linear-gradient(135deg, #f7fafc 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid var(--org-border);
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--org-accent);
+  }
+  
+  .section-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--org-primary);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .academic-section .section-header {
+    border-bottom-color: #667eea;
+  }
+  
+  .admin-section .section-header {
+    border-bottom-color: #48bb78;
+  }
+  
+  /* ===== GRID LAYOUT ===== */
+  .org-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* ===== LOADING & ERROR STATES ===== */
+  .org-loading,
+  .org-error {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--org-border);
+    border-top-color: var(--org-accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* ===== ADDITIONAL CONTENT ===== */
+  .org-additional-content {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background: var(--org-white);
+    border-radius: 16px;
+    box-shadow: var(--org-shadow);
+  }
+  
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 80px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 1200px) {
+    .org-split {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .org-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .organization-page {
+      padding: 1rem 0.5rem;
+    }
+    
+    .org-header {
+      padding: 2rem 1rem;
+    }
+    
+    .org-title {
+      font-size: 2rem;
+    }
+    
+    .org-subtitle {
+      font-size: 1rem;
+    }
+    
+    .org-chart-container {
+      padding: 1rem;
+      border-radius: 16px;
+    }
+    
+    .org-chart {
+      padding: 1rem;
+    }
+    
+    .org-row {
+      gap: 2rem;
+    }
+    
+    .org-box {
+      min-width: 180px;
+      padding: 1.25rem 1.5rem;
+    }
+    
+    .org-box.commandant,
+    .org-box.students {
+      min-width: 240px;
+      padding: 1.5rem 2rem;
+    }
+    
+    .org-grid {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+    
+    .org-section {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .org-title {
+      font-size: 1.75rem;
+    }
+    
+    .org-box {
+      min-width: 150px;
+      padding: 1rem;
+    }
+    
+    .org-box h5 {
+      font-size: 0.75rem;
+    }
+    
+    .box-icon {
+      font-size: 1.5rem;
+    }
+    
+    .org-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* ===== PRINT STYLES ===== */
+  @media print {
+    .organization-page {
+      background: white;
+      padding: 0;
+    }
+    
+    .org-chart-container {
+      box-shadow: none;
+    }
+    
+    .org-box {
+      break-inside: avoid;
+    }
+  }

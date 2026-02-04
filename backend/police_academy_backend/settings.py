@@ -102,15 +102,14 @@ TEMPLATES = [
 # ===========================
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # or postgress, sqlite3
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'police_colleges',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'HOST': '127.0.0.1',  # connect via TCP
+        'PORT': '3306',       # default MySQL port
     }
 }
-
 # ===========================
 # Password validation
 # ===========================

@@ -1,155 +1,206 @@
-import { useEffect, useState } from 'react';
-import api from '../../utils/api';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export default function DrivingSchool() {
-  const [features, setFeatures] = useState([]);
-  const [features2, setFeatures2] = useState([]);
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    // Fetch features (small features on welcome section)
-    api.get('/driving-features')
-      .then(res => setFeatures(res.data))
-      .catch(() => {
-        setFeatures([
-          { title: "Accredited Training Institution", text: "DPA Driving School operates as a fully accredited institution, providing certified and regulated driver training programs." },
-          { title: "Learner-Focused Instruction", text: "Training programs are designed using structured lesson plans that support individual learner progress and competency development." },
-          { title: "Qualified Driving Instructors", text: "Instruction is provided by trained and experienced professionals committed to maintaining high standards of road safety." },
-          { title: "Comprehensive Practical Training", text: "The curriculum integrates theoretical knowledge with practical driving experience to ensure road readiness and compliance." },
-        ]);
-      });
-
-    // Set features2 (main cards in 'Why Choose Us' section)
-    setFeatures2([
+export default function SportGym() {
+  const data = {
+    sports: [
       {
-        title: "Top Safety Measures",
-        text: "Safety is our priority. At DPA Driving School, we follow strict safety protocols, provide expert guidance, and teach defensive driving techniques to ensure every student drives with confidence and care."
+        title: "Football",
+        description:
+          "Our football facilities include a full-sized pitch, training equipment, and regular coaching sessions to enhance skills and teamwork.",
+        photo: "/images/sports.jpg",
       },
       {
-        title: "Perfect Timing for Your Driving Journey",
-        text: "At DPA Driving School, we ensure every lesson is scheduled perfectly to fit your needs, helping you learn at your own pace and convenience."
+        title: "Basketball",
+        description:
+          "We have indoor and outdoor basketball courts available for practice and competitive games, along with professional coaching staff.",
+        photo: "/images/sports.jpg",
       },
       {
-        title: "Affordable Driving Lessons",
-        text: "At DPA Driving School, we offer high-quality driving education at prices that fit your budget, making safe driving accessible to all."
+        title: "Volleyball",
+        description:
+          "Our volleyball courts are equipped for both recreational play and competitive matches, with training programs for all skill levels.",
+        photo: "/images/sports.jpg",
+      },
+    ],
+    gym: [
+      {
+        title: "Cardio Equipment",
+        description:
+          "Our gym features state-of-the-art cardio machines including treadmills, ellipticals, and stationary bikes to help improve cardiovascular health.",
+        photo: "/images/gym1.jpg",
       },
       {
-        title: "Our Experts",
-        text: "At DPA Driving School, our certified instructors bring years of experience and a passion for teaching, ensuring you gain the skills and confidence to drive safely."
+        title: "Strength Training",
+        description:
+          "We offer a variety of strength training equipment such as free weights, resistance machines, and functional training tools to build muscle and endurance.",
+        photo: "/images/gym2.jpg",
       },
 
-    ]);
+    ],
+  };
 
-    // Fetch images
-    api.get('/driving-images')
-      .then(res => setImages(res.data))
-      .catch(() => {
-        setImages([{ src: '/images/driving.jpeg', alt: 'DPA Driving School Training Session' }]);
-      });
-  }, []);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 500,
+    arrows: false,
+    fade: true,
+    pauseOnHover: true,
+  };
 
   return (
-    <div className="driving-school-page">
-
-      {/* ===== CUSTOM CSS ===== */}
-      <style>{`
-        .welcome-section { padding: 60px 0; background: #ffffff; }
-        .wide-container { padding-left: 40px; padding-right: 40px; }
-        .welcome-images { position: relative; }
-        .circle-bg { position: absolute; width: 280px; height: 280px; border: 1px solid #dddddd; border-radius: 50%; top: -40px; left: -40px; }
-        .image-box { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); position: relative; z-index: 2; margin-bottom: 15px; transition: transform 0.3s ease; }
-        .image-box img { width: 100%; display: block; }
-        .image-box:hover img { transform: scale(1.05); }
-        .welcome-title { font-size: 42px; font-weight: 700; margin-bottom: 15px; color: #111111; }
-        .welcome-text { color: #6c757d; line-height: 1.7; margin-bottom: 30px; max-width: 680px; }
-        .feature-item { display: flex; gap: 12px; }
-        .feature-icon { width: 24px; height: 24px; border: 1px solid #0d6efd; color: #0d6efd; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; }
-        .feature-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: left; display: flex; flex-direction: column; gap: 12px; height: 100%; }
-        .feature-card .feature-icon { font-size: 28px; width: 50px; height: 50px; border-radius: 50%; background: #001f3f; color: #ff4136; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
-        .feature-card h6 { font-weight: 700; font-size: 16px; margin-bottom: 6px; }
-        .feature-card p { font-size: 14px; color: #6c757d; }
-        @media (max-width: 768px) { 
-          .wide-container { padding-left: 20px; padding-right: 20px; } 
-          .welcome-title { font-size: 32px; } 
-          .circle-bg { width: 180px; height: 180px; top: -20px; left: -20px; } 
-        }
-      `}</style>
-
-      {/* ===== WELCOME SECTION ===== */}
-      <section className="welcome-section">
-        <div className="container-fluid wide-container">
-          <div className="row align-items-center g-3">
-
-            {/* LEFT SIDE: IMAGES */}
-            <div className="col-lg-6">
-              <div className="welcome-images">
-                <div className="circle-bg"></div>
-                {images.map((img, idx) => (
-                  <div className="image-box w-70" key={idx}>
-                    <img src={img.src} alt={img.alt} />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* RIGHT SIDE: TEXT + SMALL FEATURES */}
-            <div className="col-lg-6">
-              <h1 className="welcome-title">
-                Welcome to DPA <br /> Driving School
-              </h1>
-
-              <p className="welcome-text">
-                DPA Driving School is a professionally accredited driving institution
-                dedicated to the development of competent, disciplined, and responsible
-                drivers. Through structured training programs, experienced instructors,
-                and well-maintained training vehicles, the school delivers high-quality
-                driving education in accordance with established safety and regulatory
-                standards.
-              </p>
-
-              <div className="row g-3">
-                {features.map((feature, idx) => (
-                  <div className="col-md-6" key={idx}>
-                    <Feature title={feature.title} text={feature.text} />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ===== FEATURE CARDS SECTION (features2) ===== */}
-      <section className="feature-cards-section py-5" style={{ background: '#f8f9fa' }}>
-        <div className="container-fluid wide-container">
-          <h2 className="mb-4" style={{ fontWeight: 700, textAlign: 'center' }}>Why Choose Us</h2>
-          <div className="row g-4">
-            {features2.map((feature, idx) => (
-              <div className="col-12 col-md-6 col-lg-3" key={idx}>
-                <div className="feature-card" style={{ minHeight: '220px' }}>
-                  <h6>{feature.title}</h6>
-                  <p>{feature.text}</p>
-                </div>
+    <div style={{ padding: "2%" }}>
+    <div>
+      <h2>Sports & Gym</h2><br />
+      <blockquote>
+        &nbsp; Dar-es-Salam police Academy (DPA) has a comprehensive sports and fitness program designed to promote physical wellness and team spirit among cadets.
+        Our facilities include well-maintained sports fields, courts, and a fully equipped gymnasium. We offer training and recreational activities in various sports such as football, basketball, volleyball, and more.
+        The gym is outfitted with modern equipment for strength training, cardio workouts, and overall fitness. Regular fitness assessments and training sessions are conducted to ensure cadets meet the physical standards required for their roles.
+        Participation in sports and fitness activities is encouraged as part of our holistic approach to cadet development, fostering discipline, resilience, and camaraderie.
+      </blockquote><br/>
+    </div>
+      <div className="hero-section">
+        {/* LEFT: Sports Carousel */}
+        <div className="hero-left">
+          <Slider {...settings}>
+            {data.sports.map((sport, index) => (
+              <div key={index} className="hero-slide">
+                <img src={sport.photo} alt={sport.title} />
+                <div className="slide-title">{sport.title}</div>
+                <div className="slide-description">{sport.description}</div>
               </div>
             ))}
-          </div>
+          </Slider>
         </div>
-      </section>
 
-    </div>
-  );
-}
-
-// ===== FEATURE COMPONENT =====
-function Feature({ title, text, icon = "✓" }) {
-  return (
-    <div className="feature-item">
-      <div className="feature-icon">{icon}</div>
-      <div>
-        <h6 className="mb-1">{title}</h6>
-        <p className="text-muted mb-0 small">{text}</p>
+        {/* RIGHT: Gym Latest 2 */}
+        <div className="hero-right">
+          {data.gym.slice(-2).map((gym, index) => (
+            <div key={index} className="gym-card">
+              <img src={gym.photo} alt={gym.title} />
+              <div className="gym-title">{gym.title}</div>
+              <div className="gym-description">{gym.description}</div>
+            </div>
+          ))}
+        </div>
       </div>
+
+      {/* Embedded CSS */}
+      <style>{`
+        .hero-section {
+          display: flex;
+          gap: 20px;
+          width: 100%;
+        }
+
+        /* LEFT: Sports Carousel */
+        .hero-left {
+          width: 70%;
+          height: 100%;
+          position: relative;
+        }
+
+        .hero-slide {
+          position: relative;
+          height: 450px;
+          overflow: hidden;
+          border-radius: 8px;
+        }
+
+        .hero-slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .slide-title {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          color: white;
+          padding: 15px;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .slide-description {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          color: white;
+          padding: 15px;
+          font-size: 16px;
+        }
+
+        /* RIGHT: Gym Cards */
+        .hero-right {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .gym-card {
+          position: relative;
+          height: calc(50% - 10px);
+          overflow: hidden;
+          border-radius: 8px;
+        }
+
+        .gym-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .gym-title {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          color: white;
+          padding: 10px;
+          font-weight: bold;
+        }
+
+        .gym-description {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          color: white;
+          padding: 10px;
+        }
+
+        /* Responsive: Mobile */
+        @media (max-width: 768px) {
+          .hero-section {
+            flex-direction: column;
+            height: auto;
+          }
+
+          .hero-left,
+          .hero-right {
+            width: 100%;
+          }
+
+          .gym-card {
+            height: 200px;
+          }
+
+          .hero-slide {
+            height: 300px;
+          }
+        }
+      `}</style>
     </div>
   );
 }

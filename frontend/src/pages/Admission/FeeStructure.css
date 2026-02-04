@@ -128,12 +128,14 @@ body {
 
 .subtitle {
   font-size: 1.25rem;
-  font-weight: 300;
-  opacity: 0.95;
+  font-weight: 400;        /* Increased from 300 */
+  opacity: 1;               /* Changed from 0.95 */
   letter-spacing: 1px;
   position: relative;
   z-index: 1;
   animation: fadeIn 1s ease-out 0.4s both;
+  color: #ffffff;           /* Added explicit white color */
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Added shadow for contrast */
 }
 
 /* Table Container */
