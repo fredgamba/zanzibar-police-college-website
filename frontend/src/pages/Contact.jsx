@@ -61,55 +61,48 @@ export default function Contact() {
 
             {/* CONTACT INFO + OFFICE HOURS */}
             <div className="contact-info-card">
-              <h2>Get in Touch</h2>
+  <h2>Get in Touch</h2>
 
-              {contactInfo ? (
-                <>
-                  <div className="contact-item">
-                    <MapPin />
-                    <div>
-                      <h4>Address</h4>
-                      <p>{contactInfo.address}</p>
-                    </div>
-                  </div>
+  {/* Address */}
+  <div className="contact-item">
+    <MapPin />
+    <div>
+      <h4>Address</h4>
+      <p>
+        {contactInfo?.address ||
+          "Dar es Salaam Police Academy, Kurasini, Dar es Salaam, Tanzania"}
+      </p>
+      <p><strong>P.O. Box:</strong> 2503, Dar es Salaam</p>
+    </div>
+  </div>
 
-                  <div className="contact-item">
-                    <Phone />
-                    <div>
-                      <h4>Phone</h4>
-                      <p>{contactInfo.phone}</p>
-                    </div>
-                  </div>
+  {/* Phone */}
+  <div className="contact-item">
+    <Phone />
+    <div>
+      <h4>Phone</h4>
+      <p>{contactInfo?.phone || "+255 22 285 0067"}</p>
+    </div>
+  </div>
 
-                  <div className="contact-item">
-                    <Mail />
-                    <div>
-                      <h4>Email</h4>
-                      <p>{contactInfo.email}</p>
-                    </div>
-                  </div>
+  {/* Email */}
+  <div className="contact-item">
+    <Mail />
+    <div>
+      <h4>Email</h4>
+      <p>{contactInfo?.email || "info@domain.com"}</p>
+    </div>
+  </div>
 
-                  <div className="contact-item">
-                    <Clock />
-                    <div>
-                      <h4>Office Hours</h4>
-                      <p>Mon - Fri: 08:00 - 16:00</p>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <p>No contact information available.</p>
-              )}
-
-               {/* OFFICE HOURS — always visible */}
+  {/* Office Hours */}
   <div className="contact-item">
     <Clock />
     <div>
       <h4>Office Hours</h4>
-      <p>Mon - Fri: 08:00 - 16:00</p>
+      <p>Monday – Friday: 08:00 – 16:00</p>
     </div>
   </div>
-            </div>
+</div>
 
             {/* CONTACT FORM */}
             <div className="contact-form-card">
