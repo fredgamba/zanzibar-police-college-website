@@ -2950,3 +2950,4 @@ WARNING 2026-02-06 10:31:01,864 log 14762 130873905092288 Not Found: /api/drivin
 WARNING 2026-02-06 10:31:01,869 log 14762 130873955448512 Not Found: /api/driving-images
 WARNING 2026-02-06 10:31:44,234 log 14762 130873955448512 Not Found: /api/contact/
 WARNING 2026-02-06 10:31:44,240 log 14762 130873955448512 Not Found: /api/contact/
+INFO 2026-02-06 10:54:39,758 autoreload 14762 130874270445696 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.

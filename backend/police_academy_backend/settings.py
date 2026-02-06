@@ -4,11 +4,9 @@ from pathlib import Path
 from datetime import timedelta
 # Disable MariaDB version check
 # Disable MariaDB version check and RETURNING clause
-import django.db.backends.mysql.base
-import django.db.backends.mysql.features
 
-django.db.backends.mysql.base.DatabaseWrapper.check_database_version_supported = lambda self: None
-django.db.backends.mysql.features.DatabaseFeatures.can_return_columns_from_insert = False
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
