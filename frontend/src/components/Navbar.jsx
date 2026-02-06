@@ -8,6 +8,11 @@ import {
   Newspaper,
   Phone,
   ChevronDown,
+  Mail,
+  PhoneCall,
+   Shield,
+  BookOpen,
+  HelpCircle,
 } from 'lucide-react';
 
 export default function Navbar() {
@@ -17,6 +22,15 @@ export default function Navbar() {
   const handleMouseEnter = (name) => setOpenDropdown(name);
   const handleMouseLeave = () => setOpenDropdown(null);
   const toggleMobileMenu = () => setIsMobileOpen(!isMobileOpen);
+
+   // Quick Links for Top Bar
+  const quickLinks = [
+    { name: 'Tpf Service Portal', path: '/alumni', icon: Shield },
+    { name: 'Admission', path: '/admission', icon: GraduationCap },
+    { name: 'E-Learning', path: '/e-learning', icon: BookOpen },
+    { name: 'Help Desk', path: '/help-desk', icon: HelpCircle },
+    { name: 'Certificate Verification', path: '/certificate-verification', icon: Shield },
+  ];
 
   const aboutSubItems = [
     { label: 'History', path: '/about/history' },
@@ -42,124 +56,54 @@ export default function Navbar() {
   ];
 
   return (
-    <>
-      {/* ================= STYLES ================= */}
-      <style>
-        {`
-          /* NAVBAR BASE */
-          .college-navbar {
-            background: #002855;
-          }
+    <nav className="college-navbar">
+      {/* Top Bar - Quick Links & Contact Info */}
+      <div className="top-bar">
+        <div className="contact-info">
+          <span>
+            <Mail size={14} className="contact-icon" />
+            barua@dpacademy.go.tz
+          </span>
+          <span>
+            <PhoneCall size={14} className="contact-icon" />
+            +255 (0) 22 123 4567
+          </span>
+        </div>
+       <nav className="quick-links">
+          {quickLinks.map(link => {
+            const IconComponent = link.icon;
+            return (
+              <Link key={link.path} to={link.path}>
+                <IconComponent size={12} className="quick-link-icon" />
+                {link.name}
+              </Link>
+            );
+          })}
+        </nav>
+      </div>
 
-          .college-navbar a,
-          .college-navbar span {
-            color: #ffffff;
-          }
 
-          .college-navbar svg {
-            stroke: #ffffff;
-          }
-
-          /* HAMBURGER */
-          .mobile-hamburger {
-            display: none;
-            padding: 12px 20px;
-            font-size: 28px;
-            cursor: pointer;
-            color: #ffffff;
-          }
-
-          /* MAIN NAV */
-          .main-nav ul {
-            display: flex;
-            gap: 25px;
-            list-style: none;
-            margin: 0;
-            padding: 14px 30px;
-            align-items: center;
-          }
-
-          .main-nav a,
-          .main-nav span {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-weight: 500;
-            cursor: pointer;
-          }
-
-          /* DROPDOWN */
-          .dropdown {
-            position: relative;
-          }
-
-          .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #0b2e63;
-            min-width: 220px;
-            padding: 10px 0;
-            border-radius: 6px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-            z-index: 1000;
-          }
-
-          .dropdown-menu a {
-            color: #ffffff;
-            padding: 10px 20px;
-            display: block;
-          }
-
-          .dropdown-menu a:hover {
-            background: #123d7a;
-            color: #ffffff;
-          }
-
-          /* HOVER FIX (VERY IMPORTANT) */
-          .college-navbar a:hover,
-          .college-navbar span:hover {
-            color: #ffffff;
-          }
-
-          .college-navbar a:hover svg,
-          .college-navbar span:hover svg {
-            stroke: #ffffff;
-          }
-
-          /* MOBILE */
-          @media (max-width: 900px) {
-            .mobile-hamburger {
-              display: block;
-            }
-
-            .main-nav {
-              display: none;
-            }
-
-            .main-nav.open {
-              display: block;
-            }
-
-            .main-nav ul {
-              flex-direction: column;
-              align-items: flex-start;
-            }
-
-            .dropdown-menu {
-              position: static;
-              width: 100%;
-              box-shadow: none;
-            }
-          }
-        `}
-      </style>
-
+{/* Main Header - Logos + Centered Title */}
+      <div className="main-header">
+        <img
+          src="/images/tanzania-coa.png"
+          alt="Tanzania Coat of Arms"
+          className="coa-logo"
+        />
+        <div className="school-name">
+          <h1>THE UNITED REPUBLIC OF TANZANIA</h1>
+          <h2>DAR ES SALAAM POLICE ACADEMY</h2>
+          <p>"The Center of Excellence"</p>
+        </div>
+        <img
+          src="/images/police-academy-logo.png"
+          alt="Police Academy Logo"
+          className="academy-logo"
+        />
+      </div>
       {/* ================= NAVBAR ================= */}
-      <nav className="college-navbar">
-        <div className="mobile-hamburger" onClick={toggleMobileMenu}>
-          ☰
+      <div className="college-navbar">
+        < div className="mobile-hamburger" onClick={toggleMobileMenu}>
         </div>
 
         <div className={`main-nav ${isMobileOpen ? 'open' : ''}`}>
@@ -234,7 +178,8 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
+  
 }
