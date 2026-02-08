@@ -383,3 +383,4 @@ WARNING 2026-02-05 15:30:25,731 log 26951 136895103235776 Not Found: /api/public
 WARNING 2026-02-05 15:30:25,736 log 26951 136895103235776 Not Found: /api/public/pages/by-page/
 WARNING 2026-02-05 15:30:37,023 log 26951 136895103235776 Not Found: /api/contact/
 WARNING 2026-02-05 15:30:37,029 log 26951 136895103235776 Not Found: /api/contact/
+INFO 2026-02-06 11:49:42,157 autoreload 23532 20312 Watching for file changes with StatReloader
