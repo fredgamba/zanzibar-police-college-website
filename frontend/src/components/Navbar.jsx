@@ -101,85 +101,74 @@ export default function Navbar() {
           className="academy-logo"
         />
       </div>
-      {/* ================= NAVBAR ================= */}
-      <div className="college-navbar">
-        < div className="mobile-hamburger" onClick={toggleMobileMenu}>
-        </div>
+    
 
-        <div className={`main-nav ${isMobileOpen ? 'open' : ''}`}>
-          <ul>
-            <li>
-              <Link to="/"><Home size={18} /> Home</Link>
-            </li>
+      {/* Hamburger for mobile */}
+      <div className="mobile-hamburger" onClick={toggleMobileMenu}>
+        <span className="hamburger-icon">&#9776;</span> {/* ☰ */}
+      </div>
 
-            <li
-              className="dropdown"
-              onMouseEnter={() => handleMouseEnter('about')}
-              onMouseLeave={handleMouseLeave}
-            >
-              <span>
-                <Users size={18} /> About Us <ChevronDown size={14} />
-              </span>
-              {openDropdown === 'about' && (
-                <ul className="dropdown-menu">
-                  {aboutSubItems.map(item => (
-                    <li key={item.path}>
-                      <Link to={item.path}>{item.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
+      {/* Main Navigation */}
+      <div className={`main-nav ${isMobileOpen ? 'open' : ''}`}>
+        <ul>
+          <li><Link to="/"><Home size={18} /> Home</Link></li>
 
-            <li
-              className="dropdown"
-              onMouseEnter={() => handleMouseEnter('admission')}
-              onMouseLeave={handleMouseLeave}
-            >
-              <span>
-                <GraduationCap size={18} /> Admission <ChevronDown size={14} />
-              </span>
-              {openDropdown === 'admission' && (
-                <ul className="dropdown-menu">
-                  {admissionSubItems.map(item => (
-                    <li key={item.path}>
-                      <Link to={item.path}>{item.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
+          <li
+            className="dropdown"
+            onMouseEnter={() => handleMouseEnter('about')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <span>
+              <Users size={18} /> About Us <ChevronDown size={14} />
+            </span>
+            {openDropdown === 'about' && (
+              <ul className="dropdown-menu">
+                {aboutSubItems.map((item) => (
+                  <li key={item.path}><Link to={item.path}>{item.label}</Link></li>
+                ))}
+              </ul>
+            )}
+          </li>
 
-            <li
-              className="dropdown"
-              onMouseEnter={() => handleMouseEnter('facilities')}
-              onMouseLeave={handleMouseLeave}
-            >
-              <span>
-                <Building size={18} /> Facilities <ChevronDown size={14} />
-              </span>
-              {openDropdown === 'facilities' && (
-                <ul className="dropdown-menu">
-                  {facilitiesSubItems.map(item => (
-                    <li key={item.path}>
-                      <Link to={item.path}>{item.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
+          <li
+            className="dropdown"
+            onMouseEnter={() => handleMouseEnter('admission')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <span>
+              <GraduationCap size={18} /> Admission <ChevronDown size={14} />
+            </span>
+            {openDropdown === 'admission' && (
+              <ul className="dropdown-menu">
+                {admissionSubItems.map((item) => (
+                  <li key={item.path}><Link to={item.path}>{item.label}</Link></li>
+                ))}
+              </ul>
+            )}
+          </li>
 
-            <li>
-              <Link to="/news"><Newspaper size={18} /> News</Link>
-            </li>
+          <li
+            className="dropdown"
+            onMouseEnter={() => handleMouseEnter('facilities')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <span>
+              <Building size={18} /> Facilities <ChevronDown size={14} />
+            </span>
+            {openDropdown === 'facilities' && (
+              <ul className="dropdown-menu">
+                {facilitiesSubItems.map((item) => (
+                  <li key={item.path}><Link to={item.path}>{item.label}</Link></li>
+                ))}
+              </ul>
+            )}
+          </li>
 
-            <li>
-              <Link to="/contact"><Phone size={18} /> Contact</Link>
-            </li>
-          </ul>
-        </div>
+          <li><Link to="/news"><Newspaper size={18} /> News</Link></li>
+          <li><Link to="/contact"><Phone size={18} /> Contact</Link></li>
+        </ul>
       </div>
     </nav>
   );
-  
 }
+

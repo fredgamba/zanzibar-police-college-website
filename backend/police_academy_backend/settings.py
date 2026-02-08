@@ -2,6 +2,11 @@
 import os
 from pathlib import Path
 from datetime import timedelta
+# Disable MariaDB version check
+# Disable MariaDB version check and RETURNING clause
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -111,11 +116,15 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'police_academy_db',
-        'USER': 'policeadmin',
-        'PASSWORD': 'SecurePass123!',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'police_colleges',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
+        'DISABLE_SERVER_SIDE_CURSORS': True,
+        
     }
 }
 # ===========================

@@ -6322,3 +6322,53 @@ body, #root {
 .contact-item svg {
   color: #2563eb;
 }
+/* Desktop Menu */
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hide hamburger on desktop */
+.mobile-hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+    width: 100%;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .main-nav li {
+    padding: 10px;
+  }
+
+  .mobile-hamburger {
+    display: block;
+    padding: 10px;
+    color: white;
+    background: #003366;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: #003366;
+  }
+
+  .dropdown-menu li {
+    padding-left: 20px;
+  }
+}
