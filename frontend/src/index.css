@@ -6420,7 +6420,7 @@ justify-content: center;
 
   .mobile-logo {
     position: absolute;
-    left: 50%;
+    left: 80%;
     transform: translateX(-50%);
     height: 40px;
     width: auto;
