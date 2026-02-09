@@ -10,22 +10,49 @@ import {
   ChevronDown,
   Mail,
   PhoneCall,
-   Shield,
+  Shield,
   BookOpen,
   HelpCircle,
 } from 'lucide-react';
-
-
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  const handleMouseEnter = (name) => setOpenDropdown(name);
-  const handleMouseLeave = () => setOpenDropdown(null);
-  const toggleMobileMenu = () => setIsMobileOpen(!isMobileOpen);
+  const handleMouseEnter = (name) => {
+    // Only use hover on desktop
+    if (window.innerWidth > 768) {
+      setOpenDropdown(name);
+    }
+  };
+  
+  const handleMouseLeave = () => {
+    // Only use hover on desktop
+    if (window.innerWidth > 768) {
+      setOpenDropdown(null);
+    }
+  };
 
-   // Quick Links for Top Bar
+  const handleDropdownClick = (name) => {
+    // Toggle dropdown on click (for mobile)
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileOpen(!isMobileOpen);
+    // Close any open dropdowns when closing menu
+    if (isMobileOpen) {
+      setOpenDropdown(null);
+    }
+  };
+
+  // Close mobile menu and dropdowns when clicking a link
+  const handleLinkClick = () => {
+    setIsMobileOpen(false);
+    setOpenDropdown(null);
+  };
+
+  // Quick Links for Top Bar
   const quickLinks = [
     { name: 'Tpf Service Portal', path: '/alumni', icon: Shield },
     { name: 'Admission', path: '/admission', icon: GraduationCap },
@@ -71,7 +98,7 @@ export default function Navbar() {
             +255 (0) 22 123 4567
           </span>
         </div>
-       <nav className="quick-links">
+        <nav className="quick-links">
           {quickLinks.map(link => {
             const IconComponent = link.icon;
             return (
@@ -84,8 +111,7 @@ export default function Navbar() {
         </nav>
       </div>
 
-
-{/* Main Header - Logos + Centered Title */}
+      {/* Main Header - Logos + Centered Title */}
       <div className="main-header">
         <img
           src="/images/tanzania-coa.png"
@@ -103,39 +129,45 @@ export default function Navbar() {
           className="academy-logo"
         />
       </div>
-    
 
       {/* Mobile header */}
-<div className="mobile-header">
-  <div className="mobile-hamburger" onClick={toggleMobileMenu}>
-    <span className="hamburger-icon">&#9776;</span>
-  </div>
+      <div className="mobile-header">
+        <div className="mobile-hamburger" onClick={toggleMobileMenu}>
+          <span className="hamburger-icon">&#9776;</span>
+        </div>
 
-  <img
-    src="/images/police-academy-logo.png"
-    alt="Police Logo"
-    className="mobile-logo"
-  />
-</div>
-
+        <img
+          src="/images/police-academy-logo.png"
+          alt="Police Logo"
+          className="mobile-logo"
+        />
+      </div>
 
       {/* Main Navigation */}
       <div className={`main-nav ${isMobileOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/"><Home size={18} /> Home</Link></li>
+          <li>
+            <Link to="/" onClick={handleLinkClick}>
+              <Home size={18} /> Home
+            </Link>
+          </li>
 
           <li
             className="dropdown"
             onMouseEnter={() => handleMouseEnter('about')}
             onMouseLeave={handleMouseLeave}
           >
-            <span>
+            <span onClick={() => handleDropdownClick('about')}>
               <Users size={18} /> About Us <ChevronDown size={14} />
             </span>
             {openDropdown === 'about' && (
               <ul className="dropdown-menu">
                 {aboutSubItems.map((item) => (
-                  <li key={item.path}><Link to={item.path}>{item.label}</Link></li>
+                  <li key={item.path}>
+                    <Link to={item.path} onClick={handleLinkClick}>
+                      {item.label}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             )}
@@ -146,13 +178,17 @@ export default function Navbar() {
             onMouseEnter={() => handleMouseEnter('admission')}
             onMouseLeave={handleMouseLeave}
           >
-            <span>
+            <span onClick={() => handleDropdownClick('admission')}>
               <GraduationCap size={18} /> Admission <ChevronDown size={14} />
             </span>
             {openDropdown === 'admission' && (
               <ul className="dropdown-menu">
                 {admissionSubItems.map((item) => (
-                  <li key={item.path}><Link to={item.path}>{item.label}</Link></li>
+                  <li key={item.path}>
+                    <Link to={item.path} onClick={handleLinkClick}>
+                      {item.label}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             )}
@@ -163,23 +199,34 @@ export default function Navbar() {
             onMouseEnter={() => handleMouseEnter('facilities')}
             onMouseLeave={handleMouseLeave}
           >
-            <span>
+            <span onClick={() => handleDropdownClick('facilities')}>
               <Building size={18} /> Facilities <ChevronDown size={14} />
             </span>
             {openDropdown === 'facilities' && (
               <ul className="dropdown-menu">
                 {facilitiesSubItems.map((item) => (
-                  <li key={item.path}><Link to={item.path}>{item.label}</Link></li>
+                  <li key={item.path}>
+                    <Link to={item.path} onClick={handleLinkClick}>
+                      {item.label}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             )}
           </li>
 
-          <li><Link to="/news"><Newspaper size={18} /> News</Link></li>
-          <li><Link to="/contact"><Phone size={18} /> Contact</Link></li>
+          <li>
+            <Link to="/news" onClick={handleLinkClick}>
+              <Newspaper size={18} /> News
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={handleLinkClick}>
+              <Phone size={18} /> Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
   );
 }
-
