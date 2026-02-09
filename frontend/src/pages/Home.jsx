@@ -549,44 +549,7 @@ const facilities = [
               </a>
             </div>
 
-            {/* Announcements */}
-            <div className="announcements-section">
-              <div className="section-header-inline">
-                <Bell className="section-icon" />
-                <h2>Announcements</h2>
-                <div className="notification-badge">New</div>
-              </div>
-              <div className="announcements-list">
-                {posts.announcements.length > 0 ? (
-                  posts.announcements.map((ann, index) => (
-                    <div key={ann.id} className="announcement-item">
-                      <div className="announcement-badge">!</div>
-                      <div className="announcement-content">
-                        <h3>{ann.title}</h3>
-                        <span className="announcement-time">2 hours ago</span>
-                      </div>
-                    </div>
-                  ))
-                ) : (
-                  <>
-                    <div className="announcement-item">
-                      <div className="announcement-badge">!</div>
-                      <div className="announcement-content">
-                        <h3>Library Opening Hours Extended</h3>
-                        <span className="announcement-time">Today</span>
-                      </div>
-                    </div>
-                    <div className="announcement-item">
-                      <div className="announcement-badge">!</div>
-                      <div className="announcement-content">
-                        <h3>New Security Protocols</h3>
-                        <span className="announcement-time">Yesterday</span>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-            </div>
+  
           </div>
         </div>
       </section>

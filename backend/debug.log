@@ -2951,7 +2951,304 @@ WARNING 2026-02-06 10:31:01,869 log 14762 130873955448512 Not Found: /api/drivin
 WARNING 2026-02-06 10:31:44,234 log 14762 130873955448512 Not Found: /api/contact/
 WARNING 2026-02-06 10:31:44,240 log 14762 130873955448512 Not Found: /api/contact/
 INFO 2026-02-06 10:54:39,758 autoreload 14762 130874270445696 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
-INFO 2026-02-09 11:08:44,805 autoreload 23208 184 Watching for file changes with StatReloader
-INFO 2026-02-09 11:14:39,711 autoreload 21984 13744 Watching for file changes with StatReloader
-INFO 2026-02-09 11:43:09,275 autoreload 6912 18436 Watching for file changes with StatReloader
-INFO 2026-02-09 11:51:34,808 autoreload 23188 14476 Watching for file changes with StatReloader
+INFO 2026-02-06 13:25:17,813 autoreload 27972 137785839136896 Watching for file changes with StatReloader
+INFO 2026-02-06 13:25:34,980 autoreload 28041 131828021067904 Watching for file changes with StatReloader
+INFO 2026-02-06 13:38:39,316 autoreload 28829 124956302971008 Watching for file changes with StatReloader
+INFO 2026-02-06 14:36:45,071 autoreload 31106 124853122015360 Watching for file changes with StatReloader
+INFO 2026-02-09 06:51:09,017 autoreload 8500 140166915448960 Watching for file changes with StatReloader
+INFO 2026-02-09 06:53:21,664 autoreload 8500 140166915448960 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-02-09 06:54:56,139 autoreload 9576 123538729836672 Watching for file changes with StatReloader
+INFO 2026-02-09 09:08:29,315 autoreload 6916 138836229410944 Watching for file changes with StatReloader
+INFO 2026-02-09 10:06:55,335 autoreload 6916 138836229410944 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-02-09 10:07:10,870 autoreload 11778 136537422979200 Watching for file changes with StatReloader
+INFO 2026-02-09 10:08:02,469 autoreload 11778 136537422979200 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-02-09 10:08:02,821 autoreload 12076 127946269819008 Watching for file changes with StatReloader
+ERROR 2026-02-09 10:08:07,143 log 12076 127946190743232 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 246, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'police_colleges.django_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/auditlog/middleware.py", line 69, in __call__
+    with set_extra_data(context_data=self.get_extra_data(request)):
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/auditlog/middleware.py", line 62, in get_extra_data
+    context_data["actor"] = self._get_actor(request)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/auditlog/middleware.py", line 53, in _get_actor
+    if isinstance(user, get_user_model()) and user.is_authenticated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/utils/functional.py", line 280, in __getattribute__
+    value = super().__getattribute__(name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 40, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 20, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 311, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 95, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 251, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'police_colleges.django_session' doesn't exist")
+ERROR 2026-02-09 10:08:07,328 log 12076 127946190743232 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 246, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'police_colleges.django_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/auditlog/middleware.py", line 69, in __call__
+    with set_extra_data(context_data=self.get_extra_data(request)):
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/auditlog/middleware.py", line 62, in get_extra_data
+    context_data["actor"] = self._get_actor(request)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/auditlog/middleware.py", line 53, in _get_actor
+    if isinstance(user, get_user_model()) and user.is_authenticated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/utils/functional.py", line 280, in __getattribute__
+    value = super().__getattribute__(name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 40, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/middleware.py", line 20, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 311, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 95, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 251, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'police_colleges.django_session' doesn't exist")
+INFO 2026-02-09 10:08:43,898 0002_migrate_from_old_table 12354 140195184017536 Old table does not exist, skipping
+INFO 2026-02-09 10:08:50,134 autoreload 12621 124722386653312 Watching for file changes with StatReloader
+WARNING 2026-02-09 10:08:59,270 log 12621 124722307131072 Not Found: /favicon.ico
+INFO 2026-02-09 10:23:36,412 autoreload 14635 132814964400256 Watching for file changes with StatReloader
+INFO 2026-02-09 10:40:43,043 autoreload 6234 133703905550464 Watching for file changes with StatReloader
+INFO 2026-02-09 11:11:23,027 autoreload 6082 130413915476096 Watching for file changes with StatReloader
+WARNING 2026-02-09 11:11:42,893 log 6082 130413836101312 Not Found: /favicon.ico
+WARNING 2026-02-09 11:25:13,907 log 6082 130413460715200 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:25:13,917 log 6082 130413460715200 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:26:22,154 log 6082 130413460715200 Not Found: /api/pages/organization/
+WARNING 2026-02-09 11:26:22,160 log 6082 130413808826048 Not Found: /api/pages/organization/
+WARNING 2026-02-09 11:44:48,198 log 6082 130413825611456 Not Found: /api/pages/organization/
+WARNING 2026-02-09 11:44:48,206 log 6082 130413825611456 Not Found: /api/pages/organization/
+WARNING 2026-02-09 11:44:49,215 log 6082 130413825611456 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:44:49,221 log 6082 130413825611456 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:44:57,230 log 6082 130413460715200 Not Found: /api/driving-images
+WARNING 2026-02-09 11:44:57,233 log 6082 130413825611456 Not Found: /api/driving-features
+WARNING 2026-02-09 11:44:57,241 log 6082 130413825611456 Not Found: /api/driving-images
+WARNING 2026-02-09 11:44:57,249 log 6082 130413460715200 Not Found: /api/driving-features
+WARNING 2026-02-09 11:45:02,360 log 6082 130413825611456 Not Found: /api/driving-images
+WARNING 2026-02-09 11:45:02,366 log 6082 130413460715200 Not Found: /api/driving-features
+WARNING 2026-02-09 11:45:02,388 log 6082 130413460715200 Not Found: /api/driving-images
+WARNING 2026-02-09 11:45:02,390 log 6082 130413825611456 Not Found: /api/driving-features
+WARNING 2026-02-09 11:45:26,811 log 6082 130413836101312 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:45:26,820 log 6082 130413836101312 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:45:27,402 log 6082 130413836101312 Not Found: /api/pages/organization/
+WARNING 2026-02-09 11:45:27,409 log 6082 130413836101312 Not Found: /api/pages/organization/
+WARNING 2026-02-09 11:45:28,170 log 6082 130413836101312 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-09 11:45:28,210 log 6082 130413836101312 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-09 11:52:28,238 log 6082 130413825611456 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:52:28,247 log 6082 130413825611456 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:53:08,138 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:08,145 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:25,275 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:25,281 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:29,973 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:29,994 log 6082 130413817218752 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:48,634 log 6082 130413817218752 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:48,640 log 6082 130413817218752 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:52,813 log 6082 130413817218752 Not Found: /api/contact/
+WARNING 2026-02-09 11:53:52,823 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 11:56:22,848 log 6082 130413460715200 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:56:22,856 log 6082 130413460715200 Not Found: /api/pages/history/
+WARNING 2026-02-09 11:56:36,274 log 6082 130413460715200 Not Found: /api/contact/
+WARNING 2026-02-09 11:56:36,280 log 6082 130413460715200 Not Found: /api/contact/
+WARNING 2026-02-09 12:01:58,913 log 6082 130413460715200 Not Found: /api/pages/history/
+WARNING 2026-02-09 12:01:58,922 log 6082 130413437646528 Not Found: /api/pages/history/
+WARNING 2026-02-09 12:02:09,353 log 6082 130413437646528 Not Found: /api/contact/
+WARNING 2026-02-09 12:02:09,359 log 6082 130413437646528 Not Found: /api/contact/
+WARNING 2026-02-09 12:06:24,324 log 6082 130413437646528 Not Found: /api/pages/organization/
+WARNING 2026-02-09 12:06:24,329 log 6082 130413437646528 Not Found: /api/pages/organization/
+WARNING 2026-02-09 12:06:30,250 log 6082 130413437646528 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-09 12:06:30,287 log 6082 130413437646528 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-09 12:06:36,344 log 6082 130413437646528 Not Found: /api/pages/history/
+WARNING 2026-02-09 12:06:36,350 log 6082 130413437646528 Not Found: /api/pages/history/
+WARNING 2026-02-09 12:06:44,025 log 6082 130413437646528 Not Found: /api/pages/organization/
+WARNING 2026-02-09 12:06:44,030 log 6082 130413437646528 Not Found: /api/pages/organization/
+WARNING 2026-02-09 12:08:04,241 log 6082 130413437646528 Not Found: /api/pages/organization/
+WARNING 2026-02-09 12:08:04,254 log 6082 130413460715200 Not Found: /api/pages/organization/

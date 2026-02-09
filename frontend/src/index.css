@@ -6437,3 +6437,246 @@ justify-content: center;
     display: flex;
   }
 }
+/* =============== MOBILE NAVIGATION FIX =============== */
+@media (max-width: 768px) {
+  /* Position navbar properly */
+  .college-navbar {
+    position: relative;
+  }
+
+  /* Mobile header styling */
+  .mobile-header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background: #1c236d;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .mobile-hamburger {
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+  }
+
+  .hamburger-icon {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .mobile-logo {
+    height: 45px;
+    width: auto;
+    margin-left: auto;
+  }
+
+  /* Hide desktop elements */
+  .top-bar,
+  .main-header {
+    display: none !important;
+  }
+
+  /* Mobile menu */
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #1c236d;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .main-nav a,
+  .dropdown > span {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Dropdown menu in mobile */
+  .dropdown-menu {
+    position: static !important;
+    display: block;
+    background: rgba(0,0,0,0.2);
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 3rem !important;
+  }
+}
+/* =============== MOBILE HEADER - LOGO ON RIGHT =============== */
+.mobile-header {
+  display: none;
+  background: #1c236d;
+  position: relative;
+  z-index: 1000;
+  padding: 0.8rem 1rem;
+}
+
+.mobile-hamburger {
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-icon {
+  font-size: 2rem;
+  display: block;
+}
+
+.mobile-logo {
+  height: 45px;
+  width: auto;
+  display: block;
+  margin-left: auto; /* This pushes it to the right */
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  /* Show mobile header */
+  .mobile-header {
+    display: block !important;
+  }
+
+  /* Hide desktop elements */
+  .top-bar,
+  .main-header {
+    display: none !important;
+  }
+
+  /* Position navbar properly */
+  .college-navbar {
+    position: relative;
+  }
+
+  /* Mobile menu */
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #1c236d;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .main-nav a,
+  .dropdown > span {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Dropdown menu in mobile */
+  .dropdown-menu {
+    position: static !important;
+    display: block;
+    background: rgba(0,0,0,0.2);
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 3rem !important;
+  }
+}
+/* =============== ALTERNATIVE - MOBILE HEADER FLEXBOX =============== */
+@media (max-width: 768px) {
+  .mobile-header {
+    display: flex !important;
+    justify-content: space-between; /* Space between hamburger and logo */
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background: #1c236d;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .mobile-hamburger {
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    order: 1; /* First item (left) */
+  }
+
+  .hamburger-icon {
+    font-size: 2rem;
+  }
+
+  .mobile-logo {
+    height: 45px;
+    width: auto;
+    order: 2; /* Second item (right) */
+  }
+
+  /* Hide desktop elements */
+  .top-bar,
+  .main-header {
+    display: none !important;
+  }
+}

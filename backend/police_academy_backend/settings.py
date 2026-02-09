@@ -117,16 +117,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'police_colleges',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'duncun',
+        'PASSWORD': 'Mazeed@Munyama1234',
         'HOST': '127.0.0.1',
-        'PORT': '3306',        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        'PORT': '3306',
         },
-        'DISABLE_SERVER_SIDE_CURSORS': True,
+               
+            
+        
         
     }
-}
+
 # ===========================
 # Password validation
 # ===========================
