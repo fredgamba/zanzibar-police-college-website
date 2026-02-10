@@ -1,6 +1,7 @@
 // ===== GLOBAL CSS IMPORTS (REQUIRED FOR REACT-SLICK) =====
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 // ===== REACT / ROUTER =====
 import {
@@ -21,6 +22,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
 import ApplyOnline from "./pages/ApplyOnline";
+import programs from "./pages/Admission/Course";
 
 // ===== ABOUT =====
 import History from "./pages/About/History";
@@ -92,6 +94,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+         <ScrollToTop />
         <Routes>
 
           {/* ===== ADMIN LOGIN ===== */}
@@ -258,6 +261,17 @@ function App() {
               <ClassesAccomodations />
             </PublicLayout>
           } />
+
+     <Route
+  path="/programs/:slug"
+  element={
+    <PublicLayout>
+      <Course />
+    </PublicLayout>
+  }
+/>
+
+
 
           <Route path="/facilities/sport-gym" element={<PublicLayout><SportGym/></PublicLayout>} />
           <Route path="/facilities/recreation" element={<PublicLayout><Recreation/></PublicLayout>} />

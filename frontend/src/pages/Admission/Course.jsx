@@ -1,12 +1,18 @@
 
 import './Course.css';
 import modernDormitoriesImage from '../../assets/modern-dormitories.png';
+import { useParams } from "react-router-dom";
 
 export default function Course() {
+  const { slug } = useParams();
   return (
     <div className="course-page">
       <div className="course-container">
-        <h1 className="course-title">Course Offered at DPA</h1>
+        <h1 className="course-title">Course Offered at DPA
+           {slug === "academic" && "Academic Programmes"}
+        {slug === "promotional" && "Promotional Programmes"}
+        {slug === "proficiency" && "Proficiency Programmes"}
+        </h1>
         
         <div className="course-content-wrapper">
           {/* Left Column - Image */}

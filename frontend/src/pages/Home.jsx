@@ -2,7 +2,7 @@
 // src/pages/Home.jsx
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { 
   Send, 
   ArrowRight, 
@@ -107,6 +107,7 @@ export default function Home() {
 const programs = [
   {
     title: "Academic Courses",
+     slug: "academic-courses",
     description:
       "Advanced educational programs offering undergraduate degrees and specialized certifications.",
     images: [
@@ -118,6 +119,7 @@ const programs = [
   },
   {
     title: "Promotional Courses",
+     slug: "promotional-courses",
     description:
       "Leadership and skill enhancement training designed to prepare officers for higher ranks.",
     images: [
@@ -129,6 +131,7 @@ const programs = [
   },
   {
     title: "Proficiency Courses",
+     slug: "proficiency-courses",
     description:
       "Specialized training programs focusing on technical skills and tactical operations.",
     images: [
@@ -383,9 +386,11 @@ const facilities = [
       <div className="program-content">
         <h3 style={{ color: program.color }}>{program.title}</h3>
         <p>{program.description}</p>
-        <a href="/programs" className="program-link">
-          View Details →
-        </a>
+        <Link to={`/programs/${program.slug}`}
+      className="program-link">
+  View Details →
+       </Link>
+
       </div>
 
     </div>
