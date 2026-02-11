@@ -19,7 +19,8 @@ router.register(r'contact', ContactInfoViewSet, basename='contactinfo')
 
 urlpatterns = [
     # 🔥 ACADEMY API ROOT (Optional - shows academy-specific endpoints)
-    path('', api_root, name='academy-api-root'),
+    path('', include(router.urls)),
+
     
     # 🔥 INCLUDE ROUTER URLS (This includes all ViewSet URLs)
     path('api/', include(router.urls)),

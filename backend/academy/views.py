@@ -666,15 +666,15 @@ class PublicHomeFeedView(generics.RetrieveAPIView):
         ).data
 
         announcements = PostSerializer(
-            Post.objects.filter(post_type='announcement')
-            .order_by('-created_at')[:3],
-            many=True
+              Post.objects.filter(post_type='announcement', is_published=True)
+    .order_by('-created_at')[:3],
+    many=True
         ).data
         
         events = PostSerializer(
-            Post.objects.filter(post_type='event')
-            .order_by('-created_at')[:3],
-            many=True
+             Post.objects.filter(post_type='event', is_published=True)
+    .order_by('-created_at')[:3],
+    many=True
         ).data
 
         return Response({

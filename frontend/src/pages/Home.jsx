@@ -39,6 +39,7 @@ export default function Home() {
   const [posts, setPosts] = useState({ news: [], announcements: [], events: [] });
   const [loading, setLoading] = useState(true);
   const [hoveredCard, setHoveredCard] = useState(null);
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
   useEffect(() => {
   const fetchData = async () => {
@@ -183,7 +184,7 @@ const facilities = [
      images: [
       "/images/promotional.jpg",
       "/images/academic.jpg",
-      "/images/campus1",
+      "/images/campus1.jpg",
     ],
     description: "Extensive collection of law enforcement literature and digital resources.",
     progress: 95
@@ -291,20 +292,29 @@ const facilities = [
       )} */}
 
       {/* Hero Carousel */}
-      <div className="hero-carousel">
-        <Slider {...settings}>
-          {slides.map((slide, index) => (
-            <div key={index} className="hero-slide">
-              <img src={slide.image} alt={`Slide ${index + 1}`} />
-              <div className="slide-overlay">
-                <div className="slide-content">
-                  <h2>{slide.title}</h2>
-                  <p>{slide.subtitle}</p>
-                </div>
-              </div>
+     <div className="hero-carousel">
+  <Slider {...settings}>
+    {slides.map((slide, index) => (
+      <div key={index} className="hero-slide">
+        <img src={slide.image} alt={slide.title} />
+
+        <div className="slide-overlay">
+          <div className="slide-content">
+            <span className="slide-tag">Tanzania Police Academy</span>
+            <h2>{slide.title}</h2>
+            <p>{slide.subtitle}</p>
+
+            <div className="slide-buttons">
+              <button className="btn-primary">Apply Now</button>
+              <button className="btn-outline">Learn More</button>
             </div>
-          ))}
-        </Slider>
+          </div>
+        </div>
+      </div>
+    ))}
+  </Slider>
+</div>
+
 
         <div className="apply-overlay">
           <a
@@ -316,30 +326,54 @@ const facilities = [
             <Send className="btn-icon" /> Apply Online
           </a>
         </div>
-      </div>
+      
 
-      {/* Commandant Message Section */}
-      <section className="commandant-section">
-        
+
+  {/* Commandant Message Section */}
+  
+  <section className="hero-commandant">
+  <video
+    className="hero-video"
+    src="/videos/campus-hero.mp4" 
+    autoPlay
+    muted
+    loop
+    playsInline >
+
+  </video>
+
+  {/* Overlay & Floating Shapes */}
+  <div className="hero-overlay"></div>
+  <div className="floating-shape shape-1"></div>
+  <div className="floating-shape shape-2"></div>
+
+  {/* Hero Card with 3D tilt */}
   <div className="container">
-    <div className="commandant-card">
-
-      {/* IMAGE */}
-      <div className="commandant-image">
+    <div
+      className="hero-card"
+      data-tilt
+      data-tilt-max="15"
+      data-tilt-speed="400"
+    >
+      {/* Commandant Image */}
+      <div className="hero-image" data-aos="fade-right">
         <img
           src="/images/mambosasa.jpg"
           alt="Dr. Lazaro B. Mambosasa-DCP - Commandant"
         />
         <div className="commandant-badge">
-          <Award size={22} />
+          <Award size={24} />
         </div>
       </div>
 
-      {/* MESSAGE */}
-      <div className="commandant-message">
+      {/* Commandant Message */}
+      <div className="hero-message" data-aos="fade-left">
         <span className="section-tag">Leadership Message</span>
-
-        <h2>Message from the Commandant</h2>
+        <h1>
+          <span className="typing-text">
+            Shaping Officers of Integrity & Excellence
+          </span>
+        </h1>
 
         <blockquote>
           “At Dar es Salaam Police Academy, we shape officers of integrity and
@@ -353,10 +387,10 @@ const facilities = [
           <p>Deputy Commissioner of Police · Commandant</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
+
 
 
       {/* Programs Section */}
@@ -427,7 +461,8 @@ const facilities = [
     >
       {news.image && (
         <div className="news-card-image">
-          <img src={'http://localhost:8000' + news.image} alt={news.title} />
+<img src={`${BASE_URL}${news.image}`} alt={news.title} />
+
         </div>
       )}
 
@@ -517,7 +552,10 @@ const facilities = [
                         </span>
                       </div>
                       <div className="event-content">
-                        <h3>{event.title}</h3>
+                        <Link to={`/events/${event.id}`}>
+  <h3>{event.title}</h3>
+</Link>
+
                         <p>{event.content || "Join us for this important academy event."}</p>
                         <div className="event-meta">
                           <span>📍 Main Campus</span>
@@ -570,15 +608,12 @@ const facilities = [
           </div>
         </div>
       </section>
-
-        
-
+      
 {/* Facilities Section */}
 <FacilitiesShowcase facilities={facilities} />
 
-    </div>
+    </div> 
   );
-
 }
 
 

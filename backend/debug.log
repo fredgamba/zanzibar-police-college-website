@@ -3434,3 +3434,280 @@ WARNING 2026-02-11 11:23:30,217 log 21712 14340 Not Found: /api/users/
 WARNING 2026-02-11 11:23:30,309 log 21712 4804 Not Found: /api/posts/
 WARNING 2026-02-11 11:23:30,356 log 21712 18384 Not Found: /api/pages/
 WARNING 2026-02-11 11:24:50,134 log 21712 18384 Not Found: /api/posts/
+INFO 2026-02-11 13:18:49,448 autoreload 22932 19340 Watching for file changes with StatReloader
+INFO 2026-02-11 18:47:03,613 autoreload 11416 16668 Watching for file changes with StatReloader
+INFO 2026-02-11 21:43:32,756 autoreload 11416 16668 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 21:43:58,914 autoreload 12440 7008 Watching for file changes with StatReloader
+INFO 2026-02-11 21:44:13,071 autoreload 12440 7008 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 21:44:24,506 autoreload 13092 17208 Watching for file changes with StatReloader
+INFO 2026-02-11 21:44:59,770 autoreload 13092 17208 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 21:45:07,114 autoreload 16644 3852 Watching for file changes with StatReloader
+INFO 2026-02-11 21:45:28,566 autoreload 16644 3852 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 21:45:36,711 autoreload 13716 21296 Watching for file changes with StatReloader
+INFO 2026-02-11 21:45:56,776 autoreload 13716 21296 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 21:46:06,322 autoreload 14380 2664 Watching for file changes with StatReloader
+INFO 2026-02-11 21:46:18,790 autoreload 14380 2664 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 21:46:25,876 autoreload 13676 14060 Watching for file changes with StatReloader
+WARNING 2026-02-11 21:49:56,140 log 13676 6316 Not Found: /public/home-feed/
+WARNING 2026-02-11 21:56:47,454 log 13676 3692 Not Found: /api/pages/
+WARNING 2026-02-11 21:56:47,509 log 13676 316 Not Found: /api/pages/
+WARNING 2026-02-11 21:56:52,486 log 13676 316 Not Found: /api/posts/
+WARNING 2026-02-11 21:56:52,498 log 13676 3692 Not Found: /api/users/
+WARNING 2026-02-11 21:56:52,517 log 13676 1564 Not Found: /api/pages/
+WARNING 2026-02-11 21:56:52,592 log 13676 13924 Not Found: /api/posts/
+WARNING 2026-02-11 21:56:52,601 log 13676 316 Not Found: /api/users/
+WARNING 2026-02-11 21:56:52,649 log 13676 3692 Not Found: /api/pages/
+WARNING 2026-02-11 21:58:38,039 log 13676 3692 Not Found: /api/posts/
+WARNING 2026-02-11 21:58:47,116 log 13676 3692 Not Found: /api/posts/
+WARNING 2026-02-11 21:58:52,498 log 13676 3692 Not Found: /api/posts/
+WARNING 2026-02-11 21:59:10,185 log 13676 3692 Not Found: /api/posts/
+WARNING 2026-02-11 21:59:26,086 log 13676 3692 Not Found: /api/posts/
+ERROR 2026-02-11 22:08:03,581 log 13676 11796 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\library.py", line 271, in render
+    new_context = context.new(_dict)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 265, in new
+    new_context = super().new(values)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 110, in new
+    new_context = copy(self)
+  File "C:\Users\ICT POOL\AppData\Local\Programs\Python\Python314\Lib\copy.py", line 82, in copy
+    return copier(x)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 158, in __copy__
+    duplicate = super().__copy__()
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 39, in __copy__
+    duplicate.dicts = self.dicts[:]
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute 'dicts' and no __dict__ for setting new attributes
+ERROR 2026-02-11 22:12:29,452 log 13676 15652 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\library.py", line 271, in render
+    new_context = context.new(_dict)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 265, in new
+    new_context = super().new(values)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 110, in new
+    new_context = copy(self)
+  File "C:\Users\ICT POOL\AppData\Local\Programs\Python\Python314\Lib\copy.py", line 82, in copy
+    return copier(x)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 158, in __copy__
+    duplicate = super().__copy__()
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\template\context.py", line 39, in __copy__
+    duplicate.dicts = self.dicts[:]
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute 'dicts' and no __dict__ for setting new attributes
+INFO 2026-02-11 22:41:49,243 autoreload 12428 6368 Watching for file changes with StatReloader
+WARNING 2026-02-11 22:48:16,472 log 12428 10032 Not Found: /api/users/
+WARNING 2026-02-11 22:48:16,464 log 12428 17892 Not Found: /api/pages/
+WARNING 2026-02-11 22:48:16,480 log 12428 3592 Not Found: /api/posts/
+WARNING 2026-02-11 22:48:16,629 log 12428 3592 Not Found: /api/posts/
+WARNING 2026-02-11 22:48:16,671 log 12428 10032 Not Found: /api/users/
+WARNING 2026-02-11 22:48:16,716 log 12428 1524 Not Found: /api/pages/
+WARNING 2026-02-11 22:48:20,708 log 12428 3592 Not Found: /api/users/
+WARNING 2026-02-11 22:48:20,722 log 12428 10032 Not Found: /api/pages/
+WARNING 2026-02-11 22:48:20,736 log 12428 1524 Not Found: /api/posts/
+WARNING 2026-02-11 22:48:20,802 log 12428 17892 Not Found: /api/users/
+WARNING 2026-02-11 22:48:20,888 log 12428 10032 Not Found: /api/posts/
+WARNING 2026-02-11 22:48:20,957 log 12428 3592 Not Found: /api/pages/
+WARNING 2026-02-11 22:49:50,552 log 12428 3592 Not Found: /api/posts/
+WARNING 2026-02-11 22:59:17,871 log 12428 20400 Not Found: /api/posts/
+INFO 2026-02-11 23:07:51,123 autoreload 12428 6368 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\urls.py changed, reloading.
+INFO 2026-02-11 23:08:16,066 autoreload 11380 22008 Watching for file changes with StatReloader
