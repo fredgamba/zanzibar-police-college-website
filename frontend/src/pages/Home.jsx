@@ -305,7 +305,7 @@ const facilities = [
 
         <div className="apply-overlay">
           <a
-            href="https://tvetims.nacte.go.tz/"
+            href="https://dpa.tpf.go.tz/"
             target="_blank"
             rel="noopener noreferrer"
             className="apply-hero-btn animated-padding"

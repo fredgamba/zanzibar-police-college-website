@@ -3252,3 +3252,43 @@ WARNING 2026-02-09 12:06:44,025 log 6082 130413437646528 Not Found: /api/pages/o
 WARNING 2026-02-09 12:06:44,030 log 6082 130413437646528 Not Found: /api/pages/organization/
 WARNING 2026-02-09 12:08:04,241 log 6082 130413437646528 Not Found: /api/pages/organization/
 WARNING 2026-02-09 12:08:04,254 log 6082 130413460715200 Not Found: /api/pages/organization/
+WARNING 2026-02-09 12:18:57,843 log 6082 130413437646528 Not Found: /api/pages/history/
+WARNING 2026-02-09 12:18:57,853 log 6082 130413437646528 Not Found: /api/pages/history/
+WARNING 2026-02-09 12:58:09,300 log 6082 130413460715200 Not Found: /api/pages/organization/
+WARNING 2026-02-09 12:58:09,310 log 6082 130413836101312 Not Found: /api/pages/organization/
+WARNING 2026-02-09 13:14:48,246 log 6082 130413460715200 Not Found: /api/pages/history/
+WARNING 2026-02-09 13:14:48,254 log 6082 130413836101312 Not Found: /api/pages/history/
+WARNING 2026-02-09 14:32:39,351 log 6082 130413825611456 Not Found: /api/pages/organization/
+WARNING 2026-02-09 14:32:39,358 log 6082 130413825611456 Not Found: /api/pages/organization/
+WARNING 2026-02-09 14:33:37,833 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 14:33:37,840 log 6082 130413825611456 Not Found: /api/contact/
+WARNING 2026-02-09 14:43:59,901 log 6082 130413817218752 Not Found: /api/pages/organization/
+WARNING 2026-02-09 14:43:59,912 log 6082 130413817218752 Not Found: /api/pages/organization/
+WARNING 2026-02-09 14:44:14,084 log 6082 130413817218752 Not Found: /api/pages/history/
+WARNING 2026-02-09 14:44:14,090 log 6082 130413817218752 Not Found: /api/pages/history/
+WARNING 2026-02-09 14:48:14,230 log 6082 130413836101312 Not Found: /api/pages/history/
+WARNING 2026-02-09 14:48:14,238 log 6082 130413825611456 Not Found: /api/pages/history/
+WARNING 2026-02-09 14:48:22,266 log 6082 130413825611456 Not Found: /api/pages/organization/
+WARNING 2026-02-09 14:48:22,270 log 6082 130413825611456 Not Found: /api/pages/organization/
+WARNING 2026-02-09 14:48:26,924 log 6082 130413825611456 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-09 14:48:26,966 log 6082 130413825611456 Not Found: /api/public/pages/by-page/
+INFO 2026-02-10 06:51:48,418 autoreload 6321 140421766406272 Watching for file changes with StatReloader
+WARNING 2026-02-10 06:51:56,741 log 6321 140421687666368 Not Found: /favicon.ico
+INFO 2026-02-10 08:03:09,408 autoreload 5886 138390336766080 Watching for file changes with StatReloader
+WARNING 2026-02-10 08:03:20,966 log 5886 138390257264320 Not Found: /favicon.ico
+INFO 2026-02-10 08:38:09,622 autoreload 6593 124145948782720 Watching for file changes with StatReloader
+INFO 2026-02-10 10:17:04,566 autoreload 6478 129272368689280 Watching for file changes with StatReloader
+WARNING 2026-02-10 13:06:36,469 log 6478 129272207374016 Unauthorized: /api/auth/token/
+WARNING 2026-02-10 13:06:51,042 log 6478 129272207374016 Unauthorized: /api/auth/token/
+WARNING 2026-02-10 13:07:03,845 log 6478 129272207374016 Unauthorized: /api/auth/token/
+WARNING 2026-02-10 13:07:08,035 log 6478 129272207374016 Unauthorized: /api/auth/token/
+WARNING 2026-02-10 13:10:56,104 log 6478 129272198981312 Not Found: /api/pages/
+WARNING 2026-02-10 13:10:56,110 log 6478 129271737611968 Not Found: /api/users/
+WARNING 2026-02-10 13:10:56,114 log 6478 129272154941120 Not Found: /api/posts/
+WARNING 2026-02-10 13:10:56,153 log 6478 129272207374016 Not Found: /api/pages/
+WARNING 2026-02-10 13:10:56,160 log 6478 129272198981312 Not Found: /api/users/
+WARNING 2026-02-10 13:10:56,165 log 6478 129271737611968 Not Found: /api/posts/
+WARNING 2026-02-10 13:15:37,801 log 6478 129272198981312 Not Found: /api/posts/
+WARNING 2026-02-10 13:17:17,461 log 6478 129272198981312 Not Found: /api/posts/
+INFO 2026-02-11 10:15:29,307 autoreload 11349 136866860003456 Watching for file changes with StatReloader
+WARNING 2026-02-11 10:15:44,332 log 11349 136866713040576 Not Found: /favicon.ico
