@@ -3477,3 +3477,4 @@ WARNING 2026-02-11 11:23:30,309 log 21712 4804 Not Found: /api/posts/
 WARNING 2026-02-11 11:23:30,356 log 21712 18384 Not Found: /api/pages/
 WARNING 2026-02-11 11:24:50,134 log 21712 18384 Not Found: /api/posts/
 >>>>>>> 077a6e8e4264a85dd33fb54101f84aba62ae0124
+INFO 2026-02-12 09:08:45,620 autoreload 12752 8540 Watching for file changes with StatReloader

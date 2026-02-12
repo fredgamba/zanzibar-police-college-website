@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 import { 
   Send, 
   ArrowRight, 
@@ -39,7 +40,9 @@ export default function Home() {
   const [posts, setPosts] = useState({ news: [], announcements: [], events: [] });
   const [loading, setLoading] = useState(true);
   const [hoveredCard, setHoveredCard] = useState(null);
+  const [selectedEvent, setSelectedEvent] = useState(null);
   const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+  
 
   useEffect(() => {
   const fetchData = async () => {
@@ -63,6 +66,28 @@ export default function Home() {
   };
   fetchData();
 }, []);
+
+//prevent background scroll
+useEffect(() => {
+  if (selectedEvent) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}, [selectedEvent]);
+
+//close the modal with ESC key
+useEffect(() => {
+  const handleEsc = (e) => {
+    if (e.key === "Escape") {
+      setSelectedEvent(null);
+    }
+  };
+
+  window.addEventListener("keydown", handleEsc);
+  return () => window.removeEventListener("keydown", handleEsc);
+}, []);
+
 
   // Sample data for sections
  /*
@@ -439,6 +464,7 @@ const facilities = [
      {/* News & Events Section */}
 <section className="news-events-section">
   <div className="container">
+    
     <div className="news-events-grid">
       {/* News Section */}
       <div className="news-section">
@@ -529,86 +555,147 @@ const facilities = [
 
             {/* Events Section */}
             <div className="events-section">
-              <div className="section-header-inline">
-                <Calendar className="section-icon" />
-                <h2>Upcoming Events</h2>
-              </div>
-              <div className="events-list">
-                {posts.events.length > 0 ? (
-                  posts.events.map((event, index) => (
-                    <div 
-                      key={event.id} 
-                      className={`event-item ${hoveredCard === `event-${index}` ? 'card-hovered' : ''}`}
-                      onMouseEnter={() => setHoveredCard(`event-${index}`)}
-                      onMouseLeave={() => setHoveredCard(null)}
-                    >
-                      <div className="event-date-badge">
-                        <Calendar size={16} />
-                        <span>
-                          {new Date(event.created_at).toLocaleDateString('en-US', {
-                            day: 'numeric',
-                            month: 'short'
-                          })}
-                        </span>
-                      </div>
-                      <div className="event-content">
-                        <Link to={`/events/${event.id}`}>
-  <h3>{event.title}</h3>
-</Link>
+  <div className="section-header-inline">
+    <Calendar className="section-icon" />
+    <h2>Upcoming Events</h2>
+  </div>
+  <div className="events-list">
+    {posts.events.length > 0 ? (
+      posts.events.map((event, index) => (
+        <div 
+          key={event.id} 
+          className={`event-item ${hoveredCard === `event-${index}` ? 'card-hovered' : ''}`}
+          onMouseEnter={() => setHoveredCard(`event-${index}`)}
+          onMouseLeave={() => setHoveredCard(null)}
+        >
+          {/* Event Image */}
+          {event.image && (
+            <div className="event-image">
+              <img src={`${BASE_URL}${event.image}`} alt={event.title} />
+            </div>
+          )}
 
-                        <p>{event.content || "Join us for this important academy event."}</p>
-                        <div className="event-meta">
-                          <span>📍 Main Campus</span>
-                          <span>🕒 09:00 AM</span>
-                        </div>
-                      </div>
-                    </div>
-                  ))
-                ) : (
-                  <>
-                    <div className="event-item">
-                      <div className="event-date-badge">
-                        <Calendar size={16} />
-                        <span>Nov 25</span>
-                      </div>
-                      <div className="event-content">
-                        <Link to="/events" className="read-more-link">
-  Read More →
-</Link>
+          <div className="event-date-badge">
+            <Calendar size={16} />
+            <span>
+              {new Date(event.created_at).toLocaleDateString('en-US', {
+                day: 'numeric',
+                month: 'short'
+              })}
+            </span>
+          </div>
+          
 
-                        <h3>Graduation Day Ceremony</h3>
-                        <p>Annual graduation ceremony celebrating our cadets' achievements.</p>
-                        <div className="event-meta">
-                          <span>📍 Main Auditorium</span>
-                          <span>🕒 10:00 AM</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="event-item">
-                      <div className="event-date-badge">
-                        <Calendar size={16} />
-                        <span>Dec 12</span>
-                      </div>
-                      <div className="event-content">
-                        <h3>Leadership Workshop</h3>
-                        <p>Special training session for senior officers and department heads.</p>
-                        <div className="event-meta">
-                          <span>📍 Conference Hall</span>
-                          <span>🕒 08:30 AM</span>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-              <a href="/events" className="view-all-link">
-                See All Events <ExternalLink size={16} />
-              </a>
+          <div className="event-content">
+            <Link to={`/events/${event.id}`}>
+              <h3>{event.title}</h3>
+            </Link>
+            <p className="event-description">
+              {event.content
+                ? event.content.slice(0, 120) + "..."
+                : "Join us for this important academy event."}
+            </p>
+
+            <button
+              className="view-more-btn"
+              onClick={() => setSelectedEvent(event)}
+            >
+              View More →
+            </button>
+
+            <div className="event-meta">
+              <span>📍 Main Campus</span>
+              <span>🕒 09:00 AM</span>
             </div>
           </div>
         </div>
+      ))
+    ) : (
+      <>
+        {/* Default static events */}
+        <div className="event-item">
+          <div className="event-date-badge">
+            <Calendar size={16} />
+            <span>Nov 25</span>
+          </div>
+          <div className="event-content">
+            <Link to="/events" className="read-more-link">Read More →</Link>
+            <h3>Graduation Day Ceremony</h3>
+            <p>Annual graduation ceremony celebrating our cadets' achievements.</p>
+            <div className="event-meta">
+              <span>📍 Main Auditorium</span>
+              <span>🕒 10:00 AM</span>
+            </div>
+          </div>
+        </div>
+        <div className="event-item">
+          <div className="event-date-badge">
+            <Calendar size={16} />
+            <span>Dec 12</span>
+          </div>
+          <div className="event-content">
+            <h3>Leadership Workshop</h3>
+            <p>Special training session for senior officers and department heads.</p>
+            <div className="event-meta">
+              <span>📍 Conference Hall</span>
+              <span>🕒 08:30 AM</span>
+            </div>
+          </div>
+        </div>
+      </>
+    )}
+  </div>
+  <a href="/events" className="view-all-link">
+    See All Events <ExternalLink size={16} />
+  </a>
+</div>
+
+          </div>
+        </div>
       </section>
-      
+
+
+    {/* EVENT MODAL */}
+{selectedEvent && (
+  <div
+    className="event-modal-overlay"
+    onClick={() => setSelectedEvent(null)}
+  >
+    <div
+      className="event-modal"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        className="modal-close-btn"
+        onClick={() => setSelectedEvent(null)}
+      >
+        ✕
+      </button>
+
+      {/* Event Image */}
+      {selectedEvent.image && (
+        <div className="modal-image">
+          <img
+            src={`${BASE_URL}${selectedEvent.image}`}
+            alt={selectedEvent.title}
+          />
+        </div>
+      )}
+
+      <h2>{selectedEvent.title}</h2>
+
+      <div className="modal-date">
+        {new Date(selectedEvent.created_at).toLocaleDateString()}
+      </div>
+
+      <p className="modal-content">
+        {selectedEvent.content}
+      </p>
+    </div>
+  </div>
+)}
+
+
 {/* Facilities Section */}
 <FacilitiesShowcase facilities={facilities} />
 
@@ -675,6 +762,9 @@ const FacilitiesShowcase = ({ facilities }) => {
 
       </div>
     </section>
+
+
   );
+  
 };
 
