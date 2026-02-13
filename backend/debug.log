@@ -3478,3 +3478,19 @@ WARNING 2026-02-11 11:23:30,356 log 21712 18384 Not Found: /api/pages/
 WARNING 2026-02-11 11:24:50,134 log 21712 18384 Not Found: /api/posts/
 >>>>>>> 077a6e8e4264a85dd33fb54101f84aba62ae0124
 INFO 2026-02-12 09:08:45,620 autoreload 12752 8540 Watching for file changes with StatReloader
+WARNING 2026-02-12 10:52:35,272 log 12752 15996 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-12 10:52:35,281 log 12752 14632 Unauthorized: /api/public/posts/
+WARNING 2026-02-12 10:52:35,217 log 12752 6160 Unauthorized: /api/public/gallery/
+WARNING 2026-02-12 10:52:35,836 log 12752 20692 Unauthorized: /api/public/gallery/
+WARNING 2026-02-12 10:52:35,919 log 12752 22808 Unauthorized: /api/public/posts/
+WARNING 2026-02-12 10:52:36,185 log 12752 6160 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-12 10:52:37,703 log 12752 20692 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 10:52:37,706 log 12752 6160 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 10:52:38,553 log 12752 11120 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 10:52:38,554 log 12752 15996 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 10:52:38,556 log 12752 14632 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 10:52:38,559 log 12752 22808 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 12:09:27,915 log 12752 9992 Unauthorized: /api/auth/token/
+WARNING 2026-02-12 12:09:51,782 log 12752 9992 Unauthorized: /api/auth/token/
+WARNING 2026-02-12 12:10:11,674 log 12752 9992 Unauthorized: /api/auth/token/
+INFO 2026-02-13 05:13:26,680 autoreload 7104 17484 Watching for file changes with StatReloader

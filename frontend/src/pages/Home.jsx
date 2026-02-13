@@ -26,6 +26,8 @@ import {
   Dumbbell,
   Bell,
   ExternalLink,
+  Tag,
+  User,
   PlayCircle
 } from 'lucide-react';
 import Slider from 'react-slick';
@@ -42,7 +44,19 @@ export default function Home() {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [selectedEvent, setSelectedEvent] = useState(null);
   const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
-  
+  const [activeFilter, setActiveFilter] = useState("news");
+
+
+  const navigate = useNavigate();
+
+const handleApply = () => {
+  window.open("https://dpa.tpf.go.tz/", "_blank");
+};
+
+const handleLearnMore = () => {
+  navigate("/pages/About");
+};
+
 
   useEffect(() => {
   const fetchData = async () => {
@@ -269,6 +283,14 @@ const facilities = [
     </div>
   );
 
+
+  const calculateReadingTime = (text) => {
+  const wordsPerMinute = 200;
+  const words = text ? text.trim().split(/\s+/).length : 0;
+  const minutes = Math.ceil(words / wordsPerMinute);
+  return `${minutes} min read`;
+};
+
   return (
     <div className="home-page">
       <style>{`
@@ -325,33 +347,26 @@ const facilities = [
 
         <div className="slide-overlay">
           <div className="slide-content">
-            <span className="slide-tag">Tanzania Police Academy</span>
+            <span className="slide-tag">Dar es salaam Police Academy</span>
             <h2>{slide.title}</h2>
             <p>{slide.subtitle}</p>
 
-            <div className="slide-buttons">
-              <button className="btn-primary">Apply Now</button>
-              <button className="btn-outline">Learn More</button>
-            </div>
+           <div className="slide-buttons">
+  <button className="btn-primary" onClick={handleApply}>
+    Apply Now
+  </button>
+
+  <button className="btn-outline" onClick={handleLearnMore}>
+    Learn More
+  </button>
+</div>
+
           </div>
         </div>
       </div>
     ))}
   </Slider>
 </div>
-
-
-        <div className="apply-overlay">
-          <a
-            href="https://dpa.tpf.go.tz/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="apply-hero-btn animated-padding"
-          >
-            <Send className="btn-icon" /> Apply Online
-          </a>
-        </div>
-      
 
 
   {/* Commandant Message Section */}
@@ -464,137 +479,151 @@ const facilities = [
      {/* News & Events Section */}
 <section className="news-events-section">
   <div className="container">
-    
+    <h2>News & Announcements</h2>
+    <div className="news-filters">
+  {["news", "events", "announcements"].map((type) => (
+    <button
+      key={type}
+      className={`filter-btn ${activeFilter === type ? "active" : ""}`}
+      onClick={() => setActiveFilter(type)}
+    >
+      {type.charAt(0).toUpperCase() + type.slice(1)}
+    </button>
+  ))}
+</div>
+
     <div className="news-events-grid">
       {/* News Section */}
-      <div className="news-section">
-        <div className="section-header-inline">
-          <Newspaper className="section-icon" />
-          <h2>News & Announcements</h2>
-        </div>
+      <div className="news-content-area">
 
-        <div className="news-list">
-          {posts.news.length > 0 ? (
-   posts.news
-      .sort((a, b) => new Date(b.date_posted) - new Date(a.date_posted))
-      .slice(0, 3)
-      .map((news, index) => (
-    <div
-      key={news.id}
-      className={`news-card ${hoveredCard === `news-${index}` ? 'expanded' : ''}`}
-      onMouseEnter={() => setHoveredCard(`news-${index}`)}
-      onMouseLeave={() => setHoveredCard(null)}
-    >
-      {news.image && (
-        <div className="news-card-image">
-<img src={`${BASE_URL}${news.image}`} alt={news.title} />
+  {/* NEWS FILTER VIEW */}
+  {activeFilter === "news" && posts.news.length > 0 && (() => {
+    const sortedNews = [...posts.news].sort(
+      (a, b) => new Date(b.date_posted) - new Date(a.date_posted)
+    );
 
-        </div>
-      )}
+    const featured = sortedNews[0];
+    const sideNews = sortedNews.slice(1, 5);
 
-      <div className="news-card-content">
-        <div className="news-date">
-          {new Date(news.date_posted).toLocaleDateString('en-US', {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric'
-          })}
-        </div>
-        <h3>{news.title}</h3>
-        <p>{news.content || "Important update from the academy administration."}</p>
+    return (
+      <div className="news-layout">
 
-        {/* Read More link */}
-  
-<Link to={`/news/${news.id}`} className="read-more-link">
-  Read More →
-</Link>
+        {/* Featured Left */}
+       <div className="news-card featured-card">
 
-      </div>
-
-      <div className="news-card-arrow">
-        <ChevronRight size={16} />
-      </div>
-    </div>
- 
-
- 
-
-            ))
-          ) : (
-            <>
-              <div className="news-card">
-                <div className="news-card-content">
-                  <div className="news-date">Jan 15, 2025</div>
-                  <h3>New Intake for 2025/2026 Announced</h3>
-                  <p>Applications now open for the upcoming academic year.</p>
-                </div>
-                <div className="news-card-arrow">
-                  <ChevronRight size={16} />
-                </div>
-              </div>
-
-              <div className="news-card">
-                <div className="news-card-content">
-                  <div className="news-date">Dec 20, 2024</div>
-                  <h3>Graduation Ceremony Highlights</h3>
-                  <p>Celebrating the achievements of our latest graduates.</p>
-                </div>
-                <div className="news-card-arrow">
-                  <ChevronRight size={20} />
-                </div>
-              </div>
-            </>
-          )}
-        </div>
-
-        <a href="/news" className="view-all-link">
-          View All News <ExternalLink size={16} />
-        </a>
-      </div>
-    
-
-            {/* Events Section */}
-            <div className="events-section">
-  <div className="section-header-inline">
-    <Calendar className="section-icon" />
-    <h2>Upcoming Events</h2>
+  <div className="news-card-image">
+    <img
+      src={`${BASE_URL}${featured.image}`}
+      alt={featured.title}
+    />
+    <span className="news-badge">Featured News</span>
   </div>
-  <div className="events-list">
-    {posts.events.length > 0 ? (
-      posts.events.map((event, index) => (
-        <div 
-          key={event.id} 
-          className={`event-item ${hoveredCard === `event-${index}` ? 'card-hovered' : ''}`}
-          onMouseEnter={() => setHoveredCard(`event-${index}`)}
-          onMouseLeave={() => setHoveredCard(null)}
-        >
-          {/* Event Image */}
+
+  <div className="news-card-body">
+    <h3>{featured.title}</h3>
+
+  <div className="news-meta">
+
+  <span className="news-tag category-tag glow-tag">
+    <Tag size={14} />
+    {featured.category || "General"}
+  </span>
+
+  <span className="news-tag date-tag">
+    <Calendar size={14} />
+    {new Date(featured.date_posted).toLocaleDateString()}
+  </span>
+
+  <span className="news-tag author-tag">
+    <User size={14} />
+    Admin
+  </span>
+
+  <span className="news-tag readtime-tag">
+    <Clock size={14} />
+    {calculateReadingTime(featured.content)}
+  </span>
+
+</div>
+    <p className="featured-description">
+  {featured.content?.slice(0, 420)}...
+</p>
+
+    <Link to={`/news/${featured.id}`} className="read-more-link">
+      Read more →
+    </Link>
+  </div>
+
+</div>
+
+
+        {/* Right Small Cards */}
+        <div className="small-news-list">
+         {sideNews.map((news) => (
+  <div key={news.id} className="news-card">
+
+    <div className="news-card-image">
+      <img
+        src={`${BASE_URL}${news.image}`}
+        alt={news.title}
+      />
+      <span className="news-badge">Latest News</span>
+    </div>
+
+    <div className="news-card-body">
+      <h4>{news.title}</h4>
+<div className="news-meta">
+
+ 
+
+  <span className="news-tag date-tag">
+    <Calendar size={14} />
+    {new Date(news.date_posted).toLocaleDateString()}
+  </span>
+
+  <span className="news-tag author-tag">
+    <User size={14} />
+    Admin
+  </span>
+
+  <span className="news-tag readtime-tag">
+    <Clock size={14} />
+    {calculateReadingTime(news.content)}
+  </span>
+
+</div>
+      <Link to={`/news/${news.id}`} className="read-more-link">
+        Read more →
+      </Link>
+    </div>
+
+  </div>
+))}
+
+        </div>
+
+      </div>
+    );
+  })()}
+
+  {/* EVENTS FILTER VIEW */}
+  {activeFilter === "events" && (
+    <div className="events-only-layout">
+      {posts.events.map((event) => (
+        <div key={event.id} className="event-item">
           {event.image && (
             <div className="event-image">
               <img src={`${BASE_URL}${event.image}`} alt={event.title} />
             </div>
           )}
 
-          <div className="event-date-badge">
-            <Calendar size={16} />
-            <span>
-              {new Date(event.created_at).toLocaleDateString('en-US', {
-                day: 'numeric',
-                month: 'short'
-              })}
-            </span>
-          </div>
-          
-
           <div className="event-content">
-            <Link to={`/events/${event.id}`}>
-              <h3>{event.title}</h3>
-            </Link>
-            <p className="event-description">
-              {event.content
-                ? event.content.slice(0, 120) + "..."
-                : "Join us for this important academy event."}
-            </p>
+            <div className="news-date">
+              {new Date(event.created_at).toLocaleDateString()}
+            </div>
+
+            <h3>{event.title}</h3>
+            <p>{event.content?.slice(0, 120)}...</p>
 
             <button
               className="view-more-btn"
@@ -602,53 +631,33 @@ const facilities = [
             >
               View More →
             </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
 
-            <div className="event-meta">
-              <span>📍 Main Campus</span>
-              <span>🕒 09:00 AM</span>
-            </div>
+  {/* ANNOUNCEMENTS FILTER VIEW */}
+  {activeFilter === "announcements" && (
+    <div className="announcements-only-layout">
+      {posts.announcements?.map((item) => (
+        <div key={item.id} className="announcement-item">
+          <div className="announcement-badge">!</div>
+          <div>
+            <h4>{item.title}</h4>
+            <p>{item.content}</p>
           </div>
         </div>
-      ))
-    ) : (
-      <>
-        {/* Default static events */}
-        <div className="event-item">
-          <div className="event-date-badge">
-            <Calendar size={16} />
-            <span>Nov 25</span>
-          </div>
-          <div className="event-content">
-            <Link to="/events" className="read-more-link">Read More →</Link>
-            <h3>Graduation Day Ceremony</h3>
-            <p>Annual graduation ceremony celebrating our cadets' achievements.</p>
-            <div className="event-meta">
-              <span>📍 Main Auditorium</span>
-              <span>🕒 10:00 AM</span>
-            </div>
-          </div>
-        </div>
-        <div className="event-item">
-          <div className="event-date-badge">
-            <Calendar size={16} />
-            <span>Dec 12</span>
-          </div>
-          <div className="event-content">
-            <h3>Leadership Workshop</h3>
-            <p>Special training session for senior officers and department heads.</p>
-            <div className="event-meta">
-              <span>📍 Conference Hall</span>
-              <span>🕒 08:30 AM</span>
-            </div>
-          </div>
-        </div>
-      </>
-    )}
-  </div>
-  <a href="/events" className="view-all-link">
-    See All Events <ExternalLink size={16} />
-  </a>
+      ))}
+    </div>
+  )}
+
 </div>
+
+    
+
+            {/* Events Section */}
+           
 
           </div>
         </div>
@@ -694,6 +703,9 @@ const facilities = [
     </div>
   </div>
 )}
+
+
+
 
 
 {/* Facilities Section */}
@@ -767,4 +779,7 @@ const FacilitiesShowcase = ({ facilities }) => {
   );
   
 };
+
+
+
 
