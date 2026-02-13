@@ -3477,3 +3477,62 @@ WARNING 2026-02-11 11:23:30,309 log 21712 4804 Not Found: /api/posts/
 WARNING 2026-02-11 11:23:30,356 log 21712 18384 Not Found: /api/pages/
 WARNING 2026-02-11 11:24:50,134 log 21712 18384 Not Found: /api/posts/
 >>>>>>> 077a6e8e4264a85dd33fb54101f84aba62ae0124
+INFO 2026-02-11 12:43:31,951 autoreload 22227 135458475741312 Watching for file changes with StatReloader
+INFO 2026-02-11 12:46:01,762 autoreload 22453 125718808469632 Watching for file changes with StatReloader
+INFO 2026-02-11 12:46:34,876 autoreload 22453 125718808469632 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/__init__.py changed, reloading.
+INFO 2026-02-11 12:47:00,599 autoreload 22578 136786541662336 Watching for file changes with StatReloader
+INFO 2026-02-11 12:54:44,507 autoreload 22578 136786541662336 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 12:54:45,014 autoreload 23081 126821401034880 Watching for file changes with StatReloader
+INFO 2026-02-11 12:56:47,080 autoreload 23081 126821401034880 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 12:56:47,467 autoreload 23226 140720005107840 Watching for file changes with StatReloader
+INFO 2026-02-11 12:57:34,282 autoreload 23226 140720005107840 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 12:57:34,691 autoreload 23282 136047514439808 Watching for file changes with StatReloader
+INFO 2026-02-11 13:01:31,174 autoreload 23282 136047514439808 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 13:01:31,529 autoreload 23409 130866095378560 Watching for file changes with StatReloader
+INFO 2026-02-11 13:03:02,565 autoreload 23409 130866095378560 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 13:03:03,039 autoreload 23481 124770037936256 Watching for file changes with StatReloader
+INFO 2026-02-11 13:04:02,823 autoreload 23481 124770037936256 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 13:04:03,189 autoreload 23542 130076277330048 Watching for file changes with StatReloader
+WARNING 2026-02-11 13:08:43,109 log 23542 130076197775040 Not Found: /api/posts/
+WARNING 2026-02-11 13:08:43,156 log 23542 130076189382336 Not Found: /api/posts/
+INFO 2026-02-11 13:08:55,133 autoreload 23542 130076277330048 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 13:08:55,525 autoreload 23804 132582054215808 Watching for file changes with StatReloader
+INFO 2026-02-11 13:08:56,727 autoreload 23804 132582054215808 /home/tpf/dar-es-salaam-police-academy/backend/academy/views.py changed, reloading.
+INFO 2026-02-11 13:08:57,095 autoreload 23832 137719694966912 Watching for file changes with StatReloader
+WARNING 2026-02-11 13:10:37,528 log 23832 137719535630016 Not Found: /api/posts/
+WARNING 2026-02-11 13:27:35,871 log 23832 137719535630016 Not Found: /api/posts/
+INFO 2026-02-12 08:51:50,956 autoreload 6449 137399683108992 Watching for file changes with StatReloader
+WARNING 2026-02-12 08:52:17,695 log 6449 137399595161280 Unauthorized: /api/public/posts/
+WARNING 2026-02-12 08:52:17,696 log 6449 137399578375872 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-12 08:52:17,697 log 6449 137399225022144 Unauthorized: /api/public/gallery/
+WARNING 2026-02-12 08:52:17,741 log 6449 137399569983168 Unauthorized: /api/public/posts/
+WARNING 2026-02-12 08:52:17,742 log 6449 137399586768576 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-12 08:52:17,744 log 6449 137399603553984 Unauthorized: /api/public/gallery/
+WARNING 2026-02-12 08:52:17,917 log 6449 137399578375872 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 08:52:17,925 log 6449 137399586768576 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 08:52:17,928 log 6449 137399225022144 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 08:52:17,950 log 6449 137399569983168 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 08:52:17,952 log 6449 137399603553984 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-12 08:53:10,467 log 6449 137399595161280 Unauthorized: /api/auth/token/
+WARNING 2026-02-12 08:53:18,943 log 6449 137399595161280 Unauthorized: /api/auth/token/
+WARNING 2026-02-12 08:53:27,712 log 6449 137399603553984 Not Found: /api/pages/
+WARNING 2026-02-12 08:53:27,716 log 6449 137399225022144 Not Found: /api/posts/
+WARNING 2026-02-12 08:53:27,720 log 6449 137399586768576 Not Found: /api/users/
+WARNING 2026-02-12 08:53:27,763 log 6449 137399595161280 Not Found: /api/pages/
+WARNING 2026-02-12 08:53:27,768 log 6449 137399603553984 Not Found: /api/posts/
+WARNING 2026-02-12 08:53:27,772 log 6449 137399225022144 Not Found: /api/users/
+INFO 2026-02-13 09:03:30,911 autoreload 12005 135751267500160 Watching for file changes with StatReloader
+WARNING 2026-02-13 09:04:48,129 log 12005 135750939035328 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-13 09:04:48,130 log 12005 135751180211904 Unauthorized: /api/public/posts/
+WARNING 2026-02-13 09:04:48,130 log 12005 135750955820736 Unauthorized: /api/public/gallery/
+WARNING 2026-02-13 09:04:48,178 log 12005 135751188604608 Unauthorized: /api/public/gallery/
+WARNING 2026-02-13 09:04:48,180 log 12005 135750964213440 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-13 09:04:48,182 log 12005 135750947428032 Unauthorized: /api/public/posts/
+WARNING 2026-02-13 09:04:48,389 log 12005 135751180211904 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-13 09:04:56,912 log 12005 135750955820736 Unauthorized: /api/auth/token/
+WARNING 2026-02-13 09:05:15,576 log 12005 135750939035328 Not Found: /api/pages/
+WARNING 2026-02-13 09:05:15,579 log 12005 135751188604608 Not Found: /api/users/
+WARNING 2026-02-13 09:05:15,584 log 12005 135750947428032 Not Found: /api/posts/
+WARNING 2026-02-13 09:05:15,633 log 12005 135750939035328 Not Found: /api/posts/
+WARNING 2026-02-13 09:05:15,638 log 12005 135750955820736 Not Found: /api/pages/
+WARNING 2026-02-13 09:05:15,642 log 12005 135751180211904 Not Found: /api/users/

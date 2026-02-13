@@ -117,8 +117,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'police_colleges',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        'USER': 'duncun',
+        'PASSWORD': 'Mazeed@Munyama1234',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         },
