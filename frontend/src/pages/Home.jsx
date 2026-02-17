@@ -200,54 +200,48 @@ const programs = [
     color: "#9a3412",
   },
 ];
-
 const facilities = [
   {
-    category: "ICT Labs",
-    name: "Networking Lab",
-     images: [
+    title: "Modern Classrooms",
+     slug: "Modern Classrooms",
+    color: "#1d4ed8",
+    description:
+      "Smart learning environments equipped with modern teaching technology.",
+        link: "/facilities/library",
+    images: [
       "/images/campus4.jpg",
+      "/images/campus2.jpg",
       "/images/campus3.jpg",
-      "/images/promotional.jpg",
     ],
-    description: "Specialized lab for network administration and cybersecurity training.",
-    progress: 85
   },
   {
-    category: "ICT Labs",
-    name: "Computer Lab",
-     images: [
+    title: "Training Grounds",
+    slug: "training-grounds",
+    color: "#0ea5e9",
+    description:
+      "Professional outdoor training environments for practical exercises.",
+       link: "/facilities/range",
+    images: [
       "/images/promotional.jpg",
       "/images/academic.jpg",
       "/images/campus2.jpg",
     ],
-    description: "State-of-the-art technology for digital forensics and research.",
-     progress: 90
   },
-  {
-    category: "Sports Areas",
-    name: "Basketball Courts",
+   {
+    title: "Student Hostels",
+     slug: "Student-hostel",
+    color: "#0ea5e9",
+    description:
+      "Comfortable and secure accommodation for all cadets.",
+       link: "/facilities/classes-accomodation",
     images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
       "/images/campus3.jpg",
-      "/images/academic.jpg",
-      "/images/promotional.jpg",
     ],
-    description: "Multiple indoor and outdoor basketball courts for training and competitions.",
-    progress: 75
   },
-  
-  {
-    category: "Library",
-    name: "Modern Library",
-     images: [
-      "/images/promotional.jpg",
-      "/images/academic.jpg",
-      "/images/campus1.jpg",
-    ],
-    description: "Extensive collection of law enforcement literature and digital resources.",
-    progress: 95
-  }
 ];
+
 
 
   const stats = [
@@ -772,6 +766,8 @@ const sortedNews = [...posts.news]
         </div>
       </section>
 
+      
+
 
     {/* EVENT MODAL */}
 {selectedEvent && (
@@ -814,142 +810,56 @@ const sortedNews = [...posts.news]
 )}
 
 
-
-
-
 {/* Facilities Section */}
-<FacilitiesShowcase facilities={facilities} />
+<section className="facilities-section">
+  <div className="container">
+    <div className="section-header">
+      <h2>Our Facilities</h2>
+    </div>
 
-    </div> 
-  );
-}
+    <div className="facilities-grid">
+      {facilities.map((facility, index) => (
+        <div className="facility-card" key={index}>
 
-
-/* ✅ COMPONENT OUTSIDE JSX */
-
-const FacilitiesShowcase = ({ facilities }) => {
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredFacilities =
-    activeCategory === "All"
-      ? facilities
-      : facilities.filter(
-          (f) => f.category === activeCategory
-        );
-
-  const sliderSettings = {
-    dots: true,
-    arrows: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
-
-  return (
-    <section className="facilities-showcase">
-      <div className="container">
-
-        {/* Tabs */}
-        <div className="facilities-tabs">
-          {["All", "ICT Labs", "Sports Areas", "Library"].map(tab => (
-            <button
-              key={tab}
-              className={activeCategory === tab ? "active" : ""}
-              onClick={() => setActiveCategory(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-
-        {/* Cards */}
-       <div className="facilities-slider">
-
-  {/* Navigation Buttons */}
-  <div className="facility-nav prev">‹</div>
-  <div className="facility-nav next">›</div>
-
-  <Swiper
-    modules={[EffectCoverflow, Autoplay, Navigation]}
-    effect="coverflow"
-    centeredSlides
-    slidesPerView={"auto"}
-    loop
-    grabCursor
-    navigation={{
-      nextEl: ".next",
-      prevEl: ".prev",
-    }}
-    autoplay={{
-      delay: 4500,
-      disableOnInteraction: false,
-    }}
-    coverflowEffect={{
-      rotate: 0,
-      stretch: 0,
-      depth: 220,
-      modifier: 2.2,
-      slideShadows: false,
-    }}
-  >
-    {filteredFacilities.map((facility, index) => (
-      <SwiperSlide key={index} className="facility-slide">
-
-        <div className="facility-card">
-
-          {/* Image Stack */}
+          {/* Animated Image Stack */}
           <div className="facility-image">
             {facility.images.map((img, i) => (
               <img
                 key={i}
                 src={img}
-                alt={facility.name}
+                alt={facility.title}
                 style={{ animationDelay: `${i * 4}s` }}
               />
             ))}
           </div>
 
-          {/* Glass Overlay */}
-          <div className="facility-overlay">
-
-            <span className="facility-category">
-              {facility.category}
-            </span>
-
-            <h3>{facility.name}</h3>
+          {/* Content */}
+          <div className="facility-content">
+            <h3 style={{ color: facility.color }}>
+              {facility.title}
+            </h3>
 
             <p>{facility.description}</p>
 
-            {/* Progress */}
-            <div className="facility-progress">
-              <div
-                className="facility-progress-bar"
-                style={{ width: `${facility.progress}%` }}
-              />
-            </div>
-
-           <Link to="/facilities" className="facility-btn">
-  View More →
+           <Link
+  to={facility.link}
+  className="facility-link"
+>
+  Learn More →
 </Link>
 
           </div>
 
         </div>
+      ))}
+    </div>
+  </div>
+</section>
 
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</div>
-
-
-
-      </div>
-    </section>
+    </div> 
   );
-};
+}
+
 
 
 
