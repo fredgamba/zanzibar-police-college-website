@@ -413,11 +413,12 @@ backdrop-filter: blur(6px);
 
 .slide-tag {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #60a5fa;
+  color: #1c236d;
+  font-weight: bold;
 }
 .slick-active .slide-content {
   opacity: 1;
@@ -3679,7 +3680,8 @@ backdrop-filter: blur(6px);
   transform: translateY(-8px);
   box-shadow: 0 45px 100px rgba(15, 23, 42, 0.15);
 }
-/* LEFT SIDE */.hero-content {
+/* LEFT SIDE */
+.hero-content {
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -6983,7 +6985,7 @@ backdrop-filter: blur(6px);
   background: rgba(15, 23, 42, 0.75);
 }
 
-.hero-content {
+.hero-content-contact {
   position: relative;
   z-index: 1;
   height: 100%;
@@ -6995,12 +6997,12 @@ backdrop-filter: blur(6px);
   text-align: center;
 }
 
-.hero-content h1 {
+.hero-content-contact h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.hero-content p {
+.hero-content-contact p {
   font-size: 1.1rem;
   opacity: 0.9;
 }
@@ -7074,7 +7076,7 @@ backdrop-filter: blur(6px);
     height: 40vh;
   }
 
-  .hero-content h1 {
+  .hero-content-contact h1 {
     font-size: 2.2rem;
   }
 }

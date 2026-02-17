@@ -48,7 +48,7 @@ export default function Contact() {
       {/* HERO */}
       <section className="contact-hero">
         <div className="overlay"></div>
-        <div className="hero-content">
+        <div className="hero-content-contact">
           <h1>Contact Us</h1>
           <p>Dar es Salaam Police Academy</p>
         </div>
