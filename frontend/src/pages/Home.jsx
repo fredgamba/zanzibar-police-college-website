@@ -745,6 +745,7 @@ const sortedNews = [...posts.news]
             <h4>{item.title}</h4>
             <p>{item.content}</p>
           </div>
+          
         </div>
       ))}
     </div>

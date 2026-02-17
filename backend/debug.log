@@ -3577,3 +3577,15 @@ WARNING 2026-02-16 09:24:10,302 log 12616 5928 Unauthorized: /api/public/gallery
 WARNING 2026-02-16 09:24:11,243 log 12616 20308 Unauthorized: /api/public/posts/
 WARNING 2026-02-16 09:24:11,264 log 12616 12992 Unauthorized: /api/public/home-feed/
 WARNING 2026-02-16 09:24:11,503 log 12616 5928 Unauthorized: /api/public/gallery/
+INFO 2026-02-17 07:34:03,247 autoreload 9690 135722642108544 Watching for file changes with StatReloader
+WARNING 2026-02-17 07:34:51,493 log 9690 135722545694400 Unauthorized: /api/auth/token/
+WARNING 2026-02-17 07:34:57,247 log 9690 135722545694400 Unauthorized: /api/auth/token/
+WARNING 2026-02-17 07:35:22,270 log 9690 135722545694400 Unauthorized: /api/auth/token/
+WARNING 2026-02-17 09:05:27,555 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 09:05:27,639 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 09:09:01,669 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 09:09:01,707 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 09:21:18,947 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 09:21:18,985 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 09:21:50,459 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 09:21:50,493 log 9690 135722545694400 Not Found: /api/pages/history/
