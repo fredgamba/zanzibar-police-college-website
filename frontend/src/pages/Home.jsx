@@ -3,6 +3,12 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Autoplay, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
 
 import { 
   Send, 
@@ -57,6 +63,18 @@ const handleLearnMore = () => {
   navigate("/pages/About");
 };
 
+
+useEffect(() => {
+  const cards = document.querySelectorAll(".facility-card");
+
+  cards.forEach(card => {
+    card.addEventListener("mousemove", e => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--x", `${e.clientX - rect.left}px`);
+      card.style.setProperty("--y", `${e.clientY - rect.top}px`);
+    });
+  });
+}, []);
 
   useEffect(() => {
   const fetchData = async () => {
@@ -182,53 +200,48 @@ const programs = [
     color: "#9a3412",
   },
 ];
-
 const facilities = [
   {
-    category: "ICT Labs",
-    name: "Networking Lab",
-     images: [
+    title: "Modern Classrooms",
+     slug: "Modern Classrooms",
+    color: "#1d4ed8",
+    description:
+      "Smart learning environments equipped with modern teaching technology.",
+        link: "/facilities/library",
+    images: [
       "/images/campus4.jpg",
+      "/images/campus2.jpg",
       "/images/campus3.jpg",
-      "/images/promotional.jpg",
     ],
-    description: "Specialized lab for network administration and cybersecurity training.",
-    progress: 85
   },
   {
-    category: "ICT Labs",
-    name: "Computer Lab",
-     images: [
+    title: "Training Grounds",
+    slug: "training-grounds",
+    color: "#0ea5e9",
+    description:
+      "Professional outdoor training environments for practical exercises.",
+       link: "/facilities/range",
+    images: [
       "/images/promotional.jpg",
       "/images/academic.jpg",
       "/images/campus2.jpg",
     ],
-    description: "State-of-the-art technology for digital forensics and research.",
-     progress: 90
   },
-  {
-    category: "Sports Areas",
-    name: "Basketball Courts",
+   {
+    title: "Student Hostels",
+     slug: "Student-hostel",
+    color: "#0ea5e9",
+    description:
+      "Comfortable and secure accommodation for all cadets.",
+       link: "/facilities/classes-accomodation",
     images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
       "/images/campus3.jpg",
-      "/images/academic.jpg",
-      "/images/promotional.jpg",
     ],
-    description: "Multiple indoor and outdoor basketball courts for training and competitions.",
-    progress: 75
   },
-  {
-    category: "Library",
-    name: "Modern Library",
-     images: [
-      "/images/promotional.jpg",
-      "/images/academic.jpg",
-      "/images/campus1.jpg",
-    ],
-    description: "Extensive collection of law enforcement literature and digital resources.",
-    progress: 95
-  }
 ];
+
 
 
   const stats = [
@@ -372,15 +385,7 @@ const facilities = [
   {/* Commandant Message Section */}
   
   <section className="hero-commandant">
-  <video
-    className="hero-video"
-    src="/videos/campus-hero.mp4" 
-    autoPlay
-    muted
-    loop
-    playsInline >
-
-  </video>
+  
 
   {/* Overlay & Floating Shapes */}
   <div className="hero-overlay"></div>
@@ -568,7 +573,7 @@ const sortedNews = [...posts.news]
       {/* Featured Ribbon */}
       {news.is_featured && (
         <div className="featured-ribbon-corner">
-          ★ Featured
+          ★ Featured News
         </div>
       )}
 
@@ -762,6 +767,8 @@ const sortedNews = [...posts.news]
         </div>
       </section>
 
+      
+
 
     {/* EVENT MODAL */}
 {selectedEvent && (
@@ -804,80 +811,57 @@ const sortedNews = [...posts.news]
 )}
 
 
-
-
-
 {/* Facilities Section */}
-<FacilitiesShowcase facilities={facilities} />
+<section className="facilities-section">
+  <div className="container">
+    <div className="section-header">
+      <h2>Our Facilities</h2>
+    </div>
+
+    <div className="facilities-grid">
+      {facilities.map((facility, index) => (
+        <div className="facility-card" key={index}>
+
+          {/* Animated Image Stack */}
+          <div className="facility-image">
+            {facility.images.map((img, i) => (
+              <img
+                key={i}
+                src={img}
+                alt={facility.title}
+                style={{ animationDelay: `${i * 4}s` }}
+              />
+            ))}
+          </div>
+
+          {/* Content */}
+          <div className="facility-content">
+            <h3 style={{ color: facility.color }}>
+              {facility.title}
+            </h3>
+
+            <p>{facility.description}</p>
+
+           <Link
+  to={facility.link}
+  className="facility-link"
+>
+  Learn More →
+</Link>
+
+          </div>
+
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
     </div> 
   );
 }
 
 
-/* ✅ COMPONENT OUTSIDE JSX */
-
-const FacilitiesShowcase = ({ facilities }) => {
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredFacilities =
-    activeCategory === "All"
-      ? facilities
-      : facilities.filter(
-          (facility) => facility.category === activeCategory
-        );
-
-  return (
-    <section className="facilities-showcase">
-      <div className="container">
-
-        {/* Tabs */}
-        <div className="facilities-tabs">
-          {["All", "ICT Labs", "Sports Areas", "Library"].map((tab) => (
-            <button
-              key={tab}
-              className={activeCategory === tab ? "active" : ""}
-              onClick={() => setActiveCategory(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-
-        {/* Cards */}
-        <div className="facilities-cards">
-          {filteredFacilities.map((facility, index) => (
-            <div className="facility-image-card" key={index}>
-              <div className="facility-image">
-                {facility.images.map((img, i) => (
-                  <img
-                    key={i}
-                    src={img}
-                    alt={facility.name}
-                    style={{ animationDelay: `${i * 4}s` }}
-                  />
-                ))}
-              </div>
-
-              <div className="facility-overlay">
-                <span className="facility-category">
-                  {facility.category}
-                </span>
-                <h3>{facility.name}</h3>
-                <p>{facility.description}</p>
-                <button className="facility-btn">Learn More</button>
-              </div>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
-
-
-  );
-  
-};
 
 
 
