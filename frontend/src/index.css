@@ -3971,7 +3971,7 @@ backdrop-filter: blur(6px);
   padding: 4px 10px;
   border-radius: 50px;
   transition: all 0.3s ease;
-  color: white;
+  color: black;
   cursor: default;
 }
 
@@ -3979,7 +3979,7 @@ backdrop-filter: blur(6px);
 .admin-pill,
 .calendar-pill,
 .read-pill {
-  background: var(--primary-color);
+
 }
 
 /* Hover effect */
@@ -7743,9 +7743,6 @@ backdrop-filter: blur(6px);
 
 /* Date Badge */
 .event-date-badge {
- 
-
-
 
   position: absolute;
   top: 15px;
@@ -7801,6 +7798,14 @@ backdrop-filter: blur(6px);
   color: #ef4444;
 }
 
+/* For single event page */
+.event-date-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  position: relative;
+}
 
 
 

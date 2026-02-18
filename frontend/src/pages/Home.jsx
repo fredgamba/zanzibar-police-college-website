@@ -53,8 +53,6 @@ export default function Home() {
   const [activeFilter, setActiveFilter] = useState("news");
    const [now, setNow] = useState(new Date());
 
-  const navigate = useNavigate();
-
 const handleApply = () => {
   window.open("https://dpa.tpf.go.tz/", "_blank");
 };
@@ -536,7 +534,7 @@ const sortedNews = [...posts.news]
 
       {/* HERO STORY */}
       <div className="split-hero-card">
-        <div className="featured-ribbon">★ Featured</div>
+        <div className="featured-ribbon">★ Featured </div>
 
         {/* LEFT CONTENT */}
         <div className="hero-content">
@@ -544,11 +542,11 @@ const sortedNews = [...posts.news]
 
           <div className="hero-meta">
             <span className="meta-pill admin-pill">
-              <User size={14} />
+              <User size={12} />
               Admin
             </span>
             <span className="meta-pill calendar-pill">
-              <Calendar size={14} />
+              <Calendar size={12} />
               {new Date(featured.date_posted).toLocaleDateString()}
             </span>
            
@@ -592,16 +590,14 @@ const sortedNews = [...posts.news]
         {/* Tags */}
         <div className="secondary-tags">
           <span className="meta-pill admin-pill">
-            <User size={14} /> Admin
+            <User size={10} /> Admin
           </span>
 
           <span className="meta-pill calendar-pill">
-            <Calendar size={14} /> {new Date(news.date_posted).toLocaleDateString()}
+            <Calendar size={10} /> {new Date(news.date_posted).toLocaleDateString()}
           </span>
 
-          <span className="meta-pill read-pill">
-            <Clock size={14} /> {calculateReadingTime(news.content)}
-          </span>
+          
         </div>
 
         <h3>{news.title}</h3>
@@ -698,12 +694,10 @@ const sortedNews = [...posts.news]
 
     
 
-        <button
-          className="read-more-link"
-          onClick={() => setSelectedEvent(event)}
-        >
-          Read More →
-        </button>
+        <Link to={`/events/${event.id}`} className="read-more-link">
+  Read More →
+</Link>
+
       </div>
     </div>
   );
@@ -711,60 +705,6 @@ const sortedNews = [...posts.news]
 
     </div>
 
-   {/* Modal */}
-{selectedEvent && (
-  <div
-    className="event-modal-overlay"
-    onClick={() => setSelectedEvent(null)}
-  >
-    <div
-      className="event-modal"
-      onClick={(e) => e.stopPropagation()}
-    >
-      {/* Close Button */}
-      <button
-        className="modal-close-btn"
-        onClick={() => setSelectedEvent(null)}
-      >
-        ✕
-      </button>
-
-      {/* Image */}
-      {selectedEvent.image && (
-        <div className="modal-image-wrapper">
-          <img
-            src={`${BASE_URL}${selectedEvent.image}`}
-            alt={selectedEvent.title}
-          />
-        </div>
-      )}
-
-      {/* Content Section */}
-      <div className="modal-body">
-        <h2 className="modal-title">
-          {selectedEvent.title}
-        </h2>
-
-        <div className="modal-date">
-          {new Date(selectedEvent.event_date).toLocaleDateString(
-            "default",
-            {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            }
-          )}
-        </div>
-
-        <div className="modal-divider"></div>
-
-        <div className="modal-content">
-          {selectedEvent.content}
-        </div>
-      </div>
-    </div>
-  </div>
-)}
 
 
   </section>

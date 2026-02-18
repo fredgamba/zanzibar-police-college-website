@@ -265,9 +265,7 @@ function App() {
           } />
                <Route path="/facilities" element={<Facilities />} />
 
-               <Route path="/events" element={<Events />} />
-<Route path="/events/:id" element={<Events />} />
-
+             
 
      <Route
   path="/programs/:slug"
