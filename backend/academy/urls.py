@@ -52,4 +52,5 @@ urlpatterns = [
     
     # 🔥 PUBLIC PAGE BY SLUG
     path('public/pages/<str:page>/', views.public_page_by_slug, name='public-page-detail'),
+    
 ]

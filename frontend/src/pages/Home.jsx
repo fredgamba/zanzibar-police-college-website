@@ -3,6 +3,12 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Autoplay, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
 
 import { 
   Send, 
@@ -57,6 +63,18 @@ const handleLearnMore = () => {
   navigate("/pages/About");
 };
 
+
+useEffect(() => {
+  const cards = document.querySelectorAll(".facility-card");
+
+  cards.forEach(card => {
+    card.addEventListener("mousemove", e => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--x", `${e.clientX - rect.left}px`);
+      card.style.setProperty("--y", `${e.clientY - rect.top}px`);
+    });
+  });
+}, []);
 
   useEffect(() => {
   const fetchData = async () => {
@@ -182,53 +200,48 @@ const programs = [
     color: "#9a3412",
   },
 ];
-
 const facilities = [
   {
-    category: "ICT Labs",
-    name: "Networking Lab",
-     images: [
+    title: "Modern Classrooms",
+     slug: "Modern Classrooms",
+    color: "#1d4ed8",
+    description:
+      "Smart learning environments equipped with modern teaching technology.",
+        link: "/facilities/library",
+    images: [
       "/images/campus4.jpg",
+      "/images/campus2.jpg",
       "/images/campus3.jpg",
-      "/images/promotional.jpg",
     ],
-    description: "Specialized lab for network administration and cybersecurity training.",
-    progress: 85
   },
   {
-    category: "ICT Labs",
-    name: "Computer Lab",
-     images: [
+    title: "Training Grounds",
+    slug: "training-grounds",
+    color: "#0ea5e9",
+    description:
+      "Professional outdoor training environments for practical exercises.",
+       link: "/facilities/range",
+    images: [
       "/images/promotional.jpg",
       "/images/academic.jpg",
       "/images/campus2.jpg",
     ],
-    description: "State-of-the-art technology for digital forensics and research.",
-     progress: 90
   },
-  {
-    category: "Sports Areas",
-    name: "Basketball Courts",
+   {
+    title: "Student Hostels",
+     slug: "Student-hostel",
+    color: "#0ea5e9",
+    description:
+      "Comfortable and secure accommodation for all cadets.",
+       link: "/facilities/Classes_Accomodations",
     images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
       "/images/campus3.jpg",
-      "/images/academic.jpg",
-      "/images/promotional.jpg",
     ],
-    description: "Multiple indoor and outdoor basketball courts for training and competitions.",
-    progress: 75
   },
-  {
-    category: "Library",
-    name: "Modern Library",
-     images: [
-      "/images/promotional.jpg",
-      "/images/academic.jpg",
-      "/images/campus1.jpg",
-    ],
-    description: "Extensive collection of law enforcement literature and digital resources.",
-    progress: 95
-  }
 ];
+
 
 
   const stats = [
@@ -372,15 +385,7 @@ const facilities = [
   {/* Commandant Message Section */}
   
   <section className="hero-commandant">
-  <video
-    className="hero-video"
-    src="/videos/campus-hero.mp4" 
-    autoPlay
-    muted
-    loop
-    playsInline >
-
-  </video>
+  
 
   {/* Overlay & Floating Shapes */}
   <div className="hero-overlay"></div>
@@ -479,7 +484,7 @@ const facilities = [
      {/* News & Events Section */}
 <section className="news-events-section">
   <div className="container">
-    <h2>News & Announcements</h2>
+    <h2>News & Upcoming Events</h2>
     <div className="news-filters">
   {["news", "events", "announcements"].map((type) => (
     <button
@@ -497,145 +502,240 @@ const facilities = [
       <div className="news-content-area">
 
   {/* NEWS FILTER VIEW */}
-  {activeFilter === "news" && posts.news.length > 0 && (() => {
-    const sortedNews = [...posts.news].sort(
-      (a, b) => new Date(b.date_posted) - new Date(a.date_posted)
-    );
+{activeFilter === "news" && posts.news.length > 0 && (() => {
 
-    const featured = sortedNews[0];
-    const sideNews = sortedNews.slice(1, 5);
+  // ✅ Parse ISO date strings (YYYY-MM-DD)
+ const parseDate = (dateStr) => {
+  if (!dateStr) return 0;
+  const [year, month, day] = dateStr.split("-").map(Number);
+  return new Date(year, month - 1, day).getTime();
+};
 
-    return (
-      <div className="news-layout">
-
-        {/* Featured Left */}
-       <div className="news-card featured-card">
-
-  <div className="news-card-image">
-    <img
-      src={`${BASE_URL}${featured.image}`}
-      alt={featured.title}
-    />
-    <span className="news-badge">Featured News</span>
-  </div>
-
-  <div className="news-card-body">
-    <h3>{featured.title}</h3>
-
-  <div className="news-meta">
-
-  <span className="news-tag category-tag glow-tag">
-    <Tag size={14} />
-    {featured.category || "General"}
-  </span>
-
-  <span className="news-tag date-tag">
-    <Calendar size={14} />
-    {new Date(featured.date_posted).toLocaleDateString()}
-  </span>
-
-  <span className="news-tag author-tag">
-    <User size={14} />
-    Admin
-  </span>
-
-  <span className="news-tag readtime-tag">
-    <Clock size={14} />
-    {calculateReadingTime(featured.content)}
-  </span>
-
-</div>
-    <p className="featured-description">
-  {featured.content?.slice(0, 420)}...
-</p>
-
-    <Link to={`/news/${featured.id}`} className="read-more-link">
-      Read more →
-    </Link>
-  </div>
-
-</div>
+const sortedNews = [...posts.news]
+  .filter(item => item.date_posted)
+  .sort((a, b) => {
+    const dateDiff = parseDate(b.date_posted) - parseDate(a.date_posted);
+    if (dateDiff !== 0) return dateDiff;
+    return b.id - a.id; // Newer ID = more recent
+  });
 
 
-        {/* Right Small Cards */}
-        <div className="small-news-list">
-         {sideNews.map((news) => (
-  <div key={news.id} className="news-card">
+  // Hero = latest news, next 3 = secondary cards
+  const featured = sortedNews[0];
+  const sideNews = sortedNews.slice(1, 4);
 
-    <div className="news-card-image">
-      <img
-        src={`${BASE_URL}${news.image}`}
-        alt={news.title}
-      />
-      <span className="news-badge">Latest News</span>
-    </div>
+  return (
+    <div className="modern-news-layout">
 
-    <div className="news-card-body">
-      <h4>{news.title}</h4>
-<div className="news-meta">
+      {/* HERO STORY */}
+      <div className="split-hero-card">
+        <div className="featured-ribbon">★ Featured</div>
 
- 
+        {/* LEFT CONTENT */}
+        <div className="hero-content">
+          <h1>{featured.title}</h1>
 
-  <span className="news-tag date-tag">
-    <Calendar size={14} />
-    {new Date(news.date_posted).toLocaleDateString()}
-  </span>
+          <div className="hero-meta">
+            <span className="meta-pill admin-pill">
+              <User size={14} />
+              Admin
+            </span>
+            <span className="meta-pill calendar-pill">
+              <Calendar size={14} />
+              {new Date(featured.date_posted).toLocaleDateString()}
+            </span>
+           
+          </div>
 
-  <span className="news-tag author-tag">
-    <User size={14} />
-    Admin
-  </span>
+          <p className="hero-summary">
+            {featured.content?.slice(0, 220)}...
+          </p>
 
-  <span className="news-tag readtime-tag">
-    <Clock size={14} />
-    {calculateReadingTime(news.content)}
-  </span>
-
-</div>
-      <Link to={`/news/${news.id}`} className="read-more-link">
-        Read more →
-      </Link>
-    </div>
-
-  </div>
-))}
-
+          <Link to={`/news/${featured.id}`} className="hero-cta">
+            Read More
+          </Link>
         </div>
 
+        {/* RIGHT IMAGE */}
+        <div className="hero-image">
+          <img src={`${BASE_URL}${featured.image}`} alt={featured.title} />
+        </div>
       </div>
-    );
-  })()}
+
+     {/* SECONDARY STORIES */}
+<div className="secondary-news-grid">
+  {sideNews.map((news) => (
+    <div key={news.id} className="secondary-card">
+      
+      {/* Featured Ribbon */}
+      {news.is_featured && (
+        <div className="featured-ribbon-corner">
+          ★ Featured News
+        </div>
+      )}
+
+      <div className="secondary-image-wrapper">
+        <img
+          src={`${BASE_URL}${news.image}`}
+          alt={news.title}
+        />
+      </div>
+
+      <div className="secondary-content">
+        {/* Tags */}
+        <div className="secondary-tags">
+          <span className="meta-pill admin-pill">
+            <User size={14} /> Admin
+          </span>
+
+          <span className="meta-pill calendar-pill">
+            <Calendar size={14} /> {new Date(news.date_posted).toLocaleDateString()}
+          </span>
+
+          <span className="meta-pill read-pill">
+            <Clock size={14} /> {calculateReadingTime(news.content)}
+          </span>
+        </div>
+
+        <h3>{news.title}</h3>
+
+       
+        <Link to={`/news/${news.id}`} className="read-more-btn">
+          Read More 
+        </Link>
+      </div>
+    </div>
+  ))}
+</div>
+
+{/* View All News */}
+<div className="view-all-news-wrapper">
+  <Link to="/news" className="view-all-news-btn">
+    View All News →
+  </Link>
+</div>
+
+
+
+    </div>
+  );
+})()}
+
 
   {/* EVENTS FILTER VIEW */}
-  {activeFilter === "events" && (
-    <div className="events-only-layout">
-      {posts.events.map((event) => (
-        <div key={event.id} className="event-item">
-          {event.image && (
-            <div className="event-image">
-              <img src={`${BASE_URL}${event.image}`} alt={event.title} />
-            </div>
-          )}
+ {activeFilter === "events" && (
+  <section className="events-section">
 
-          <div className="event-content">
-            <div className="news-date">
-              {new Date(event.created_at).toLocaleDateString()}
-            </div>
-
-            <h3>{event.title}</h3>
-            <p>{event.content?.slice(0, 120)}...</p>
-
-            <button
-              className="view-more-btn"
-              onClick={() => setSelectedEvent(event)}
-            >
-              View More →
-            </button>
-          </div>
-        </div>
-      ))}
+    {/* Section Title */}
+    <div className="events-header">
+      <h2>Upcoming Events</h2>
+      <p>Stay updated with our latest programs and activities</p>
     </div>
-  )}
+
+    <div className="events-grid-layout">
+      {posts.events.map((event) => {
+        const eventDate = new Date(event.created_at);
+        const day = eventDate.getDate();
+        const month = eventDate.toLocaleString("default", { month: "short" });
+        const year = eventDate.getFullYear();
+
+        return (
+          <div key={event.id} className="event-card">
+            
+            {/* Image */}
+            {event.image && (
+              <div className="event-card-image">
+                <img
+                  src={`${BASE_URL}${event.image}`}
+                  alt={event.title}
+                />
+                
+                {/* Date Badge */}
+                <div className="event-date-badge">
+                  <span className="month">{month}</span>
+                  <span className="day">{day}</span>
+                  <span className="year">{year}</span>
+                </div>
+              </div>
+            )}
+
+            {/* Content */}
+            <div className="event-card-content">
+              <h3>{event.title}</h3>
+
+              <p>{event.content?.slice(0, 120)}...</p>
+
+              <button
+                className="read-more-link"
+                onClick={() => setSelectedEvent(event)}
+              >
+                Read More →
+              </button>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+   {/* Modal */}
+{selectedEvent && (
+  <div
+    className="event-modal-overlay"
+    onClick={() => setSelectedEvent(null)}
+  >
+    <div
+      className="event-modal"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Close Button */}
+      <button
+        className="modal-close-btn"
+        onClick={() => setSelectedEvent(null)}
+      >
+        ✕
+      </button>
+
+      {/* Image */}
+      {selectedEvent.image && (
+        <div className="modal-image-wrapper">
+          <img
+            src={`${BASE_URL}${selectedEvent.image}`}
+            alt={selectedEvent.title}
+          />
+        </div>
+      )}
+
+      {/* Content Section */}
+      <div className="modal-body">
+        <h2 className="modal-title">
+          {selectedEvent.title}
+        </h2>
+
+        <div className="modal-date">
+          {new Date(selectedEvent.event_date).toLocaleDateString(
+            "default",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            }
+          )}
+        </div>
+
+        <div className="modal-divider"></div>
+
+        <div className="modal-content">
+          {selectedEvent.content}
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+
+  </section>
+)}
+
 
   {/* ANNOUNCEMENTS FILTER VIEW */}
   {activeFilter === "announcements" && (
@@ -647,6 +747,7 @@ const facilities = [
             <h4>{item.title}</h4>
             <p>{item.content}</p>
           </div>
+          
         </div>
       ))}
     </div>
@@ -662,6 +763,8 @@ const facilities = [
           </div>
         </div>
       </section>
+
+      
 
 
     {/* EVENT MODAL */}
@@ -705,80 +808,57 @@ const facilities = [
 )}
 
 
-
-
-
 {/* Facilities Section */}
-<FacilitiesShowcase facilities={facilities} />
+<section className="facilities-section">
+  <div className="container">
+    <div className="section-header">
+      <h2>Our Facilities</h2>
+    </div>
+
+    <div className="facilities-grid">
+      {facilities.map((facility, index) => (
+        <div className="facility-card" key={index}>
+
+          {/* Animated Image Stack */}
+          <div className="facility-image">
+            {facility.images.map((img, i) => (
+              <img
+                key={i}
+                src={img}
+                alt={facility.title}
+                style={{ animationDelay: `${i * 4}s` }}
+              />
+            ))}
+          </div>
+
+          {/* Content */}
+          <div className="facility-content">
+            <h3 style={{ color: facility.color }}>
+              {facility.title}
+            </h3>
+
+            <p>{facility.description}</p>
+
+           <Link
+  to={facility.link}
+  className="facility-link"
+>
+  Learn More →
+</Link>
+
+          </div>
+
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
     </div> 
   );
 }
 
 
-/* ✅ COMPONENT OUTSIDE JSX */
-
-const FacilitiesShowcase = ({ facilities }) => {
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredFacilities =
-    activeCategory === "All"
-      ? facilities
-      : facilities.filter(
-          (facility) => facility.category === activeCategory
-        );
-
-  return (
-    <section className="facilities-showcase">
-      <div className="container">
-
-        {/* Tabs */}
-        <div className="facilities-tabs">
-          {["All", "ICT Labs", "Sports Areas", "Library"].map((tab) => (
-            <button
-              key={tab}
-              className={activeCategory === tab ? "active" : ""}
-              onClick={() => setActiveCategory(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-
-        {/* Cards */}
-        <div className="facilities-cards">
-          {filteredFacilities.map((facility, index) => (
-            <div className="facility-image-card" key={index}>
-              <div className="facility-image">
-                {facility.images.map((img, i) => (
-                  <img
-                    key={i}
-                    src={img}
-                    alt={facility.name}
-                    style={{ animationDelay: `${i * 4}s` }}
-                  />
-                ))}
-              </div>
-
-              <div className="facility-overlay">
-                <span className="facility-category">
-                  {facility.category}
-                </span>
-                <h3>{facility.name}</h3>
-                <p>{facility.description}</p>
-                <button className="facility-btn">Learn More</button>
-              </div>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
-
-
-  );
-  
-};
 
 
 
