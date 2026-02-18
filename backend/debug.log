@@ -3634,3 +3634,7 @@ INFO 2026-02-17 13:05:29,729 autoreload 109345 129420219150464 Watching for file
 INFO 2026-02-17 13:09:20,864 autoreload 109345 129420219150464 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
 INFO 2026-02-17 13:09:21,155 autoreload 110935 139964691570816 Watching for file changes with StatReloader
 >>>>>>> 3aa02f6f02639b882f2621ce70d3af0e0d695e06
+INFO 2026-02-18 10:53:43,712 autoreload 14592 7920 Watching for file changes with StatReloader
+INFO 2026-02-18 10:54:50,793 autoreload 14584 6180 Watching for file changes with StatReloader
+INFO 2026-02-18 10:56:08,545 autoreload 6880 7412 Watching for file changes with StatReloader
+INFO 2026-02-18 10:57:12,913 autoreload 11196 16356 Watching for file changes with StatReloader
