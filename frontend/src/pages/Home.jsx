@@ -51,7 +51,7 @@ export default function Home() {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
   const [activeFilter, setActiveFilter] = useState("news");
-
+   const [now, setNow] = useState(new Date());
 
   const navigate = useNavigate();
 
@@ -118,6 +118,15 @@ useEffect(() => {
 
   window.addEventListener("keydown", handleEsc);
   return () => window.removeEventListener("keydown", handleEsc);
+}, []);
+
+
+useEffect(() => {
+  const timer = setInterval(() => {
+    setNow(new Date());
+  }, 1000);
+
+  return () => clearInterval(timer);
 }, []);
 
 
@@ -233,7 +242,7 @@ const facilities = [
     color: "#0ea5e9",
     description:
       "Comfortable and secure accommodation for all cadets.",
-       link: "/facilities/Classes_Accomodations",
+       link: "/facilities/classes-accommodation",
     images: [
       "/images/promotional.jpg",
       "/images/academic.jpg",
@@ -479,8 +488,6 @@ const facilities = [
   </div>
 </section>
 
-
-      {/* News & Events Section */}
      {/* News & Events Section */}
 <section className="news-events-section">
   <div className="container">
@@ -629,52 +636,79 @@ const sortedNews = [...posts.news]
     {/* Section Title */}
     <div className="events-header">
       <h2>Upcoming Events</h2>
-      <p>Stay updated with our latest programs and activities</p>
+      <p>Stay updated with our upcomming Events</p>
     </div>
 
     <div className="events-grid-layout">
       {posts.events.map((event) => {
-        const eventDate = new Date(event.created_at);
-        const day = eventDate.getDate();
-        const month = eventDate.toLocaleString("default", { month: "short" });
-        const year = eventDate.getFullYear();
+  const eventDate = new Date(event.created_at);
+  const today = new Date();
 
-        return (
-          <div key={event.id} className="event-card">
-            
-            {/* Image */}
-            {event.image && (
-              <div className="event-card-image">
-                <img
-                  src={`${BASE_URL}${event.image}`}
-                  alt={event.title}
-                />
-                
-                {/* Date Badge */}
-                <div className="event-date-badge">
-                  <span className="month">{month}</span>
-                  <span className="day">{day}</span>
-                  <span className="year">{year}</span>
-                </div>
-              </div>
-            )}
+  const day = eventDate.getDate();
+  const month = eventDate.toLocaleString("default", { month: "short" });
+  const year = eventDate.getFullYear();
 
-            {/* Content */}
-            <div className="event-card-content">
-              <h3>{event.title}</h3>
+  // Calculate days left
+  today.setHours(0, 0, 0, 0);
+  eventDate.setHours(0, 0, 0, 0);
 
-              <p>{event.content?.slice(0, 120)}...</p>
+  const differenceInTime = eventDate.getTime() - today.getTime();
+  const daysLeft = Math.ceil(differenceInTime / (1000 * 60 * 60 * 24));
 
-              <button
-                className="read-more-link"
-                onClick={() => setSelectedEvent(event)}
-              >
-                Read More →
-              </button>
-            </div>
+
+  
+  return (
+    <div key={event.id} className="event-card">
+      
+      {event.image && (
+        <div className="event-card-image">
+          <img
+            src={`${BASE_URL}${event.image}`}
+            alt={event.title}
+          />
+
+          {/* Date Badge */}
+          <div className="event-date-badge">
+            <span className="month">{month}</span>
+            <span className="day">{day}</span>
+            <span className="year">{year}</span>
           </div>
-        );
-      })}
+        </div>
+      )}
+
+      <div className="event-card-content">
+        <h3>{event.title}</h3>
+
+        <p>{event.content?.slice(0, 120)}...</p>
+
+        {/* Days Left Display */}
+        <div
+             className={`days-left ${
+             daysLeft > 0
+              ? "upcoming"
+             : daysLeft === 0
+             ? "today"
+            : "completed"
+             }`}
+>
+  {daysLeft > 0 && `${daysLeft} day${daysLeft > 1 ? "s" : ""} left`}
+  {daysLeft === 0 && "Happening Today 🎉"}
+  {daysLeft < 0 && "Event Completed"}
+</div>
+
+    
+
+        <button
+          className="read-more-link"
+          onClick={() => setSelectedEvent(event)}
+        >
+          Read More →
+        </button>
+      </div>
+    </div>
+  );
+})}
+
     </div>
 
    {/* Modal */}
@@ -738,20 +772,45 @@ const sortedNews = [...posts.news]
 
 
   {/* ANNOUNCEMENTS FILTER VIEW */}
-  {activeFilter === "announcements" && (
-    <div className="announcements-only-layout">
+ {activeFilter === "announcements" && (
+  <div className="announcements-section">
+    <div className="events-header">
+      <h2>Announcements</h2>
+      <p>Stay updated with our Announcements</p>
+    </div>
+    <div className="announcements-grid">
       {posts.announcements?.map((item) => (
-        <div key={item.id} className="announcement-item">
-          <div className="announcement-badge">!</div>
-          <div>
-            <h4>{item.title}</h4>
-            <p>{item.content}</p>
+        <div key={item.id} className="announcement-card">
+          
+          <div className="announcement-header">
+            <div className="announcement-icon">📢</div>
+            <div className="announcement-meta">
+              <h3>{item.title}</h3>
+              <span className="announcement-date">
+                {item.date}
+              </span>
+            </div>
           </div>
+
+          <p className="announcement-text">{item.content}</p>
+
+          {item.pdf && (
+            <a
+              href={item.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-attachment"
+            >
+              📄 View Attachment
+            </a>
+          )}
           
         </div>
       ))}
     </div>
-  )}
+  </div>
+)}
+
 
 </div>
 

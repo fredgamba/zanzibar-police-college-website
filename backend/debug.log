@@ -3613,3 +3613,16 @@ INFO 2026-02-17 13:05:29,434 autoreload 109259 128698086072448 /home/tpf/dar-es-
 INFO 2026-02-17 13:05:29,729 autoreload 109345 129420219150464 Watching for file changes with StatReloader
 INFO 2026-02-17 13:09:20,864 autoreload 109345 129420219150464 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
 INFO 2026-02-17 13:09:21,155 autoreload 110935 139964691570816 Watching for file changes with StatReloader
+INFO 2026-02-18 08:10:45,399 autoreload 8424 12304 Watching for file changes with StatReloader
+INFO 2026-02-18 08:13:39,606 autoreload 12068 9760 Watching for file changes with StatReloader
+INFO 2026-02-18 08:23:52,507 autoreload 12068 9760 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\__init__.py changed, reloading.
+INFO 2026-02-18 08:24:57,400 autoreload 9168 10796 Watching for file changes with StatReloader
+INFO 2026-02-18 08:26:00,007 autoreload 1532 9300 Watching for file changes with StatReloader
+INFO 2026-02-18 08:29:10,532 autoreload 1532 9300 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 08:29:11,446 autoreload 9168 10796 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 08:29:36,179 autoreload 2188 636 Watching for file changes with StatReloader
+INFO 2026-02-18 08:30:34,627 autoreload 2188 636 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 08:32:34,852 autoreload 12524 8064 Watching for file changes with StatReloader
+INFO 2026-02-18 09:04:32,900 autoreload 13136 10948 Watching for file changes with StatReloader
+INFO 2026-02-18 09:18:24,921 autoreload 13136 10948 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 09:18:59,044 autoreload 11172 8804 Watching for file changes with StatReloader
