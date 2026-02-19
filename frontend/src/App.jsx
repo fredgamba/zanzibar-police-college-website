@@ -25,6 +25,7 @@ import ApplyOnline from "./pages/ApplyOnline";
 import programs from "./pages/Admission/Course";
 import Events from "./pages/Events";
 import Facilities from "./pages/Facilities/Library";
+
 // ===== ABOUT =====
 import History from "./pages/About/History";
 import Organization from "./pages/About/Organization";
@@ -263,6 +264,8 @@ function App() {
             </PublicLayout>
           } />
                <Route path="/facilities" element={<Facilities />} />
+
+             
 
      <Route
   path="/programs/:slug"

@@ -10,41 +10,59 @@ export default function Events() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 useEffect(() => {
-  api.get("posts/?post_type=event")
-    .then(res => {
-      const allEvents = res.data;
+  setLoading(true);
+  setError(null);
 
-      if (id) {
-        const found = allEvents.find(e => e.id === Number(id));
-        if (!found) {
-          setError("Event not found.");
-        } else {
-          setEventItem(found);
-        }
-      } else {
-        setEvents(allEvents);
-      }
-
-      setLoading(false);
-    })
-    .catch(err => {
-      console.error(err);
-      setError("Failed to load events.");
-      setLoading(false);
-    });
+  if (id) {
+    api.get(`posts/${id}/`)
+      .then(res => {
+        setEventItem(res.data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setError("Event not found.");
+        setLoading(false);
+      });
+  } else {
+    api.get("posts/?post_type=event")
+      .then(res => {
+        setEvents(res.data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setError("Failed to load events.");
+        setLoading(false);
+      });
+  }
 }, [id]);
 
 
+
   if (loading) return <div>Loading events...</div>;
-  if (error) return <div>{error}</div>;
+ if (error) {
+  return (
+    <div style={{
+      minHeight: "60vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      fontSize: "18px"
+    }}>
+      {error}
+    </div>
+  );
+}
+
 
   // ================= SINGLE EVENT PAGE =================
   if (id && eventItem) {
     return (
-      <div className="events-page" style={{ maxWidth: "800px", margin: "auto", padding: "20px" }}>
+      <div className="events-page" style={{ maxWidth: "800px", margin: "auto", padding: "20px",position: "relative"  }}>
         <h1>{eventItem.title}</h1>
 
-        <div className="event-date-badge" style={{ marginBottom: "20px" }}>
+        <div className="event-date-inline">
           <Calendar size={16} />
           <span>
             {new Date(eventItem.created_at).toLocaleDateString("en-US", {
@@ -57,10 +75,11 @@ useEffect(() => {
 
         {eventItem.image && (
           <img
-            src={eventItem.image}
-            alt={eventItem.title}
-            style={{ width: "100%", borderRadius: "10px", marginBottom: "20px" }}
-          />
+  src={eventItem.image}
+  alt={eventItem.title}
+  style={{ width: "100%", borderRadius: "10px", marginBottom: "20px" }}
+/>
+
         )}
 
         <div dangerouslySetInnerHTML={{ __html: eventItem.content }} />

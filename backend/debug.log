@@ -3633,6 +3633,7 @@ INFO 2026-02-17 13:05:29,434 autoreload 109259 128698086072448 /home/tpf/dar-es-
 INFO 2026-02-17 13:05:29,729 autoreload 109345 129420219150464 Watching for file changes with StatReloader
 INFO 2026-02-17 13:09:20,864 autoreload 109345 129420219150464 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
 INFO 2026-02-17 13:09:21,155 autoreload 110935 139964691570816 Watching for file changes with StatReloader
+<<<<<<< HEAD
 >>>>>>> 3aa02f6f02639b882f2621ce70d3af0e0d695e06
 INFO 2026-02-18 10:53:43,712 autoreload 14592 7920 Watching for file changes with StatReloader
 INFO 2026-02-18 10:54:50,793 autoreload 14584 6180 Watching for file changes with StatReloader
@@ -3640,3 +3641,167 @@ INFO 2026-02-18 10:56:08,545 autoreload 6880 7412 Watching for file changes with
 INFO 2026-02-18 10:57:12,913 autoreload 11196 16356 Watching for file changes with StatReloader
 WARNING 2026-02-18 10:57:35,543 log 11196 14508 Unauthorized: /api/auth/token/
 INFO 2026-02-19 08:13:06,194 autoreload 9688 2604 Watching for file changes with StatReloader
+=======
+INFO 2026-02-18 08:10:45,399 autoreload 8424 12304 Watching for file changes with StatReloader
+INFO 2026-02-18 08:13:39,606 autoreload 12068 9760 Watching for file changes with StatReloader
+INFO 2026-02-18 08:23:52,507 autoreload 12068 9760 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\__init__.py changed, reloading.
+INFO 2026-02-18 08:24:57,400 autoreload 9168 10796 Watching for file changes with StatReloader
+INFO 2026-02-18 08:26:00,007 autoreload 1532 9300 Watching for file changes with StatReloader
+INFO 2026-02-18 08:29:10,532 autoreload 1532 9300 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 08:29:11,446 autoreload 9168 10796 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 08:29:36,179 autoreload 2188 636 Watching for file changes with StatReloader
+INFO 2026-02-18 08:30:34,627 autoreload 2188 636 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 08:32:34,852 autoreload 12524 8064 Watching for file changes with StatReloader
+INFO 2026-02-18 09:04:32,900 autoreload 13136 10948 Watching for file changes with StatReloader
+INFO 2026-02-18 09:18:24,921 autoreload 13136 10948 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-18 09:18:59,044 autoreload 11172 8804 Watching for file changes with StatReloader
+WARNING 2026-02-18 09:19:40,905 log 11172 6924 Not Found: /favicon.ico
+WARNING 2026-02-18 09:20:45,962 log 11172 4928 Unauthorized: /api/posts/
+WARNING 2026-02-18 09:20:45,967 log 11172 11216 Unauthorized: /api/users/
+WARNING 2026-02-18 09:20:45,969 log 11172 12072 Unauthorized: /api/pages/
+WARNING 2026-02-18 09:20:46,014 log 11172 11852 Unauthorized: /api/posts/
+WARNING 2026-02-18 09:20:46,020 log 11172 10988 Unauthorized: /api/users/
+WARNING 2026-02-18 09:20:46,024 log 11172 9780 Unauthorized: /api/pages/
+WARNING 2026-02-18 09:20:46,309 log 11172 10988 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-18 09:20:46,320 log 11172 12072 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-18 09:20:46,334 log 11172 4928 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-18 09:20:46,336 log 11172 11852 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-18 09:20:46,337 log 11172 11216 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-18 09:20:46,339 log 11172 9780 Unauthorized: /api/auth/token/refresh/
+ERROR 2026-02-18 13:23:22,936 log 11172 6300 Internal Server Error: /api/public/home-feed/
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 789, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Users\ICT POOL\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 680, in connect
+    self._get_server_information()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 1099, in _get_server_information
+    packet = self._read_packet()
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 751, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 795, in _read_bytes
+    raise err.OperationalError(
+    ...<2 lines>...
+    )
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10054] An existing connection was forcibly closed by the remote host)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 132, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 680, in connect
+    self._get_server_information()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 1099, in _get_server_information
+    packet = self._read_packet()
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 751, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\myenv\Lib\site-packages\pymysql\connections.py", line 795, in _read_bytes
+    raise err.OperationalError(
+    ...<2 lines>...
+    )
+django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10054] An existing connection was forcibly closed by the remote host)')
+>>>>>>> 295affe697e2842634d865f580624fc94e786df4
