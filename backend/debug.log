@@ -3775,3 +3775,11 @@ Traceback (most recent call last):
     ...<2 lines>...
     )
 django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10054] An existing connection was forcibly closed by the remote host)')
+WARNING 2026-02-18 20:13:53,309 log 11172 7156 Not Found: /posts/2/
+WARNING 2026-02-18 20:13:55,674 log 11172 7156 Not Found: /favicon.ico
+INFO 2026-02-19 09:59:27,760 autoreload 13012 3556 Watching for file changes with StatReloader
+INFO 2026-02-19 10:19:20,244 autoreload 13012 3556 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-19 10:19:59,566 autoreload 7724 2408 Watching for file changes with StatReloader
+INFO 2026-02-19 10:29:30,820 autoreload 13064 10532 Watching for file changes with StatReloader
+INFO 2026-02-19 10:39:46,884 autoreload 13064 10532 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-19 10:39:58,811 autoreload 5960 5076 Watching for file changes with StatReloader

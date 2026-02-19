@@ -3666,46 +3666,53 @@ backdrop-filter: blur(6px);
 
 .split-hero-card {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  min-height: 520px;
+  grid-template-columns: 1.15fr 1fr;
+  min-height: 540px;
   background: white;
-  border-radius: 28px;
-  overflow: visible;
-  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.08);
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 
+    0 10px 40px rgba(15, 23, 42, 0.06),
+    0 40px 120px rgba(15, 23, 42, 0.10);
   transition: all 0.4s ease;
-  
 }
 
 .split-hero-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 45px 100px rgba(15, 23, 42, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 
+    0 20px 60px rgba(15, 23, 42, 0.10),
+    0 60px 140px rgba(15, 23, 42, 0.18);
 }
-/* LEFT SIDE */
-.hero-content {
-  padding: 4rem;
+
+/* LEFT SIDE */.hero-content {
+  padding: 4.5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(
-    135deg,
-    #ffffff,
-    #f8fafc
+    180deg,
+    #ffffff 0%,
+    #f8fafc 100%
   );
   position: relative;
 }
 
-/* Accent bar */
+/* Accent Line */
 .hero-content::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 20%;
-  height: 60%;
-  width: 5px;
-  background: var(--primary-color);
-  border-radius: 5px;
+  top: 80px;
+  width: 6px;
+  height: 120px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    #6366f1
+  );
 }
-
 
 /* Badge */
 .hero-badge {
@@ -3725,11 +3732,15 @@ backdrop-filter: blur(6px);
   font-size: 2.6rem;
   font-weight: 800;
   line-height: 1.15;
-  margin-bottom: 1.5rem;
   color: #0f172a;
-  position: relative;
-  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
 }
+
+.hero-content h1 {
+  font-size: clamp(2rem, 2.8vw, 3rem);
+}
+
 
 .hero-content h1::after {
   content: "";
@@ -3754,18 +3765,7 @@ backdrop-filter: blur(6px);
   flex-wrap: wrap;
 }
 
-/* Base pill */
-.meta-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
- 
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
+
 
 /* Calendar, Read, Admin use primary color */
 .calendar-pill,
@@ -3778,29 +3778,38 @@ backdrop-filter: blur(6px);
 
 /* SUMMARY */
 .hero-summary {
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 1.05rem;
+  line-height: 1.9;
   color: #475569;
-  max-width: 520px;
-  transition: all 0.3s ease;
+  max-width: 560px;
+  margin-top: 0.5rem;
 }
+.hero-summary {
+  font-weight: 400;
+}
+
 
 /* CTA */
 .hero-cta {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  display:block;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
   font-weight: 700;
-  color: var(--primary-color);
   text-decoration: none;
-  font-size: 1rem;
-  position: relative;
   transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(99,102,241,0.3);
 }
 
-.hero-cta::after {
-  content: "→";
-  margin-left: 6px;
-  transition: transform 0.3s ease;
+.hero-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 35px rgba(99,102,241,0.4);
 }
+
 
 .hero-cta:hover::after {
   transform: translateX(6px);
@@ -3809,18 +3818,45 @@ backdrop-filter: blur(6px);
 
 /* RIGHT SIDE IMAGE */
 .hero-image {
-  height: 100%;
-  
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* keeps it clean */
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
+
+.split-hero-card:hover .hero-image img {
+  transform: scale(1.05);
+}
+
+/* Subtle overlay */
+.hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.15),
+    transparent
+  );
+}
+
 .split-hero-card {
   position: relative;
   overflow: visible;
+}
+
+.hero-category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 .featured-ribbon {
@@ -3965,15 +4001,15 @@ backdrop-filter: blur(6px);
 .meta-pill {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 0.7rem;
+  gap: 6px;
+  font-size: 0.75rem;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 6px 14px;
   border-radius: 50px;
-  transition: all 0.3s ease;
-  color: black;
-  cursor: default;
+  background: #f1f5f9;
+  color: #334155;
 }
+
 
 /* Pill colors */
 .admin-pill,
