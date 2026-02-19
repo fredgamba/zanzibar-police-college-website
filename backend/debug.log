@@ -3804,6 +3804,7 @@ Traceback (most recent call last):
     ...<2 lines>...
     )
 django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10054] An existing connection was forcibly closed by the remote host)')
+<<<<<<< HEAD
 >>>>>>> 295affe697e2842634d865f580624fc94e786df4
 INFO 2026-02-19 08:26:00,198 autoreload 10584 18324 Watching for file changes with StatReloader
 INFO 2026-02-19 08:26:39,343 autoreload 10584 18324 C:\Users\USER\Documents\dpa_college_website\backend\police_academy_backend\settings.py changed, reloading.
@@ -3818,3 +3819,13 @@ WARNING 2026-02-19 15:18:40,378 log 13172 13624 Not Found: /api/pages/history/
 WARNING 2026-02-19 15:18:40,445 log 13172 18372 Not Found: /api/pages/history/
 WARNING 2026-02-19 15:55:32,282 log 13172 18740 Not Found: /api/pages/history/
 WARNING 2026-02-19 15:55:32,295 log 13172 7872 Not Found: /api/pages/history/
+=======
+WARNING 2026-02-18 20:13:53,309 log 11172 7156 Not Found: /posts/2/
+WARNING 2026-02-18 20:13:55,674 log 11172 7156 Not Found: /favicon.ico
+INFO 2026-02-19 09:59:27,760 autoreload 13012 3556 Watching for file changes with StatReloader
+INFO 2026-02-19 10:19:20,244 autoreload 13012 3556 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-19 10:19:59,566 autoreload 7724 2408 Watching for file changes with StatReloader
+INFO 2026-02-19 10:29:30,820 autoreload 13064 10532 Watching for file changes with StatReloader
+INFO 2026-02-19 10:39:46,884 autoreload 13064 10532 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-19 10:39:58,811 autoreload 5960 5076 Watching for file changes with StatReloader
+>>>>>>> c79150d9092a0d65ca6632a0bf5b18c359ca1676
