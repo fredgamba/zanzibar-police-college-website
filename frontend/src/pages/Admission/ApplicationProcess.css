@@ -2,6 +2,9 @@
   background: linear-gradient(to bottom, #f8fafc, #eef2f7);
   padding: 60px 20px;
   font-family: "Segoe UI", Tahoma, sans-serif;
+  isolation: isolate;
+  position: relative;
+  z-index: 1;
 }
 
 .application-container {
@@ -10,7 +13,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  align-items: center;
+  align-items: start;
 }
 
 /* LEFT CONTENT */
@@ -59,24 +62,40 @@
   text-decoration: underline;
 }
 
-/* RIGHT IMAGE */
-.application-image {
-  text-align: center;
+/* RIGHT COLUMN — grid column ya kulia */
+.application-image-col {
+  display: block;
 }
 
-.application-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* INNER WRAPPER — inashikilia picha + caption, inafuata ukubwa wa picha tu */
+.image-wrapper {
+  display: inline-block;
+  width: 100%;
+  line-height: 0; /* inaondoa gap ya default kati ya img na p */
 }
 
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  box-shadow: none;
+}
 
+/* Caption inashikamana moja kwa moja chini ya picha */
 .image-caption {
-  margin-top: 12px;
+  display: block;
+  line-height: 1.4; /* rudisha line-height kwa text */
+  margin: 0;
+  padding: 10px 14px;
+  background: #0f3d68;
+  color: #ffffff;
   font-size: 14px;
-  font-weight: 500;
-  color: #1f2937;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* RESPONSIVE */

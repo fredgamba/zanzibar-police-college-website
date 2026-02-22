@@ -7339,108 +7339,112 @@ body,
 .contact-item svg {
   color: #2563eb;
 }
-/* Desktop Menu */
-.main-nav ul {
-  display: flex;
-  gap: 20px;
-}
+/*humberger ya zamani
 
-/* Hide hamburger on desktop */
-/* Hide mobile header on desktop */
-.mobile-header {
+.mobile-hamburger-bar {
   display: none;
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-  .mobile-header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background: #003366;
-    padding: 10px 15px;
-    height: 60px;
-  }
 
-  .mobile-hamburger {
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    z-index: 2;
-  }
-  .mobile-logo {
-    position: absolute;
-    left: 80%;
-    transform: translateX(-50%);
-    height: 40px;
-    width: auto;
-  }
-
-  .main-nav {
-    display: none;
-    flex-direction: column;
-    background: #003366;
-    width: 100%;
-  }
-
-  .main-nav.open {
-    display: flex;
-  }
-}
-/* =============== MOBILE NAVIGATION FIX =============== */
 @media (max-width: 768px) {
-  /* Position navbar properly */
-  .college-navbar {
-    position: relative;
-  }
 
-  /* Mobile header styling */
-  .mobile-header {
+ 
+  .top-bar {
     display: flex !important;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0.8rem 1rem;
-    background: #1c236d;
-    position: relative;
-    z-index: 1000;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.78rem;
+    text-align: center;
   }
 
-  .mobile-hamburger {
-    cursor: pointer;
+  .contact-info {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+
+  .top-bar .quick-links {
+    display: none;
+  }
+
+  
+  .main-header {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
+
+  .coa-logo,
+  .academy-logo {
+    height: 56px;
+  }
+
+  .school-name h1 {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+
+  .school-name h2 {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+  }
+
+  .school-name p {
+    font-size: 0.85rem;
+  }
+
+ 
+  .mobile-hamburger-bar {
+    display: flex;
+    align-items: center;
+    background: #1c236d;
+    padding: 0.55rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .mobile-hamburger-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
     color: white;
-    z-index: 1001;
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+
+  .mobile-hamburger-btn:hover {
+    background: rgba(255, 255, 255, 0.22);
   }
 
   .hamburger-icon {
-    font-size: 2rem;
-    display: block;
+    font-size: 1.4rem;
+    line-height: 1;
   }
 
-  .mobile-logo {
-    height: 45px;
-    width: auto;
-    margin-left: auto;
+  .hamburger-label {
+    font-size: 0.85rem;
   }
 
-  /* Hide desktop elements */
-  .top-bar,
-  .main-header {
-    display: none !important;
-  }
-
-  /* Mobile menu */
+  
   .main-nav {
     display: none;
     flex-direction: column;
     background: #1c236d;
     width: 100%;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    max-height: calc(100vh - 60px);
-    overflow-y: auto;
-    z-index: 999;
+    
+    position: relative;
+    z-index: 998;
   }
 
   .main-nav.open {
@@ -7461,175 +7465,43 @@ body,
 
   .main-nav a,
   .dropdown > span {
-    padding: 1rem 1.5rem;
+    padding: 0.85rem 1.5rem;
     width: 100%;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-size: 0.95rem;
   }
 
-  /* Dropdown menu in mobile */
+ 
   .dropdown-menu {
     position: static !important;
     display: block;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.25);
     box-shadow: none;
     margin: 0;
     border-radius: 0;
     width: 100%;
+    animation: none;
   }
 
   .dropdown-menu li {
     width: 100%;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
   }
 
   .dropdown-menu li a {
     padding-left: 3rem !important;
+    font-size: 0.88rem;
   }
-}
-/* =============== MOBILE HEADER - LOGO ON RIGHT =============== */
-.mobile-header {
-  display: none;
-  background: #1c236d;
-  position: relative;
-  z-index: 1000;
-  padding: 0.8rem 1rem;
+
+
 }
 
-.mobile-hamburger {
-  cursor: pointer;
-  color: white;
-  z-index: 1001;
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
+*/
 
-.hamburger-icon {
-  font-size: 2rem;
-  display: block;
-}
-
-.mobile-logo {
-  height: 45px;
-  width: auto;
-  display: block;
-  margin-left: auto; /* This pushes it to the right */
-  margin-right: 0;
-}
-
-@media (max-width: 768px) {
-  /* Show mobile header */
-  .mobile-header {
-    display: block !important;
-  }
-
-  /* Hide desktop elements */
-  .top-bar,
-  .main-header {
-    display: none !important;
-  }
-
-  /* Position navbar properly */
-  .college-navbar {
-    position: relative;
-  }
-
-  /* Mobile menu */
-  .main-nav {
-    display: none;
-    flex-direction: column;
-    background: #1c236d;
-    width: 100%;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    max-height: calc(100vh - 60px);
-    overflow-y: auto;
-    z-index: 999;
-  }
-
-  .main-nav.open {
-    display: flex;
-  }
-
-  .main-nav ul {
-    flex-direction: column;
-    gap: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .main-nav li {
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .main-nav a,
-  .dropdown > span {
-    padding: 1rem 1.5rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  /* Dropdown menu in mobile */
-  .dropdown-menu {
-    position: static !important;
-    display: block;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: none;
-    margin: 0;
-    border-radius: 0;
-    width: 100%;
-  }
-
-  .dropdown-menu li {
-    width: 100%;
-  }
-
-  .dropdown-menu li a {
-    padding-left: 3rem !important;
-  }
-}
-/* =============== ALTERNATIVE - MOBILE HEADER FLEXBOX =============== */
-@media (max-width: 768px) {
-  .mobile-header {
-    display: flex !important;
-    justify-content: space-between; /* Space between hamburger and logo */
-    align-items: center;
-    padding: 0.8rem 1rem;
-    background: #1c236d;
-    position: relative;
-    z-index: 1000;
-  }
-
-  .mobile-hamburger {
-    cursor: pointer;
-    color: white;
-    z-index: 1001;
-    order: 1; /* First item (left) */
-  }
-
-  .hamburger-icon {
-    font-size: 2rem;
-  }
-
-  .mobile-logo {
-    height: 45px;
-    width: auto;
-    order: 2; /* Second item (right) */
-  }
-
-  /* Hide desktop elements */
-  .top-bar,
-  .main-header {
-    display: none !important;
-  }
-}
 
 /* SECTION */
 .events-section {
@@ -8129,4 +8001,171 @@ body,
   .modal-body {
     padding: 1.5rem;
   }
+}
+/* ============================================================
+   MOBILE NAVBAR PATCH — paste this at the BOTTOM of index.css
+   (it overrides the earlier mobile rules that hide top-bar
+   and main-header on small screens)
+   ============================================================ */
+
+/* ---- Hamburger bar: hidden on desktop ---- */
+.mobile-hamburger-bar {
+  display: none;
+}
+
+/* ---- Mobile breakpoint ---- */
+@media (max-width: 768px) {
+
+  /* 1. Keep top-bar visible but make it wrap nicely */
+  .top-bar {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.78rem;
+    text-align: center;
+  }
+
+  .contact-info {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  /* Hide the long quick-links row on very small screens
+     (optional — remove this block if you want them shown) */
+  .top-bar .quick-links {
+    display: none;
+  }
+
+  /* 2. Keep main-header visible, stack it vertically */
+  .main-header {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
+
+  .coa-logo,
+  .academy-logo {
+    height: 56px;
+  }
+
+  .school-name h1 {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+
+  .school-name h2 {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+  }
+
+  .school-name p {
+    font-size: 0.85rem;
+  }
+
+  /* 3. Show the hamburger bar below the header */
+  .mobile-hamburger-bar {
+    display: flex;
+    align-items: center;
+    background: #1c236d;
+    padding: 0.55rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .mobile-hamburger-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    color: white;
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+
+  .mobile-hamburger-btn:hover {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .hamburger-icon {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .hamburger-label {
+    font-size: 0.85rem;
+  }
+
+  /* 4. Mobile nav drawer — drops below the hamburger bar */
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #1c236d;
+    width: 100%;
+    /* NOT fixed — flows naturally below the bar */
+    position: relative;
+    z-index: 998;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .main-nav a,
+  .dropdown > span {
+    padding: 0.85rem 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* Inline dropdown on mobile */
+  .dropdown-menu {
+    position: static !important;
+    display: block;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    animation: none;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 3rem !important;
+    font-size: 0.88rem;
+  }
+
+  /* Desktop nav hidden by default on mobile (hamburger controls it) */
+  /* (the .main-nav rule above handles this already) */
 }

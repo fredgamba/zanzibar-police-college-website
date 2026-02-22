@@ -1,4 +1,3 @@
-
 import "./ApplicationProcess.css";
 import commandant from "../../assets/commandant.png";
 
@@ -29,17 +28,19 @@ const ApplicationProcess = () => {
           </div>
         </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="application-image">
-          <img src={commandant} alt="Commandant DPA" />
-          <p className="image-caption">
-            Commandant – Dar es Salaam Police Academy
-          </p>
+        {/* RIGHT IMAGE — div ndogo inashikilia picha + caption pamoja */}
+        <div className="application-image-col">
+          <div className="image-wrapper">
+            <img src={commandant} alt="Commandant DPA" />
+            <p className="image-caption">
+              Commandant – Dar es Salaam Police Academy
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
   );
 };
 
 export default ApplicationProcess;
-

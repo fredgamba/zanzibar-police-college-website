@@ -20,39 +20,33 @@ export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const handleMouseEnter = (name) => {
-    // Only use hover on desktop
     if (window.innerWidth > 768) {
       setOpenDropdown(name);
     }
   };
   
   const handleMouseLeave = () => {
-    // Only use hover on desktop
     if (window.innerWidth > 768) {
       setOpenDropdown(null);
     }
   };
 
   const handleDropdownClick = (name) => {
-    // Toggle dropdown on click (for mobile)
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
   const toggleMobileMenu = () => {
     setIsMobileOpen(!isMobileOpen);
-    // Close any open dropdowns when closing menu
     if (isMobileOpen) {
       setOpenDropdown(null);
     }
   };
 
-  // Close mobile menu and dropdowns when clicking a link
   const handleLinkClick = () => {
     setIsMobileOpen(false);
     setOpenDropdown(null);
   };
 
-  // Quick Links for Top Bar
   const quickLinks = [
     { name: 'Tpf Service Portal', path: '/alumni', icon: Shield },
     { name: 'Admission', path: '/admission', icon: GraduationCap },
@@ -86,7 +80,7 @@ export default function Navbar() {
 
   return (
     <nav className="college-navbar">
-      {/* Top Bar - Quick Links & Contact Info */}
+      {/* Top Bar - Quick Links & Contact Info — always visible */}
       <div className="top-bar">
         <div className="contact-info">
           <span>
@@ -111,7 +105,7 @@ export default function Navbar() {
         </nav>
       </div>
 
-      {/* Main Header - Logos + Centered Title */}
+      {/* Main Header - Logos + Centered Title — always visible */}
       <div className="main-header">
         <img
           src="/images/tanzania-coa.png"
@@ -130,17 +124,16 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Mobile header */}
-      <div className="mobile-header">
-        <div className="mobile-hamburger" onClick={toggleMobileMenu}>
+      {/* Hamburger bar — shown only on mobile, sits below main-header */}
+      <div className="mobile-hamburger-bar">
+        <button
+          className="mobile-hamburger-btn"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle navigation menu"
+        >
           <span className="hamburger-icon">&#9776;</span>
-        </div>
-
-        <img
-          src="/images/police-academy-logo.png"
-          alt="Police Logo"
-          className="mobile-logo"
-        />
+          <span className="hamburger-label">Menu</span>
+        </button>
       </div>
 
       {/* Main Navigation */}
