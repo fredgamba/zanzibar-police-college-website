@@ -3783,3 +3783,12 @@ INFO 2026-02-19 10:19:59,566 autoreload 7724 2408 Watching for file changes with
 INFO 2026-02-19 10:29:30,820 autoreload 13064 10532 Watching for file changes with StatReloader
 INFO 2026-02-19 10:39:46,884 autoreload 13064 10532 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
 INFO 2026-02-19 10:39:58,811 autoreload 5960 5076 Watching for file changes with StatReloader
+WARNING 2026-02-19 10:43:29,816 log 5960 6268 Unauthorized: /api/public/news/
+WARNING 2026-02-19 10:43:29,877 log 5960 14020 Unauthorized: /api/public/news/
+WARNING 2026-02-19 11:42:42,022 log 5960 13132 Not Found: /api/pages/history/
+WARNING 2026-02-19 11:42:42,329 log 5960 13132 Not Found: /api/pages/history/
+WARNING 2026-02-19 11:42:52,657 log 5960 13132 Not Found: /api/pages/organization/
+WARNING 2026-02-19 11:42:52,716 log 5960 13132 Not Found: /api/pages/organization/
+WARNING 2026-02-19 11:43:23,007 log 5960 9284 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-19 11:43:23,231 log 5960 9284 Not Found: /api/public/pages/by-page/
+INFO 2026-02-19 21:24:42,912 autoreload 8580 2776 Watching for file changes with StatReloader
