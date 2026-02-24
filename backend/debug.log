@@ -3916,3 +3916,27 @@ WARNING 2026-02-24 10:07:59,937 log 11196 8704 Not Found: /api/driving-features
 WARNING 2026-02-24 10:08:00,356 log 11196 12168 Not Found: /api/driving-images
 WARNING 2026-02-24 10:08:00,466 log 11196 8704 Not Found: /api/driving-features
 INFO 2026-02-24 10:14:46,833 autoreload 11444 4580 Watching for file changes with StatReloader
+WARNING 2026-02-24 10:24:13,158 log 11444 6016 Not Found: /api/driving-features
+WARNING 2026-02-24 10:24:13,189 log 11444 7648 Not Found: /api/driving-images
+WARNING 2026-02-24 10:24:14,611 log 11444 6016 Not Found: /api/driving-features
+WARNING 2026-02-24 10:24:14,813 log 11444 7648 Not Found: /api/driving-images
+WARNING 2026-02-24 10:54:21,161 log 11444 5076 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-24 10:54:21,164 log 11444 6780 Unauthorized: /api/public/posts/
+WARNING 2026-02-24 10:54:21,166 log 11444 1740 Unauthorized: /api/public/gallery/
+WARNING 2026-02-24 10:54:21,185 log 11444 10972 Unauthorized: /api/public/posts/
+WARNING 2026-02-24 10:54:21,201 log 11444 5076 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-24 10:54:21,226 log 11444 1740 Unauthorized: /api/public/gallery/
+WARNING 2026-02-24 10:54:21,663 log 11444 12580 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-24 10:54:21,698 log 11444 1740 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-24 10:54:21,749 log 11444 2092 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-24 10:54:21,762 log 11444 5076 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-24 10:54:21,846 log 11444 6780 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-24 10:54:21,933 log 11444 10972 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-24 11:33:28,117 log 11444 4876 Not Found: /api/pages/organization/
+WARNING 2026-02-24 11:33:28,294 log 11444 4876 Not Found: /api/pages/organization/
+WARNING 2026-02-24 12:47:40,242 log 11444 11896 Not Found: /api/driving-images
+WARNING 2026-02-24 12:47:40,424 log 11444 2672 Not Found: /api/driving-features
+WARNING 2026-02-24 12:47:40,587 log 11444 11896 Not Found: /api/driving-images
+WARNING 2026-02-24 12:47:40,632 log 11444 2672 Not Found: /api/driving-features
+WARNING 2026-02-24 12:53:03,191 log 11444 13276 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 12:53:03,282 log 11444 13276 Not Found: /api/public/pages/by-page/
