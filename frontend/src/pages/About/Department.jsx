@@ -40,14 +40,9 @@ export default function Department() {
   return (
     <div className="department-page">
       {/* Hero Section */}
-      <div className="department-hero">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="hero-title">Academic Wing</h1>
-          <p className="hero-subtitle">Zanzibar police college</p>
-        </div>
-      </div>
-
+     
+     
+     <p className="hero-subtitle">OUR DEPARTMENTS</p>
       {/* Main Content */}
       <div className="department-container">
         {/* Library Image Card */}

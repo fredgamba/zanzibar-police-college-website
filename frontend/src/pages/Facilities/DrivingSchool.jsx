@@ -12,7 +12,7 @@ export default function DrivingSchool() {
       .then(res => setFeatures(res.data))
       .catch(() => {
         setFeatures([
-          { title: "Accredited Training Institution", text: "DPA Driving School operates as a fully accredited institution, providing certified and regulated driver training programs." },
+          { title: "Accredited Training Institution", text: "ZPC Driving School operates as a fully accredited institution, providing certified and regulated driver training programs." },
           { title: "Learner-Focused Instruction", text: "Training programs are designed using structured lesson plans that support individual learner progress and competency development." },
           { title: "Qualified Driving Instructors", text: "Instruction is provided by trained and experienced professionals committed to maintaining high standards of road safety." },
           { title: "Comprehensive Practical Training", text: "The curriculum integrates theoretical knowledge with practical driving experience to ensure road readiness and compliance." },
@@ -23,19 +23,19 @@ export default function DrivingSchool() {
     setFeatures2([
       {
         title: "Top Safety Measures",
-        text: "Safety is our priority. At DPA Driving School, we follow strict safety protocols, provide expert guidance, and teach defensive driving techniques to ensure every student drives with confidence and care."
+        text: "Safety is our priority. At ZPC Driving School, we follow strict safety protocols, provide expert guidance, and teach defensive driving techniques to ensure every student drives with confidence and care."
       },
       {
         title: "Perfect Timing for Your Driving Journey",
-        text: "At DPA Driving School, we ensure every lesson is scheduled perfectly to fit your needs, helping you learn at your own pace and convenience."
+        text: "At ZPC Driving School, we ensure every lesson is scheduled perfectly to fit your needs, helping you learn at your own pace and convenience."
       },
       {
         title: "Affordable Driving Lessons",
-        text: "At DPA Driving School, we offer high-quality driving education at prices that fit your budget, making safe driving accessible to all."
+        text: "At ZPC Driving School, we offer high-quality driving education at prices that fit your budget, making safe driving accessible to all."
       },
       {
         title: "Our Experts",
-        text: "At DPA Driving School, our certified instructors bring years of experience and a passion for teaching, ensuring you gain the skills and confidence to drive safely."
+        text: "At ZPC Driving School, our certified instructors bring years of experience and a passion for teaching, ensuring you gain the skills and confidence to drive safely."
       },
 
     ]);
@@ -44,7 +44,7 @@ export default function DrivingSchool() {
     api.get('/driving-images')
       .then(res => setImages(res.data))
       .catch(() => {
-        setImages([{ src: '/images/driving.jpeg', alt: 'DPA Driving School Training Session' }]);
+        setImages([{ src: '/images/driving.jpeg', alt: 'ZPC Driving School Training Session' }]);
       });
   }, []);
 
@@ -83,7 +83,7 @@ export default function DrivingSchool() {
             {/* LEFT SIDE: IMAGES */}
             <div className="col-lg-6">
               <div className="welcome-images">
-                <div className="circle-bg"></div>
+       
                 {images.map((img, idx) => (
                   <div className="image-box w-70" key={idx}>
                     <img src={img.src} alt={img.alt} />
@@ -95,11 +95,11 @@ export default function DrivingSchool() {
             {/* RIGHT SIDE: TEXT + SMALL FEATURES */}
             <div className="col-lg-6">
               <h1 className="welcome-title">
-                Welcome to DPA <br /> Driving School
+                Welcome to ZPC <br /> Driving School
               </h1>
 
               <p className="welcome-text">
-                DPA Driving School is a professionally accredited driving institution
+                ZPC Driving School is a professionally accredited driving institution
                 dedicated to the development of competent, disciplined, and responsible
                 drivers. Through structured training programs, experienced instructors,
                 and well-maintained training vehicles, the school delivers high-quality

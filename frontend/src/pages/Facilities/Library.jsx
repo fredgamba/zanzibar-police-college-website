@@ -140,7 +140,7 @@ export default function Library() {
               <h1 className="library-title">LIBRARY</h1>
 
               <p className="library-text">
-                The DPA Library is a comprehensive knowledge hub. Every section is carefully curated to provide students, researchers, and faculty members with easy access to materials for study, projects, and academic research.
+                The ZPC Library is a comprehensive knowledge hub. Every section is carefully curated to provide students, researchers, and faculty members with easy access to materials for study, projects, and academic research.
               </p>
 
               <p className="library-text">

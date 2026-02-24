@@ -17,17 +17,17 @@ export default function CampusTour() {
   const classBuildings = [
     {
       name: "Science Block",
-      img: "/images/class1.jpg",
+      img: "/images/class.jpg",
       desc: "Equipped with modern laboratories for physics, chemistry, and biology, smart boards, interactive projectors, collaborative workspaces, and natural lighting."
     },
     {
       name: "Arts Block",
-      img: "/images/class1.jpg",
+      img: "/images/hostel.jpg",
       desc: "Spacious studios for painting, sculpture, and performing arts with advanced audio-visual equipment."
     },
     {
       name: "Engineering Block",
-      img: "/images/class1.jpg",
+      img: "/images/class.jpg",
       desc: "High-tech labs with 3D printers, robotics stations, CAD software, and simulation tools."
     },
     {
@@ -40,12 +40,12 @@ export default function CampusTour() {
   const dormitories = [
     {
       name: "Alpha Dorm",
-      img: "/images/class1.jpg",
+      img: "/images/hostel.jpg",
       desc: "Air-conditioned rooms with Wi-Fi, common study areas, lounges, and storage."
     },
     {
       name: "Beta Dorm",
-      img: "/images/class1.jpg",
+      img: "/images/class.jpg",
       desc: "Modern rooms with ergonomic furniture, high-speed internet, and 24/7 security."
     },
     {
@@ -55,16 +55,16 @@ export default function CampusTour() {
     },
     {
       name: "Delta Dorm",
-      img: "/images/class1.jpg",
+      img: "/images/hostel.jpg",
       desc: "Spacious living areas with rooftop gardens, group study rooms, and green surroundings."
     },
   ];
 
   const stats = [
-    { title: "Buildings", value: 4, icon: "🏫" },
+    { title: "Buildings", value: 8, icon: "🏫" },
     { title: "Dormitories", value: 4, icon: "🛌" },
-    { title: "Classrooms", value: 100, icon: "📚" },
-    { title: "Labs", value: 20, icon: "🔬" },
+    { title: "Classrooms", value: 10, icon: "📚" },
+    { title: "Labs", value: 3, icon: "🔬" },
   ];
 
   /* ===========================
