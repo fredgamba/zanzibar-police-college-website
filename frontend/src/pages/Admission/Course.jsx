@@ -1,21 +1,22 @@
-
 import './Course.css';
 import modernDormitoriesImage from '../../assets/modern-dormitories.png';
 import { useParams } from "react-router-dom";
 
 export default function Course() {
   const { slug } = useParams();
+
   return (
     <div className="course-page">
       <div className="course-container">
-        <h1 className="course-title">Course Offered at ZPC
-           {slug === "academic" && "Academic Programmes"}
-        {slug === "promotional" && "Promotional Programmes"}
-        {slug === "proficiency" && "Proficiency Programmes"}
+        <h1 className="course-title">
+          Courses Offered at ZPC
+          {slug === "academic" && " - Academic Programme"}
+          {slug === "promotional" && " - Promotional Programmes"}
+          {slug === "proficiency" && " - Proficiency Programmes"}
         </h1>
         
         <div className="course-content-wrapper">
-          {/* Left Column - Image */}
+          {/* Left Column - Image (sticky) */}
           <div className="course-image-column">
             <div className="course-image-wrapper">
               <img 
@@ -24,50 +25,66 @@ export default function Course() {
                 className="course-image"
               />
             </div>
-            <p className="course-image-caption">"Our Modern Domitories."</p>
+            <p className="course-image-caption">"Our Modern Dormitories."</p>
           </div>
 
-          {/* Right Column - Text Content */}
+          {/* Right Column - All Text Content */}
           <div className="course-text-column">
-            {/* Academic Programmes Section */}
+            {/* Promotion course - Juu, full width */}
+            <div className="course-section-card promotion">
+              <div className="card-top-bar"></div>
+              <div className="course-section-content">
+                <h2 className="course-section-title">
+                  Promotion course for Non Commissioned Officer in the Police force
+                </h2>
+                <ul className="course-list">
+                  <li>CPLC</li>
+                  <li>SGTC</li>
+                  <li>INSC</li>
+                </ul>
+                {/* Unaweza kuongeza maelezo zaidi hapa ikiwa unayo */}
+              </div>
+            </div>
+
+            {/* Wrapper kwa Professional na Private - side by side */}
+            <div className="course-programs-wrapper">
+              {/* Professional Programmes - Kushoto */}
+              <div className="course-section-card">
+                <div className="card-top-bar"></div>
+                <div className="course-section-content">
+                  <h2 className="course-section-title">Professional Programmes</h2>
+                  <ul className="course-list">
+                    <li>Traffic Courses</li>
+                    <li>Charge room course</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Private Programmes - Kulia (sasa iko upande wa kulia kama ulivyotaka) */}
+              <div className="course-section-card">
+                <div className="card-top-bar"></div>
+                <div className="course-section-content">
+                  <h2 className="course-section-title">Private Programmes</h2>
+                  <ul className="course-list">
+                    <li>Auxiliary Police Courses</li>
+                    <li>Class “A”, “B1”, “C” and “D” driving courses</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Academic Programmes - Unaweza kuiweka hapa au kuifuta ikiwa si ya msingi */}
             <div className="course-section-card">
               <div className="card-top-bar"></div>
               <div className="course-section-content">
                 <h2 className="course-section-title">Academic Programmes</h2>
                 <ul className="course-list">
-                  <li>Technician Certificate in Police Science (NTA Level 5) </li>
-                  <li>Ordinary Diploma in criminal Investigation</li>
-                 
-                  <li>Ordinary Diploma in police science</li>
-                 
-                  <li>Basic Technician certificate in Criminal Investigation</li>
-                  <li>Basic technician certificate in police communication</li>
-                  <li>Basic Technician certificate in law</li>
-                  <li>Technician certificate in law</li>
-                  <li>Technician certificate in medical laboratory science</li>
-                  <li>Driving course</li>
+                  <li>Technician Certificate in Police Science (NTA Level 5)</li>
                 </ul>
               </div>
             </div>
 
-            {/* Professional programmes Section */}
-            <div className="course-section-card">
-              <div className="card-top-bar"></div>
-              <div className="course-section-content">
-                <h2 className="course-section-title">Professional programmes</h2>
-                <ul className="course-list">
-                  <li>Gazetted Officers Training Programme</li>
-                  <li>Assistant Inspectors Training Programme</li>
-                  <li>Instructors Training Programme</li>
-                  <li>Driving Training Programme</li>
-                  <li>Raiders' Training Programme</li>
-                 
-                  <li>Proficiency Training Programme</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* NOTE Section */}
+            {/* NOTE - Chini, full width */}
             <div className="course-note-card">
               <h3 className="course-note-title">NOTE:</h3>
               <p className="course-note-text">
@@ -83,4 +100,3 @@ export default function Course() {
     </div>
   );
 }
-

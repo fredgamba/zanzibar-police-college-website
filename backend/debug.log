@@ -3872,3 +3872,144 @@ WARNING 2026-02-23 10:08:10,014 log 10060 2676 Not Found: /api/pages/organizatio
 WARNING 2026-02-23 10:08:10,046 log 10060 2676 Not Found: /api/pages/organization/
 WARNING 2026-02-23 11:50:13,049 log 10060 12872 Not Found: /api/pages/history/
 WARNING 2026-02-23 11:50:13,258 log 10060 12872 Not Found: /api/pages/history/
+INFO 2026-02-24 08:54:34,645 autoreload 9536 6664 Watching for file changes with StatReloader
+INFO 2026-02-24 08:56:45,653 autoreload 2464 14048 Watching for file changes with StatReloader
+INFO 2026-02-24 08:57:22,361 autoreload 8524 13468 Watching for file changes with StatReloader
+INFO 2026-02-24 08:58:31,724 autoreload 1720 9872 Watching for file changes with StatReloader
+INFO 2026-02-24 09:00:53,561 autoreload 144 11240 Watching for file changes with StatReloader
+INFO 2026-02-24 09:01:26,817 autoreload 8932 10448 Watching for file changes with StatReloader
+INFO 2026-02-24 09:02:06,301 autoreload 7624 12200 Watching for file changes with StatReloader
+INFO 2026-02-24 09:04:12,006 autoreload 6252 10816 Watching for file changes with StatReloader
+INFO 2026-02-24 09:05:19,028 autoreload 3212 11872 Watching for file changes with StatReloader
+INFO 2026-02-24 09:07:31,639 autoreload 8380 12384 Watching for file changes with StatReloader
+INFO 2026-02-24 09:09:04,770 autoreload 12012 4180 Watching for file changes with StatReloader
+INFO 2026-02-24 09:13:25,053 autoreload 9140 2980 Watching for file changes with StatReloader
+INFO 2026-02-24 09:14:53,625 autoreload 9112 13148 Watching for file changes with StatReloader
+INFO 2026-02-24 09:23:21,486 autoreload 1656 892 Watching for file changes with StatReloader
+INFO 2026-02-24 09:24:00,810 autoreload 6636 11036 Watching for file changes with StatReloader
+INFO 2026-02-24 09:26:06,153 autoreload 13868 12792 Watching for file changes with StatReloader
+INFO 2026-02-24 09:28:20,561 autoreload 5884 8624 Watching for file changes with StatReloader
+INFO 2026-02-24 09:29:32,168 autoreload 5884 8624 C:\Users\USER\Documents\zanzibar-police-college-website\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-24 09:29:34,189 autoreload 10748 9088 Watching for file changes with StatReloader
+INFO 2026-02-24 09:30:21,644 autoreload 268 9732 Watching for file changes with StatReloader
+INFO 2026-02-24 09:41:47,319 autoreload 13992 10524 Watching for file changes with StatReloader
+INFO 2026-02-24 09:44:07,958 autoreload 9012 2744 Watching for file changes with StatReloader
+INFO 2026-02-24 09:44:48,557 autoreload 2776 1556 Watching for file changes with StatReloader
+INFO 2026-02-24 09:45:15,939 autoreload 4688 9512 Watching for file changes with StatReloader
+INFO 2026-02-24 09:45:52,292 autoreload 5360 10700 Watching for file changes with StatReloader
+INFO 2026-02-24 09:46:19,150 autoreload 15076 10700 Watching for file changes with StatReloader
+INFO 2026-02-24 09:46:47,679 autoreload 14980 2524 Watching for file changes with StatReloader
+INFO 2026-02-24 09:47:29,144 autoreload 10040 13376 Watching for file changes with StatReloader
+INFO 2026-02-24 09:47:55,008 autoreload 8948 14680 Watching for file changes with StatReloader
+INFO 2026-02-24 09:48:20,884 autoreload 6720 8908 Watching for file changes with StatReloader
+INFO 2026-02-24 09:50:02,936 autoreload 4980 7884 Watching for file changes with StatReloader
+INFO 2026-02-24 09:59:10,414 autoreload 15352 3660 Watching for file changes with StatReloader
+INFO 2026-02-24 10:06:13,058 autoreload 7072 15008 Watching for file changes with StatReloader
+INFO 2026-02-24 10:14:29,392 autoreload 740 13856 Watching for file changes with StatReloader
+INFO 2026-02-24 10:14:56,931 autoreload 8840 2184 Watching for file changes with StatReloader
+INFO 2026-02-24 10:15:38,406 autoreload 13684 1108 Watching for file changes with StatReloader
+INFO 2026-02-24 10:16:17,850 autoreload 12700 15112 Watching for file changes with StatReloader
+INFO 2026-02-24 10:16:44,964 autoreload 4916 12600 Watching for file changes with StatReloader
+INFO 2026-02-24 10:21:37,759 autoreload 9012 3652 Watching for file changes with StatReloader
+INFO 2026-02-24 10:37:47,479 autoreload 8964 13408 Watching for file changes with StatReloader
+INFO 2026-02-24 10:42:48,427 autoreload 6528 14856 Watching for file changes with StatReloader
+INFO 2026-02-24 10:46:30,995 autoreload 1004 14920 Watching for file changes with StatReloader
+INFO 2026-02-24 10:47:12,851 autoreload 13632 7944 Watching for file changes with StatReloader
+INFO 2026-02-24 10:50:27,670 autoreload 5852 12960 Watching for file changes with StatReloader
+INFO 2026-02-24 10:58:14,344 autoreload 6840 14748 Watching for file changes with StatReloader
+INFO 2026-02-24 11:29:01,900 autoreload 12564 15492 Watching for file changes with StatReloader
+INFO 2026-02-24 11:49:07,527 autoreload 12372 11580 Watching for file changes with StatReloader
+INFO 2026-02-24 11:52:06,282 autoreload 12356 1128 Watching for file changes with StatReloader
+INFO 2026-02-24 11:58:15,185 autoreload 2312 4188 Watching for file changes with StatReloader
+INFO 2026-02-24 11:59:15,802 autoreload 15820 15660 Watching for file changes with StatReloader
+INFO 2026-02-24 12:00:02,750 autoreload 3828 14956 Watching for file changes with StatReloader
+WARNING 2026-02-24 12:52:39,112 log 3828 15420 Unauthorized: /api/pages/history/
+WARNING 2026-02-24 12:52:39,119 log 3828 15420 Unauthorized: /api/pages/history/
+ERROR 2026-02-24 12:52:39,256 log 3828 15420 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2026-02-24 12:52:39,271 log 3828 892 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\zanzibar-police-college-website\backend\polienv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+WARNING 2026-02-24 12:52:54,915 log 3828 892 Not Found: /api/pages/history/
+WARNING 2026-02-24 12:52:54,925 log 3828 18080 Not Found: /api/pages/history/
+WARNING 2026-02-24 12:53:01,895 log 3828 18080 Not Found: /api/pages/organization/
+WARNING 2026-02-24 12:53:01,909 log 3828 892 Not Found: /api/pages/organization/
+WARNING 2026-02-24 12:53:08,873 log 3828 892 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 12:53:08,881 log 3828 18080 Not Found: /api/public/pages/by-page/

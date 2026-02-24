@@ -1,179 +1,89 @@
-
 import React from 'react';
 import './FeeStructure.css';
 
 const FeeStructure = () => {
-  const feeData = [
+  const courses = [
     {
-      item: 'Tuition fee per year (non-refundable)',
-      tshs: '',
-      ntaIV: '1,130,000/=',
-      ntaV: '1,130,000/=',
-      ntaVI: '0',
-      certLaw: '0'
+      name: 'Driving Course',
+      levels: [
+        { level: 'A', reg: '10,000/=', tuition: '50,000/=', other: '105,000/=', accom: 'Off campus', cert: 'Included in the tuition fee', total: '165,000/=' },
+        { level: 'B1', reg: '10,000/=', tuition: '290,000/=', other: '109,000/=', accom: 'Off campus', cert: 'Included in the tuition fee', total: '409,000/=' },
+        { level: 'C', reg: '10,000/=', tuition: '210,000/=', other: '113,000/=', accom: 'Off campus', cert: 'Included in the tuition fee', total: '333,000/=' },
+        { level: 'D', reg: '10,000/=', tuition: '210,000/=', other: '113,000/=', accom: 'Off campus', cert: 'Included in the tuition fee', total: '333,000/=' },
+      ]
     },
     {
-      item: 'Registration/Admission Fee',
-      tshs: '',
-      ntaIV: '30,000/=',
-      ntaV: '0',
-      ntaVI: '0',
-      certLaw: '20,000/='
+      name: 'Technician Certificate in Police Science',
+      levels: [
+        { level: 'NTA Level 5', reg: '5,000/=', tuition: '-', other: 'Government sponsored', accom: '-', cert: '10,000/= (For transcript)', total: '15,000/=' },
+      ]
     },
     {
-      item: 'Quality assurance fees',
-      tshs: '',
-      ntaIV: '15,000/=',
-      ntaV: '0',
-      ntaVI: '15,000',
-      certLaw: '-'
+      name: "Non Commissioned Officer's Course (NCO's)",
+      levels: [
+        { level: 'Junior and Senior NCO’s', reg: '-', tuition: '-', other: 'Government sponsored', accom: '-', cert: '-', total: '-' },
+      ]
     },
-    {
-      item: 'Student Identity Card',
-      tshs: '',
-      ntaIV: '10,000/=',
-      ntaV: '0',
-      ntaVI: '0',
-      certLaw: '0'
-    },
-    {
-      item: 'Non-refundable caution money',
-      tshs: '',
-      ntaIV: '50,000/=',
-      ntaV: '0',
-      ntaVI: '0',
-      certLaw: '0'
-    },
-    {
-      item: 'K/L Health Training',
-      tshs: '',
-      ntaIV: '45,000/=',
-      ntaV: '-',
-      ntaVI: '-',
-      certLaw: '-'
-    },
-    {
-      item: 'Sustainability Fund',
-      tshs: '',
-      ntaIV: '-',
-      ntaV: '-',
-      ntaVI: '-',
-      certLaw: '-'
-    },
-    {
-      item: 'Medical Capitation',
-      tshs: '',
-      ntaIV: '50,500/=',
-      ntaV: '-',
-      ntaVI: '-',
-      certLaw: '-'
-    },
-    {
-      item: 'Examination Fee',
-      tshs: '',
-      ntaIV: '150,000/=',
-      ntaV: '-',
-      ntaVI: '0',
-      certLaw: '0'
-    },
-    {
-      item: 'Field Practical',
-      tshs: '',
-      ntaIV: '0',
-      ntaV: '300,000/=',
-      ntaVI: '15,000/=',
-      certLaw: '-'
-    }
   ];
-
-  const totalRow = {
-    item: 'Total',
-    tshs: '',
-    ntaIV: '1,480,500',
-    ntaV: '1,430,000/=',
-    ntaVI: '15,000',
-    certLaw: '20,000'
-  };
 
   return (
     <div className="fee-structure-container">
       <div className="fee-structure-wrapper">
-        {/* Header Section */}
         <div className="header-section">
-          <div className="header-decoration"></div>
-          <h1 className="main-title">Tuition Fees Structure</h1>
-          <p className="subtitle">Dar Es Salaam Police Academy</p>
-          <div className="header-decoration"></div>
+          <h1 className="main-title">Fees Structure</h1>
+          <p className="subtitle">Zanzibar Police College</p>
         </div>
 
-        {/* Fee Table */}
         <div className="table-container">
-          <div className="table-wrapper">
-            <table className="fee-table">
-              <thead>
-                <tr>
-                  <th className="item-header">Item Description</th>
-                  <th className="amount-header">Amount in Tshs</th>
-                  <th className="level-header">NTA Level IV</th>
-                  <th className="level-header">NTA Level V</th>
-                  <th className="level-header">NTA Level VI</th>
-                  <th className="cert-header">CERTIFICATE IN LAW</th>
-                </tr>
-              </thead>
-              <tbody>
-                {feeData.map((row, index) => (
-                  <tr key={index} className="data-row">
-                    <td className="item-cell">{row.item}</td>
-                    <td className="amount-cell">{row.tshs}</td>
-                    <td className="level-cell">{row.ntaIV}</td>
-                    <td className="level-cell">{row.ntaV}</td>
-                    <td className="level-cell">{row.ntaVI}</td>
-                    <td className="cert-cell">{row.certLaw}</td>
-                  </tr>
-                ))}
-                <tr className="total-row">
-                  <td className="total-label">{totalRow.item}</td>
-                  <td className="total-amount">{totalRow.tshs}</td>
-                  <td className="total-value">{totalRow.ntaIV}</td>
-                  <td className="total-value">{totalRow.ntaV}</td>
-                  <td className="total-value">{totalRow.ntaVI}</td>
-                  <td className="total-value">{totalRow.certLaw}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table className="fee-table">
+            <thead>
+              <tr>
+                <th>Name of the Course</th>
+                <th>Level / Class</th>
+                <th>Registration Fee</th>
+                <th>Tuition Fee</th>
+                <th>Other Fees</th>
+                <th>Accommodation</th>
+                <th>Certification Fee</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              {courses.map((course, idx) => (
+                <React.Fragment key={idx}>
+                  {course.levels.map((level, lIdx) => (
+                    <tr key={`${idx}-${lIdx}`}>
+                      <td className="item-cell">{lIdx === 0 ? course.name : ''}</td>
+                      <td className="level-cell">{level.level}</td>
+                      <td className="amount-cell">{level.reg}</td>
+                      <td className="amount-cell">{level.tuition}</td>
+                      <td className="amount-cell">{level.other}</td>
+                      <td className="amount-cell">{level.accom}</td>
+                      <td className="cert-cell">{level.cert}</td>
+                      <td className="amount-cell">{level.total}</td>
+                    </tr>
+                  ))}
+                </React.Fragment>
+              ))}
+            </tbody>
+          </table>
         </div>
 
-        {/* Info Section */}
         <div className="info-section">
           <div className="info-card">
-            <div className="info-icon">ℹ️</div>
-            <div className="info-content">
-              <p className="info-note">
-                <strong>NB:</strong> 0 = Means not paid or it is paid by the Government
-              </p>
-            </div>
+            <p><strong>Important Note:</strong> All fees are in Tanzanian Shillings (TZS). Government-sponsored programs may have full or partial coverage. Please verify with the Zanzibar Police College administration for the most current information.</p>
           </div>
 
           <div className="accommodation-card">
-            <h2 className="section-title">
-              <span className="title-icon">🏠</span>
-              ACCOMMODATION AND MEALS
-            </h2>
-            <p className="accommodation-text">
-              Hostel is paid by the Government for the students who live in hostel during their studies, 
-              but meals are paid by the students at low cost of <strong>7,000/=</strong> per day, only for 
-              days which students are in hostels.
+            <h2 className="section-title">Accommodation Details</h2>
+            <p>
+              Accommodation for most courses is off-campus. Government-sponsored students may qualify for on-campus hostel facilities. Meals and other living expenses are typically the responsibility of the student.
             </p>
           </div>
         </div>
-
-        {/* Footer decoration */}
-        <div className="footer-decoration"></div>
       </div>
     </div>
   );
 };
 
 export default FeeStructure;
-
