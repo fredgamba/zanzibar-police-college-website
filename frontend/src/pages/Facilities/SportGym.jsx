@@ -16,60 +16,30 @@ export default function SportGym() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
-    }, 4500);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
   const data = {
     sports: [
-      {
-        title: "Football",
-        tag: "Team Sport",
-        description:
-          "Full-sized pitch with professional coaching sessions to enhance skills and teamwork among cadets.",
-        photo: "/images/sports.jpg",
-      },
-      {
-        title: "Basketball",
-        tag: "Indoor & Outdoor",
-        description:
-          "Indoor and outdoor courts available for practice and competitive games with professional coaching staff.",
-        photo: "/images/sports.jpg",
-      },
-      {
-        title: "Volleyball",
-        tag: "All Skill Levels",
-        description:
-          "Equipped courts for both recreational play and competitive matches with training programs for all levels.",
-        photo: "/images/sports.jpg",
-      },
+      { title: "Football", tag: "Team Discipline", description: "Professional pitch training focused on strategy, fitness & unity.", photo: "/images/sports.jpg" },
+      { title: "Basketball", tag: "Agility & Teamwork", description: "Multi-court facilities for skill drills and competitive play.", photo: "/images/sports.jpg" },
+      { title: "Volleyball", tag: "Coordination Focus", description: "Dedicated courts with progressive training for all levels.", photo: "/images/sports.jpg" },
     ],
     gym: [
-      {
-        title: "Cardio Equipment",
-        icon: "🏃",
-        description:
-          "State-of-the-art treadmills, ellipticals, and stationary bikes for cardiovascular health.",
-        photo: "/images/gym1.jpg",
-      },
-      {
-        title: "Strength Training",
-        icon: "💪",
-        description:
-          "Free weights, resistance machines, and functional training tools to build muscle and endurance.",
-        photo: "/images/gym2.jpg",
-      },
+      { title: "Cardio Area", icon: "🏃‍♂️", description: "High-end machines for cardiovascular conditioning & stamina.", photo: "/images/gym1.jpg" },
+      { title: "Strength Zone", icon: "💪", description: "Comprehensive weights & resistance equipment for power building.", photo: "/images/gym2.jpg" },
     ],
   };
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5500,
     arrows: false,
     fade: true,
     pauseOnHover: true,
@@ -78,24 +48,39 @@ export default function SportGym() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Condensed:wght@700&display=swap');
+
+        :root {
+          --bg:        #f9fafb;
+          --navy:      #0f2942;
+          --teal:      #0d9488;
+          --gray:      #374151;
+          --gray-light:#6b7280;
+          --border:    #e5e7eb;
+          --white:     #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         .sg-page {
-          font-family: 'DM Sans', sans-serif;
-          background: #f4f6f9;
-          min-height: 100vh;
+          font-family: 'Inter', system-ui, sans-serif;
+          background: var(--bg);
+          color: var(--gray);
+          line-height: 1.6;
         }
 
         /* ── HERO ── */
         .sg-hero {
           position: relative;
-          height: 420px;
-          overflow: hidden;
+          height: clamp(60vh, 85vh, 90vh);
           display: flex;
-          align-items: flex-end;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: white;
+          overflow: hidden;
         }
 
-        /* All background slides stacked */
         .sg-hero-bg {
           position: absolute;
           inset: 0;
@@ -107,480 +92,307 @@ export default function SportGym() {
           background-size: cover;
           background-position: center;
           opacity: 0;
-          transform: scale(1.06);
-          transition: opacity 1.4s ease, transform 7s ease;
+          transition: opacity 2s ease;
         }
 
-        .sg-hero-bg-slide.active {
-          opacity: 1;
-          transform: scale(1);
-        }
+        .sg-hero-bg-slide.active { opacity: 1; }
 
-        /* Dark gradient overlay — stronger at bottom for text readability */
         .sg-hero-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(
-            to top,
-            rgba(11, 31, 58, 0.75) 0%,
-            rgba(11, 31, 58, 0.35) 45%,
-            rgba(11, 31, 58, 0.15) 100%
-          );
+          background: linear-gradient(180deg, rgba(15,41,66,0.45) 0%, rgba(15,41,66,0.65) 100%);
           z-index: 1;
         }
 
-        .sg-hero-content {
+        .sg-hero-inner {
           position: relative;
-          z-index: 3;
-          padding: 2.5rem 3rem;
-          color: white;
-          width: 100%;
+          z-index: 2;
+          max-width: 1100px;
+          padding: 2rem 1.5rem;
         }
 
         .sg-hero-tag {
-          display: inline-block;
-          background: #c8a84b;
-          color: #0b1f3a;
-          font-size: 0.72rem;
-          font-weight: 700;
+          font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+          font-weight: 600;
           letter-spacing: 2px;
           text-transform: uppercase;
-          padding: 4px 12px;
-          border-radius: 2px;
+          color: var(--teal);
           margin-bottom: 1rem;
         }
 
-        .sg-hero-content h1 {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 5rem;
-          line-height: 1;
-          letter-spacing: 3px;
-          margin: 0 0 0.75rem;
-          color: white;
+        .sg-hero h1 {
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: clamp(3.5rem, 10vw, 8rem);
+          line-height: 0.9;
+          margin-bottom: 1.5rem;
         }
 
-        .sg-hero-content h1 span { color: #c8a84b; }
-
-        .sg-hero-content p {
-          font-size: 1rem;
-          color: rgba(255,255,255,0.82);
-          max-width: 560px;
-          line-height: 1.6;
-          margin: 0 0 1.2rem;
+        .sg-hero p {
+          font-size: clamp(1.1rem, 3vw, 1.3rem);
+          max-width: 720px;
+          margin: 0 auto 2.5rem;
+          opacity: 0.95;
         }
 
-        /* Dot indicators for hero slides */
-        .sg-hero-dots {
+        .sg-stats-bar {
           display: flex;
-          gap: 8px;
-          margin-top: 0.5rem;
-        }
-
-        .sg-hero-dot {
-          width: 24px;
-          height: 3px;
-          border-radius: 2px;
-          background: rgba(255,255,255,0.35);
-          cursor: pointer;
-          transition: all 0.3s ease;
-          border: none;
-          padding: 0;
-        }
-
-        .sg-hero-dot.active {
-          background: #c8a84b;
-          width: 40px;
-        }
-
-        /* STATS STRIP */
-        .sg-stats {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          background: #0b1f3a;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2rem;
+          margin-top: 2rem;
         }
 
         .sg-stat {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 1.4rem 1rem;
-          border-right: 1px solid rgba(255,255,255,0.08);
-          transition: background 0.2s;
+          text-align: center;
         }
 
-        .sg-stat:last-child { border-right: none; }
-        .sg-stat:hover { background: rgba(200,168,75,0.1); }
-
         .sg-stat-num {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 2.2rem;
-          color: #c8a84b;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: clamp(2.5rem, 6vw, 4rem);
+          color: var(--teal);
           line-height: 1;
         }
 
         .sg-stat-label {
-          font-size: 0.75rem;
-          color: rgba(255,255,255,0.6);
+          font-size: 0.95rem;
+          color: rgba(255,255,255,0.8);
           text-transform: uppercase;
           letter-spacing: 1px;
-          margin-top: 4px;
         }
 
-        /* BODY */
+        /* ── BODY ── */
         .sg-body {
           max-width: 1200px;
           margin: 0 auto;
-          padding: 3rem 2rem 4rem;
-          display: flex;
-          flex-direction: column;
-          gap: 4rem;
+          padding: clamp(3rem, 6vw, 6rem) 1.5rem;
         }
 
-        /* SECTION LABELS */
+        .sg-section {
+          margin-bottom: clamp(4rem, 8vw, 8rem);
+        }
+
+        .sg-section-header {
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+
         .sg-section-label {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 0.78rem;
-          font-weight: 700;
-          letter-spacing: 2px;
+          font-size: 1rem;
+          font-weight: 600;
+          color: var(--teal);
+          letter-spacing: 1.5px;
           text-transform: uppercase;
-          color: #0b1f3a;
-          margin-bottom: 0.4rem;
+          margin-bottom: 0.5rem;
         }
-
-        .sg-dot {
-          width: 8px; height: 8px;
-          border-radius: 50%;
-          background: #0b1f3a;
-          flex-shrink: 0;
-        }
-
-        .sg-dot-gold { background: #c8a84b; }
 
         .sg-section-title {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 2.8rem;
-          color: #0b1f3a;
-          letter-spacing: 2px;
-          margin: 0 0 2rem;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: clamp(2.5rem, 6vw, 4.5rem);
+          color: var(--navy);
         }
 
-        /* SPORTS LAYOUT */
-        .sg-sports-layout {
+        /* Sports Grid */
+        .sg-sports-grid {
           display: grid;
-          grid-template-columns: 1fr 280px;
-          gap: 24px;
-          align-items: start;
+          grid-template-columns: 1fr;
+          gap: 2rem;
         }
 
-        .sg-carousel-wrap {
-          border-radius: 16px;
+        @media (min-width: 992px) {
+          .sg-sports-grid { grid-template-columns: 2fr 1fr; }
+        }
+
+        .sg-carousel {
+          border-radius: 12px;
           overflow: hidden;
-          box-shadow: 0 20px 60px rgba(11,31,58,0.18);
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
         .sg-slide {
           position: relative;
-          height: 460px;
-          overflow: hidden;
+          height: clamp(320px, 50vw, 500px);
         }
 
         .sg-slide img {
-          width: 100%; height: 100%;
+          width: 100%;
+          height: 100%;
           object-fit: cover;
-          display: block;
-          transition: transform 6s ease;
         }
 
-        .sg-carousel-wrap:hover .sg-slide img { transform: scale(1.05); }
-
-        .sg-slide-overlay {
+        .sg-slide-content {
           position: absolute;
-          inset: 0;
-          background: linear-gradient(to top, rgba(11,31,58,0.85) 0%, rgba(11,31,58,0.2) 50%, transparent 100%);
-        }
-
-        .sg-slide-info {
-          position: absolute;
-          bottom: 0; left: 0; right: 0;
-          padding: 2rem;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 2.5rem 2rem;
+          background: linear-gradient(to top, rgba(15,41,66,0.85), transparent);
           color: white;
         }
 
         .sg-slide-tag {
-          display: inline-block;
-          background: #c8a84b;
-          color: #0b1f3a;
-          font-size: 0.68rem;
-          font-weight: 700;
-          letter-spacing: 1.5px;
-          text-transform: uppercase;
-          padding: 3px 10px;
-          border-radius: 2px;
-          margin-bottom: 0.6rem;
-        }
-
-        .sg-slide-info h3 {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 2.4rem;
-          letter-spacing: 2px;
-          margin: 0 0 0.5rem;
+          font-size: 0.85rem;
+          font-weight: 600;
+          background: var(--teal);
           color: white;
+          padding: 0.4em 1em;
+          border-radius: 4px;
+          display: inline-block;
+          margin-bottom: 1rem;
         }
 
-        .sg-slide-info p {
-          font-size: 0.9rem;
-          color: rgba(255,255,255,0.82);
-          line-height: 1.5;
-          margin: 0;
+        .sg-slide h3 {
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: clamp(2rem, 5vw, 3.2rem);
+          margin-bottom: 0.8rem;
         }
 
-        .sg-carousel-wrap .slick-dots { bottom: 16px; }
-        .sg-carousel-wrap .slick-dots li button:before {
-          color: white; opacity: 0.5; font-size: 8px;
-        }
-        .sg-carousel-wrap .slick-dots li.slick-active button:before {
-          color: #c8a84b; opacity: 1;
-        }
-
-        /* Sports sidebar */
-        .sg-sports-list {
+        .sg-sidebar-list {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 1.2rem;
         }
 
-        .sg-sport-item {
-          display: flex;
-          align-items: center;
-          gap: 14px;
-          background: white;
-          border-radius: 12px;
-          padding: 1rem 1.2rem;
-          box-shadow: 0 4px 16px rgba(11,31,58,0.06);
-          border-left: 3px solid #0b1f3a;
-          transition: all 0.25s ease;
-          cursor: default;
+        .sg-sidebar-item {
+          background: var(--white);
+          border: 1px solid var(--border);
+          border-radius: 10px;
+          padding: 1.5rem;
+          transition: all 0.3s ease;
         }
 
-        .sg-sport-item:hover {
-          transform: translateX(4px);
-          border-left-color: #c8a84b;
-          box-shadow: 0 6px 20px rgba(11,31,58,0.1);
+        .sg-sidebar-item:hover {
+          border-color: var(--teal);
+          transform: translateY(-4px);
         }
 
-        .sg-sport-more { border-left-color: #c8a84b; background: #fffbf0; }
-        .sg-sport-num {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.6rem;
-          color: #c8a84b;
-          line-height: 1;
-          min-width: 32px;
+        .sg-sidebar-num {
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: 2.2rem;
+          color: var(--teal);
+          margin-bottom: 0.3rem;
         }
 
-        .sg-sport-name { font-weight: 600; color: #0b1f3a; font-size: 0.95rem; }
-        .sg-sport-tag { font-size: 0.75rem; color: #6b7280; margin-top: 2px; }
+        .sg-sidebar-name {
+          font-weight: 600;
+          font-size: 1.15rem;
+          color: var(--navy);
+        }
 
-        /* GYM LAYOUT */
-        .sg-gym-layout {
+        .sg-sidebar-tag {
+          font-size: 0.9rem;
+          color: var(--gray-light);
+        }
+
+        /* Gym Cards */
+        .sg-gym-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 20px;
-          align-items: stretch;
+          grid-template-columns: 1fr;
+          gap: 1.8rem;
         }
+
+        @media (min-width: 768px) { .sg-gym-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { .sg-gym-grid { grid-template-columns: repeat(3, 1fr); } }
 
         .sg-gym-card {
-          background: white;
-          border-radius: 16px;
+          background: var(--white);
+          border-radius: 12px;
           overflow: hidden;
-          box-shadow: 0 8px 30px rgba(11,31,58,0.08);
+          border: 1px solid var(--border);
           transition: all 0.3s ease;
-          display: flex;
-          flex-direction: column;
         }
 
         .sg-gym-card:hover {
           transform: translateY(-6px);
-          box-shadow: 0 20px 50px rgba(11,31,58,0.14);
+          box-shadow: 0 12px 32px rgba(0,0,0,0.1);
         }
 
-        .sg-gym-img-wrap {
+        .sg-gym-img {
+          height: clamp(200px, 35vw, 260px);
           position: relative;
-          height: 200px;
-          overflow: hidden;
         }
 
-        .sg-gym-img-wrap img {
-          width: 100%; height: 100%;
+        .sg-gym-img img {
+          width: 100%;
+          height: 100%;
           object-fit: cover;
-          transition: transform 0.5s ease;
-        }
-
-        .sg-gym-card:hover .sg-gym-img-wrap img { transform: scale(1.06); }
-
-        .sg-gym-img-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to bottom, transparent 40%, rgba(11,31,58,0.5) 100%);
         }
 
         .sg-gym-icon {
           position: absolute;
-          bottom: 14px; right: 14px;
+          bottom: 1rem;
+          right: 1rem;
+          font-size: 3.5rem;
+          color: rgba(255,255,255,0.85);
+        }
+
+        .sg-gym-info {
+          padding: 1.8rem;
+        }
+
+        .sg-gym-info h3 {
+          font-family: 'Roboto Condensed', sans-serif;
           font-size: 1.8rem;
-          filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+          color: var(--navy);
+          margin-bottom: 0.8rem;
         }
 
-        .sg-gym-body { padding: 1.4rem; flex: 1; }
-
-        .sg-gym-body h3 {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.5rem;
-          letter-spacing: 1px;
-          color: #0b1f3a;
-          margin: 0 0 0.5rem;
-        }
-
-        .sg-gym-body p { font-size: 0.88rem; color: #5a6472; line-height: 1.6; margin: 0; }
-
-        /* Promo card */
-        .sg-gym-promo {
-          background: linear-gradient(135deg, #0b1f3a 0%, #1c3a6e 100%);
-          border-radius: 16px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 2rem;
-          box-shadow: 0 8px 30px rgba(11,31,58,0.25);
-        }
-
-        .sg-gym-promo-inner { text-align: center; color: white; }
-        .sg-gym-promo-icon { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
-
-        .sg-gym-promo-inner h3 {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.6rem;
-          letter-spacing: 1.5px;
-          color: #c8a84b;
-          margin: 0 0 0.8rem;
-        }
-
-        .sg-gym-promo-inner p {
-          font-size: 0.85rem;
-          color: rgba(255,255,255,0.75);
-          line-height: 1.6;
-          margin: 0 0 1.2rem;
-        }
-
-        .sg-gym-promo-badges { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
-
-        .sg-gym-promo-badges span {
-          background: rgba(200,168,75,0.2);
-          border: 1px solid rgba(200,168,75,0.5);
-          color: #c8a84b;
-          font-size: 0.7rem;
-          font-weight: 700;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          padding: 4px 10px;
-          border-radius: 4px;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 1024px) {
-          .sg-gym-layout { grid-template-columns: 1fr 1fr; }
-          .sg-gym-promo { grid-column: span 2; }
-        }
-
-        @media (max-width: 768px) {
-          .sg-hero { height: 320px; }
-          .sg-hero-content { padding: 1.5rem; }
-          .sg-hero-content h1 { font-size: 3.5rem; }
-          .sg-stats { grid-template-columns: repeat(2, 1fr); }
-          .sg-stat:nth-child(2) { border-right: none; }
-          .sg-body { padding: 2rem 1rem 3rem; gap: 3rem; }
-          .sg-sports-layout { grid-template-columns: 1fr; }
-          .sg-slide { height: 320px; }
-          .sg-gym-layout { grid-template-columns: 1fr; }
-          .sg-gym-promo { grid-column: span 1; }
+        .sg-gym-info p {
+          color: var(--gray-light);
         }
       `}</style>
 
       <div className="sg-page">
 
-        {/* ── HERO with sliding background ── */}
         <div className="sg-hero">
-
-          {/* Background slides */}
           <div className="sg-hero-bg">
             {heroImages.map((img, i) => (
               <div
                 key={i}
                 className={`sg-hero-bg-slide ${i === currentHero ? "active" : ""}`}
-                style={{ backgroundImage: `url('${img}')` }}
+                style={{ backgroundImage: `url(${img})` }}
               />
             ))}
           </div>
-
-          {/* Dark overlay */}
           <div className="sg-hero-overlay" />
 
-          {/* Faint fade at bottom into page */}
+          <div className="sg-hero-inner">
+            <div className="sg-hero-tag">Zanzibar Police College</div>
+            <h1>Sports & Fitness Training</h1>
+            <p>Developing physical excellence, mental resilience, and disciplined teamwork for future officers.</p>
 
-          {/* Content */}
-          <div className="sg-hero-content">
-            <span className="sg-hero-tag">Facilities</span>
-            <h1>Sports <span>&</span> Gym</h1>
-            <p>
-              A comprehensive program designed to promote physical wellness,
-              discipline, and team spirit among cadets at Dar es Salaam Police Academy.
-            </p>
-            {/* Slide indicator dots */}
-            <div className="sg-hero-dots">
-              {heroImages.map((_, i) => (
-                <button
-                  key={i}
-                  className={`sg-hero-dot ${i === currentHero ? "active" : ""}`}
-                  onClick={() => setCurrentHero(i)}
-                />
-              ))}
+            <div className="sg-stats-bar">
+              <div className="sg-stat">
+                <div className="sg-stat-num">6+</div>
+                <div className="sg-stat-label">Disciplines</div>
+              </div>
+              <div className="sg-stat">
+                <div className="sg-stat-num">Daily</div>
+                <div className="sg-stat-label">Sessions</div>
+              </div>
+              <div className="sg-stat">
+                <div className="sg-stat-num">100%</div>
+                <div className="sg-stat-label">Participation</div>
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* STATS STRIP */}
-        <div className="sg-stats">
-          {[
-            { num: "5+",    label: "Sports Disciplines" },
-            { num: "2",     label: "Gym Halls" },
-            { num: "Daily", label: "Training Sessions" },
-            { num: "100%",  label: "Cadet Participation" },
-          ].map((s, i) => (
-            <div className="sg-stat" key={i}>
-              <span className="sg-stat-num">{s.num}</span>
-              <span className="sg-stat-label">{s.label}</span>
-            </div>
-          ))}
         </div>
 
         <div className="sg-body">
 
-          {/* SPORTS SECTION */}
           <section className="sg-section">
-            <div className="sg-section-label">
-              <span className="sg-dot" /> Sports Programme
+            <div className="sg-section-header">
+              <div className="sg-section-label">Core Programme</div>
+              <h2 className="sg-section-title">Competitive Sports</h2>
             </div>
-            <h2 className="sg-section-title">Competitive Sports</h2>
-            <div className="sg-sports-layout">
-              <div className="sg-carousel-wrap">
+
+            <div className="sg-sports-grid">
+              <div className="sg-carousel">
                 <Slider {...settings}>
                   {data.sports.map((sport, i) => (
                     <div key={i}>
                       <div className="sg-slide">
                         <img src={sport.photo} alt={sport.title} />
-                        <div className="sg-slide-overlay" />
-                        <div className="sg-slide-info">
+                        <div className="sg-slide-content">
                           <span className="sg-slide-tag">{sport.tag}</span>
                           <h3>{sport.title}</h3>
                           <p>{sport.description}</p>
@@ -591,64 +403,37 @@ export default function SportGym() {
                 </Slider>
               </div>
 
-              <div className="sg-sports-list">
+              <div className="sg-sidebar-list">
                 {data.sports.map((sport, i) => (
-                  <div className="sg-sport-item" key={i}>
-                    <div className="sg-sport-num">0{i + 1}</div>
-                    <div>
-                      <div className="sg-sport-name">{sport.title}</div>
-                      <div className="sg-sport-tag">{sport.tag}</div>
-                    </div>
+                  <div className="sg-sidebar-item" key={i}>
+                    <div className="sg-sidebar-num">0{i + 1}</div>
+                    <div className="sg-sidebar-name">{sport.title}</div>
+                    <div className="sg-sidebar-tag">{sport.tag}</div>
                   </div>
                 ))}
-                <div className="sg-sport-item sg-sport-more">
-                  <div className="sg-sport-num">+</div>
-                  <div>
-                    <div className="sg-sport-name">More Sports</div>
-                    <div className="sg-sport-tag">Athletics, Swimming & more</div>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
 
-          {/* GYM SECTION */}
           <section className="sg-section">
-            <div className="sg-section-label">
-              <span className="sg-dot sg-dot-gold" /> Fitness Centre
+            <div className="sg-section-header">
+              <div className="sg-section-label">Strength & Conditioning</div>
+              <h2 className="sg-section-title">Gym Facilities</h2>
             </div>
-            <h2 className="sg-section-title">Modern Gymnasium</h2>
-            <div className="sg-gym-layout">
+
+            <div className="sg-gym-grid">
               {data.gym.map((item, i) => (
                 <div className="sg-gym-card" key={i}>
-                  <div className="sg-gym-img-wrap">
+                  <div className="sg-gym-img">
                     <img src={item.photo} alt={item.title} />
-                    <div className="sg-gym-img-overlay" />
                     <span className="sg-gym-icon">{item.icon}</span>
                   </div>
-                  <div className="sg-gym-body">
+                  <div className="sg-gym-info">
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                   </div>
                 </div>
               ))}
-
-              <div className="sg-gym-promo">
-                <div className="sg-gym-promo-inner">
-                  <span className="sg-gym-promo-icon">🏅</span>
-                  <h3>Train Like a Professional</h3>
-                  <p>
-                    Regular fitness assessments ensure every cadet meets the
-                    physical standards required for their role.
-                  </p>
-                  <div className="sg-gym-promo-badges">
-                    <span>Strength</span>
-                    <span>Cardio</span>
-                    <span>Endurance</span>
-                    <span>Agility</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
 

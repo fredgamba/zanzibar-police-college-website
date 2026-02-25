@@ -4050,3 +4050,26 @@ WARNING 2026-02-24 10:08:00,466 log 11196 8704 Not Found: /api/driving-features
 INFO 2026-02-24 10:14:46,833 autoreload 11444 4580 Watching for file changes with StatReloader
 
 INFO 2026-02-24 13:51:50,817 autoreload 6096 14344 Watching for file changes with StatReloader
+INFO 2026-02-24 15:37:24,594 autoreload 6148 15852 Watching for file changes with StatReloader
+WARNING 2026-02-24 15:37:49,853 log 6148 6964 Not Found: /api/pages/history/
+WARNING 2026-02-24 15:37:49,871 log 6148 5348 Not Found: /api/pages/history/
+INFO 2026-02-24 21:01:48,763 autoreload 10520 10664 Watching for file changes with StatReloader
+INFO 2026-02-24 21:02:39,751 autoreload 14952 14948 Watching for file changes with StatReloader
+WARNING 2026-02-24 22:42:48,704 log 14952 7208 Unauthorized: /api/contact/
+WARNING 2026-02-24 22:42:48,714 log 14952 7208 Unauthorized: /api/contact/
+WARNING 2026-02-24 22:42:54,845 log 14952 7208 Not Found: /api/pages/organization/
+WARNING 2026-02-24 22:42:54,857 log 14952 4500 Not Found: /api/pages/organization/
+WARNING 2026-02-24 22:43:04,316 log 14952 4500 Not Found: /api/pages/history/
+WARNING 2026-02-24 22:43:04,340 log 14952 7208 Not Found: /api/pages/history/
+INFO 2026-02-25 07:53:39,683 autoreload 2264 13168 Watching for file changes with StatReloader
+INFO 2026-02-25 07:54:55,968 autoreload 2540 3744 Watching for file changes with StatReloader
+WARNING 2026-02-25 08:27:31,571 log 2540 16736 Not Found: /api/pages/organization/
+WARNING 2026-02-25 08:27:31,596 log 2540 5476 Not Found: /api/pages/organization/
+WARNING 2026-02-25 08:27:35,112 log 2540 5476 Not Found: /api/pages/history/
+WARNING 2026-02-25 08:27:35,121 log 2540 16736 Not Found: /api/pages/history/
+WARNING 2026-02-25 08:27:45,401 log 2540 16736 Not Found: /api/pages/organization/
+WARNING 2026-02-25 08:27:45,408 log 2540 5476 Not Found: /api/pages/organization/
+WARNING 2026-02-25 08:28:51,317 log 2540 10004 Not Found: /api/pages/history/
+WARNING 2026-02-25 08:28:51,333 log 2540 16580 Not Found: /api/pages/history/
+WARNING 2026-02-25 08:33:04,370 log 2540 16580 Not Found: /api/pages/history/
+WARNING 2026-02-25 08:33:04,402 log 2540 10004 Not Found: /api/pages/history/

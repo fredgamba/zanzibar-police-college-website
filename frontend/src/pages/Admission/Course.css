@@ -28,7 +28,7 @@
 .course-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--blue);
+  color: gray;
   margin: 0 0 3rem 0;
   text-align: center;
   font-family: system-ui, -apple-system, sans-serif;
@@ -139,7 +139,7 @@
 .course-section-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--blue);
+  color: gray;
   margin: 0 0 1.5rem 0;
   font-family: system-ui, -apple-system, sans-serif;
   display: flex;
@@ -187,7 +187,7 @@
   position: absolute;
   left: 1rem;
   top: 0.875rem;
-  color: var(--blue);
+  color: gray;
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -211,7 +211,7 @@
 .course-note-title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--blue);
+  color: gray;
   margin: 0 0 1rem 0;
   font-family: system-ui, -apple-system, sans-serif;
   display: flex;
@@ -226,7 +226,7 @@
   justify-content: center;
   width: 28px;
   height: 28px;
-  background: var(--blue);
+  background: gray;
   color: var(--white);
   border-radius: 50%;
   font-size: 1rem;
