@@ -1977,7 +1977,7 @@ body,
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background: #1c236d;
+  background: grey;
   color: white;
   font-size: 0.95rem;
 }
@@ -2111,7 +2111,7 @@ body,
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 2rem;
-  background: #1c236d;
+  background: grey;
   color: white;
   font-size: 0.9rem;
 }
@@ -2251,7 +2251,7 @@ body,
 
 /* Main Navigation Menu */
 .main-nav {
-  background: #1c236d;
+  background:grey;
   padding: 0;
 }
 
@@ -2619,7 +2619,7 @@ body,
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 2rem;
-  background: #1c236d;
+  background: grey;
   color: white;
   font-size: 0.9rem;
 }
@@ -2722,7 +2722,7 @@ body,
 
 /* Enhanced Main Navigation */
 .main-nav {
-  background: #1c236d;
+  background: grey;
   padding: 0;
 }
 
@@ -3582,13 +3582,13 @@ body,
 }
 
 .page-actions .btn-primary {
-  background: #1c236d;
+  background: grey;
   color: white;
   border: none;
 }
 
 .page-actions .btn-primary:hover {
-  background: #0d143a;
+  background:grey;
 }
 
 .page-actions .btn-secondary {
@@ -4486,12 +4486,12 @@ body,
 }
 
 .news-actions .btn-primary {
-  background: #1c236d;
+  background: grey;
   color: white;
 }
 
 .news-actions .btn-primary:hover {
-  background: #0d143a;
+  background: grey;
 }
 
 .news-actions .btn-secondary {
@@ -6232,7 +6232,7 @@ body,
 
 .section-tag {
   display: inline-block;
-  background-color: #1c236d;
+  background-color: grey;
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
   font-size: 0.8rem;
@@ -6251,7 +6251,7 @@ body,
 .typing-text {
   display: inline-block;
   position: relative;
-  color: #1c236d;
+  color: grey;
   border-right: 3px solid #2563eb;
   padding-right: 5px;
 

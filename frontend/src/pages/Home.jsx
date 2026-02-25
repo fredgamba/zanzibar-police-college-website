@@ -274,9 +274,6 @@ export default function Home() {
                       Apply Now
                     </button>
 
-                    <button className="btn-outline" onClick={handleLearnMore}>
-                      Learn More
-                    </button>
                   </div>
                 </div>
               </div>
