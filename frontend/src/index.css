@@ -6121,7 +6121,7 @@ body,
 /* HERO SECTION */
 .hero-commandant {
   position: relative;
-  height: 100vh;
+  height: auto;
   width: 100%;
   overflow: hidden;
   display: flex;
