@@ -1,342 +1,175 @@
-/* Modern Professional Design for Police Academy - Fixed Overlap Issue */
+/* ================================================================
+   button-fix.css
+   ---------------------------------------------------------------
+   Fix: Apply Now button — kubwa, katikati, responsive
+   Ongeza @import './button-fix.css'; mwishoni mwa CSS yako
+   AU paste mwishoni mwa css string ndani ya AdmissionRequirement.jsx
+   ================================================================ */
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap");
-
-:root {
-  --navy:        #0B1E3D;
-  --navy-mid:    #152d57;
-  --black:       #0D0D0D;
-  --steel:       #4B5563;
-  --mid-grey:    #9CA3AF;
-  --light-grey:  #E5E7EB;
-  --off-white:   #F3F4F6;
-  --white:       #FFFFFF;
-  --gold:        #C9A84C;
-  --gold-light:  #F0D080;
-  --gold-dark:   #9A7730;
-  --primary:        #0B1E3D;
-  --primary-light:  #3b82f6;
-  --dark:           #0D0D0D;
-  --gray:           #4B5563;
-  --gray-light:     #E5E7EB;
-  --gradient-1: linear-gradient(135deg, #0B1E3D 0%, #1a3a6e 100%);
-  --gradient-2: linear-gradient(135deg, #0D0D0D 0%, #0B1E3D 100%);
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.14);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,0.22);
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-.admission-container {
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #f0f2f5 0%, #ffffff 100%);
-  font-family: "Inter", sans-serif;
-  color: var(--black);
-  padding-bottom: 60px;
-}
-
-/* ── HERO ── */
-.hero-section {
-  position: relative;
-  min-height: 78vh;
+/* ── Center + enlarge CTA row ── */
+.hero-cta-row {
   display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;    /* katikati */
   align-items: center;
-  overflow: hidden;
-  background: var(--navy);
-  padding-bottom: 8rem; /* ← Ongezo hili linafanya hero iwe na nafasi chini ili banner isingiliane */
-}
-
-.hero-bg-split {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(115deg, var(--navy) 0%, var(--navy) 58%, #122444 58%, #122444 100%);
-  z-index: 0;
-}
-
-.hero-dot-grid {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-image: radial-gradient(circle, rgba(201,168,76,0.12) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
-
-.hero-gold-bar {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px; /* imepunguzwa kidogo */
-  background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light), var(--gold), var(--gold-dark));
-  z-index: 10;
-}
-
-.hero-gold-bar-bottom {
-  top: auto; bottom: 0; height: 3px;
-}
-
-.hero-inner {
-  position: relative;
-  z-index: 5;
   width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 100px 48px 60px; /* padding chini imepunguzwa ili isi-overlap */
-  display: flex;
+  margin-top: 8px;
+}
+
+/* ── Apply Now button — kubwa na yenye nguvu ── */
+.hero-btn-primary {
+  display: inline-flex;
   align-items: center;
-  gap: 60px;
-}
+  justify-content: center;
+  gap: 12px;
 
-/* Hero left & right styles zinaendelea... */
-.hero-left { flex: 1; min-width: 0; animation: fadeInLeft 0.9s cubic-bezier(0.22,1,0.36,1) both; }
-.hero-badge { /* ... */ }
-/* (styles zingine za hero zinaendelea kama zilivyo kwenye code yako ya awali) */
+  background: linear-gradient(135deg, #9A7730 0%, #C9A84C 50%, #F0D080 100%);
+  color: #0D0D0D;
+  border: none;
+  border-radius: 6px;
 
-/* ── INFO BANNER ── (sasa inasogea chini kidogo bila overlap) */
-.info-banner {
-  max-width: 1200px;
-  margin: 3rem auto 64px; /* ← Negative margin imeondolewa kabisa, sasa inaanza chini ya hero */
+  /* Ukubwa mpya */
+  padding: 22px 64px;
+  min-width: 280px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+
+  /* Glow effect */
+  box-shadow:
+    0 8px 32px rgba(201, 168, 76, 0.45),
+    0 2px 0 rgba(255, 255, 255, 0.15) inset;
+
+  /* Smooth transitions */
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.25s ease,
+              filter 0.25s ease;
+
   position: relative;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: stretch;
-  background: var(--white);
-  border-radius: 20px;
-  box-shadow: var(--shadow-lg);
   overflow: hidden;
-  border-top: 4px solid var(--gold);
-  animation: fadeInUp 0.9s ease-out 0.7s backwards;
 }
 
-.info-banner-left {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 40px 44px;
-  background: linear-gradient(135deg, #f6f8fb 0%, #edf0f5 100%);
+/* Shimmer overlay */
+.hero-btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -75%;
+  width: 50%; height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
 }
 
-.info-banner-right {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 40px 44px;
-  background: linear-gradient(135deg, #fdfbf5 0%, #f9f4e4 100%);
+.hero-btn-primary:hover::before {
+  left: 130%;
 }
 
-.info-banner-divider {
-  width: 1px;
-  background: linear-gradient(to bottom, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
-  margin: 24px 0;
-  flex-shrink: 0;
+.hero-btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 16px 48px rgba(201, 168, 76, 0.6),
+    0 0 0 8px rgba(201, 168, 76, 0.12);
+  filter: brightness(1.08);
 }
 
-/* ... (styles zingine za info-banner-icon, title, body zinaendelea kama zilivyo) */
+.hero-btn-primary:active {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.4);
+}
 
-/* ── PROGRAMS CAROUSEL ── (styles zinaendelea bila mabadiliko makubwa) */
-/* ... */
+/* ── Ghost button ── */
+.hero-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 
-/* ── TIMELINE ── (styles zinaendelea) */
-/* ... */
+  background: transparent;
+  color: #E5E7EB;
+  border: 1.5px solid rgba(229, 231, 235, 0.4);
+  border-radius: 6px;
 
-/* ── CTA ── (styles zinaendelea) */
-/* ... */
+  padding: 22px 44px;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
 
-/* ── ANIMATIONS ── */
-@keyframes fadeIn    { from { opacity:0 } to { opacity:1 } }
-@keyframes fadeInUp  { from { opacity:0; transform:translateY(30px) } to { opacity:1; transform:translateY(0) } }
-@keyframes fadeInLeft  { from { opacity:0; transform:translateX(-40px) } to { opacity:1; transform:translateX(0) } }
-@keyframes fadeInRight { from { opacity:0; transform:translateX(40px)  } to { opacity:1; transform:translateX(0) } }
-@keyframes spinSlow  { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
-@keyframes floatUp   { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-8px) } }
+.hero-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #C9A84C;
+  color: #F0D080;
+}
 
-/* ── RESPONSIVE ── */
+/* ================================================================
+   RESPONSIVE — Mobile
+   ================================================================ */
 @media (max-width: 1024px) {
-  .hero-inner { flex-direction: column; text-align: center; padding: 80px 32px 60px; gap: 48px; }
-  .info-banner { margin: 2rem auto 48px; } /* hata kwenye screen ndogo inabaki na nafasi */
-  /* ... (responsive styles zingine) */
-}
-
-@media (max-width: 900px) {
-  .info-banner { grid-template-columns: 1fr; margin: 2rem 20px 48px; }
-  .info-banner-divider {
-    width: 80%; height: 1px; margin: 0 auto;
-    background: linear-gradient(to right, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+  /* Hero kwisha kuwa column — row tayari inaelekea center */
+  .hero-cta-row {
+    justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-section { padding-bottom: 7rem; } /* nafasi zaidi kwenye mobile */
-  /* ... */
-}
-/* Modern Professional Design for Police Academy - Fixed Overlap Issue */
+  .hero-cta-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap");
+  .hero-btn-primary {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 32px;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    min-width: unset;
+    justify-content: center;
+  }
 
-:root {
-  --navy:        #0B1E3D;
-  --navy-mid:    #152d57;
-  --black:       #0D0D0D;
-  --steel:       #4B5563;
-  --mid-grey:    #9CA3AF;
-  --light-grey:  #E5E7EB;
-  --off-white:   #F3F4F6;
-  --white:       #FFFFFF;
-  --gold:        #C9A84C;
-  --gold-light:  #F0D080;
-  --gold-dark:   #9A7730;
-  --primary:        #0B1E3D;
-  --primary-light:  #3b82f6;
-  --dark:           #0D0D0D;
-  --gray:           #4B5563;
-  --gray-light:     #E5E7EB;
-  --gradient-1: linear-gradient(135deg, #0B1E3D 0%, #1a3a6e 100%);
-  --gradient-2: linear-gradient(135deg, #0D0D0D 0%, #0B1E3D 100%);
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.14);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,0.22);
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-.admission-container {
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #f0f2f5 0%, #ffffff 100%);
-  font-family: "Inter", sans-serif;
-  color: var(--black);
-  padding-bottom: 60px;
-}
-
-/* ── HERO ── */
-.hero-section {
-  position: relative;
-  min-height: 78vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background: var(--navy);
-  padding-bottom: 8rem; /* ← Ongezo hili linafanya hero iwe na nafasi chini ili banner isingiliane */
-}
-
-.hero-bg-split {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(115deg, var(--navy) 0%, var(--navy) 58%, #122444 58%, #122444 100%);
-  z-index: 0;
-}
-
-.hero-dot-grid {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-image: radial-gradient(circle, rgba(201,168,76,0.12) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
-
-.hero-gold-bar {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px; /* imepunguzwa kidogo */
-  background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light), var(--gold), var(--gold-dark));
-  z-index: 10;
-}
-
-.hero-gold-bar-bottom {
-  top: auto; bottom: 0; height: 3px;
-}
-
-.hero-inner {
-  position: relative;
-  z-index: 5;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 100px 48px 60px; /* padding chini imepunguzwa ili isi-overlap */
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-/* Hero left & right styles zinaendelea... */
-.hero-left { flex: 1; min-width: 0; animation: fadeInLeft 0.9s cubic-bezier(0.22,1,0.36,1) both; }
-.hero-badge { /* ... */ }
-/* (styles zingine za hero zinaendelea kama zilivyo kwenye code yako ya awali) */
-
-/* ── INFO BANNER ── (sasa inasogea chini kidogo bila overlap) */
-.info-banner {
-  max-width: 1200px;
-  margin: 3rem auto 64px; /* ← Negative margin imeondolewa kabisa, sasa inaanza chini ya hero */
-  position: relative;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: stretch;
-  background: var(--white);
-  border-radius: 20px;
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  border-top: 4px solid var(--gold);
-  animation: fadeInUp 0.9s ease-out 0.7s backwards;
-}
-
-.info-banner-left {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 40px 44px;
-  background: linear-gradient(135deg, #f6f8fb 0%, #edf0f5 100%);
-}
-
-.info-banner-right {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 40px 44px;
-  background: linear-gradient(135deg, #fdfbf5 0%, #f9f4e4 100%);
-}
-
-.info-banner-divider {
-  width: 1px;
-  background: linear-gradient(to bottom, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
-  margin: 24px 0;
-  flex-shrink: 0;
-}
-
-/* ... (styles zingine za info-banner-icon, title, body zinaendelea kama zilivyo) */
-
-/* ── PROGRAMS CAROUSEL ── (styles zinaendelea bila mabadiliko makubwa) */
-/* ... */
-
-/* ── TIMELINE ── (styles zinaendelea) */
-/* ... */
-
-/* ── CTA ── (styles zinaendelea) */
-/* ... */
-
-/* ── ANIMATIONS ── */
-@keyframes fadeIn    { from { opacity:0 } to { opacity:1 } }
-@keyframes fadeInUp  { from { opacity:0; transform:translateY(30px) } to { opacity:1; transform:translateY(0) } }
-@keyframes fadeInLeft  { from { opacity:0; transform:translateX(-40px) } to { opacity:1; transform:translateX(0) } }
-@keyframes fadeInRight { from { opacity:0; transform:translateX(40px)  } to { opacity:1; transform:translateX(0) } }
-@keyframes spinSlow  { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
-@keyframes floatUp   { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-8px) } }
-
-/* ── RESPONSIVE ── */
-@media (max-width: 1024px) {
-  .hero-inner { flex-direction: column; text-align: center; padding: 80px 32px 60px; gap: 48px; }
-  .info-banner { margin: 2rem auto 48px; } /* hata kwenye screen ndogo inabaki na nafasi */
-  /* ... (responsive styles zingine) */
-}
-
-@media (max-width: 900px) {
-  .info-banner { grid-template-columns: 1fr; margin: 2rem 20px 48px; }
-  .info-banner-divider {
-    width: 80%; height: 1px; margin: 0 auto;
-    background: linear-gradient(to right, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+  .hero-btn-ghost {
+    width: 100%;
+    max-width: 400px;
+    padding: 18px 32px;
+    font-size: 16px;
+    justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  .hero-section { padding-bottom: 7rem; } /* nafasi zaidi kwenye mobile */
-  /* ... */
+@media (max-width: 480px) {
+  .hero-btn-primary {
+    padding: 18px 24px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .hero-btn-ghost {
+    padding: 16px 24px;
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  /* Panda nafasi ndogo kati ya badge na button */
+  .hero-cta-row {
+    gap: 12px;
+    margin-top: 4px;
+  }
 }

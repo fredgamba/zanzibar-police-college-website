@@ -102,7 +102,7 @@ body {
   position: sticky;
   left: 0;
   z-index: 3;
-  background: var(--grey-dark);
+  background: gray;
 }
 
 .fee-table tbody tr {
@@ -171,7 +171,7 @@ body {
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
-  color: var(--grey-dark);
+  color: gray;
   margin-bottom: 1.2rem;
 }
 

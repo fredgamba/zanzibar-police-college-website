@@ -4073,6 +4073,7 @@ WARNING 2026-02-25 08:28:51,317 log 2540 10004 Not Found: /api/pages/history/
 WARNING 2026-02-25 08:28:51,333 log 2540 16580 Not Found: /api/pages/history/
 WARNING 2026-02-25 08:33:04,370 log 2540 16580 Not Found: /api/pages/history/
 WARNING 2026-02-25 08:33:04,402 log 2540 10004 Not Found: /api/pages/history/
+INFO 2026-02-26 09:58:30,913 autoreload 4340 8268 Watching for file changes with StatReloader
 INFO 2026-02-26 09:25:56,793 autoreload 6226 132850130190464 Watching for file changes with StatReloader
 INFO 2026-02-26 09:26:24,726 autoreload 6226 132850130190464 /home/tpf/zanzibar-police-college-website/backend/police_academy_backend/settings.py changed, reloading.
 INFO 2026-02-26 09:26:25,313 autoreload 6625 131093622968448 Watching for file changes with StatReloader

@@ -20,14 +20,14 @@
 .application-content h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #0f3d68;
+  color: gray;
   margin-bottom: 20px;
 }
 
 .application-content h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #1f2937;
+  color: gray;
 }
 
 .application-content p {
@@ -49,7 +49,7 @@
 .address-card h4 {
   margin-bottom: 12px;
   font-size: 18px;
-  color: #0f3d68;
+  color: gray;
 }
 
 .address-card a {
@@ -88,7 +88,7 @@
   line-height: 1.4; /* rudisha line-height kwa text */
   margin: 0;
   padding: 10px 14px;
-  background: #0f3d68;
+  background: gray;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
