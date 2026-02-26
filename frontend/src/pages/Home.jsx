@@ -59,10 +59,10 @@ export default function Home() {
     window.open("https://dpa.tpf.go.tz/", "_blank");
   };
 
-  const handleLearnMore = () => {
-    navigate("/pages/About");
+  
+  const goToCourses = () => {
+    navigate("/Admission/Course"); 
   };
-
   useEffect(() => {
     const cards = document.querySelectorAll(".facility-card");
 
@@ -212,7 +212,7 @@ export default function Home() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    arrows: false,
+    arrows: true,
     fade: true,
     pauseOnHover: true,
   };
@@ -255,83 +255,82 @@ export default function Home() {
       </style>
 
       {/* Hero Carousel */}
-      <div className="hero-carousel">
-        <Slider {...settings}>
-          {slides.map((slide, index) => (
-            <div key={index} className="hero-slide">
-              <img src={slide.image} alt={slide.title} />
-
-              <div className="slide-overlay">
-                <div className="slide-content">
-                  <span className="slide-tag">
-                    Zanzibar Police College
-                  </span>
-                  <h2>{slide.title}</h2>
-                  <p>{slide.subtitle}</p>
-
-                  <div className="slide-buttons">
-                    <button className="btn-primary" onClick={handleApply}>
-                      Apply Now
-                    </button>
-
-                  </div>
+      <div className="police-hero">
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index} className="police-slide">
+            <div
+              className="police-bg"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              <div className="flag-overlay"></div>
+              <div className="police-content">
+                
+                <h1>{slide.title}</h1>
+                <p>{slide.subtitle}</p>
+                <div className="police-buttons">
+                  <button className="gold-btn" onClick={handleApply}>
+                    Apply Now
+                  </button>
+                  <button className="outline-btn" onClick={goToCourses}>
+        Explore Programs
+      </button>
                 </div>
               </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+          </div>
+        ))}
+      </Slider>
+</div>
 
       {/* Commandant Message Section */}
       <section className="hero-commandant">
-        {/* Overlay & Floating Shapes */}
-        <div className="hero-overlay"></div>
-        <div className="floating-shape shape-1"></div>
-        <div className="floating-shape shape-2"></div>
+  {/* Overlay */}
+  <div className="hero-overlay"></div>
 
-        {/* Hero Card with 3D tilt */}
-        <div className="container">
-          <div
-            className="hero-card"
-            data-tilt
-            data-tilt-max="15"
-            data-tilt-speed="400"
-          >
-            {/* Commandant Image */}
-            <div className="hero-image" data-aos="fade-right">
-              <img
-                src="/images/CO-ZPC.jpg"
-                alt="Augustino Senga-ACP - Commandant"
-              />
-              <div className="commandant-badge">
-                <Award size={24} />
-              </div>
-            </div>
+  {/* Floating Shapes */}
+  <div className="floating-shape shape-1"></div>
+  <div className="floating-shape shape-2"></div>
 
-            {/* Commandant Message */}
-            <div className="hero-message" data-aos="fade-left">
-              <span className="section-tag">Leadership Message</span>
-              <h1>
-                <span className="typing-text">
-                  Shaping Officers of Integrity & Excellence
-                </span>
-              </h1>
-
-              <blockquote>
-                “At Zanzibar police college, we shape officers of integrity
-                and excellence. Our commitment extends beyond academic
-                excellence to character building, ensuring our graduates serve
-                with honor, courage, and unwavering dedication to justice.”
-              </blockquote>
-
-              <div className="commandant-info">
-                <h3>Augustino Senga, ACP</h3>
-                <p>Assistant Commissioner of Police · Commandant</p>
-              </div>
-            </div>
-          </div>
+  <div className="container">
+    <div
+      className="hero-card"
+      data-tilt
+      data-tilt-max="15"
+      data-tilt-speed="400"
+    >
+      {/* Commandant Image */}
+      <div className="hero-image" data-aos="fade-right">
+        <img src="/images/CO-ZPC.jpg" alt="Augustino Senga-ACP - Commandant" />
+        <div className="commandant-badge">
+          <Award size={24} />
         </div>
-      </section>
+        <div className="light-reflection"></div>
+      </div>
+
+      {/* Commandant Message */}
+      <div className="hero-message" data-aos="fade-left">
+        <span className="section-tag">Leadership Message</span>
+        <h1>
+          <span className="typing-text">
+            Shaping Officers of Integrity & Excellence
+          </span>
+        </h1>
+
+        <blockquote>
+          “At Zanzibar Police College, we shape officers of integrity and
+          excellence. Our commitment extends beyond academics to character
+          building, ensuring graduates serve with honor and dedication.”
+        </blockquote>
+
+        <div className="commandant-info">
+          <h3>Augustino Senga, ACP</h3>
+          <p>Assistant Commissioner of Police · Commandant</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Programs Section */}
       <section className="programs-section">

@@ -265,7 +265,8 @@ function App() {
           } />
                <Route path="/facilities" element={<Facilities />} />
 
-             
+               <Route path="/pages/Admission/Course" element={<Course />} />
+
 
      <Route
   path="/programs/:slug"
