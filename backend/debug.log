@@ -4079,3 +4079,263 @@ INFO 2026-02-26 09:26:25,313 autoreload 6625 131093622968448 Watching for file c
 INFO 2026-02-26 09:26:54,552 autoreload 6625 131093622968448 /home/tpf/zanzibar-police-college-website/backend/police_academy_backend/settings.py changed, reloading.
 INFO 2026-02-26 09:26:55,138 autoreload 7568 125677030772864 Watching for file changes with StatReloader
 INFO 2026-02-26 09:29:54,036 autoreload 8420 126866830303360 Watching for file changes with StatReloader
+INFO 2026-02-26 09:31:50,516 autoreload 9254 136415479976064 Watching for file changes with StatReloader
+WARNING 2026-02-26 09:32:09,345 log 9254 136415380674240 Unauthorized: /api/public/posts/
+WARNING 2026-02-26 09:32:09,346 log 9254 136415006422720 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-26 09:32:09,371 log 9254 136415355496128 Unauthorized: /api/public/gallery/
+WARNING 2026-02-26 09:32:09,393 log 9254 136415363888832 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-26 09:32:09,394 log 9254 136415372281536 Unauthorized: /api/public/posts/
+WARNING 2026-02-26 09:32:09,416 log 9254 136415372281536 Unauthorized: /api/public/gallery/
+ERROR 2026-02-26 09:32:09,641 log 9254 136415363888832 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2026-02-26 09:32:09,647 log 9254 136415372281536 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2026-02-26 09:32:09,663 log 9254 136415380674240 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2026-02-26 09:32:09,664 log 9254 136415355496128 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2026-02-26 09:32:09,665 log 9254 136415389066944 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2026-02-26 09:32:09,671 log 9254 136415006422720 Internal Server Error: /api/auth/token/refresh/
+Traceback (most recent call last):
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpf/dar-es-salaam-police-academy/backend/policeenv/lib/python3.12/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO 2026-02-26 09:34:06,537 autoreload 10117 134393023967360 Watching for file changes with StatReloader
+WARNING 2026-02-26 09:39:34,186 log 10117 134392899479232 Not Found: /api/pages/history/
+WARNING 2026-02-26 09:39:34,232 log 10117 134392899479232 Not Found: /api/pages/history/
+WARNING 2026-02-26 09:39:37,931 log 10117 134392933050048 Not Found: /api/pages/organization/
+WARNING 2026-02-26 09:39:37,977 log 10117 134392933050048 Not Found: /api/pages/organization/
+WARNING 2026-02-26 09:39:51,699 log 10117 134392933050048 Not Found: /api/pages/organization/
+WARNING 2026-02-26 09:39:51,703 log 10117 134392933050048 Not Found: /api/pages/organization/
